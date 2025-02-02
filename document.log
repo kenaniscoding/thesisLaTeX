@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.1)  2 FEB 2025 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.1)  2 FEB 2025 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2217,7 +2217,7 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 5.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [21]
-<figure/example_gray_box.pdf, id=755, 202.7575pt x 202.7575pt>
+<figure/example_gray_box.pdf, id=759, 202.7575pt x 202.7575pt>
 File: figure/example_gray_box.pdf Graphic file (type pdf)
 <use figure/example_gray_box.pdf>
 Package pdftex.def Info: figure/example_gray_box.pdf  used on input line 9.
@@ -2523,7 +2523,7 @@ d on input line 309.
 
 
 ]
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=992, 484.81125pt x 655.4487
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=996, 484.81125pt x 655.4487
 5pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>
@@ -2535,7 +2535,7 @@ File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf  used o
 n input line 324.
 (pdftex.def)             Requested size: 484.81006pt x 655.44714pt.
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=995, page=1, 484.81125pt x 
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=999, page=1, 484.81125pt x 
 655.44875pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
@@ -4176,7 +4176,7 @@ d on input line 1439.
 [107
 
 ]
-<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2272, 614.295p
+<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2276, 614.295p
 t x 794.97pt>
 File: ./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf Graphic file 
 (type pdf)
@@ -4190,7 +4190,7 @@ File: ./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf Graphic file
 Package pdftex.def Info: ./reference/Xilinx2015-UltraScale-Architecture-Overvie
 w.pdf  used on input line 1446.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2275, page=8, 
+<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2279, page=8, 
 614.295pt x 794.97pt>
 File: ./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf Graphic file 
 (type pdf)
@@ -4234,7 +4234,7 @@ w.pdf , page8 used on input line 1446.
 
 
  <./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf>]
-<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2300, page=9, 
+<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2304, page=9, 
 614.295pt x 794.97pt>
 File: ./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf Graphic file 
 (type pdf)
@@ -4265,7 +4265,7 @@ w.pdf , page9 used on input line 1446.
 [109
 
  <./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf>]
-<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2310, page=10,
+<./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf, id=2314, page=10,
  614.295pt x 794.97pt>
 File: ./reference/Xilinx2015-UltraScale-Architecture-Overview.pdf Graphic file 
 (type pdf)
@@ -4299,7 +4299,7 @@ w.pdf , page10 used on input line 1446.
 \openout2 = `vita.aux'.
 
  (vita.tex
-<figure/vita_photo.pdf, id=2319, 150.5625pt x 150.5625pt>
+<figure/vita_photo.pdf, id=2323, 150.5625pt x 150.5625pt>
 File: figure/vita_photo.pdf Graphic file (type pdf)
 <use figure/vita_photo.pdf>
 Package pdftex.def Info: figure/vita_photo.pdf  used on input line 11.
@@ -4354,7 +4354,7 @@ d on input line 382.
 
 
 ]
-<article_forum_paper.pdf, id=2332, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=2336, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf>
 Package pdftex.def Info: article_forum_paper.pdf  used on input line 389.
@@ -4363,7 +4363,7 @@ File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf>
 Package pdftex.def Info: article_forum_paper.pdf  used on input line 389.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<article_forum_paper.pdf, id=2335, page=1, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=2339, page=1, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
 Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
@@ -4395,7 +4395,7 @@ Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
 
 
  <./article_forum_paper.pdf>]
-<article_forum_paper.pdf, id=2364, page=2, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=2368, page=2, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 2>
 Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 389
@@ -4417,8 +4417,7 @@ Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 389
 
  <./article_forum_paper.pdf>]
 
-Package datagidx Warning: Rerun required to ensure the index/glossary location 
-lists are up-to-date.
+Package datagidx Warning: Rerun required to sort the index/glossary databases.
 
 (document.aux (introduction.aux) (literature_review.aux)
 (theoretical_considerations.aux) (design_considerations.aux) (methodology.aux)
@@ -4437,9 +4436,9 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 3B5BFDA68A33AFAA8DFCA092ECD041E1;12251.
  ) 
 Here is how much of TeX's memory you used:
- 45802 strings out of 473536
- 800728 string characters out of 5714957
- 2745005 words of memory out of 5000000
+ 45806 strings out of 473536
+ 800791 string characters out of 5714957
+ 2744658 words of memory out of 5000000
  66634 multiletter control sequences out of 15000+600000
  638469 words of font info for 426 fonts, out of 8000000 for 9000
  1149 hyphenation exceptions out of 8191
@@ -4481,9 +4480,9 @@ w/times/utmb8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/ur
 w/times/utmbi8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on document.pdf (127 pages, 1386644 bytes).
+Output written on document.pdf (127 pages, 1387197 bytes).
 PDF statistics:
- 2769 PDF objects out of 2984 (max. 8388607)
- 1055 named destinations out of 1200 (max. 500000)
+ 2774 PDF objects out of 2984 (max. 8388607)
+ 1059 named destinations out of 1200 (max. 500000)
  122140 words of extra memory for PDF output out of 128383 (max. 10000000)
 
