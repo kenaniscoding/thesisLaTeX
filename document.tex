@@ -288,18 +288,7 @@
 	\bibliographystyle{apalike} % for APA referencing format
 	\begin{SingleSpace}
 		{\small \bibliography{references}}
-		\vfill
-		\LaTeX-comment this and the following texts after you have implemented them. See the following references for helpful guides for the bibliography and script editing in general.  Note that the links might be unavailable, but the names can be searched in the Web.
-		
-		\begin{enumerate}
-			\item IEEE Citation Reference: \url{www.ieee.org/documents/ieeecitationref.pdf}
-			
-			\item IEEE Editorial Style manual: \url{www.ieee.org/documents/style_manual.pdf} 
-			
-			\item IEEE Abbreviations for Transactions, Journals, Letters, and Magazines: \url{www.ieee.org/documents/trans_journal_names.pdf}
-		\end{enumerate}
-		
-		\noindent Also in your BibTeX file, enclose letters or words that should all be in uppercase in curly brackets. Example: {IBM}, {P}hilippines, e{X}tensible {M}arkup {L}anguage.
+
 		
 	\end{SingleSpace}
 	\vfill
@@ -337,7 +326,8 @@
 	\label{ch:revisions_to_the_proposal}
 	%\startcontents[chapters]
 	%\Mprintcontents  
-	\include{revisions_to_the_proposal}
+	%\include{revisions_to_the_proposal}
+	\includepdf[pages={1-5}]{./figure/AppendixZ.pdf} % Includes all pages (1 to 5)
 	%\stopcontents[chapters]
 	\cleardoublepage
 	

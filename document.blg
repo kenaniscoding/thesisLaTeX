@@ -20,62 +20,58 @@ The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 25 items.
 A level-1 auxiliary file: answers_to_questions.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: revisions_to_the_proposal.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: revisions_to_the_final.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 A level-1 auxiliary file: vita.aux
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 583 of file references.bib
- :  
- :  title = {Mango {\textbar} {Description}, {History}, {Cultivation}, \& {Facts} {\textbar} {Britannica}},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--entry type for "DBpediaCarabao" isn't style-file defined
+--line 5 of file references.bib
+Warning--entry type for "noauthor-mango-2024" isn't style-file defined
+--line 19 of file references.bib
 Warning--empty journal in adam-non-destructive-2022
 Warning--empty booktitle in alejandro-grading-2018
-Warning--empty year in noauthor-mango-2024
 Warning--empty journal in centino-current-nodate
-Warning--empty year in zhengzhou-first-industry-co-ltd-what-nodate
-You've used 23 entries,
+Warning--empty journal in guillermo-determining-2019
+You've used 22 entries,
             1935 wiz_defined-function locations,
-            615 strings with 9024 characters,
-and the built_in function-call counts, 9027 in all, are:
-= -- 863
-> -- 445
-< -- 13
-+ -- 160
-- -- 154
-* -- 780
-:= -- 1627
-add.period$ -- 65
-call.type$ -- 23
-change.case$ -- 189
-chr.to.int$ -- 23
-cite$ -- 28
-duplicate$ -- 319
-empty$ -- 566
-format.name$ -- 183
-if$ -- 1702
+            604 strings with 8902 characters,
+and the built_in function-call counts, 8944 in all, are:
+= -- 862
+> -- 436
+< -- 10
++ -- 154
+- -- 150
+* -- 782
+:= -- 1588
+add.period$ -- 62
+call.type$ -- 22
+change.case$ -- 185
+chr.to.int$ -- 22
+cite$ -- 26
+duplicate$ -- 318
+empty$ -- 568
+format.name$ -- 178
+if$ -- 1703
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 114
-num.names$ -- 69
-pop$ -- 165
+missing$ -- 19
+newline$ -- 109
+num.names$ -- 66
+pop$ -- 159
 preamble$ -- 1
-purify$ -- 192
+purify$ -- 185
 quote$ -- 0
-skip$ -- 247
+skip$ -- 249
 stack$ -- 0
-substring$ -- 553
-swap$ -- 30
-text.length$ -- 1
+substring$ -- 572
+swap$ -- 35
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 136
-warning$ -- 5
-while$ -- 69
+type$ -- 132
+warning$ -- 4
+while$ -- 70
 width$ -- 0
-write$ -- 284
-(There was 1 error message)
+write$ -- 274
+(There were 6 warnings)

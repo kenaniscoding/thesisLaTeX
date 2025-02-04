@@ -6,6 +6,13 @@ Abbas, Q., Niazi, S., Iqbal, M., and Noureen, M. (2018).
 \newblock {\em IJCSNS International Journal of Computer Science and Network
   Security}, 18(8).
 
+\bibitem[Abu et~al., 2021]{abu-determination-2021}
+Abu, M., Olympio, N.~S., and Darko, J.~O. (2021).
+\newblock Determination of {Harvest} {Maturity} for {Mango}
+  (\&lt;i\&gt;{Mangifera} indica\&lt;/i\&gt; {L}.) {Fruit} by
+  {Non}-{Destructive} {Criteria}.
+\newblock {\em Agricultural Sciences}, 12(10):1103--1118.
+
 \bibitem[Adam et~al., 2022]{adam-non-destructive-2022}
 Adam, J. A.~P., Dato, K.~S., Impelido, M. C.~D., Tobias, R.~G., and Pilueta,
   N.~U. (2022).
@@ -17,8 +24,14 @@ Alejandro, A.~B., Gonzales, J.~P., Yap, J. P.~C., and Linsangan, N.~B. (2018).
   network.
 \newblock page 020065, Bandung, Indonesia.
 
-\bibitem[Britannica.org, ]{noauthor-mango-2024}
-Britannica.org.
+\bibitem[Amna et~al., 2023]{amna-et-al-machine-2023}
+Amna, M. W.~A., Guiqiang, L., and Muhammad Zuhaib~AKRAM, M.~F. (2023).
+\newblock Machine vision-based automatic fruit quality detection and grading.
+\newblock {\em Frontiers of Agricultural Science and Engineering}, 0(0):0.
+
+\bibitem[Britannica, nd]{noauthor-mango-2024}
+Britannica (n.d.).
+\newblock Mango history cultivation and facts.
 
 \bibitem[Centino et~al., 2020]{centino-current-nodate}
 Centino, M.~F., Castano, M. C.~N., and Ebo, J. B.~F. (2020).
@@ -34,10 +47,9 @@ Chakraborty, S.~K., Subeesh, A., Dubey, K., Jat, D., Chandel, N.~S., Potdar,
 \newblock {\em Engineering Applications of Artificial Intelligence},
   120:105826.
 
-\bibitem[Croft, 1978]{croft-78}
-Croft, W.~B. (1978).
-\newblock {\em Organizing and searching large files of document descriptions}.
-\newblock PhD thesis, Cambridge University.
+\bibitem[Co., nd]{zhengzhou-first-industry-co-ltd-what-nodate}
+Co., Z. F.~I. (n.d.).
+\newblock What is fruit sorting.
 
 \bibitem[D'Adamo, 2018]{dadamo-determinants-2018}
 D'Adamo, G. (2018).
@@ -48,18 +60,7 @@ D'Adamo, G. (2018).
 
 \bibitem[DBpedia, nd]{DBpediaCarabao}
 DBpedia (n.d.).
-\newblock Carabao.
-
-\bibitem[Einstein, 1905]{Einstein}
-Einstein, A. (1905).
-\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies].
-\newblock {\em Annalen der Physik}, 322(10):891--921.
-
-\bibitem[et. al., 2023]{amna-et-al-machine-2023}
-et. al., A. (2023).
-\newblock Machine vision-based automatic fruit quality detection and grading.
-\newblock {\em Frontiers of Agricultural Science and Engineering}, 0(0):0.
+\newblock About: Carabao.
 
 \bibitem[Guillergan et~al., 2024]{guillergan-naive-2024}
 Guillergan, G., Sabay, R., Madrigal, D., and Bual, J. (2024).
@@ -67,11 +68,10 @@ Guillergan, G., Sabay, R., Madrigal, D., and Bual, J. (2024).
 \newblock {\em Technium: Romanian Journal of Applied Sciences and Technology},
   22:14--32.
 
-\bibitem[{ISO}, 2009]{ISO800002}
-{ISO} (2009).
-\newblock 80000-2.
-\newblock {\em Quantities and units--Part 2: Mathematical signs and symbols to
-  be used in the natural sciences and technology}.
+\bibitem[Guillermo et~al., 2019]{guillermo-determining-2019}
+Guillermo, M. C.~S., Naciongayo, D.~S., and Galela, M. G.~C. (2019).
+\newblock Determining ‘{Carabao}’ {Mango} {Ripeness} {Stages} {Using}
+  {Three} {Image} {Processing} {Algorithms}.
 
 \bibitem[Lacap et~al., 2021]{lacap-bruise-2021}
 Lacap, A., Bayogan, E.~R., Secretaria, L., Joyce, D., Ekman, J., and Goldwater,
@@ -79,12 +79,6 @@ Lacap, A., Bayogan, E.~R., Secretaria, L., Joyce, D., Ekman, J., and Goldwater,
 \newblock Bruise {Injury} and {Its} {Effect} on '{Carabao}' {Mango} {Fruit}
   {Quality}.
 \newblock {\em Philippine Journal of Science}, 150(6B).
-
-\bibitem[Oetiker et~al., 2014]{Oetiker2014}
-Oetiker, T., Partl, H., Hyna, I., and Schlegl, E. (2014).
-\newblock {\em The Not So Short Introduction to \LaTeXe Or \LaTeXe in 157
-  minutes}.
-\newblock n.a.
 
 \bibitem[Patel et~al., 2019]{patel-novel-2019}
 Patel, K.~K., Khan, M.~A., Kumar, Y., and Yadav, A.~K. (2019).
@@ -101,16 +95,9 @@ Rizwan~Iqbal, H.~M. and Hakim, A. (2022).
 
 \bibitem[Samaniego et~al.,
   2023]{school-of-engineering-asia-pacific-college-philippines-carabao-2023}
-Samaniego, L., De~Jesus, L.~C., {School of Engineering, Asia Pacific College,
-  Philippines}, Apostol, J., {School of Engineering, Asia Pacific College,
-  Philippines}, Betonio, D., {School of Engineering, Asia Pacific College,
-  Philippines}, Medalla, J.~D., {School of Engineering, Asia Pacific College,
-  Philippines}, Peruda~Jr., S., {School of Engineering, Asia Pacific College,
-  Philippines}, Brucal, S.~G., {School of Engineering, Asia Pacific College,
-  Philippines}, Yong, E., and {School of Engineering, Asia Pacific College,
-  Philippines} (2023).
-\newblock Carabao {Mango} {Export} {Quality} {Checker} {Using} {MATLAB} {Image}
-  {Processing}.
+Samaniego, L.~A., De~Jesus, L. C.~M., Apostol, J.~D., Betonio, D.~C., Medalla,
+  J. D.~B., Peruda~Jr, S.~R., Brucal, S. G.~E., and Yong, E.~D. (2023).
+\newblock Carabao mango export quality checker using matlab image processing.
 \newblock {\em International Journal of Computing Sciences Research},
   7:2080--2094.
 
@@ -128,6 +115,13 @@ Supekar, A.~D. and Wakode, M. (2020).
 \newblock {\em INFOCOMP Journal of Computer Science}, 19(2):175--187.
 \newblock Number: 2.
 
+\bibitem[Tomas et~al., 2022]{tomas-detection-2022}
+Tomas, M.~C., Celino, J. P.~L., Escalambre, I.~E., and Secreto, B.~P. (2022).
+\newblock Detection of {Overall} {Fruit} {Maturity} of {Local} {Fruits} {Using}
+  {Support} {Vector} {Machine} through {Image} {Processing}.
+\newblock In {\em 2022 12th {International} {Conference} on {Software}
+  {Technology} and {Engineering} ({ICSTE})}, pages 96--102.
+
 \bibitem[Veling, 2019]{veling-mango-2019}
 Veling, P.~S. (2019).
 \newblock Mango {Disease} {Detection} by using {Image} {Processing}.
@@ -139,10 +133,5 @@ Zheng, B. and Huang, T. (2021).
 \newblock Mango {Grading} {System} {Based} on {Optimized} {Convolutional}
   {Neural} {Network}.
 \newblock {\em Mathematical Problems in Engineering}, 2021:1--11.
-
-\bibitem[Zhengzhou First Industry~Co.,
-  ]{zhengzhou-first-industry-co-ltd-what-nodate}
-Zhengzhou First Industry~Co., L.
-\newblock What is fruit sorting.
 
 \end{thebibliography}

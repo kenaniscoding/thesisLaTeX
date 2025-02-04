@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {1.9}Overview of the Thesis}{14}{section.1.9}%
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Literature Review}}{16}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Existing Work}{17}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Sorting Algorithms}{19}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Sorting Algorithms}{20}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Lacking in the Approaches}{21}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Summary}{22}{section.2.3}%
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Theoretical Considerations}}{24}{chapter.3}%
@@ -48,10 +48,10 @@
 \contentsline {section}{\numberline {7.3}Recommendations}{49}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Future Prospects}{51}{section.7.4}%
 \contentsline {chapter}{References}{53}{chapter*.20}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{56}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{58}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{67}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{73}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{77}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{79}{appendix.F}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{55}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{57}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{66}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{72}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{76}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{78}{appendix.F}%
 \contentsfinish 

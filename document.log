@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  4 FEB 2025 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  4 FEB 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,6 +561,13 @@ Package: poormanlog 2022/05/25 v0.07 base 10 log and pow with 9 digits (JFB)
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/poormanlog\poormanlog
 .tex))))
+(C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip194
+\bibsep=\skip195
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count342
+)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/breakcites\breakcites.s
 ty)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
@@ -585,20 +592,20 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@width=\dimen196
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count342
+\c@tracingmulticols=\count343
 \mult@box=\box60
 \multicol@leftmargin=\dimen197
-\c@unbalance=\count343
-\c@collectmore=\count344
-\doublecol@number=\count345
-\multicoltolerance=\count346
-\multicolpretolerance=\count347
+\c@unbalance=\count344
+\c@collectmore=\count345
+\doublecol@number=\count346
+\multicoltolerance=\count347
+\multicolpretolerance=\count348
 \full@width=\dimen198
 \page@free=\dimen199
 \premulticols=\dimen256
 \postmulticols=\dimen257
-\multicolsep=\skip194
-\multicolbaselineskip=\skip195
+\multicolsep=\skip196
+\multicolbaselineskip=\skip197
 \partial@page=\box61
 \last@line=\box62
 \mc@boxedresult=\box63
@@ -643,20 +650,20 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box101
 \@tempa=\box102
 \@tempa=\box103
-\c@minrows=\count348
-\c@columnbadness=\count349
-\c@finalcolumnbadness=\count350
+\c@minrows=\count349
+\c@columnbadness=\count350
+\c@finalcolumnbadness=\count351
 \last@try=\dimen259
 \multicolovershoot=\dimen260
 \multicolundershoot=\dimen261
 \mult@nat@firstbox=\box104
 \colbreak@box=\box105
-\mc@col@check@num=\count351
+\mc@col@check@num=\count352
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip196
-\multirow@cntb=\count352
-\multirow@dima=\skip197
+\multirow@colwidth=\skip198
+\multirow@cntb=\count353
+\multirow@dima=\skip199
 \bigstrutjot=\dimen262
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
@@ -664,9 +671,9 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count353
-\rotFPtop=\skip198
-\rotFPbot=\skip199
+\c@r@tfl@t=\count354
+\rotFPtop=\skip256
+\rotFPbot=\skip257
 \rot@float@box=\box106
 \rot@mess@toks=\toks31
 )
@@ -685,8 +692,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/mdwtools\mdwtab.sty
 Package: mdwtab 1998/04/28 1.9 Table typesetting with style
-\tab@state=\count354
-\tab@columns=\count355
+\tab@state=\count355
+\tab@columns=\count356
 \tab@preamble=\toks32
 \tab@shortline=\toks33
 \extrarowheight=\dimen263
@@ -697,8 +704,8 @@ Package: mdwtab 1998/04/28 1.9 Table typesetting with style
 \tab@width=\dimen268
 \col@sep=\dimen269
 \tab@endheight=\dimen270
-\tab@leftskip=\skip256
-\tab@rightskip=\skip257
+\tab@leftskip=\skip258
+\tab@rightskip=\skip259
 \fn@notes=\box107
 \fn@width=\dimen271
 )
@@ -707,30 +714,30 @@ Package: ltablex 2014/08/13 v1.1 Modified tabularx
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
-\LTleft=\skip258
-\LTright=\skip259
-\LTpre=\skip260
-\LTpost=\skip261
-\LTchunksize=\count356
+\LTleft=\skip260
+\LTright=\skip261
+\LTpre=\skip262
+\LTpost=\skip263
+\LTchunksize=\count357
 \LTcapwidth=\dimen272
 \LT@head=\box108
 \LT@firsthead=\box109
 \LT@foot=\box110
 \LT@lastfoot=\box111
 \LT@gbox=\box112
-\LT@cols=\count357
-\LT@rows=\count358
-\c@LT@tables=\count359
-\c@LT@chunks=\count360
+\LT@cols=\count358
+\LT@rows=\count359
+\c@LT@tables=\count360
+\c@LT@chunks=\count361
 \LT@p@ftn=\toks34
 ))
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/eqparbox\eqparbox.sty
 Package: eqparbox 2017/09/03 v4.1 Create equal-widthed boxes
-\eqp@tempdima=\skip262
-\eqp@tempdimb=\skip263
+\eqp@tempdima=\skip264
+\eqp@tempdimb=\skip265
 \eqp@tabular@box=\box113
 \eqp@list@box=\box114
-\eqp@list@indent=\skip264
+\eqp@list@indent=\skip266
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -759,8 +766,8 @@ sto
 File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to th
 e memoir document class (AR)
 ))
-\c@caption@flags=\count361
-\c@continuedfloat=\count362
+\c@caption@flags=\count362
+\c@continuedfloat=\count363
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen281
 \caption@adjustwidth@linewidth=\dimen282
@@ -780,7 +787,7 @@ Package: excludeonly 2003/03/14 v1.0 eponymous command opposite to \includeonly
 Package: microtype 2024/12/12 v3.2 Micro-typographical refinements (RS)
 \MT@toks=\toks35
 \MT@tempbox=\box115
-\MT@count=\count363
+\MT@count=\count364
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1075.
 LaTeX Info: Redefining \leftprotrusion on input line 1076.
 \MT@prot@toks=\toks36
@@ -789,14 +796,14 @@ LaTeX Info: Redefining \textls on input line 1437.
 \MT@outer@kern=\dimen283
 LaTeX Info: Redefining \microtypecontext on input line 2041.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2058.
-\MT@listname@count=\count364
+\MT@listname@count=\count365
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdf
 tex.def
 File: microtype-pdftex.def 2024/12/12 v3.2 Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip265
+\MT@outer@space=\skip267
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -810,24 +817,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count365
-\c@Blindtext=\count366
-\c@blind@countparstart=\count367
-\blind@countxx=\count368
-\blindtext@numBlindtext=\count369
-\blind@countyy=\count370
-\c@blindlist=\count371
-\c@blindlistlevel=\count372
-\c@blindlist@level=\count373
-\blind@listitem=\count374
-\c@blind@listcount=\count375
-\c@blind@levelcount=\count376
-\blind@mathformula=\count377
-\blind@Mathformula=\count378
-\c@blind@randomcount=\count379
-\c@blind@randommax=\count380
-\c@blind@pangramcount=\count381
-\c@blind@pangrammax=\count382
+\c@blindtext=\count366
+\c@Blindtext=\count367
+\c@blind@countparstart=\count368
+\blind@countxx=\count369
+\blindtext@numBlindtext=\count370
+\blind@countyy=\count371
+\c@blindlist=\count372
+\c@blindlistlevel=\count373
+\c@blindlist@level=\count374
+\blind@listitem=\count375
+\c@blind@listcount=\count376
+\c@blind@levelcount=\count377
+\blind@mathformula=\count378
+\blind@Mathformula=\count379
+\c@blind@randomcount=\count380
+\c@blind@randommax=\count381
+\c@blind@pangramcount=\count382
+\c@blind@pangrammax=\count383
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
@@ -835,9 +842,9 @@ eys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count383
-\l__lipsum_a_int=\count384
-\l__lipsum_b_int=\count385
+\g__lipsum_par_int=\count384
+\l__lipsum_a_int=\count385
+\l__lipsum_b_int=\count386
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
@@ -854,7 +861,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks37
 \XKV@tempa@toks=\toks38
 )
-\XKV@depth=\count386
+\XKV@depth=\count387
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
@@ -863,17 +870,17 @@ Package: fcprefix 2012/09/28
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.st
 y
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count387
+\fc@digit@counter=\count388
 ))
-\c@padzeroesN=\count388
-\fc@tmpcatcode=\count389
-\@DT@modctr=\count390
-\@ordinalctr=\count391
-\@orgargctr=\count392
-\@strctr=\count393
-\@tmpstrctr=\count394
-\@DT@loopN=\count395
-\@DT@X=\count396
+\c@padzeroesN=\count389
+\fc@tmpcatcode=\count390
+\@DT@modctr=\count391
+\@ordinalctr=\count392
+\@orgargctr=\count393
+\@strctr=\count394
+\@tmpstrctr=\count395
+\@DT@loopN=\count396
+\@DT@X=\count397
 
 
 Package fmtcount Warning: \ordinal already defined use \FCordinal instead. on i
@@ -884,23 +891,23 @@ nput line 467.
 lts.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count397
-\@month=\count398
-\@year=\count399
-\c@HOUR=\count400
-\c@HOURXII=\count401
-\c@MINUTE=\count402
-\c@TOHOUR=\count403
-\c@TOMINUTE=\count404
-\c@SECOND=\count405
-\currenthour=\count406
-\currentminute=\count407
-\currentsecond=\count408
+\@day=\count398
+\@month=\count399
+\@year=\count400
+\c@HOUR=\count401
+\c@HOURXII=\count402
+\c@MINUTE=\count403
+\c@TOHOUR=\count404
+\c@TOMINUTE=\count405
+\c@SECOND=\count406
+\currenthour=\count407
+\currentminute=\count408
+\currentsecond=\count409
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count409
-\dayofyear=\count410
-\dayofweek=\count411
+\@dtctr=\count410
+\dayofyear=\count411
+\dayofweek=\count412
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks39
 \dt@b=\toks40
@@ -968,8 +975,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen285
-\Hy@linkcounter=\count412
-\Hy@pagecounter=\count413
+\Hy@linkcounter=\count413
+\Hy@pagecounter=\count414
  (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -977,7 +984,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count414
+\Hy@SavedSpaceFactor=\count415
  (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -991,7 +998,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count415
+\c@Hy@tempcnt=\count416
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
@@ -1008,7 +1015,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count416
+\Fld@menulength=\count417
 \Field@Width=\dimen287
 \Fld@charsize=\dimen288
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -1023,9 +1030,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count417
-\c@Item=\count418
-\c@Hfootnote=\count419
+\Hy@abspage=\count418
+\c@Item=\count419
+\c@Hfootnote=\count420
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -1036,8 +1043,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count420
-\c@bookmark@seq@number=\count421
+\Fld@listcount=\count421
+\c@bookmark@seq@number=\count422
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -1050,12 +1057,12 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip266
+\Hy@SectionHShift=\skip268
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/memoir\memhfixc.sty
 Package: memhfixc 2023/09/10 v1.22 hyperref package fixes for memoir class
-\c@memhycontfloat=\count422
-\c@Hpagenote=\count423
+\c@memhycontfloat=\count423
+\c@Hpagenote=\count424
 
 
 LaTeX Warning: Command `\theHpagenote' already defined -- not changed on input 
@@ -1065,16 +1072,16 @@ line 315.
 Package: pdfpages 2025/01/30 v0.6e Insert pages of external PDF documents (AM)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count424
-\calc@Bcount=\count425
+\calc@Acount=\count425
+\calc@Bcount=\count426
 \calc@Adimen=\dimen289
 \calc@Bdimen=\dimen290
-\calc@Askip=\skip267
-\calc@Bskip=\skip268
+\calc@Askip=\skip269
+\calc@Bskip=\skip270
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count426
-\calc@Cskip=\skip269
+\calc@Ccount=\count427
+\calc@Cskip=\skip271
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
@@ -1088,13 +1095,13 @@ Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/01/30 v0.6e Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count427
+\pdfpages@includegraphics@status=\count428
 \AM@pagebox=\box116
 \AM@global@opts=\toks41
-\AM@pagecnt=\count428
+\AM@pagecnt=\count429
 \AM@toc@title=\toks42
 \AM@lof@heading=\toks43
-\c@AM@survey=\count429
+\c@AM@survey=\count430
 \AM@templatesizebox=\box117
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
@@ -1113,11 +1120,11 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@hyphkern=\dimen299
 \SOUL@dimen=\dimen300
 \SOUL@dimeni=\dimen301
-\SOUL@minus=\count430
-\SOUL@comma=\count431
-\SOUL@apo=\count432
-\SOUL@grave=\count433
-\SOUL@spaceskip=\skip270
+\SOUL@minus=\count431
+\SOUL@comma=\count432
+\SOUL@apo=\count433
+\SOUL@grave=\count434
+\SOUL@spaceskip=\skip272
 \SOUL@ttwidth=\dimen302
 \SOUL@uldp=\dimen303
 \SOUL@ulht=\dimen304
@@ -1132,12 +1139,12 @@ Package: clipboard 2016/05/18 v0.3 Copy and paste into and across documents
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.
 sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count434
-\c@ALC@line=\count435
-\c@ALC@rem=\count436
-\c@ALC@depth=\count437
-\ALC@tlm=\skip271
-\algorithmicindent=\skip272
+\c@ALC@unique=\count435
+\c@ALC@line=\count436
+\c@ALC@rem=\count437
+\c@ALC@depth=\count438
+\ALC@tlm=\skip273
+\algorithmicindent=\skip274
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -1190,14 +1197,14 @@ libraryfiltered.code.tex
 \pgf@yd=\dimen316
 \w@pgf@writea=\write6
 \r@pgf@reada=\read3
-\c@pgf@counta=\count438
-\c@pgf@countb=\count439
-\c@pgf@countc=\count440
-\c@pgf@countd=\count441
+\c@pgf@counta=\count439
+\c@pgf@countb=\count440
+\c@pgf@countc=\count441
+\c@pgf@countd=\count442
 \t@pgf@toka=\toks54
 \t@pgf@tokb=\toks55
 \t@pgf@tokc=\toks56
-\pgf@sys@id@count=\count442
+\pgf@sys@id@count=\count443
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -1216,8 +1223,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count443
-\pgfsyssoftpath@bigbuffer@items=\count444
+\pgfsyssoftpath@smallbuffer@items=\count444
+\pgfsyssoftpath@bigbuffer@items=\count445
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -1234,7 +1241,7 @@ code.tex)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen317
-\pgfmath@count=\count445
+\pgfmath@count=\count446
 \pgfmath@box=\box119
 \pgfmath@toks=\toks57
 \pgfmath@stack@operand=\toks58
@@ -1262,7 +1269,7 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count446
+\c@pgfmathroundto@lastzeros=\count447
 ))
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
@@ -1302,7 +1309,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box120
 \pgf@hbox=\box121
 \pgf@layerbox@main=\box122
-\pgf@picture@serial@count=\count447
+\pgf@picture@serial@count=\count448
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
@@ -1337,8 +1344,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen341
-\pgf@sys@shading@range@num=\count448
-\pgf@shadingcount=\count449
+\pgf@sys@shading@range@num=\count449
+\pgf@shadingcount=\count450
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -1408,7 +1415,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count450
+\pgf@plot@mark@count=\count451
 \pgfplotmarksize=\dimen346
 )
 \tikz@lastx=\dimen347
@@ -1423,19 +1430,19 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box126
 \tikz@tempbox=\box127
 \tikz@tempbox@bg=\box128
-\tikztreelevel=\count451
-\tikznumberofchildren=\count452
-\tikznumberofcurrentchild=\count453
-\tikz@fig@count=\count454
+\tikztreelevel=\count452
+\tikznumberofchildren=\count453
+\tikznumberofcurrentchild=\count454
+\tikz@fig@count=\count455
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count455
-\pgfmatrixcurrentcolumn=\count456
-\pgf@matrix@numberofcolumns=\count457
+\pgfmatrixcurrentrow=\count456
+\pgfmatrixcurrentcolumn=\count457
+\pgf@matrix@numberofcolumns=\count458
 )
-\tikz@expandcount=\count458
+\tikz@expandcount=\count459
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -1444,53 +1451,53 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/alphalph\alphalph.sty
 Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count459
+\lst@mode=\count460
 \lst@gtempboxa=\box129
 \lst@token=\toks62
-\lst@length=\count460
+\lst@length=\count461
 \lst@currlwidth=\dimen355
-\lst@column=\count461
-\lst@pos=\count462
+\lst@column=\count462
+\lst@pos=\count463
 \lst@lostspace=\dimen356
 \lst@width=\dimen357
-\lst@newlines=\count463
-\lst@lineno=\count464
+\lst@newlines=\count464
+\lst@lineno=\count465
 \lst@maxwidth=\dimen358
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count465
-\lst@skipnumbers=\count466
+\c@lstnumber=\count466
+\lst@skipnumbers=\count467
 \lst@framebox=\box130
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
-\c@subfigure=\count467
-\cftbeforesubfigureskip=\skip273
-\cftsubfigureindent=\skip274
-\cftsubfigurenumwidth=\skip275
+\c@subfigure=\count468
+\cftbeforesubfigureskip=\skip275
+\cftsubfigureindent=\skip276
+\cftsubfigurenumwidth=\skip277
 ) (format/postamble.ltx
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2025/01/29 line numbers on paragraphs v5.4
-\linenopenalty=\count468
+\linenopenalty=\count469
 \output=\toks63
-\linenoprevgraf=\count469
+\linenoprevgraf=\count470
 \linenumbersep=\dimen359
 \linenumberwidth=\dimen360
-\c@linenumber=\count470
-\c@pagewiselinenumber=\count471
-\c@LN@truepage=\count472
-\c@internallinenumber=\count473
-\c@internallinenumbers=\count474
+\c@linenumber=\count471
+\c@pagewiselinenumber=\count472
+\c@LN@truepage=\count473
+\c@internallinenumber=\count474
+\c@internallinenumbers=\count475
 \quotelinenumbersep=\dimen361
 \bframerule=\dimen362
 \bframesep=\dimen363
 \bframebox=\box131
-\@LN@amsmath@ams@eqpen=\count475
+\@LN@amsmath@ams@eqpen=\count476
 LaTeX Info: Redefining \\ on input line 3187.
 )
 \document@idxfile=\write7
@@ -1509,7 +1516,7 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count476
+\c@su@anzahl=\count477
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.
 sty
@@ -1524,19 +1531,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count477
+\actioncount=\count478
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count478
-\FP@xia=\count479
-\FP@xib=\count480
-\FP@xfa=\count481
-\FP@xfb=\count482
-\FP@rega=\count483
-\FP@regb=\count484
-\FP@regs=\count485
-\FP@times=\count486
+\FP@xs=\count479
+\FP@xia=\count480
+\FP@xib=\count481
+\FP@xfa=\count482
+\FP@xfb=\count483
+\FP@rega=\count484
+\FP@regb=\count485
+\FP@regs=\count486
+\FP@times=\count487
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1555,7 +1562,7 @@ Package: fp-pas 1994/08/29
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count487
+\FPseed=\count488
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1567,31 +1574,31 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks64
-\@dtl@tmpcount=\count488
-\dtl@tmplength=\skip276
-\dtl@sortresult=\count489
-\@dtl@numgrpsepcount=\count490
-\@dtl@datatype=\count491
-\dtl@codeA=\count492
-\dtl@codeB=\count493
-\@dtl@foreach@level=\count494
+\@dtl@tmpcount=\count489
+\dtl@tmplength=\skip278
+\dtl@sortresult=\count490
+\@dtl@numgrpsepcount=\count491
+\@dtl@datatype=\count492
+\dtl@codeA=\count493
+\dtl@codeB=\count494
+\@dtl@foreach@level=\count495
 )
-\dtlcolumnnum=\count495
-\dtlrownum=\count496
+\dtlcolumnnum=\count496
+\dtlrownum=\count497
 \@dtl@before=\toks65
 \@dtl@after=\toks66
 \@dtl@colhead=\toks67
 \dtlcurrentrow=\toks68
 \dtlbeforerow=\toks69
 \dtlafterrow=\toks70
-\dtlforeachlevel=\count497
-\c@DTLrowi=\count498
-\c@DTLrowii=\count499
-\c@DTLrowiii=\count500
-\c@DTLrow=\count501
-\dtl@rowi=\count502
-\dtl@rowii=\count503
-\dtl@rowiii=\count504
+\dtlforeachlevel=\count498
+\c@DTLrowi=\count499
+\c@DTLrowii=\count500
+\c@DTLrowiii=\count501
+\c@DTLrow=\count502
+\dtl@rowi=\count503
+\dtl@rowii=\count504
+\dtl@rowiii=\count505
 \@dtl@curi=\toks71
 \@dtl@previ=\toks72
 \@dtl@nexti=\toks73
@@ -1601,7 +1608,7 @@ Package: fp-eval 1995/04/03
 \@dtl@curiii=\toks77
 \@dtl@previii=\toks78
 \@dtl@nextiii=\toks79
-\@dtl@elements=\count505
+\@dtl@elements=\count506
 \@dtl@list=\toks80
 \@dtl@rowa=\toks81
 \@dtl@rowb=\toks82
@@ -1609,8 +1616,8 @@ Package: fp-eval 1995/04/03
 \@dtl@toksB=\toks84
 \@dtl@write=\write8
 \@dtl@read=\read4
-\dtl@entrycr=\count506
-\dtl@omitlines=\count507
+\dtl@entrycr=\count507
+\dtl@omitlines=\count508
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
@@ -1623,32 +1630,32 @@ Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 \AP@partial=\box132
 \AP@footins=\box133
 )
-\c@DTLgidxChildCount=\count508
-\datagidxsymbolwidth=\skip277
-\datagidxlocationwidth=\skip278
+\c@DTLgidxChildCount=\count509
+\datagidxsymbolwidth=\skip279
+\datagidxlocationwidth=\skip280
 \dtldb@datagidx=\toks88
 \dtlkeys@datagidx=\toks89
-\dtlrows@datagidx=\count509
-\dtlcols@datagidx=\count510
-\datagidxindent=\skip279
-\datagidxnamewidth=\skip280
-\datagidxdescwidth=\skip281
-\datagidx@anchorcount=\count511
-\datagidx@count=\count512
-\datagidx@level=\count513
+\dtlrows@datagidx=\count510
+\dtlcols@datagidx=\count511
+\datagidxindent=\skip281
+\datagidxnamewidth=\skip282
+\datagidxdescwidth=\skip283
+\datagidx@anchorcount=\count512
+\datagidx@count=\count513
+\datagidx@level=\count514
 )
 \dtldb@abbreviation=\toks90
 \dtlkeys@abbreviation=\toks91
-\dtlrows@abbreviation=\count514
-\dtlcols@abbreviation=\count515
+\dtlrows@abbreviation=\count515
+\dtlcols@abbreviation=\count516
 \dtldb@notation=\toks92
 \dtlkeys@notation=\toks93
-\dtlrows@notation=\count516
-\dtlcols@notation=\count517
+\dtlrows@notation=\count517
+\dtlcols@notation=\count518
 \dtldb@glossary=\toks94
 \dtlkeys@glossary=\toks95
-\dtlrows@glossary=\count518
-\dtlcols@glossary=\count519
+\dtlrows@glossary=\count519
+\dtlcols@glossary=\count520
 
 (abbreviation.tex) (notation.tex) (glossary.tex)
 Package hyperref Info: Option `breaklinks' set `true' on input line 58.
@@ -1657,22 +1664,22 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 58.
 
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/wallpaper\wallpaper.sty
 Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
-\wpXoffset=\skip282
-\wpYoffset=\skip283
-\tileXoffset=\skip284
-\tileYoffset=\skip285
-\tilewidth=\skip286
-\tileheight=\skip287
-\tileX=\skip288
-\tileY=\skip289
+\wpXoffset=\skip284
+\wpYoffset=\skip285
+\tileXoffset=\skip286
+\tileYoffset=\skip287
+\tilewidth=\skip288
+\tileheight=\skip289
+\tileX=\skip290
+\tileY=\skip291
 ) (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count520
-\Gm@cntv=\count521
-\c@Gm@tempcnt=\count522
+\Gm@cnth=\count521
+\Gm@cntv=\count522
+\c@Gm@tempcnt=\count523
 \Gm@bindingoffset=\dimen364
 \Gm@wd@mp=\dimen365
 \Gm@odd@mp=\dimen366
@@ -1693,7 +1700,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (document.aux (introduction.aux) (literature_review.aux)
 (theoretical_considerations.aux) (design_considerations.aux) (methodology.aux)
 (results_and_discussions.aux) (conclusions.aux) (answers_to_questions.aux)
-(revisions_to_the_proposal.aux) (revisions_to_the_final.aux) (vita.aux))
+(revisions_to_the_final.aux) (vita.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
@@ -1718,16 +1725,16 @@ LaTeX Font Info:    ... okay on input line 146.
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count523
+\scratchcounter=\count524
 \scratchdimen=\dimen372
 \scratchbox=\box134
-\nofMPsegments=\count524
-\nofMParguments=\count525
+\nofMPsegments=\count525
+\nofMParguments=\count526
 \everyMPshowfont=\toks97
-\MPscratchCnt=\count526
+\MPscratchCnt=\count527
 \MPscratchDim=\dimen373
-\MPnumerator=\count527
-\makeMPintoPDFobject=\count528
+\MPnumerator=\count528
+\makeMPintoPDFobject=\count529
 \everyMPtoPDFconversion=\toks98
 )
 (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1773,7 +1780,7 @@ Package hyperref Info: Link coloring ON on input line 146.
 \@outlinefile=\write9
 \openout9 = `document.out'.
 
-\c@lstlisting=\count529
+\c@lstlisting=\count530
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2013,7 +2020,7 @@ d on input line 210.
 \openout2 = `introduction.aux'.
 
  (introduction.tex
-<figure/fig1.png, id=419, 361.35pt x 214.22893pt>
+<figure/fig1.png, id=421, 361.35pt x 214.22893pt>
 File: figure/fig1.png Graphic file (type png)
 <use figure/fig1.png>
 Package pdftex.def Info: figure/fig1.png  used on input line 11.
@@ -2189,18 +2196,82 @@ d on input line 47.
 [17
 
 ]
-Overfull \hbox (3.88484pt too wide) in paragraph at lines 55--56
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 49.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[18]
+Overfull \hbox (3.88484pt too wide) in paragraph at lines 58--59
 []\OT1/ptm/b/n/12 (-20) Accuracy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[]\OT1/ptm/m/n/12 (+20) [[][]Adam et al.,
+Underfull \hbox (badness 1642) in paragraph at lines 64--64
+[][][]\OT1/ptm/m/n/12 (+20) Guillergan et al.[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]\OT1/ptm/m/n/12 (+20) [[][]Supekar and
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[][][]\OT1/ptm/m/n/12 (+20) Supekar and
+ []
+
+
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 82.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[19]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 123.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[20]
+Overfull \hbox (3.88484pt too wide) in paragraph at lines 131--131
+[]\OT1/ptm/b/n/12 (-20) Accuracy
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 133--133
+[]\OT1/ptm/m/n/12 (+20) Convolution Neu-ral Net-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\OT1/ptm/m/n/12 (+20) mango de-fects
+ []
+
+
+Underfull \hbox (badness 4967) in paragraph at lines 137--137
+[]\OT1/ptm/m/n/12 (+20) for mango size
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 139--139
+[]\OT1/ptm/m/n/12 (+20) Probabilistic Neu-ral Net-
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 139--139
+[]\OT1/ptm/m/n/12 (+20) for mango area,
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 139--140
+[]\OT1/ptm/m/n/12 (+20) Difficulty in iden-ti-fy-ing
+ []
+
+
+Overfull \hbox (6.26866pt too wide) in paragraph at lines 129--142
+ [][] 
  []
 
 
@@ -2212,71 +2283,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 79.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[18]
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 96.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[19]
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 120.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[20]
-Overfull \hbox (3.88484pt too wide) in paragraph at lines 128--128
-[]\OT1/ptm/b/n/12 (-20) Accuracy
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 130--130
-[]\OT1/ptm/m/n/12 (+20) Convolution Neu-ral Net-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
-[]\OT1/ptm/m/n/12 (+20) mango de-fects
- []
-
-
-Underfull \hbox (badness 4967) in paragraph at lines 134--134
-[]\OT1/ptm/m/n/12 (+20) for mango size
- []
-
-
-Underfull \hbox (badness 1038) in paragraph at lines 136--136
-[]\OT1/ptm/m/n/12 (+20) Probabilistic Neu-ral Net-
- []
-
-
-Underfull \hbox (badness 2368) in paragraph at lines 136--136
-[]\OT1/ptm/m/n/12 (+20) for mango area,
- []
-
-
-Underfull \hbox (badness 3954) in paragraph at lines 136--137
-[]\OT1/ptm/m/n/12 (+20) Difficulty in iden-ti-fy-ing
- []
-
-
-Overfull \hbox (6.26866pt too wide) in paragraph at lines 126--139
- [][] 
- []
-
-
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 151.
+d on input line 153.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [21]
 
@@ -2284,7 +2291,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 181.
+d on input line 182.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [22])
 
@@ -2328,7 +2335,7 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 5.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [26]
-<figure/example_gray_box.pdf, id=612, 202.7575pt x 202.7575pt>
+<figure/example_gray_box.pdf, id=680, 202.7575pt x 202.7575pt>
 File: figure/example_gray_box.pdf Graphic file (type pdf)
 <use figure/example_gray_box.pdf>
 Package pdftex.def Info: figure/example_gray_box.pdf  used on input line 9.
@@ -2716,14 +2723,12 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 280.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [52] (document.bbl
-bibitemlist
-
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 88.
+d on input line 95.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [53
 
@@ -2735,35 +2740,27 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 303.
+d on input line 298.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [54]
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 309.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[55]
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=862, 484.81125pt x 655.4487
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=912, 484.81125pt x 655.4487
 5pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf  used o
-n input line 324.
+n input line 313.
 (pdftex.def)             Requested size: 484.81006pt x 655.44714pt.
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=864, page=1, 484.81125pt x 
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=914, page=1, 484.81125pt x 
 655.44875pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf , page1
- used on input line 324.
+ used on input line 313.
 (pdftex.def)             Requested size: 484.81006pt x 655.44714pt.
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf , page1
- used on input line 324.
+ used on input line 313.
 (pdftex.def)             Requested size: 363.60754pt x 491.58536pt.
 
 
@@ -2771,21 +2768,21 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 324.
+d on input line 313.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[56
+[55
 
 
 ]
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf , page1
- used on input line 324.
+ used on input line 313.
 (pdftex.def)             Requested size: 363.60754pt x 491.58536pt.
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf , page1
- used on input line 324.
+ used on input line 313.
 (pdftex.def)             Requested size: 363.60754pt x 491.58536pt.
 
 
@@ -2793,14 +2790,14 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 324.
+d on input line 313.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf , page1
- used on input line 324.
+ used on input line 313.
 (pdftex.def)             Requested size: 363.60754pt x 491.58536pt.
-[57
+[56
 
  <./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>]
 
@@ -2808,9 +2805,9 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 331.
+d on input line 320.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[58
+[57
 
 
 ]
@@ -2824,7 +2821,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 21.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[59
+[58
 
 ]
 
@@ -2834,7 +2831,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 43.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[60]
+[59]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2842,7 +2839,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 61.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[61]
+[60]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2850,7 +2847,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 80.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[62]
+[61]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2858,7 +2855,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 96.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[63]
+[62]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2866,289 +2863,194 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 115.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[64])
+[63])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 331.
+d on input line 320.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[64]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 320.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [65]
+<./figure/AppendixZ.pdf, id=1022, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf>
+Package pdftex.def Info: ./figure/AppendixZ.pdf  used on input line 330.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<./figure/AppendixZ.pdf, id=1024, page=1, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 1>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 330.
+
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 1>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 331.
+d on input line 330.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[66]
+[66
+
+
+
+]
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 1>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 1>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 340.
+d on input line 330.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 1>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 [67
 
+ <./figure/AppendixZ.pdf>]
+<./figure/AppendixZ.pdf, id=1053, page=2, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 2>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 2>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
-
-]
-\openout2 = `revisions_to_the_proposal.aux'.
-
- (revisions_to_the_proposal.tex
-Overfull \hbox (6.26866pt too wide) in alignment at lines 68--68
- [] [] [] [] 
- []
-
-
-Overfull \hbox (6.26866pt too wide) in alignment at lines 68--68
- [] [] [] [] 
- []
-
-
-Overfull \hbox (6.26866pt too wide) in alignment at lines 68--68
- [] [] [] [] 
- []
-
-
-Overfull \hbox (6.26866pt too wide) in alignment at lines 68--68
- [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Dr. Reg-gie
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ip-sum do-lor sit amet,
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ter-dum libero ut me-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Sec. [][]5.1[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]36[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) Sec. [][]5.2[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]39[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) de Veas
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ip-sum do-lor sit amet,
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ter-dum libero ut me-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Sec. [][]5.1[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]36[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) Sec. [][]5.2[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]39[][],
- []
-
-
-Underfull \hbox (badness 5817) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Engr. Jose
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) Mar-tin
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ip-sum do-lor sit amet,
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ter-dum libero ut me-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Sec. [][]5.1[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]36[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) Sec. [][]5.2[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]39[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) der Co
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ip-sum do-lor sit amet,
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ter-dum libero ut me-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Sec. [][]5.1[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]36[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) Sec. [][]5.2[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]39[][],
- []
-
-
-Underfull \hbox (badness 6157) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Dr. Rafael
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ip-sum do-lor sit amet,
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) ter-dum libero ut me-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-[]\OT1/ptm/m/n/9 (+20) Sec. [][]5.1[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]36[][],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) Sec. [][]5.2[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
-\OT1/ptm/m/n/9 (+20) on p. [][]39[][],
- []
-
-
-Overfull \hbox (6.26866pt too wide) in alignment at lines 68--68
- [] [] [] [] 
- []
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 68.
+d on input line 330.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 2>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 [68
 
-]
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+ <./figure/AppendixZ.pdf>]
+<./figure/AppendixZ.pdf, id=1059, page=3, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 3>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 330.
 
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 68.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [69]
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 3>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 330.
 
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 68.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [70]
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 68.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [71])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 340.
+d on input line 330.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[72]
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 3>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[69
+
+ <./figure/AppendixZ.pdf>]
+<./figure/AppendixZ.pdf, id=1097, page=4, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 4>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 4>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 349.
+d on input line 330.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[73
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 4>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 330.
 
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[70
+
+ <./figure/AppendixZ.pdf>]
+<./figure/AppendixZ.pdf, id=1105, page=5, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 5>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 5>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 330.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 5>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 330.
+
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+[71
+
+ <./figure/AppendixZ.pdf>]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 339.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[72
 
 
 ]
@@ -3315,7 +3217,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 71.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[74
+[73
 
 ]
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
@@ -3324,19 +3226,19 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 71.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [75])
+ [74])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 349.
+d on input line 339.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[76]
+[75]
 \openout2 = `vita.aux'.
 
  (vita.tex
-<figure/vita_photo.pdf, id=1316, 150.5625pt x 150.5625pt>
+<figure/vita_photo.pdf, id=1315, 150.5625pt x 150.5625pt>
 File: figure/vita_photo.pdf Graphic file (type pdf)
 <use figure/vita_photo.pdf>
 Package pdftex.def Info: figure/vita_photo.pdf  used on input line 11.
@@ -3357,7 +3259,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 11.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[77
+[76
 
 
 
@@ -3374,9 +3276,9 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 370.
+d on input line 360.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[78]
+[77]
 No file document.ind.
 
 
@@ -3384,75 +3286,75 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 382.
+d on input line 372.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[79
+[78
 
 
 
 ]
-<article_forum_paper.pdf, id=1330, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1328, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf>
-Package pdftex.def Info: article_forum_paper.pdf  used on input line 389.
+Package pdftex.def Info: article_forum_paper.pdf  used on input line 379.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<article_forum_paper.pdf, id=1332, page=1, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1330, page=1, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
-Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
+Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 379
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
-Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
+Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 379
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
-Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
+Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 379
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
-Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
+Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 379
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
-Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 389
+Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 379
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[79
+
+
+ <./article_forum_paper.pdf>]
+<article_forum_paper.pdf, id=1364, page=2, 614.295pt x 794.97pt>
+File: article_forum_paper.pdf Graphic file (type pdf)
+<use article_forum_paper.pdf, page 2>
+Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 379
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: article_forum_paper.pdf Graphic file (type pdf)
+<use article_forum_paper.pdf, page 2>
+Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 379
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+File: article_forum_paper.pdf Graphic file (type pdf)
+<use article_forum_paper.pdf, page 2>
+Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 379
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 [80
 
-
- <./article_forum_paper.pdf>]
-<article_forum_paper.pdf, id=1365, page=2, 614.295pt x 794.97pt>
-File: article_forum_paper.pdf Graphic file (type pdf)
-<use article_forum_paper.pdf, page 2>
-Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 389
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: article_forum_paper.pdf Graphic file (type pdf)
-<use article_forum_paper.pdf, page 2>
-Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 389
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-File: article_forum_paper.pdf Graphic file (type pdf)
-<use article_forum_paper.pdf, page 2>
-Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 389
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-[81
-
  <./article_forum_paper.pdf>] (document.aux (introduction.aux)
 (literature_review.aux) (theoretical_considerations.aux)
 (design_considerations.aux) (methodology.aux) (results_and_discussions.aux)
-(conclusions.aux) (answers_to_questions.aux) (revisions_to_the_proposal.aux)
-(revisions_to_the_final.aux) (vita.aux))
+(conclusions.aux) (answers_to_questions.aux) (revisions_to_the_final.aux)
+(vita.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -3465,27 +3367,26 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E99DADD1249DE48459C1FAE379995389;8235.
  ) 
 Here is how much of TeX's memory you used:
- 42904 strings out of 473530
- 759381 string characters out of 5714795
- 1630786 words of memory out of 5000000
- 64405 multiletter control sequences out of 15000+600000
- 618511 words of font info for 396 fonts, out of 8000000 for 9000
+ 43224 strings out of 473530
+ 764753 string characters out of 5714795
+ 1602599 words of memory out of 5000000
+ 64771 multiletter control sequences out of 15000+600000
+ 613804 words of font info for 371 fonts, out of 8000000 for 9000
  1149 hyphenation exceptions out of 8191
  114i,19n,110p,2737b,831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi10.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kenan/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Kenan/AppData/Local/Programs/
-MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Kenan/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Kenan/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Kenan/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Kenan/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (93 pages, 1458205 bytes).
+cmmi12.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTe
+X/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTe
+X/fonts/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (92 pages, 1677850 bytes).
 PDF statistics:
- 1498 PDF objects out of 1728 (max. 8388607)
- 421 named destinations out of 1000 (max. 500000)
- 93705 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1490 PDF objects out of 1728 (max. 8388607)
+ 406 named destinations out of 1000 (max. 500000)
+ 87084 words of extra memory for PDF output out of 89155 (max. 10000000)
 

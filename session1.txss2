@@ -6,48 +6,40 @@
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "references.bib",
+        "CurrentFile": "document.tex",
         "FileVersion": 1,
         "Files": [
             {
                 "Col": 0,
                 "EditorGroup": 0,
                 "FileName": "document.tex",
-                "FirstLine": 109,
+                "FirstLine": 49,
                 "FoldedLines": "",
-                "Line": 0
+                "Line": 68
             },
             {
                 "Col": 1,
                 "EditorGroup": 0,
                 "FileName": "references.bib",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 7
+                "FirstLine": 55,
+                "FoldedLines": "2,9,16,24,41,56,73,88,97,124,140,155,167,176,190,201,220,231,248,263,272,288,304",
+                "Line": 314
             },
             {
-                "Col": 17,
+                "Col": 0,
                 "EditorGroup": 0,
                 "FileName": "introduction.tex",
-                "FirstLine": 97,
-                "FoldedLines": "",
-                "Line": 207
-            },
-            {
-                "Col": 106,
-                "EditorGroup": 0,
-                "FileName": "literature_review.tex",
-                "FirstLine": 113,
-                "FoldedLines": "",
-                "Line": 129
-            },
-            {
-                "Col": 31,
-                "EditorGroup": 0,
-                "FileName": "methodology.tex",
                 "FirstLine": 4,
                 "FoldedLines": "",
-                "Line": 22
+                "Line": 15
+            },
+            {
+                "Col": 69,
+                "EditorGroup": 0,
+                "FileName": "literature_review.tex",
+                "FirstLine": 28,
+                "FoldedLines": "",
+                "Line": 45
             },
             {
                 "Col": 0,
@@ -56,6 +48,14 @@
                 "FirstLine": 0,
                 "FoldedLines": "",
                 "Line": 5
+            },
+            {
+                "Col": 88,
+                "EditorGroup": 0,
+                "FileName": "format/preamble.ltx",
+                "FirstLine": 17,
+                "FoldedLines": "",
+                "Line": 22
             }
         ],
         "MasterFile": "",
