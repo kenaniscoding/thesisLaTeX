@@ -1,5 +1,26 @@
+
 # Non-Destructive Carabao Mango Sorter and Grader based on Physical Characteristics using Machine Learning
-Thesis Documentation in LaTeX format.
+
+My group's thesis documentation in LaTeX format. 
+
+
+## Edit The PDF
+
+- To edit the LaTeX, I used TeXStudio as the IDE.
+- Document.tex is the main directory.
+
+
+
+## Acknowledgements
+
+ - LM DLSU ECE Faculty
+
+
+## Template
+
+[Original Template](https://goo.gl/9YTTs2)
+
+## Basic Info by LM
 
 DLSUdtp is a LaTeX document format for authors of De La Salle University (DLSU) dissertations, theses, proposals, or projects. 
 
