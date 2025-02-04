@@ -6,8 +6,9 @@ My group's thesis documentation in LaTeX format.
 
 ## Edit The PDF
 
+- good luck trying lol
 - To edit the LaTeX, I used TeXStudio as the IDE.
-- Document.tex is the main directory.
+- document.tex is the main directory.
 
 
 
