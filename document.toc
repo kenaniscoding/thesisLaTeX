@@ -1,12 +1,12 @@
 \contentsline {chapter}{Oral Defense Recommendation Sheet}{ii}{section*.1}%
 \contentsline {chapter}{Abstract}{iii}{section*.2}%
 \contentsline {chapter}{Table of Contents}{iv}{section*.4}%
-\contentsline {chapter}{List of Figures}{vi}{section*.5}%
-\contentsline {chapter}{List of Tables}{vii}{section*.6}%
-\contentsline {chapter}{Abbreviations and Acronyms}{viii}{section*.7}%
-\contentsline {chapter}{Notations}{ix}{section*.9}%
-\contentsline {chapter}{Glossary}{x}{section*.11}%
-\contentsline {chapter}{Listings}{xi}{section*.13}%
+\contentsline {chapter}{List of Figures}{vii}{section*.5}%
+\contentsline {chapter}{List of Tables}{viii}{section*.6}%
+\contentsline {chapter}{Abbreviations and Acronyms}{ix}{section*.7}%
+\contentsline {chapter}{Notations}{x}{section*.9}%
+\contentsline {chapter}{Glossary}{xi}{section*.11}%
+\contentsline {chapter}{Listings}{xii}{section*.13}%
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introduction}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background of the Study}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Prior Studies}{4}{section.1.2}%
@@ -28,28 +28,30 @@
 \contentsline {section}{\numberline {1.9}Overview of the Thesis}{14}{section.1.9}%
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Literature Review}}{16}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Existing Work}{17}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Lacking in the Approaches}{19}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Summary}{21}{section.2.3}%
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Theoretical Considerations}}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Summary}{25}{section.3.1}%
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Standards}{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Summary}{30}{section.4.2}%
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Implementation}{34}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Evaluation}{36}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Summary}{39}{section.5.3}%
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{40}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{45}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{46}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Concluding Remarks}{47}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Contributions}{47}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Recommendations}{47}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Future Prospects}{49}{section.7.4}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{52}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{54}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{63}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{69}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{73}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{75}{appendix.F}%
+\contentsline {subsection}{\numberline {2.1.1}Sorting Algorithms}{19}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Lacking in the Approaches}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Summary}{22}{section.2.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Theoretical Considerations}}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Summary}{27}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Standards}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Summary}{32}{section.4.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Implementation}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Evaluation}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Summary}{41}{section.5.3}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{42}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{47}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{48}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Concluding Remarks}{49}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Contributions}{49}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Recommendations}{49}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Prospects}{51}{section.7.4}%
+\contentsline {chapter}{References}{53}{chapter*.20}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{56}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{58}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{67}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{73}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{77}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{79}{appendix.F}%
 \contentsfinish 

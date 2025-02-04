@@ -1,0 +1,64 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "document.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+        ],
+        "CurrentFile": "references.bib",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "document.tex",
+                "FirstLine": 109,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 1,
+                "EditorGroup": 0,
+                "FileName": "references.bib",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 7
+            },
+            {
+                "Col": 17,
+                "EditorGroup": 0,
+                "FileName": "introduction.tex",
+                "FirstLine": 97,
+                "FoldedLines": "",
+                "Line": 207
+            },
+            {
+                "Col": 106,
+                "EditorGroup": 0,
+                "FileName": "literature_review.tex",
+                "FirstLine": 113,
+                "FoldedLines": "",
+                "Line": 129
+            },
+            {
+                "Col": 31,
+                "EditorGroup": 0,
+                "FileName": "methodology.tex",
+                "FirstLine": 4,
+                "FoldedLines": "",
+                "Line": 22
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "results_and_discussions.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": true
+    }
+}
