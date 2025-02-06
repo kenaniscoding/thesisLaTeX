@@ -53,7 +53,7 @@
 %\newcommand{\degreeAbbrv}{PhD-ECE}
 
 \newcommand{\documentAdviserTitle}{Dr.} 
-\newcommand{\documentAdviser}{Reggie C. Gustillo}
+\newcommand{\documentAdviser}{Reggie C. Gustilo}
 
 \newcommand{\examinerChairTitle}{Dr.} 
 \newcommand{\examinerChair}{Donable de Veas Abuan}
@@ -86,13 +86,13 @@
 \defineAuthor{surname1}{Banal}
 \defineAuthor{firstname1}{Kenan A.}
 
-\defineAuthor{surname2}{BAUTISTA}
+\defineAuthor{surname2}{Bautista}
 \defineAuthor{firstname2}{Francis Robert Miguel F.}
 
-\defineAuthor{surname3}{HERMOSURA}
+\defineAuthor{surname3}{Hermosura}
 \defineAuthor{firstname3}{Don Humphrey L.}
 
-\defineAuthor{surname4}{SALAZAR}
+\defineAuthor{surname4}{Salazar}
 \defineAuthor{firstname4}{Daniel G.}
 
 \newcommand{\documentTitle}{Non-Destructive Carabao Mango Sorter and Grader based on Physical Characteristics using Machine Learning} % put tilde (~) between words to indicate non-breaking adjacent words
@@ -327,7 +327,10 @@
 	%\startcontents[chapters]
 	%\Mprintcontents  
 	%\include{revisions_to_the_proposal}
-	\includepdf[pages={1-5}]{./figure/AppendixZ.pdf} % Includes all pages (1 to 5)
+	\includepdf[pages={1-5},
+	offset=3.5mm -10mm,%
+	scale=0.75,%
+	pagecommand={},]{./figure/AppendixZ.pdf} % Includes all pages (1 to 5)
 	%\stopcontents[chapters]
 	\cleardoublepage
 	
@@ -339,6 +342,12 @@
 	\include{revisions_to_the_final}
 	%\stopcontents[chapters]	
 	\cleardoublepage
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter{List of Limits and Design Constraints}
+	\label{ch:list_of_limits}
+	\cleardoublepage
+	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%\chapter{Usage Examples} 

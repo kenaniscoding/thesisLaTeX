@@ -32,7 +32,7 @@ A paper written by \citet{amna-et-al-machine-2023}, designed an automated fruit 
 an image acquisition system and CNN. Furthermore, the results of the paper show that the image processing detection 
 score was 89\% while that of the tomatoes was 92\% while the CNN model had higher validity of 95\% for mangoes and 93\% 
 for tomatoes. 15\%, while the percentage of distinction between the two groups was reported to be 5\% respectively 
-\citep{amna-et-al-machine-2023}. Despite the high accuracy in detecting mango defects, the fruit sorting system only sorts based 
+\citep{amna-et-al-machine-2023}. Despite the high \gls{accuracy score}  in detecting mango defects, the fruit sorting system only sorts based 
 on the mango defects and not on ripeness, and weight.
 
 Furthermore, the research paper presented by \citet{guillergan-naive-2024} designed an Automated Carabao mango classifier, 
@@ -40,7 +40,7 @@ in which the mango image database is used to extract the features like size, are
 grading using Naïve Bayes Model. For the results, the Naïve Bayes’ model recognized large and rejected mangoes with 95\%
  accuracy and the large and small/medium difference with a 7\% error, suggesting an application for quality differentiation 
  and sorting in the mango business industry. Despite the high accuracy of classifying Carabao mangoes, the researchers used a 
- high quality DSLR camera for the image acquisition system without any microcontroller to control the mangoes \citep{guillergan-naive-2024}. 
+ high quality DSLR camera for the image acquisition system without any \gls{microcontroller} to control the mangoes \citep{guillergan-naive-2024}. 
 
 
 \section{Problem Statement}
@@ -324,8 +324,7 @@ productivity for the user which would in effect remove human error in sorting an
 
 Another benefit to automating sorting and grading mangoes is the improvement in quality control.
  This implies that compared to human labor, automating sorting and grading mangoes can uniformly 
- assess the quality of mangoes based on size, color, and bruises, ensuring that the expected grade and
-  high-quality mangoes reach the consumer. By accurately identifying substandard mangoes, the system 
+ assess the quality of mangoes based on size, color, and \gls{bruises}, ensuring that the expected grade and high-quality mangoes reach the consumer. By accurately identifying substandard mangoes, the system 
   helps in reducing waste and ensuring that only marketable fruits are processed further.
 
 Likewise, the scalability of automating sorting and grading mangoes is simpler, especially 
@@ -338,13 +337,13 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 \subsection{Technical Benefit}
 
 \begin{enumerate}
-	\item The development of an automated Carabao mango sorter would increase the quality control 
-	of classifying Carabao mangoes based on ripeness, size, and bruising.
+	\item The development of an automated \gls{Carabao mango} sorter would increase the quality control 
+	of classifying \gls{Carabao mango} based on ripeness, size, and bruising.
 	
-	\item The accuracy in sorting Carabao Mangoes will be significantly improved while
+	\item The accuracy in sorting Carabao mangoes will be significantly improved while
 	 reducing the errors due to human factors in manual sorting.
 	
-	\item The automated Carabao Mango sorter carefully sorts the mangoes 
+	\item The automated \gls{Carabao mango}  sorter carefully sorts the mangoes 
 	while ensuring that they remain free from bruising or further damage during the process	
 \end{enumerate}
 
@@ -352,9 +351,9 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 
 \begin{enumerate}
 	\item The reduction in manual labor creates opportunities in maintenance and
-	 technologies in the automated Carabao mango sorter.
+	 technologies in the automated \gls{Carabao mango}  sorter.
 	
-	\item The automated Carabao mango sorter system improves Carabao mango 
+	\item The automated \gls{Carabao mango}  sorter system improves Carabao mango 
 	standards and enhances the satisfaction of the buyers and the customers through
 	 guaranteeing consistent Carabao mango grade.
 	
@@ -437,11 +436,25 @@ Your methodology is your means of achieving your stated objectives. What you put
 
 \section{Estimated Work Schedule and Budget}
 
-The estimated work schedule can be represented as a Gantt Chart or a combination of Project Network Diagram, Work Breakdown Structure, and Critical Path.  The budget can be made into a Bill of Materials, financial plan, or if your \documentType \ is funded and part of larger project, the cost, and date for reaching each milestone and/or deliverable for your part of the project.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{ganttchart}
+	\caption{Gantt Chart}
+	\label{fig:img2}
+\end{figure}
 
-For ECE Department undergraduate theses, the individual Gantt Chart or Work Breakdown Schedule and Bill of Materials will be included in this section and be removed in the final document.
-
-\graytx{\blindtext}
+As seen above, Table~\ref{fig:img2} shows the Gantt Chart together with the assigned task. For the
+first part of the THSCP4A, the group would primarily revise and fine tune Chapters 1
+and 2 while also preparing for the defense. After that for THSCP4B, the yellow team
+which consists of two members, Hermosura and Salazar, would start buying and
+collecting the materials needed for assembling the prototype. While team yellow is
+doing that, team purple which consists of Banal and Baustista would start training and
+validating the \acr{cnn} model based on the Carabao mango image dataset. After that
+integration of the sensors and actuators together with the integration of the \acr{cnn} model
+and beginning of coding of the Application to the Raspberry Pi would be done. Once
+that \acr{cnn} model is deployed and the Application works testing of the Carabao mangoes
+to the prototype would be done. During THSCP4C, data gathering would be done
+together with polishing and revising of the final paper.
 
 \ifPhD
 \section{Publication Plan}
@@ -462,4 +475,4 @@ chapter 2. Chapter 3 involves the theoretical considerations of the thesis topic
 chapter 4 would consist of the design consideration involving the thesis topic. Chapter 5
 would involve the research methodology containing the testing procedure and setup.
 Chapter 6 would involve the results and discussion based on the methodology while
-chapter 7 would involve the conclusion, recommendations, and future suggestions.
+Chapter 7 would involve the conclusion, recommendations, and future suggestions.

@@ -32,26 +32,27 @@
 \contentsline {section}{\numberline {2.2}Lacking in the Approaches}{21}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Summary}{22}{section.2.3}%
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Theoretical Considerations}}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Summary}{27}{section.3.1}%
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Standards}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Summary}{32}{section.4.2}%
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Implementation}{36}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Evaluation}{39}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Summary}{41}{section.5.3}%
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{42}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{47}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{48}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Concluding Remarks}{49}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Contributions}{49}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Recommendations}{49}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Future Prospects}{51}{section.7.4}%
-\contentsline {chapter}{References}{53}{chapter*.20}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{55}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{57}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{66}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{72}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{76}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{78}{appendix.F}%
+\contentsline {section}{\numberline {3.1}Summary}{25}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Standards}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Summary}{29}{section.4.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{30}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Implementation}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Evaluation}{36}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Summary}{38}{section.5.3}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{44}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{45}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Concluding Remarks}{46}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Contributions}{46}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Recommendations}{46}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Prospects}{48}{section.7.4}%
+\contentsline {chapter}{References}{50}{chapter*.21}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{52}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{54}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{63}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{69}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{List of Limits and Design Constraints}}{73}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Vita}}{74}{appendix.F}%
+\contentsline {appendix}{\chapternumberline {G}\MakeTextUppercase []{Article Paper(s)}}{75}{appendix.G}%
 \contentsfinish 
