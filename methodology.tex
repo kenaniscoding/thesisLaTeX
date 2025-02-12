@@ -1,13 +1,3 @@
-Put an overview of the contents of chapter. Mention here your methodology flow through a figure and provide an overview of it and how your methodology achieves your objectives.  How your methodology achieves each of your specific objectives is what your panelists/examiners will be looking for.  Specify how your methodology achieves your general objective and specific objectives.  A point-by-point comparison how your methodology achieves each of your specific objectives is expected in the final \documentType.
-
-Also make sure that you refer clearly to the chapters on the Literature Review, Theoretical Considerations, and Design Considerations showing how your methodology ties with those that you have discussed in those chapters.
-
-Make an overview of the contents of the chapter. Put here your methodology flow through a figure and provide an overview of it.  
-
-
-In summative form, Table~\ref{tab:methods_per_objective} indicates the approaches, designs, modes, processes, programs, techniques, and/or ways that the \documentType reaches the objectives. 
-
-
 \begin{center}
 	{\scriptsize
 		\begin{tabularx}{\textwidth}{p{0.2\textwidth}|p{0.6\textwidth}|p{0.1\textwidth}}
@@ -57,34 +47,27 @@ In summative form, Table~\ref{tab:methods_per_objective} indicates the approache
 	}
 \end{center}
 
+\section{Introduction}
+The methodology for this research outlines the development of the Carabao Mango sorter using machine learning and computer vision. The sorting system uses a conveyor belt system which delivers the mangoes into the image acquisition system. This system captures the image of the mangoes which will then be going through the various stages of image processing and classification into grades which will depend on the priority of the user. This methodology ensures that the grading of the mangoes will be accurate while being non-destructive.
 
+\section{Research Approach}
+This study applies the experimental approach for research in order to develop and properly test the proposed system. The experimental approach of the methodology will allow the researchers to fine-tune the parameters and other factors in the classification of mangoes in order to get optimal results with high accuracy scores while maintaining the quality of the mangoes. This approach will also allow for real-time data processing and classification which will improve the previous static grading systems.
 
+\section{Experimental Setup}
+The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller (Raspberry Pi/Arduino), coordinating actions of all components. A laser sensor detects mangoes, allowing the system to take images thereby. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient.
 
-\section{Implementation}
-\label{sec:implement}
+In addition to their hardware, the rest of the software components are of utmost importance to mango classification. Image processing algorithms in OpenCV and CNN models extract features such as color, size, and bruises that are known to determine quality parameters of mangoes. Mangoes are classified based on ripeness and defects by using machine learning algorithms, which further enhances accuracy using deep learning techniques. A user interface (UI) is designed for users to control and observe the system in real time. Finally, the interface programming of the microcontroller provides the necessary synchronization between sensors, actuators, and motors throughout the sorting operation scenario.
 
-Summarize the process used to create/set-up the work with an explanation of such process, instruments, and materials that you used if any. If the description is lengthy, use condensed bullet points. 
+\section{Data Collection Methods}
+The system acquires high-resolution images of mangoes under pre-specified lighting conditions through systematic acquisition. Apart from that, this corpus of data is based on the real-time images acquired from the camera system, where classification operations are carried out based on real-time data. Pre-processing image operations such as color segmentation, histogram equalization, and thresholding are also carried out in order to enhance image clarity and feature detection. Then, the feature extraction process is carried out, where the intensity of color, shape, and texture are analyzed for the detection of characteristic features in terms of the mango. The data will be labeled to ground truth values by expert mango graders so that the classification model is trained on accurate and reliable data. All these aspects lead to the creation of a reliable dataset for the machine learning algorithm that will allow the system to classify and grade mangoes more accurately.
 
-\noindent \textit{Rule of thumb}: Implementation is how you made your  work; (keywords: implemented, created, made, soldered, programmed, etc.).
+\section{Testing and Evaluation Methods}
+In a bid to ensure the mango sorting and grading system is accurate and reliable, there is intensive testing conducted at different levels. Unit testing is initially conducted on each component separately, for instance, the conveyor belt, sensors, and cameras, to ensure that each of the components works as expected when operating separately. After component testing on an individual basis, integration testing is conducted to ensure communication between hardware and software is correct to ensure the image processing system, motors, and sorting actuators work in concert as required. System testing is conducted to conduct overall system performance testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
 
-If you wrote a program or made a simulation, you must state how the program or simulation functions in this section.	An algorithm or a pseudocode as shown in Table~\ref{tab:calcxn} is a good example.
+To test system performance, various measures of performance are used to evaluate. Accuracy is used to measure the percentage of correctly classified mangoes to ensure the system maintains high precision levels. Precision and recall are used to measure consistency of classification to determine if the system classifies different ripeness levels and defects correctly. A confusion matrix is used to measure correct and incorrect classification to ensure the machine learning model is optimized and that minimum errors are achieved. Throughput analysis is also used to determine the rate and efficiency of sorting to ensure that the system maintains high capacity without bottlenecks to sort mangoes. Using these methods of testing, the system is constantly optimized to ensure high-quality and reliable mango classification.
 
-
-\graytx{\Blindtext}
-
-
-
-\section{Evaluation}
-\label{sec:evaluate}
-
-Describe the procedures for evaluating the correct behavior and outcome of your  work, including what information you need to gather and how you will obtain or measure it.  
-
-\textit{Rule of thumb}: Evaluation is how you tested your  work; (keywords: measured, tested, compared, simulated, etc.).
-
-\graytx{\Blindtext}
-
-
+\section{Ethical Considerations}
+Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
 
 \section{Summary}
-
-Provide the gist of this chapter such that it reflects the contents and the message.
+This chapter explained how to create an automatic Carabao mango sorter and grader using machine learning and computer vision. The system integrates hardware and software resources, including a conveyor belt, cameras, sensors, and actuators, to offer accurate, real-time sorting by ripeness, size, and bruises. Various testing and evaluation processes ensure its performance to offer reliability. Ethical issues are data privacy, environmental sustainability, and operation safety. With enhanced efficiency, reduced human error, and enhanced quality, this system provides an affordable, scalable, and non-destructive solution to post-harvest mango classification in agricultural industries.
