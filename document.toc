@@ -72,5 +72,5 @@
 \contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{57}{appendix.C}%
 \contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{63}{appendix.D}%
 \contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{67}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{69}{appendix.F}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{68}{appendix.F}%
 \contentsfinish 
