@@ -15,7 +15,7 @@ Commit with a MESSAGE
 ```
 Push to the branch
 ```bash
-  git commit -m "message"
+  git push
 ```
 
 ## Edit The PDF
