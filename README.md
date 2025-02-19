@@ -7,15 +7,15 @@ My group's thesis documentation in LaTeX format.
 ## How to PUSH and COMMIT
 Add File
 ```bash
-  git add .
+git add .
 ```
 Commit with a MESSAGE
 ```bash
-  git commit -m "message"
+git commit -m "message"
 ```
 Push to the branch
 ```bash
-  git push
+git push
 ```
 
 ## Edit The PDF
