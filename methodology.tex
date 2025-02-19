@@ -1,52 +1,52 @@
 
-\begin{center}
-	{\scriptsize
-		\begin{tabularx}{\textwidth}{p{0.2\textwidth}|p{0.6\textwidth}|p{0.1\textwidth}}
-			\caption{Summary of methods for reaching the objectives} \label{tab:methods_per_objective} \\
-			\hline 
-			\hline 
-			\textbf{Objectives} & 
-			\textbf{Methods} &
-			\textbf{Locations}\\ 
-			\hline 
-			\endfirsthead
-			\multicolumn{3}{c}%
-			{\textit{Continued from previous page}} \\
-			\hline
-			\hline 
-			\textbf{Objectives} & 
-			\textbf{Methods} &
-			\textbf{Locations}\\ 
-			\hline 
-			\endhead
-			\hline 
-			\multicolumn{3}{r}{\textit{Continued on next page}} \\ 
-			\endfoot
-			\hline 
-			\endlastfoot
-			\hline
-			
-			
-			\Paste{GO} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
-			
-			
-			\Paste{SO1} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
-			
-			
-			\Paste{SO2} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
-			
-			
-			\Paste{SO3} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
-			
-			
-			\Paste{SO4} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
-			
-			
-			\Paste{SO5} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
-			
-		\end{tabularx}
-	}
-\end{center}
+% \begin{center}
+	% 	{\scriptsize
+		% 		\begin{tabularx}{\textwidth}{p{0.2\textwidth}|p{0.6\textwidth}|p{0.1\textwidth}}
+			% 			\caption{Summary of methods for reaching the objectives} \label{tab:methods_per_objective} \\
+			% 			\hline 
+			% 			\hline 
+			% 			\textbf{Objectives} & 
+			% 			\textbf{Methods} &
+			% 			\textbf{Locations}\\ 
+			% 			\hline 
+			% 			\endfirsthead
+			% 			\multicolumn{3}{c}%
+			% 			{\textit{Continued from previous page}} \\
+			% 			\hline
+			% 			\hline 
+			% 			\textbf{Objectives} & 
+			% 			\textbf{Methods} &
+			% 			\textbf{Locations}\\ 
+			% 			\hline 
+			% 			\endhead
+			% 			\hline 
+			% 			\multicolumn{3}{r}{\textit{Continued on next page}} \\ 
+			% 			\endfoot
+			% 			\hline 
+			% 			\endlastfoot
+			% 			\hline
+			% 			
+			% 			
+			% 			\Paste{GO} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
+			% 			
+			% 			
+			% 			\Paste{SO1} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			% 			
+			% 			
+			% 			\Paste{SO2} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
+			% 			
+			% 			
+			% 			\Paste{SO3} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
+			% 			
+			% 			
+			% 			\Paste{SO4} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			% 			
+			% 			
+			% 			\Paste{SO5} & \blindlist{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			% 			
+			% 		\end{tabularx}
+		% 	}
+	% \end{center}
 
 \section{Introduction}
 The methodology for this research outlines the development of the Carabao Mango sorter using machine learning and computer vision. The sorting system uses a conveyor belt system which delivers the mangoes into the image acquisition system. This system captures the image of the mangoes which will then be going through the various stages of image processing and classification into grades which will depend on the priority of the user. This methodology ensures that the grading of the mangoes will be accurate while being non-destructive.
@@ -55,7 +55,7 @@ The methodology for this research outlines the development of the Carabao Mango 
 This study applies the experimental approach for research in order to develop and properly test the proposed system. The experimental approach of the methodology will allow the researchers to fine-tune the parameters and other factors in the classification of mangoes in order to get optimal results with high accuracy scores while maintaining the quality of the mangoes. This approach will also allow for real-time data processing and classification which will improve the previous static grading systems.
 
 \section{Experimental Setup}
-The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller (Raspberry Pi/Arduino), coordinating actions of all components. A laser sensor detects mangoes, allowing the system to take images thereby. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient.
+The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller (Raspberry Pi 4b), coordinating actions of all components. A laser sensor detects mangoes, allowing the system to take images thereby. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient.
 
 In addition to their hardware, the rest of the software components are of utmost importance to mango classification. Image processing algorithms in OpenCV and CNN models extract features such as color, size, and bruises that are known to determine quality parameters of mangoes. Mangoes are classified based on ripeness and defects by using machine learning algorithms, which further enhances accuracy using deep learning techniques. A user interface (UI) is designed for users to control and observe the system in real time. Finally, the interface programming of the microcontroller provides the necessary synchronization between sensors, actuators, and motors throughout the sorting operation scenario.
 
@@ -65,7 +65,30 @@ The system acquires high-resolution images of mangoes under pre-specified lighti
 \section{Testing and Evaluation Methods}
 In a bid to ensure the mango sorting and grading system is accurate and reliable, there is intensive testing conducted at different levels. Unit testing is initially conducted on each component separately, for instance, the conveyor belt, sensors, and cameras, to ensure that each of the components works as expected when operating separately. After component testing on an individual basis, integration testing is conducted to ensure communication between hardware and software is correct to ensure the image processing system, motors, and sorting actuators work in concert as required. System testing is conducted to conduct overall system performance testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
 
-To test system performance, various measures of performance are used to evaluate. Accuracy is used to measure the percentage of correctly classified mangoes to ensure the system maintains high precision levels. Precision and recall are used to measure consistency of classification to determine if the system classifies different ripeness levels and defects correctly. A confusion matrix is used to measure correct and incorrect classification to ensure the machine learning model is optimized and that minimum errors are achieved. Throughput analysis is also used to determine the rate and efficiency of sorting to ensure that the system maintains high capacity without bottlenecks to sort mangoes. Using these methods of testing, the system is constantly optimized to ensure high-quality and reliable mango classification.
+\begin{eqnarray}
+	\text{Precision} = \frac{TP}{TP + FP}
+	\label{eq:precision}
+\end{eqnarray}
+
+\begin{eqnarray}
+	\text{Recall} = \frac{TP}{TP + FN}
+	\label{eq:recall}
+\end{eqnarray}
+
+
+To test system performance, various measures of performance are used to evaluate. As seen on equation~\ref{eq:accuracy}, accuracy is used to measure the percentage of correctly classified mangoes to ensure the system maintains high precision levels. Precision as seen on equation~\ref{eq:precision} and recall as seen on equation~\ref{eq:recall} are used to measure consistency of classification to determine if the system classifies different ripeness levels and defects correctly. Furthermore, the F1 score formula as seen on equation~\ref{eq:f1_score} is used to evaluate the performance of the model's classification. 
+
+\begin{eqnarray}
+	F_1 = 2\times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+	\label{eq:f1_score}
+\end{eqnarray}
+
+\begin{eqnarray}
+	\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+	\label{eq:accuracy}
+\end{eqnarray}
+
+A confusion matrix is used to measure correct and incorrect classification to ensure the machine learning model is optimized and that minimum errors are achieved. Throughput analysis is also used to determine the rate and efficiency of sorting to ensure that the system maintains high capacity without bottlenecks to sort mangoes. Using these methods of testing, the system is constantly optimized to ensure high-quality and reliable mango classification.
 
 \section{Ethical Considerations}
 Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
