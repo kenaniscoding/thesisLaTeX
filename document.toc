@@ -38,39 +38,39 @@
 \contentsline {section}{\numberline {3.5}Summary}{25}{section.3.5}%
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}System Architecture}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.2}System Architecture}{28}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Hardware Considerations}{29}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Software Considerations}{29}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Security and Reliability considerations}{30}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Scalability and Efficiency Considerations}{30}{section.4.6}%
+\contentsline {section}{\numberline {4.5}Security and Reliability considerations}{29}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Scalability and Efficiency Considerations}{29}{section.4.6}%
 \contentsline {section}{\numberline {4.7}User Interface}{30}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Constraints and Limitations}{30}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Technical Standards}{31}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Prototyping and Simulation}{31}{section.4.10}%
+\contentsline {section}{\numberline {4.9}Technical Standards}{30}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Prototyping and Simulation}{30}{section.4.10}%
 \contentsline {section}{\numberline {4.11}Design Validation}{31}{section.4.11}%
 \contentsline {section}{\numberline {4.12}Summary}{31}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Standards}{33}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Summary}{34}{section.4.14}%
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Research Approach}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Experimental Setup}{38}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Data Collection Methods}{39}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Testing and Evaluation Methods}{40}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ethical Considerations}{41}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Summary}{41}{section.5.7}%
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{42}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{47}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{48}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Concluding Remarks}{49}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Contributions}{49}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Recommendations}{49}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Future Prospects}{51}{section.7.4}%
-\contentsline {chapter}{References}{53}{chapter*.21}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{55}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{57}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{66}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{72}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{76}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{78}{appendix.F}%
+\contentsline {section}{\numberline {4.13}Standards}{31}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Summary}{32}{section.4.14}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Research Approach}{36}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Experimental Setup}{36}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Data Collection Methods}{37}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Testing and Evaluation Methods}{38}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ethical Considerations}{39}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Summary}{39}{section.5.7}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{40}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{45}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{46}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Concluding Remarks}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Contributions}{47}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Recommendations}{47}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Prospects}{49}{section.7.4}%
+\contentsline {chapter}{References}{51}{chapter*.22}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{53}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{55}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{64}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{70}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{74}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{76}{appendix.F}%
 \contentsfinish 
