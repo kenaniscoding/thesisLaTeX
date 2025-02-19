@@ -8,7 +8,7 @@ If aspects such as temperature and rainfall are not ideal, it may affect the qua
 of the mango \citep{noauthor-mango-2024}. 
 \begin{figure}[!htbp]
 	\centering
-		\includegraphics[width=0.5\textwidth]{fig1}
+	\includegraphics[width=0.5\textwidth]{fig1}
 	\caption{Carabao Mangoes at Different Ripeness Stages \citep{guillermo-determining-2019}}
 	\label{fig:img1}
 \end{figure}
@@ -38,34 +38,34 @@ on the mango defects and not on ripeness, and weight.
 Furthermore, the research paper presented by \citet{guillergan-naive-2024} designed an Automated Carabao mango classifier, 
 in which the mango image database is used to extract the features like size, area along with the ratio of the spots for 
 grading using Naïve Bayes Model. For the results, the Naïve Bayes’ model recognized large and rejected mangoes with 95\%
- accuracy and the large and small/medium difference with a 7\% error, suggesting an application for quality differentiation 
- and sorting in the mango business industry. Despite the high accuracy of classifying Carabao mangoes, the researchers used a 
- high quality DSLR camera for the image acquisition system without any \gls{microcontroller} to control the mangoes \citep{guillergan-naive-2024}. 
+accuracy and the large and small/medium difference with a 7\% error, suggesting an application for quality differentiation 
+and sorting in the mango business industry. Despite the high accuracy of classifying Carabao mangoes, the researchers used a 
+high quality DSLR camera for the image acquisition system without any \gls{microcontroller} to control the mangoes \citep{guillergan-naive-2024}. 
 
 
 \section{Problem Statement}
 As mangoes are among the top exports of the Philippines \citep{centino-current-nodate}, 
 assessing the physical deformities is a necessity. The physical deformities of the 
 Carabao mango can determine the global competitiveness of the country. Having higher quality
- exports can often lead to gaining competitive edge, increase in demand, increase export revenues,
-  and becoming less susceptible to low-wage competition \citep{dadamo-determinants-2018}. In order to increase the 
-  quality of mango fruit exports, a key post-harvest process is done, which is sorting and grading.
-   Mango sorting and grading then becomes important to determine which batches are of high quality and
-    can be sold for a higher price, and which batches are of low quality and can only be sold for a low price
-	 \citep{zhengzhou-first-industry-co-ltd-what-nodate}. Traditionally, fruit sorting and grading is inefficient as it is
-	  done manually by hand. Some tools are used such as porous ruler to determine fruit size and color palette 
-	  for color grading \citep{zhengzhou-first-industry-co-ltd-what-nodate}. However, among the problems encountered in the 
-	  process of manually sorting and grading mangoes are susceptibility to human error and requiring a number of 
-	  laborers to do the task. 
+exports can often lead to gaining competitive edge, increase in demand, increase export revenues,
+and becoming less susceptible to low-wage competition \citep{dadamo-determinants-2018}. In order to increase the 
+quality of mango fruit exports, a key post-harvest process is done, which is sorting and grading.
+Mango sorting and grading then becomes important to determine which batches are of high quality and
+can be sold for a higher price, and which batches are of low quality and can only be sold for a low price
+\citep{zhengzhou-first-industry-co-ltd-what-nodate}. Traditionally, fruit sorting and grading is inefficient as it is
+done manually by hand. Some tools are used such as porous ruler to determine fruit size and color palette 
+for color grading \citep{zhengzhou-first-industry-co-ltd-what-nodate}. However, among the problems encountered in the 
+process of manually sorting and grading mangoes are susceptibility to human error and requiring a number of 
+laborers to do the task. 
 
-	  With the current advancements in technology, some researchers have already taken steps to automate the process
-	   of sorting and grading mangoes. However, these attempts would often only consider some of the aspects 
-	   pertaining to size, ripeness, and \gls{bruises} but not all of them at the same time. Lastly, not all research approaches
-	    were able to implement a hardware for their algorithm, limiting their output to only a software implementation and not
-		 an embedded system. As such the proposed system would assess the export quality of the Carabao mango based on all the
-		  mentioned mango traits, namely size, \gls{bruises}, and ripeness while also taking into consideration being non-destructive.
-		   These aspects are important because, as was previously mentioned, there is a need to develop a Carabao mango sorter 
-		   that takes into account all these aspects at the same time while being non-destructive.
+With the current advancements in technology, some researchers have already taken steps to automate the process
+of sorting and grading mangoes. However, these attempts would often only consider some of the aspects 
+pertaining to size, ripeness, and \gls{bruises} but not all of them at the same time. Lastly, not all research approaches
+were able to implement a hardware for their algorithm, limiting their output to only a software implementation and not
+an embedded system. As such the proposed system would assess the export quality of the Carabao mango based on all the
+mentioned mango traits, namely size, \gls{bruises}, and ripeness while also taking into consideration being non-destructive.
+These aspects are important because, as was previously mentioned, there is a need to develop a Carabao mango sorter 
+that takes into account all these aspects at the same time while being non-destructive.
 
 
 
@@ -74,29 +74,29 @@ Carabao mango can determine the global competitiveness of the country. Having hi
 \subsection{General Objective (GO)}
 \begin{itemize}
 	\item \Copy{GO}{GO: To develop a user-priority-based grading and sorting system for Carabao mangoes, 
- using machine learning and computer vision techniques to assess ripeness, size, and bruises. };
+		using machine learning and computer vision techniques to assess ripeness, size, and bruises. };
 \end{itemize}
 
 \subsection{Specific Objectives (SOs)}
 
 \begin{itemize}
 	\item \Copy{SO1}{SO1: To make an image acquisition system with a conveyor belt for 
-	automatic sorting and grading mangoes. };
+		automatic sorting and grading mangoes. };
 	
 	\item \Copy{SO2}{SO2: To get the precision, recall, F1 score, confusion matrix,
-	 and train and test accuracy metrics for classifying the ripeness and bruises with an accuracy score of at least 90\%.};
+		and train and test accuracy metrics for classifying the ripeness and bruises with an accuracy score of at least 90\%.};
 	
 	\item \Copy{SO3}{SO3: To create a microcontroller-based system to operate the image acquisition system, 
-	control the conveyor belt, and process the mango images through machine learning. };
-
+		control the conveyor belt, and process the mango images through machine learning. };
+	
 	\item \Copy{SO4}{SO4: To grade mangoes based on user priorities for size, ripeness, and bruises.  };
 	
 	\item \Copy{SO5}{SO5: To classify mango ripeness based on image data using machine learning algorithms
-	 such as kNN, k-mean, and Naïve Bayes.  };
+		such as kNN, k-mean, and Naïve Bayes.  };
 	
 	\item \Copy{SO6}{SO6: To classify mango size based on image data by getting its length and width using OpenCV, 
-	geometry, and image processing techniques. };
-
+		geometry, and image processing techniques. };
+	
 	\item \Copy{SO7}{SO7: To classify mango bruises based on image data by employing machine learning algorithms.}
 \end{itemize}
 
@@ -119,21 +119,21 @@ yields of the \documentType.
 			\textbf{Objectives} & 
 			\textbf{Expected Deliverables}\\ 
 			\hline 
-%%			\endfirsthead
-%			\multicolumn{2}{c}%
-%			{\textit{Continued from previous page}} \\
-%			\hline
-%			\hline 
-%			\textbf{Objectives} & 
-%			\textbf{Expected Deliverables}\\ 
-%			\hline 
-%%			\endhead
-%			\hline 
-%			\multicolumn{2}{r}{\textit{Continued on next page}} \\ 
-%%			\endfoot
-%			\hline 
-%%			\endlastfoot
-%			\hline		
+			%%			\endfirsthead
+			%			\multicolumn{2}{c}%
+			%			{\textit{Continued from previous page}} \\
+			%			\hline
+			%			\hline 
+			%			\textbf{Objectives} & 
+			%			\textbf{Expected Deliverables}\\ 
+			%			\hline 
+			%%			\endhead
+			%			\hline 
+			%			\multicolumn{2}{r}{\textit{Continued on next page}} \\ 
+			%%			\endfoot
+			%			\hline 
+			%%			\endlastfoot
+			%			\hline		
 			\Paste{GO} &
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt} 
@@ -144,7 +144,7 @@ yields of the \documentType.
 					\item To integrate sensors and actuators to control the conveyor belt and image acquisition system.
 				\end{itemize}
 			\end{minipage} \\ \hline
-
+			
 			\Paste{SO1} & 
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt}
@@ -153,16 +153,16 @@ yields of the \documentType.
 					\item To build a flat belt conveyor for moving the mangoes.
 				\end{itemize}
 			\end{minipage} \\ \hline
-
+			
 			\Paste{SO2} & 
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt}
 				\begin{itemize}
 					\item To use a publicly available dataset of at least 10,000 mango images
-					 for classification of ripeness, and bruises.
+					for classification of ripeness, and bruises.
 				\end{itemize}
 			\end{minipage} \\ \hline
-						
+			
 			\Paste{SO3} & 
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt}
@@ -171,7 +171,7 @@ yields of the \documentType.
 					\item To implement a priority-based grading system with sliders for ripeness, bruises, and size.
 				\end{itemize}
 			\end{minipage} \\ \hline
-						
+			
 			\Paste{SO4} & 
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt}
@@ -181,8 +181,8 @@ yields of the \documentType.
 					\item To assign score values for each classification level of the mango.
 				\end{itemize}
 			\end{minipage} \\ \hline
-		
-
+			
+			
 			\Paste{SO5} & 
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt}
@@ -193,10 +193,10 @@ yields of the \documentType.
 					\item To obtain an evaluation report of performance metrics of the model
 				\end{itemize}
 			\end{minipage} \\ \hline
-
+			
 			
 		\end{tabular}	
-			
+		
 	}
 \end{table}
 
@@ -221,7 +221,7 @@ yields of the \documentType.
 					and large based on those measures
 				\end{itemize}
 			\end{minipage} \\ \hline
-
+			
 			\Paste{SO7} & 
 			\begin{minipage}{0.55\textwidth}
 				\vspace{10pt}
@@ -240,98 +240,98 @@ yields of the \documentType.
 
 
 % \begin{center}
-% 	{\scriptsize
-% 		\begin{longtable}{p{0.2\textwidth}|p{0.6\textwidth}|p{0.1\textwidth}}
-% 			\caption{Summary of methods for reaching the objectives} \label{tab:methods_per_objective} \\
-% 			\hline 
-% 			\hline 
-% 			\textbf{Objectives} & 
-% 			\textbf{Expected Deliverables} &
-% 			\textbf{Locations}\\ 
-% 			\hline 
-% 			\endhead
-% 			\hline 
-% 			\multicolumn{3}{r}{\textit{Continued on next page}} \\ 
-% 			\endfoot
-% 			\hline 
-% 			\endlastfoot
-% 			\hline
-% 			\Paste{GO} & \begin{itemize}
-% 				\item To develop a Carabao mango grading and sorting system 
-% 				\item To grade Carabao mangoes into three categories based on ripeness, size, and 
-% 				bruises of the Carabao mangoes using machine learning.
-% 				\item To integrate sensors and actuators to control the conveyor belt and image acquisition system.
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
+	% 	{\scriptsize
+		% 		\begin{longtable}{p{0.2\textwidth}|p{0.6\textwidth}|p{0.1\textwidth}}
+			% 			\caption{Summary of methods for reaching the objectives} \label{tab:methods_per_objective} \\
+			% 			\hline 
+			% 			\hline 
+			% 			\textbf{Objectives} & 
+			% 			\textbf{Expected Deliverables} &
+			% 			\textbf{Locations}\\ 
+			% 			\hline 
+			% 			\endhead
+			% 			\hline 
+			% 			\multicolumn{3}{r}{\textit{Continued on next page}} \\ 
+			% 			\endfoot
+			% 			\hline 
+			% 			\endlastfoot
+			% 			\hline
+			% 			\Paste{GO} & \begin{itemize}
+				% 				\item To develop a Carabao mango grading and sorting system 
+				% 				\item To grade Carabao mangoes into three categories based on ripeness, size, and 
+				% 				bruises of the Carabao mangoes using machine learning.
+				% 				\item To integrate sensors and actuators to control the conveyor belt and image acquisition system.
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
 			
-% 			\Paste{SO1} & \begin{itemize}
-% 				\item To make an image acquisition system with a camera and LED light source.
-% 				\item To build a flat belt conveyor for moving the mangoes.
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			% 			\Paste{SO1} & \begin{itemize}
+				% 				\item To make an image acquisition system with a camera and LED light source.
+				% 				\item To build a flat belt conveyor for moving the mangoes.
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-% 			\Paste{SO2} & \begin{itemize}
-% 				\item To use a publicly available dataset of at least 10,000 mango images
-% 				 for classification of ripeness, and bruises.
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
+			% 			\Paste{SO2} & \begin{itemize}
+				% 				\item To use a publicly available dataset of at least 10,000 mango images
+				% 				 for classification of ripeness, and bruises.
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
 			
-% 			\Paste{SO3} & \begin{itemize}
-% 				\item To develop an intuitive UI where users can start and stop the system.
-% 				\item To implement a priority-based grading system with sliders for ripeness, bruises, and size.
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
+			% 			\Paste{SO3} & \begin{itemize}
+				% 				\item To develop an intuitive UI where users can start and stop the system.
+				% 				\item To implement a priority-based grading system with sliders for ripeness, bruises, and size.
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement}\\ \hline
 			
-% 			\Paste{SO4} & \begin{itemize}
-% 				\item To utilize a linear combination formula as the overall mango score, where each classification level 
-% 				contributes a grade, weighted by the priority assigned to the three properties.
-% 				\item To assign score values for each classification level of the mango.
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			% 			\Paste{SO4} & \begin{itemize}
+				% 				\item To utilize a linear combination formula as the overall mango score, where each classification level 
+				% 				contributes a grade, weighted by the priority assigned to the three properties.
+				% 				\item To assign score values for each classification level of the mango.
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-% 			\Paste{SO5} & \begin{itemize}
-% 				\item To train a machine learning model such as kNN, k-mean, naive Bayes capable
-% 				of classifying mango ripeness based on the image color
-% 				\item To gather a dataset of annotated images with ripeness labels
-% 				\item To obtain an evaluation report of performance metrics of the model
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
-
-% 			\Paste{SO6} & \begin{itemize}
-% 				\item To develop an image processing algorithm capable of determining mango 
-% 				size using OpenCV, NumPy, and imutils
-% 				\item To classify mangoes based on size and categories into small, medium, 
-% 				and large based on those measures
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
-
-% 			\Paste{SO7} & \begin{itemize}
-% 				\item To train a machine learning model such as 
-% 				CNN capable of distinguishing bruised and non-bruised mangoes
-% 				\item To train a machine learning model such as kNN, k-mean, and Naïve Bayes 
-% 				capable of assessing the extent of bruising on the mangoes if it is significant or partial
-% 				\item To gather a dataset of annotated images based on bruises
-% 				\item To obtain an evaluation report of performance metrics of both CNN and machine learning models
-% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			% 			\Paste{SO5} & \begin{itemize}
+				% 				\item To train a machine learning model such as kNN, k-mean, naive Bayes capable
+				% 				of classifying mango ripeness based on the image color
+				% 				\item To gather a dataset of annotated images with ripeness labels
+				% 				\item To obtain an evaluation report of performance metrics of the model
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-% 		\end{longtable}
-% 	}
-% \end{center}
+			% 			\Paste{SO6} & \begin{itemize}
+				% 				\item To develop an image processing algorithm capable of determining mango 
+				% 				size using OpenCV, NumPy, and imutils
+				% 				\item To classify mangoes based on size and categories into small, medium, 
+				% 				and large based on those measures
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			
+			% 			\Paste{SO7} & \begin{itemize}
+				% 				\item To train a machine learning model such as 
+				% 				CNN capable of distinguishing bruised and non-bruised mangoes
+				% 				\item To train a machine learning model such as kNN, k-mean, and Naïve Bayes 
+				% 				capable of assessing the extent of bruising on the mangoes if it is significant or partial
+				% 				\item To gather a dataset of annotated images based on bruises
+				% 				\item To obtain an evaluation report of performance metrics of both CNN and machine learning models
+				% 			\end{itemize} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			
+			% 		\end{longtable}
+		% 	}
+	% \end{center}
 
 \section{Significance of the Study}
 
 Automating the process of sorting and grading mangoes increases efficiency and 
 productivity for the user which would in effect remove human error in sorting and
- grading and decrease the human labor and time taken to sort and grade the mangoes.
-  This is especially important for farmers with a large amount of fruit such as mangoes and a
-   lesser labor force. A recent study showed that
-    their automated citrus sorter and grader using computer vision can reduce the human
-	 labor cost and time to sort and grade when comparing the automated citrus sorter and grader
-	  to manual human labor \cite{chakraborty-development-2023}. 
+grading and decrease the human labor and time taken to sort and grade the mangoes.
+This is especially important for farmers with a large amount of fruit such as mangoes and a
+lesser labor force. A recent study showed that
+their automated citrus sorter and grader using computer vision can reduce the human
+labor cost and time to sort and grade when comparing the automated citrus sorter and grader
+to manual human labor \cite{chakraborty-development-2023}. 
 
 Another benefit to automating sorting and grading mangoes is the improvement in quality control.
- This implies that compared to human labor, automating sorting and grading mangoes can uniformly 
- assess the quality of mangoes based on size, color, and \gls{bruises}, ensuring that the expected grade and high-quality mangoes reach the consumer. By accurately identifying substandard mangoes, the system 
-  helps in reducing waste and ensuring that only marketable fruits are processed further.
+This implies that compared to human labor, automating sorting and grading mangoes can uniformly 
+assess the quality of mangoes based on size, color, and \gls{bruises}, ensuring that the expected grade and high-quality mangoes reach the consumer. By accurately identifying substandard mangoes, the system 
+helps in reducing waste and ensuring that only marketable fruits are processed further.
 
 Likewise, the scalability of automating sorting and grading mangoes is simpler, especially 
 for lower labor force farmers with large volumes of mangoes. Because of the possibility of
- large-scale operations by automating sorting and grading mangoes, farmers can now handle large
-  volumes of mangoes, making them suitable for commercial farms and processing plants. Moreover,
-   it can be adapted to different varieties of mangoes and potentially other fruits with minor modifications.
+large-scale operations by automating sorting and grading mangoes, farmers can now handle large
+volumes of mangoes, making them suitable for commercial farms and processing plants. Moreover,
+it can be adapted to different varieties of mangoes and potentially other fruits with minor modifications.
 
 
 \subsection{Technical Benefit}
@@ -341,7 +341,7 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 	of classifying \gls{Carabao mango} based on ripeness, size, and bruising.
 	
 	\item The accuracy in sorting Carabao mangoes will be significantly improved while
-	 reducing the errors due to human factors in manual sorting.
+	reducing the errors due to human factors in manual sorting.
 	
 	\item The automated \gls{Carabao mango}  sorter carefully sorts the mangoes 
 	while ensuring that they remain free from bruising or further damage during the process	
@@ -351,11 +351,11 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 
 \begin{enumerate}
 	\item The reduction in manual labor creates opportunities in maintenance and
-	 technologies in the automated \gls{Carabao mango}  sorter.
+	technologies in the automated \gls{Carabao mango}  sorter.
 	
 	\item The automated \gls{Carabao mango}  sorter system improves Carabao mango 
 	standards and enhances the satisfaction of the buyers and the customers through
-	 guaranteeing consistent Carabao mango grade.
+	guaranteeing consistent Carabao mango grade.
 	
 	\item Opportunity to increase sales and profit for the farmers through consistent 
 	quality and grade Carabao mangoes while reducing the physical labor to sort it.
@@ -365,8 +365,8 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 
 \begin{enumerate}
 	\item With the utilization of non-destruction methods of classifying Carabao mangoes together with an
-	 accurate sorting system, overall waste from Carabao mangoes is reduced and the likelihood
-	  of improperly sorted mangoes is decreased.
+	accurate sorting system, overall waste from Carabao mangoes is reduced and the likelihood
+	of improperly sorted mangoes is decreased.
 	
 	\item Automation of sorting and grading Carabao mangoes promotes sustainable farming practices.
 	
@@ -410,7 +410,7 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 	
 	\item Additionally, the project prototype will only be able to capture, sort, and grade one 
 	mango subject at a time which means the mangoes have to be placed in the conveyor belt in
-	 a single file line for accurate sorting. 
+	a single file line for accurate sorting. 
 	
 	\item For the bruises, the system will only be able to detect external bruises and 
 	may not identify the non-visible and internal bruises.
@@ -419,16 +419,6 @@ for lower labor force farmers with large volumes of mangoes. Because of the poss
 	\item The prototype will be powered using \acr{ac} power and will be plugged into 
 	a wall socket which is only suitable for indoor use.
 \end{enumerate}
-
-\section{Description and Methodology of the \documentType}
-
-A purpose of the description here is to re-steer/remind the panelist/reader again by tersely describing what your thesis is about (i.e. the problem and the main goal you want to achieve) in another way without sounding repetitive. 
-
-Your methodology is your means of achieving your stated objectives. What you put here is the summary of your methodology chapter.
-
-
-
-\graytx{\blindtext}
 
 
 \ifFinished
