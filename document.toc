@@ -49,28 +49,26 @@
 \contentsline {section}{\numberline {4.10}Prototyping and Simulation}{30}{section.4.10}%
 \contentsline {section}{\numberline {4.11}Design Validation}{31}{section.4.11}%
 \contentsline {section}{\numberline {4.12}Summary}{31}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Standards}{31}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Summary}{32}{section.4.14}%
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{34}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Research Approach}{34}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Experimental Setup}{34}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Data Collection Methods}{35}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Testing and Evaluation Methods}{36}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ethical Considerations}{37}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Summary}{38}{section.5.7}%
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{40}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{41}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Concluding Remarks}{42}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Contributions}{42}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Recommendations}{42}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Future Prospects}{42}{section.7.4}%
-\contentsline {chapter}{References}{44}{chapter*.20}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{46}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{48}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{57}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{63}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{67}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{68}{appendix.F}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{32}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Research Approach}{33}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Experimental Setup}{33}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Data Collection Methods}{34}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Testing and Evaluation Methods}{35}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Ethical Considerations}{36}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Summary}{37}{section.5.7}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary}{39}{section.6.1}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{40}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Concluding Remarks}{41}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Contributions}{41}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Recommendations}{41}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Prospects}{41}{section.7.4}%
+\contentsline {chapter}{References}{43}{chapter*.20}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{45}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{47}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{56}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{62}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{66}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{67}{appendix.F}%
 \contentsfinish 
