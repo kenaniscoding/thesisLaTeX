@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  19 FEB 2025 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  20 FEB 2025 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1697,10 +1697,14 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
  (C:\Users\Kenan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(document.aux (introduction.aux) (literature_review.aux)
-(theoretical_considerations.aux) (design_considerations.aux) (methodology.aux)
-(results_and_discussions.aux) (conclusions.aux) (answers_to_questions.aux)
-(revisions_to_the_final.aux) (vita.aux))
+(document.aux (introduction.aux
+
+LaTeX Warning: Label `tab:expected_deliverables' multiply defined.
+
+) (literature_review.aux) (theoretical_considerations.aux)
+(design_considerations.aux) (methodology.aux) (results_and_discussions.aux)
+(conclusions.aux) (answers_to_questions.aux) (revisions_to_the_final.aux)
+(vita.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
@@ -2020,7 +2024,7 @@ d on input line 210.
 \openout2 = `introduction.aux'.
 
  (introduction.tex
-<figure/fig1.png, id=554, 361.35pt x 214.22893pt>
+<figure/fig1.png, id=553, 361.35pt x 214.22893pt>
 File: figure/fig1.png Graphic file (type png)
 <use figure/fig1.png>
 Package pdftex.def Info: figure/fig1.png  used on input line 11.
@@ -2094,7 +2098,7 @@ ine learning algorithms such as kNN, k-mean, and Naïve Bayes. }
 \clipboard {SO7}{SO7: To classify mango bruises based on image data by employin
 g machine learning algorithms.}
 
-Underfull \hbox (badness 1917) in paragraph at lines 137--137
+Underfull \hbox (badness 1917) in paragraph at lines 237--237
 []\OT1/ptm/m/n/9 (+20) GO: To de-velop a user-priority-
  []
 
@@ -2104,23 +2108,22 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 314.
+d on input line 287.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [7]
-
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 314.
+d on input line 287.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[8]
+ [8]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 329.
+d on input line 373.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [9]
 
@@ -2128,7 +2131,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 362.
+d on input line 399.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [10]
 
@@ -2136,7 +2139,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 393.
+d on input line 436.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [11]
 
@@ -2144,13 +2147,13 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 421.
+d on input line 463.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [12]
-<figure/ganttchart.png, id=701, 776.04214pt x 194.8709pt>
+<figure/ganttchart.png, id=696, 776.04214pt x 194.8709pt>
 File: figure/ganttchart.png Graphic file (type png)
 <use figure/ganttchart.png>
-Package pdftex.def Info: figure/ganttchart.png  used on input line 431.
+Package pdftex.def Info: figure/ganttchart.png  used on input line 480.
 (pdftex.def)             Requested size: 429.3521pt x 107.81267pt.
 
 
@@ -2158,7 +2161,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 457.
+d on input line 497.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [13 <./figure/ganttchart.png>])
 
@@ -2315,7 +2318,7 @@ d on input line 233.
 \openout2 = `theoretical_considerations.aux'.
 
  (theoretical_considerations.tex
-<figure/theoreticalDiagram1.png, id=823, 848.4197pt x 653.44125pt>
+<figure/theoreticalDiagram1.png, id=821, 848.4197pt x 653.44125pt>
 File: figure/theoreticalDiagram1.png Graphic file (type png)
 <use figure/theoreticalDiagram1.png>
 Package pdftex.def Info: figure/theoreticalDiagram1.png  used on input line 11.
@@ -2332,7 +2335,7 @@ d on input line 19.
 [24
 
  <./figure/theoreticalDiagram1.png>]
-<figure/theoreticalDiagram2.png, id=829, 1158.57843pt x 740.0147pt>
+<figure/theoreticalDiagram2.png, id=827, 1158.57843pt x 740.0147pt>
 File: figure/theoreticalDiagram2.png Graphic file (type png)
 <use figure/theoreticalDiagram2.png>
 Package pdftex.def Info: figure/theoreticalDiagram2.png  used on input line 28.
@@ -2555,7 +2558,7 @@ d on input line 298.
 
 pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
 df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=931, 614.295pt x 794.97pt>
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=929, 614.295pt x 794.97pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf  used o
@@ -2569,7 +2572,7 @@ df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
 df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=933, page=1, 614.295pt x 79
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=931, page=1, 614.295pt x 79
 4.97pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
@@ -2699,12 +2702,12 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 320.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [56]
-<./figure/AppendixZ.pdf, id=1070, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1068, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf>
 Package pdftex.def Info: ./figure/AppendixZ.pdf  used on input line 334.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<./figure/AppendixZ.pdf, id=1072, page=1, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1070, page=1, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 1>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 334.
@@ -2754,7 +2757,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 334.
 [58
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1100, page=2, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1098, page=2, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 2>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
@@ -2781,7 +2784,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
 [59
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1106, page=3, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1104, page=3, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 3>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
@@ -2808,7 +2811,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
 [60
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1144, page=4, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1142, page=4, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 4>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
@@ -2835,7 +2838,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
 [61
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1153, page=5, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1151, page=5, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 5>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 334.
@@ -3167,7 +3170,7 @@ d on input line 343.
 \openout2 = `vita.aux'.
 
  (vita.tex
-<figure/vita_photo.pdf, id=1242, 150.5625pt x 150.5625pt>
+<figure/vita_photo.pdf, id=1240, 150.5625pt x 150.5625pt>
 File: figure/vita_photo.pdf Graphic file (type pdf)
 <use figure/vita_photo.pdf>
 Package pdftex.def Info: figure/vita_photo.pdf  used on input line 10.
@@ -3213,12 +3216,12 @@ d on input line 376.
 
 
 ]
-<article_forum_paper.pdf, id=1252, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1250, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf>
 Package pdftex.def Info: article_forum_paper.pdf  used on input line 383.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<article_forum_paper.pdf, id=1254, page=1, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1252, page=1, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
 Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
@@ -3250,7 +3253,7 @@ Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
 
 
  <./article_forum_paper.pdf>]
-<article_forum_paper.pdf, id=1287, page=2, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1285, page=2, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 2>
 Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
@@ -3286,15 +3289,18 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 34001CA5F27268A9A74544607152995B;11435.
+(rerunfilecheck)             Checksum: 2FF901F7F25960B0D8547483C1C41BB9;11435.
  ) 
 Here is how much of TeX's memory you used:
- 43285 strings out of 473530
- 769860 string characters out of 5714795
- 1638813 words of memory out of 5000000
- 64841 multiletter control sequences out of 15000+600000
- 613743 words of font info for 365 fonts, out of 8000000 for 9000
+ 43268 strings out of 473530
+ 769756 string characters out of 5714795
+ 1635470 words of memory out of 5000000
+ 64843 multiletter control sequences out of 15000+600000
+ 613029 words of font info for 353 fonts, out of 8000000 for 9000
  1149 hyphenation exceptions out of 8191
  114i,19n,110p,2737b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -3308,9 +3314,9 @@ KTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Kenan/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Kenan/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Kenan/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (82 pages, 2143879 bytes).
+Output written on document.pdf (82 pages, 2143538 bytes).
 PDF statistics:
- 1417 PDF objects out of 1440 (max. 8388607)
- 406 named destinations out of 1000 (max. 500000)
+ 1415 PDF objects out of 1440 (max. 8388607)
+ 405 named destinations out of 1000 (max. 500000)
  89294 words of extra memory for PDF output out of 106986 (max. 10000000)
 

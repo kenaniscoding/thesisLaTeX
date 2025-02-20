@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {1.4.3}Expected Deliverables}{7}{subsection.1.4.3}%
 \contentsline {section}{\numberline {1.5}Significance of the Study}{9}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Technical Benefit}{10}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Social Impact}{10}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.2}Social Impact}{11}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Environmental Welfare}{11}{subsection.1.5.3}%
 \contentsline {section}{\numberline {1.6}Assumptions, Scope, and Delimitations}{11}{section.1.6}%
 \contentsline {subsection}{\numberline {1.6.1}Assumptions}{11}{subsection.1.6.1}%
@@ -66,7 +66,7 @@
 \contentsline {section}{\numberline {7.2}Contributions}{42}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Recommendations}{42}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Future Prospects}{42}{section.7.4}%
-\contentsline {chapter}{References}{44}{chapter*.22}%
+\contentsline {chapter}{References}{44}{chapter*.20}%
 \contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{46}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{48}{appendix.B}%
 \contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{57}{appendix.C}%
