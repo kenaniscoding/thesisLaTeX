@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  12 MAR 2025 07:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  12 MAR 2025 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2024,7 +2024,7 @@ d on input line 210.
 \openout2 = `introduction.aux'.
 
  (introduction.tex
-<figure/fig1.png, id=543, 361.35pt x 214.22893pt>
+<figure/fig1.png, id=545, 361.35pt x 214.22893pt>
 File: figure/fig1.png Graphic file (type png)
 <use figure/fig1.png>
 Package pdftex.def Info: figure/fig1.png  used on input line 11.
@@ -2150,7 +2150,7 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 463.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [12]
-<figure/ganttchart.png, id=686, 776.04214pt x 194.8709pt>
+<figure/ganttchart.png, id=688, 776.04214pt x 194.8709pt>
 File: figure/ganttchart.png Graphic file (type png)
 <use figure/ganttchart.png>
 Package pdftex.def Info: figure/ganttchart.png  used on input line 480.
@@ -2318,7 +2318,7 @@ d on input line 233.
 \openout2 = `theoretical_considerations.aux'.
 
  (theoretical_considerations.tex
-<figure/theoreticalDiagram1.png, id=811, 848.4197pt x 653.44125pt>
+<figure/theoreticalDiagram1.png, id=813, 848.4197pt x 653.44125pt>
 File: figure/theoreticalDiagram1.png Graphic file (type png)
 <use figure/theoreticalDiagram1.png>
 Package pdftex.def Info: figure/theoreticalDiagram1.png  used on input line 11.
@@ -2335,7 +2335,7 @@ d on input line 19.
 [24
 
  <./figure/theoreticalDiagram1.png>]
-<figure/theoreticalDiagram2.png, id=817, 1158.57843pt x 740.0147pt>
+<figure/theoreticalDiagram2.png, id=819, 1158.57843pt x 740.0147pt>
 File: figure/theoreticalDiagram2.png Graphic file (type png)
 <use figure/theoreticalDiagram2.png>
 Package pdftex.def Info: figure/theoreticalDiagram2.png  used on input line 28.
@@ -2484,128 +2484,128 @@ LaTeX Warning: Reference `tab:outcomes_per_objective' on page 39 undefined on i
 nput line 7.
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 54--54
+Underfull \hbox (badness 2744) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) priority-based grad-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) and sort-ing sys-tem
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 54--54
+Underfull \hbox (badness 1253) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) for Carabao man-goes,
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 54--54
+Underfull \hbox (badness 6741) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) and com-puter vi-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) tech-niques to as-sess
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) ripeness, size, and
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []\OT1/ptm/m/n/9 (+20) SO3: To cre-ate a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) microcontroller-based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) sys-tem to op-er-ate
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 54--54
+Underfull \hbox (badness 2073) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) the im-age ac-qui-si-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) sys-tem, con-trol the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) con-veyor belt, and
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) data us-ing ma-chine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 \OT1/ptm/m/n/9 (+20) learn-ing al-go-rithms
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 54.
+LaTeX Warning: Reference `sec:implement' on page 39 undefined on input line 66.
 
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 54.
+d on input line 66.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [39
 
@@ -2614,7 +2614,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 54.
+d on input line 66.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [40])
 
@@ -2681,7 +2681,7 @@ d on input line 298.
 
 pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
 df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=954, 614.295pt x 794.97pt>
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=937, 614.295pt x 794.97pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf  used o
@@ -2695,7 +2695,7 @@ df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
 df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=956, page=1, 614.295pt x 79
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=939, page=1, 614.295pt x 79
 4.97pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
@@ -2825,12 +2825,12 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 320.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [57]
-<./figure/AppendixZ.pdf, id=1093, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1076, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf>
 Package pdftex.def Info: ./figure/AppendixZ.pdf  used on input line 334.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<./figure/AppendixZ.pdf, id=1095, page=1, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1078, page=1, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 1>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 334.
@@ -2880,7 +2880,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 334.
 [59
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1123, page=2, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1106, page=2, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 2>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
@@ -2907,7 +2907,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
 [60
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1129, page=3, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1112, page=3, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 3>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
@@ -2934,7 +2934,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
 [61
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1168, page=4, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1151, page=4, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 4>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
@@ -2961,7 +2961,7 @@ Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
 [62
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1176, page=5, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1159, page=5, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 5>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 334.
@@ -3293,7 +3293,7 @@ d on input line 343.
 \openout2 = `vita.aux'.
 
  (vita.tex
-<figure/vita_photo.pdf, id=1266, 150.5625pt x 150.5625pt>
+<figure/vita_photo.pdf, id=1249, 150.5625pt x 150.5625pt>
 File: figure/vita_photo.pdf Graphic file (type pdf)
 <use figure/vita_photo.pdf>
 Package pdftex.def Info: figure/vita_photo.pdf  used on input line 10.
@@ -3339,12 +3339,12 @@ d on input line 376.
 
 
 ]
-<article_forum_paper.pdf, id=1275, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1258, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf>
 Package pdftex.def Info: article_forum_paper.pdf  used on input line 383.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<article_forum_paper.pdf, id=1277, page=1, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1260, page=1, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
 Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
@@ -3376,7 +3376,7 @@ Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
 
 
  <./article_forum_paper.pdf>]
-<article_forum_paper.pdf, id=1310, page=2, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1293, page=2, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 2>
 Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
@@ -3416,11 +3416,11 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 86FBC552C5F9A62C2DFB185282C2559A;11243.
  ) 
 Here is how much of TeX's memory you used:
- 43312 strings out of 473530
- 770109 string characters out of 5714795
- 1635751 words of memory out of 5000000
+ 43297 strings out of 473530
+ 769995 string characters out of 5714795
+ 1635877 words of memory out of 5000000
  64845 multiletter control sequences out of 15000+600000
- 613505 words of font info for 361 fonts, out of 8000000 for 9000
+ 613624 words of font info for 363 fonts, out of 8000000 for 9000
  1149 hyphenation exceptions out of 8191
  114i,19n,110p,2737b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -3434,9 +3434,9 @@ KTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Kenan/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Kenan/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Kenan/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (83 pages, 2148740 bytes).
+Output written on document.pdf (83 pages, 2147294 bytes).
 PDF statistics:
- 1447 PDF objects out of 1728 (max. 8388607)
- 435 named destinations out of 1000 (max. 500000)
+ 1425 PDF objects out of 1440 (max. 8388607)
+ 417 named destinations out of 1000 (max. 500000)
  89278 words of extra memory for PDF output out of 106986 (max. 10000000)
 
