@@ -32,41 +32,114 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 			\hline
 			
 			\Paste{GO} & 
+			Expected Results:
 			\begin{enumerate}
-				\item Hardware design: Build an image acquisition system with a conveyor belt, LED lights, and Raspberry Pi Camera
-				\item Software design: Coded a Raspberry Pi application to grade and sort the Carabao mangoes
+				\item Successfully developed a user-priority-based grading and sorting system using machine learning and computer vision which can assess the mangoes’ ripeness, size and bruises.
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
+				\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
 			\end{enumerate} 
 			& Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO1} & \begin{enumerate}
-				\item Hardware implementation: Design and build an image acquisition system prototype 
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO1} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
+				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
+				\item Successfully fixed the hardware components in place
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
+				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
+				\item Need to fix the hardware components in place
+			\end{enumerate} 
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO2} & \begin{enumerate}
-				\item Performance testing: Train and test the machine learning algorithm for classifying bruises and ripeness
-				\item Data collection: Gather our own Carabao mango dataset together with an online dataset
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO2} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
+				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruises classification of Carabao mangoes
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
+				\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
+			\end{enumerate}
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO3} & \begin{enumerate}
-				\item Algorithm development: To develop a code for 
-				\item Hardware design: To design a schematic for the microcontroller based system 
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO3} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
+				\item Successfully mounted the image acquisition system on the the prototype
+				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
+				\item Temporarily mounted the image acquisition system on the the prototype
+				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
+			\end{enumerate}
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO4} & \begin{enumerate}
-				\item Formula development: Formulated an equation based on the inputted user priority and the predicted mango classification
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO4} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
+				\item Successfully verified with qualified individual the results 
+				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
+				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
+				\item Need to look for a qualified person to evaluate the graded mango for ground truth
+			\end{enumerate}
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO5} & \begin{enumerate}
-				\item Performance testing: Train and test the machine learning algorithm for classifying bruises
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO5} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Achieve at least 90\% accuracy on performance metrics
+				\item Obtain performance metrics for kNN, k-mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
+				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
+			\end{enumerate}
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO6} & \begin{enumerate}
-				\item Performance testing: Train and test the machine learning algorithm for classifying ripeness
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO6} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Successfully classified mango size using computer vision techniques
+				\item Successfully tuned to have an accurate size with an 80 percent accuracy rating
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully classified mango size using computer vision techniques
+				\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
+			\end{enumerate}
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
-			\Paste{SO7} & \begin{enumerate}
-				\item Accuracy testing: Get the percent accuracy testing for getting the length and width of the Carabao mango
-			\end{enumerate} & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			\Paste{SO7} & 
+			Expected Results:
+			\begin{enumerate}
+				\item Achieve at least 90\% accuracy on performance metrics
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+			\end{enumerate} 
+			Actual Results:
+			\begin{enumerate}
+				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
+				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
+			\end{enumerate}
+			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
 			
 		\end{tabularx}
 	}
