@@ -76,6 +76,13 @@ This study applies the experimental approach for research in order to develop an
 \section{Hardware Design} \label{sec:hardwareDesign}
 The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller (Raspberry Pi 4b), coordinating actions of all components. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient. 
 
+% PUT THE FOLLOWING IN THE METHODOLOGY
+% H bridge type connection with the two DC motors
+% 1:3 belt connection unless changed
+% Stepper Motor Specifications
+% https://www.makerlab-electronics.com/products/stepper-motor-nema-17-2600g-cm
+% https://lastminuteengineers.com/drv8825-stepper-motor-driver-arduino-tutorial/
+
 \section{Software Design} 
 For the programming language used for the prototype and training and testing the CNN model, Python was used for training and testing the CNN model and it was also used in the microcontroller to run the application containing the UI and CNN model. PyTorch was the main library used in using the EfficientNet model that is used in classifying the ripeness and bruises of the mango. Likewise, tkinter is the used library when designing the UI in Python.
 
@@ -119,18 +126,13 @@ A confusion matrix is used to measure correct and incorrect classification to en
 \subsection{Size Determination} \label{sec:sizeDetermination}
 
 \section{Formula for User Priority} \label{sec:formula}
+% The Formula for getting the linear formula for getting the grade for the mango
 
 \section{Ethical Considerations}
 Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
 
-%TODO
-% PUT THE FOLLOWING IN THE METHODOLOGY
-% H bridge type connection with the two DC motors
-% 1:3 belt connection unless changed
-% The Formula for getting the linear formula for getting the grade for the mango
-% Stepper Motor Specifications
-% https://www.makerlab-electronics.com/products/stepper-motor-nema-17-2600g-cm
-% https://lastminuteengineers.com/drv8825-stepper-motor-driver-arduino-tutorial/
+
+
 
 
 \section{Summary}
