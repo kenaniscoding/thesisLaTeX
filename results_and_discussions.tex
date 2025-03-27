@@ -1,10 +1,5 @@
 
-Show in this chapter proofs why your proposed solution works.  However, presenting results ("It worked") without an appropriate explanation does not show thorough understanding.  Aside from the data and results that you have obtained, and their explanation, the discussion includes why components of your proposed solution work did or did not work in accordance to what you described in the evaluation process, and how the proposed solution performed and faired. Interpret the results and the reasons why they were obtained.  If your results are incorrect, apparent discrepancies from theory should be pointed out and explained. In essence, what do the results mean?  Citing existing publication can help you compare your results and your explanations. 
-
-The next items below is not related to the description of this results and discussions chapter, but serves as an opener for the \LaTeX portion of this template.
-
-
-In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and completions in applying the methodology of the \documentType per objective. \begin{center}
+\begin{center}
 	{\scriptsize
 		\begin{tabularx}{\textwidth}{p{0.2\textwidth}|p{0.6\textwidth}|p{0.1\textwidth}}
 			\caption{Summary of methods for achieving the objectives} \label{tab:achieve_objective} \\
@@ -41,7 +36,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
 				\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
 			\end{enumerate} 
-			& Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			& Sec.~\ref{sec:summary_results_and_discussions} on p.~\pageref{sec:summary_results_and_discussions} \\ \hline
 			
 			\Paste{SO1} & 
 			Expected Results:
@@ -56,7 +51,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
 				\item Need to fix the hardware components in place
 			\end{enumerate} 
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO2} & 
 			Expected Results:
@@ -69,7 +64,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
 				\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
 			\end{enumerate}
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:main_trainAndTestResults} on p.~\pageref{sec:main_trainAndTestResults} \\ \hline
 			
 			\Paste{SO3} & 
 			Expected Results:
@@ -84,7 +79,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Temporarily mounted the image acquisition system on the the prototype
 				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
 			\end{enumerate}
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO4} & 
 			Expected Results:
@@ -99,7 +94,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
 				\item Need to look for a qualified person to evaluate the graded mango for ground truth
 			\end{enumerate}
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:userPriorityFormula} on p.~\pageref{sec:userPriorityFormula} \\ \hline
 			
 			\Paste{SO5} & 
 			Expected Results:
@@ -113,7 +108,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
 				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
 			\end{enumerate}
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:ripenessClassificationResults} on p.~\pageref{sec:ripenessClassificationResults} \\ \hline
 			
 			\Paste{SO6} & 
 			Expected Results:
@@ -126,7 +121,7 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Successfully classified mango size using computer vision techniques
 				\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
 			\end{enumerate}
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:sizeDeterminationResults} on p.~\pageref{sec:sizeDeterminationResults} \\ \hline
 			
 			\Paste{SO7} & 
 			Expected Results:
@@ -139,17 +134,24 @@ In aggregate form, Table~\ref{tab:methods_per_objective} shows the outcomes and 
 				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
 				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
 			\end{enumerate}
-			 & Sec.~\ref{sec:implement} on p.~\pageref{sec:implement} \\ \hline
+			 & Sec.~\ref{sec:bruisesClassificationResults} on p.~\pageref{sec:bruisesClassificationResults} \\ \hline
 			
 		\end{tabularx}
 	}
 \end{center}
 
-\section{Training and Testing Results of the Model}
+\section{Training and Testing Results of the Model} \label{sec:main_trainAndTestResults}
 
+\subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
 Add the f1-score and etc here
 
-\section{Physical Prototype}
+\subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
+
+\section{Size Determination Results} \label{sec:sizeDeterminationResults}
+
+\section{User Priority Formula} \label{sec:userPriorityFormula}
+
+\section{Physical Prototype} \label{sec:physicalPrototype}
 
 Add pictures of the hardware prototype here with description
 
@@ -157,6 +159,6 @@ Add pictures of the hardware prototype here with description
 
 Show the raspberry pi app UI and demonstrate it here 
 
-\section{Summary}
+\section{Summary} \label{sec:summary_results_and_discussions}
 
 Provide the gist of this chapter such that it reflects the contents and the message.

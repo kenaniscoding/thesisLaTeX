@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  26 MAR 2025 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  27 MAR 2025 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1701,6 +1701,9 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 LaTeX Warning: Label `tab:expected_deliverables' multiply defined.
 
+
+LaTeX Warning: Label `tab:expected_deliverables' multiply defined.
+
 ) (literature_review.aux) (theoretical_considerations.aux)
 (design_considerations.aux) (methodology.aux) (results_and_discussions.aux)
 (conclusions.aux) (answers_to_questions.aux) (revisions_to_the_final.aux)
@@ -1821,7 +1824,7 @@ Package hyperref Info: Link coloring ON on input line 146.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (format/pre_toc.ltx (format/titlep.ltx
-<figure/../format/DLSU_Logo.png, id=330, 158.994pt x 158.994pt>
+<figure/../format/DLSU_Logo.png, id=438, 158.994pt x 158.994pt>
 File: figure/../format/DLSU_Logo.png Graphic file (type png)
 <use figure/../format/DLSU_Logo.png>
 Package pdftex.def Info: figure/../format/DLSU_Logo.png  used on input line 7.
@@ -1854,7 +1857,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--113
 
 
 
-<figure/../format/dlsu_thesis_paper_letterhead.pdf, id=340, 614.295pt x 794.97p
+<figure/../format/dlsu_thesis_paper_letterhead.pdf, id=448, 614.295pt x 794.97p
 t>
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -1920,9 +1923,17 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 65.
+d on input line 66.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[5])
+[5]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 102.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[6])
 \tf@toc=\write10
 \openout10 = `document.toc'.
 
@@ -1934,7 +1945,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 156.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[6] (document.lof)
+[7] (document.lof)
 \tf@lof=\write11
 \openout11 = `document.lof'.
 
@@ -1946,7 +1957,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 160.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[7
+[8
 
 ] (document.lot)
 \tf@lot=\write12
@@ -1960,7 +1971,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 164.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[8
+[9
 
 ]
 
@@ -1969,17 +1980,6 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 173.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[9
-
-
-]
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 186.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [10
 
@@ -1990,9 +1990,20 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 195.
+d on input line 186.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [11
+
+
+]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 195.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[12
 
 
 ] (document.lol)
@@ -2007,7 +2018,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 199.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[12
+[13
 
 ]
 
@@ -2024,7 +2035,7 @@ d on input line 210.
 \openout2 = `introduction.aux'.
 
  (introduction.tex
-<figure/fig1.png, id=587, 361.35pt x 214.22893pt>
+<figure/fig1.png, id=725, 361.35pt x 214.22893pt>
 File: figure/fig1.png Graphic file (type png)
 <use figure/fig1.png>
 Package pdftex.def Info: figure/fig1.png  used on input line 11.
@@ -2098,7 +2109,7 @@ ine learning algorithms such as kNN, k-mean, and Naïve Bayes. }
 \clipboard {SO7}{SO7: To classify mango bruises based on image data by employin
 g machine learning algorithms.}
 
-Underfull \hbox (badness 1917) in paragraph at lines 237--237
+Underfull \hbox (badness 1917) in paragraph at lines 127--127
 []\OT1/ptm/m/n/9 (+20) GO: To de-velop a user-priority-
  []
 
@@ -2108,14 +2119,14 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 287.
+d on input line 177.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [7]
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 287.
+d on input line 177.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [8]
 
@@ -2123,7 +2134,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 373.
+d on input line 192.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [9]
 
@@ -2131,7 +2142,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 399.
+d on input line 218.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [10]
 
@@ -2139,7 +2150,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 436.
+d on input line 255.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [11]
 
@@ -2147,13 +2158,13 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 463.
+d on input line 282.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [12]
-<figure/ganttchart.png, id=730, 776.04214pt x 194.8709pt>
+<figure/ganttchart.png, id=869, 776.04214pt x 194.8709pt>
 File: figure/ganttchart.png Graphic file (type png)
 <use figure/ganttchart.png>
-Package pdftex.def Info: figure/ganttchart.png  used on input line 480.
+Package pdftex.def Info: figure/ganttchart.png  used on input line 299.
 (pdftex.def)             Requested size: 429.3521pt x 107.81267pt.
 
 
@@ -2161,7 +2172,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 497.
+d on input line 316.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [13 <./figure/ganttchart.png>])
 
@@ -2318,7 +2329,7 @@ d on input line 233.
 \openout2 = `theoretical_considerations.aux'.
 
  (theoretical_considerations.tex
-<figure/theoreticalDiagram1.png, id=855, 848.4197pt x 653.44125pt>
+<figure/theoreticalDiagram1.png, id=993, 848.4197pt x 653.44125pt>
 File: figure/theoreticalDiagram1.png Graphic file (type png)
 <use figure/theoreticalDiagram1.png>
 Package pdftex.def Info: figure/theoreticalDiagram1.png  used on input line 11.
@@ -2335,21 +2346,21 @@ d on input line 19.
 [24
 
  <./figure/theoreticalDiagram1.png>]
-<figure/theoreticalDiagram2.png, id=861, 1158.57843pt x 740.0147pt>
+<figure/theoreticalDiagram2.png, id=1000, 1158.57843pt x 740.0147pt>
 File: figure/theoreticalDiagram2.png Graphic file (type png)
 <use figure/theoreticalDiagram2.png>
 Package pdftex.def Info: figure/theoreticalDiagram2.png  used on input line 28.
 
 (pdftex.def)             Requested size: 214.67604pt x 137.11511pt.
-)
+
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 233.
+d on input line 38.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[25 <./figure/theoreticalDiagram2.png>]
+[25 <./figure/theoreticalDiagram2.png>])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2378,7 +2389,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 10.
+d on input line 12.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [28
 
@@ -2388,7 +2399,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 16.
+d on input line 37.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [29]
 
@@ -2396,15 +2407,15 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 26.
+d on input line 42.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[30])
+[30]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 244.
+d on input line 55.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [31]
 
@@ -2412,9 +2423,25 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 69.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[32])
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 244.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[33]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 255.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[32
+[34
 
 
 
@@ -2527,7 +2554,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 66.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[33
+[35
 
 ]
 
@@ -2537,7 +2564,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 70.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[34]
+[36]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2545,7 +2572,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 78.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[35]
+[37]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2553,7 +2580,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 86.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[36]
+[38]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2561,7 +2588,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 93.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[37]
+[39]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2569,7 +2596,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 115.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[38])
+[40])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2577,7 +2604,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 255.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[39]
+[41]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2585,7 +2612,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 255.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[40]
+[42]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2593,7 +2620,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 267.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[41
+[43
 
 
 
@@ -2601,196 +2628,138 @@ d on input line 267.
 \openout2 = `results_and_discussions.aux'.
 
  (results_and_discussions.tex
-
-LaTeX Warning: Reference `tab:methods_per_objective' on page 42 undefined on in
-put line 7.
-
-
-Underfull \hbox (badness 2744) in paragraph at lines 144--144
+Underfull \hbox (badness 2744) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) priority-based grad-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) and sort-ing sys-tem
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 144--144
+Underfull \hbox (badness 1253) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) for Carabao man-goes,
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 144--144
+Underfull \hbox (badness 6741) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) and com-puter vi-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) tech-niques to as-sess
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) ripeness, size, and
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 []\OT1/ptm/m/n/9 (+20) SO3: To cre-ate a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) microcontroller-based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) sys-tem to op-er-ate
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 144--144
+Underfull \hbox (badness 2073) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) the im-age ac-qui-si-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) sys-tem, con-trol the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) con-veyor belt, and
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) data us-ing ma-chine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) learn-ing al-go-rithms
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]\OT1/ptm/m/n/9 (+20) Sec. [][]6.1.1[][]
+ []
 
 
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-Underfull \hbox (badness 2837) in paragraph at lines 144--144
+Underfull \hbox (badness 2837) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) width us-ing OpenCV,
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 144--144
+Underfull \hbox (badness 2856) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) ge-om-e-try, and im-age
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 144--144
+Underfull \hbox (badness 2452) in paragraph at lines 139--139
 \OT1/ptm/m/n/9 (+20) bruises based on im-
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
-
-
-LaTeX Warning: Reference `sec:implement' on page 42 undefined on input line 144
-.
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]\OT1/ptm/m/n/9 (+20) Sec. [][]6.1.2[][]
+ []
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 144.
+d on input line 139.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[42
+[44
 
 ]
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 144.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [43]
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 144.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [44]
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 144.
+d on input line 139.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
  [45]
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
 <use figure/../format/dlsu_thesis_paper_letterhead.pdf>
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 144.
+d on input line 139.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [46])
+ [46]
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 139.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+ [47]
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 157.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[48])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2798,15 +2767,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 267.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[47]
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 267.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[48]
+[49]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2814,7 +2775,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 280.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[49
+[50
 
 
 
@@ -2829,7 +2790,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 31.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[50
+[51
 
 ])
 
@@ -2839,7 +2800,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 280.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[51] (document.bbl
+[52] (document.bbl
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2847,7 +2808,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 95.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[52
+[53
 
 
 
@@ -2859,11 +2820,11 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 298.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[53]
+[54]
 
-pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
-df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=1077, 614.295pt x 794.97pt>
+pdfTeX warning: pdflatex (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=1252, 614.295pt x 794.97pt>
 
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>
@@ -2872,13 +2833,13 @@ n input line 313.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
-df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex.exe (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.p
-df): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=1079, page=1, 614.295pt x 7
+pdfTeX warning: pdflatex (file ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, id=1254, page=1, 614.295pt x 7
 94.97pt>
 File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 <use ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf, page 1>
@@ -2898,7 +2859,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 313.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[54
+[55
 
 
 ]
@@ -2925,7 +2886,7 @@ File: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf , page1
  used on input line 313.
 (pdftex.def)             Requested size: 460.72011pt x 596.22604pt.
-[55
+[56
 
  <./figure/STUDENT_RESEARCH_ETHICS_CLEARANCE.pdf>]
 
@@ -2935,7 +2896,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 320.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[56
+[57
 
 
 ]
@@ -2949,7 +2910,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 21.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[57
+[58
 
 ]
 
@@ -2959,7 +2920,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 43.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[58]
+[59]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2967,7 +2928,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 61.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[59]
+[60]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2975,7 +2936,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 80.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[60]
+[61]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2983,7 +2944,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 96.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[61]
+[62]
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -2991,15 +2952,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 115.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[62])
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 320.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[63]
+[63])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -3008,12 +2961,20 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 320.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 [64]
-<./figure/AppendixZ.pdf, id=1216, 597.50829pt x 845.0471pt>
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 320.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+[65]
+<./figure/AppendixZ.pdf, id=1390, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf>
 Package pdftex.def Info: ./figure/AppendixZ.pdf  used on input line 334.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<./figure/AppendixZ.pdf, id=1218, page=1, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1392, page=1, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 1>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 334.
@@ -3032,7 +2993,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 334.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[65
+[66
 
 
 
@@ -3060,45 +3021,18 @@ File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page1 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
-[66
-
- <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1246, page=2, 597.50829pt x 845.0471pt>
-File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 2>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
-
-(pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
-File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 2>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
-
-(pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
-
-
-File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
-
-<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
-Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
-d on input line 334.
-(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 2>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
-
-(pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 [67
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1253, page=3, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1421, page=2, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 3>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
+<use ./figure/AppendixZ.pdf, page 2>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 3>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
+<use ./figure/AppendixZ.pdf, page 2>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 
@@ -3110,22 +3044,22 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 334.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 3>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
+<use ./figure/AppendixZ.pdf, page 2>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page2 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 [68
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1291, page=4, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1427, page=3, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 4>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
+<use ./figure/AppendixZ.pdf, page 3>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 4>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
+<use ./figure/AppendixZ.pdf, page 3>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 
@@ -3137,14 +3071,41 @@ Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 334.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
-<use ./figure/AppendixZ.pdf, page 4>
-Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
+<use ./figure/AppendixZ.pdf, page 3>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page3 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
 [69
 
  <./figure/AppendixZ.pdf>]
-<./figure/AppendixZ.pdf, id=1299, page=5, 597.50829pt x 845.0471pt>
+<./figure/AppendixZ.pdf, id=1465, page=4, 597.50829pt x 845.0471pt>
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 4>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
+
+(pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 4>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
+
+(pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
+
+
+File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
+
+<use figure/../format/dlsu_thesis_paper_letterhead.pdf>
+Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
+d on input line 334.
+(pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
+File: ./figure/AppendixZ.pdf Graphic file (type pdf)
+<use ./figure/AppendixZ.pdf, page 4>
+Package pdftex.def Info: ./figure/AppendixZ.pdf , page4 used on input line 334.
+
+(pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
+[70
+
+ <./figure/AppendixZ.pdf>]
+<./figure/AppendixZ.pdf, id=1473, page=5, 597.50829pt x 845.0471pt>
 File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 <use ./figure/AppendixZ.pdf, page 5>
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 334.
@@ -3168,7 +3129,7 @@ File: ./figure/AppendixZ.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figure/AppendixZ.pdf , page5 used on input line 334.
 
 (pdftex.def)             Requested size: 448.13011pt x 633.78378pt.
-[70
+[71
 
  <./figure/AppendixZ.pdf>]
 
@@ -3178,7 +3139,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 343.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[71
+[72
 
 
 ]
@@ -3210,25 +3171,25 @@ Underfull \hbox (badness 1496) in paragraph at lines 71--71
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
@@ -3257,25 +3218,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--71
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
@@ -3309,25 +3270,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--71
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
@@ -3356,25 +3317,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--71
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
@@ -3403,25 +3364,25 @@ Underfull \hbox (badness 6157) in paragraph at lines 71--71
  []
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:implement' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:implement' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `sec:evaluate' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `sec:evaluate' on page 73 undefined on input line 71.
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
-LaTeX Warning: Reference `fig:exampletc' on page 72 undefined on input line 71.
+LaTeX Warning: Reference `fig:exampletc' on page 73 undefined on input line 71.
 
 
 
@@ -3455,7 +3416,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 71.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[72
+[73
 
 ]
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
@@ -3464,7 +3425,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 71.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
- [73])
+ [74])
 
 File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 
@@ -3472,11 +3433,11 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 343.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[74]
+[75]
 \openout2 = `vita.aux'.
 
  (vita.tex
-<figure/vita_photo.pdf, id=1389, 150.5625pt x 150.5625pt>
+<figure/vita_photo.pdf, id=1563, 150.5625pt x 150.5625pt>
 File: figure/vita_photo.pdf Graphic file (type pdf)
 <use figure/vita_photo.pdf>
 Package pdftex.def Info: figure/vita_photo.pdf  used on input line 10.
@@ -3501,7 +3462,7 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 364.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[75
+[76
 
 
 
@@ -3517,17 +3478,17 @@ File: figure/../format/dlsu_thesis_paper_letterhead.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/../format/dlsu_thesis_paper_letterhead.pdf  use
 d on input line 376.
 (pdftex.def)             Requested size: 614.31223pt x 794.99231pt.
-[76
+[77
 
 
 
 ]
-<article_forum_paper.pdf, id=1398, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1572, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf>
 Package pdftex.def Info: article_forum_paper.pdf  used on input line 383.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<article_forum_paper.pdf, id=1400, page=1, 614.295pt x 794.97pt>
+<article_forum_paper.pdf, id=1574, page=1, 614.295pt x 794.97pt>
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
 Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
@@ -3553,37 +3514,40 @@ Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
 File: article_forum_paper.pdf Graphic file (type pdf)
 <use article_forum_paper.pdf, page 1>
 Package pdftex.def Info: article_forum_paper.pdf , page1 used on input line 383
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-[77
-
-
- <./article_forum_paper.pdf>]
-<article_forum_paper.pdf, id=1433, page=2, 614.295pt x 794.97pt>
-File: article_forum_paper.pdf Graphic file (type pdf)
-<use article_forum_paper.pdf, page 2>
-Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: article_forum_paper.pdf Graphic file (type pdf)
-<use article_forum_paper.pdf, page 2>
-Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
-.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-File: article_forum_paper.pdf Graphic file (type pdf)
-<use article_forum_paper.pdf, page 2>
-Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
 .
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 [78
 
- <./article_forum_paper.pdf>] (document.aux (introduction.aux)
-(literature_review.aux) (theoretical_considerations.aux)
-(design_considerations.aux) (methodology.aux) (results_and_discussions.aux)
-(conclusions.aux) (answers_to_questions.aux) (revisions_to_the_final.aux)
-(vita.aux))
+
+ <./article_forum_paper.pdf>]
+<article_forum_paper.pdf, id=1608, page=2, 614.295pt x 794.97pt>
+File: article_forum_paper.pdf Graphic file (type pdf)
+<use article_forum_paper.pdf, page 2>
+Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: article_forum_paper.pdf Graphic file (type pdf)
+<use article_forum_paper.pdf, page 2>
+Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+File: article_forum_paper.pdf Graphic file (type pdf)
+<use article_forum_paper.pdf, page 2>
+Package pdftex.def Info: article_forum_paper.pdf , page2 used on input line 383
+.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+[79
+
+ <./article_forum_paper.pdf>]
+
+Package datagidx Warning: Rerun required to sort the index/glossary databases.
+
+(document.aux (introduction.aux) (literature_review.aux)
+(theoretical_considerations.aux) (design_considerations.aux) (methodology.aux)
+(results_and_discussions.aux) (conclusions.aux) (answers_to_questions.aux)
+(revisions_to_the_final.aux) (vita.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -3596,16 +3560,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: F5B789524A96F72C32612EC27AE9A08E;12716.
+(rerunfilecheck)             Checksum: DD69EF9D6F1A5E722262A923AC73A096;16861.
  ) 
 Here is how much of TeX's memory you used:
- 43395 strings out of 473530
- 770979 string characters out of 5714795
- 1640434 words of memory out of 5000000
- 64863 multiletter control sequences out of 15000+600000
- 614695 words of font info for 381 fonts, out of 8000000 for 9000
+ 43447 strings out of 473530
+ 771992 string characters out of 5714795
+ 1639370 words of memory out of 5000000
+ 64893 multiletter control sequences out of 15000+600000
+ 613485 words of font info for 378 fonts, out of 8000000 for 9000
  1149 hyphenation exceptions out of 8191
- 114i,19n,110p,2737b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,19n,110p,2737b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi12.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr12.pfb><C:/Users/Kenan/AppData/Local/Programs/MiKTeX/fonts/type1/pu
@@ -3617,9 +3581,9 @@ KTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Kenan/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Kenan/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Kenan/AppData/Local/Program
 s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (90 pages, 2173728 bytes).
+Output written on document.pdf (92 pages, 2196295 bytes).
 PDF statistics:
- 1577 PDF objects out of 1728 (max. 8388607)
- 470 named destinations out of 1000 (max. 500000)
- 89342 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1756 PDF objects out of 2073 (max. 8388607)
+ 497 named destinations out of 1000 (max. 500000)
+ 87510 words of extra memory for PDF output out of 89155 (max. 10000000)
 
