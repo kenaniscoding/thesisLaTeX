@@ -150,7 +150,13 @@ Add the f1-score and etc here
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
 
 \section{User Priority Formula} \label{sec:userPriorityFormula}
-
+\gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the user priorities for bruises, ripeness, and size of the Carabao mango. 
+Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
+The formula for the user priority is given by:
+\begin{equation}
+	\label{eq:userPriority}
+	\text{User Priority} = \frac{b \left( P \right) + r \left( P \right) + s \left( P \right)}{3}
+\end{equation}
 \section{Physical Prototype} \label{sec:physicalPrototype}
 
 Add pictures of the hardware prototype here with description
