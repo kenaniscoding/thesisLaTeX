@@ -27,6 +27,26 @@ The hardware components include high-resolution cameras, lighting systems for co
 \end{figure}
 The Raspberry Pi 4 Model B is a compact, low-cost computer that serves as the system's main processing unit. 
 It is chosen for its balance of performance and affordability, making it suitable for real-time image processing tasks.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item SoC: Broadcom BCM2711
+    \item CPU: Quad-core ARM Cortex-A72 (64-bit)
+    \item Clock Speed: 1.5 GHz (base, overclockable)
+    \item RAM: 8GB LPDDR4-3200 SDRAM
+    \item Wireless: Dual-band 2.4 GHz / 5 GHz Wi-Fi (802.11ac)
+    \item Bluetooth: Bluetooth 5.0 (BLE support)
+    \item Ethernet: Gigabit Ethernet (full throughput)
+    \item USB: 2 x USB 3.0 ports and 2 x USB 2.0 ports
+    \item Video Output: 2 x micro-HDMI ports (supports 4K @ 60Hz, dual 4K display capability)
+    \item Audio: 3.5mm audio/video composite jack
+    \item Storage: MicroSD card slot (supports booting via SD card or USB)
+    \item GPIO: 40-pin GPIO header (backward-compatible with older models)
+    \item Camera/Display: CSI (camera) and DSI (display) ports
+    \item Power Input: USB-C (5V/3A recommended)
+    \item Power Consumption: ~3W idle, up to 7.5W under load
+\end{itemize}
 
 \subsubsection{Raspberry Pi Camera}
 \begin{figure}[!htbp]
@@ -35,6 +55,21 @@ It is chosen for its balance of performance and affordability, making it suitabl
 	\caption{Raspberry Pi Camera Module Version 2}
 	\label{fig:rpi_cam_fig}
 \end{figure}
+This is the description of the raspberry pi camera.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item Sensor: Sony IMX219PQ 8-megapixel CMOS sensor.
+    \item Still Images Resolution: 8 MP (3280 x 2464 pixels).
+    \item Video Resolution: Supports up to 1080p @ 30fps, 720p @ 60fps, and 480p @ 90fps.
+    \item Focus: Fixed-focus lens (manual focus adjustment not supported without physical modification).
+    \item Lens Size: 1/4-inch optical format.
+    \item Field of View (FoV): Diagonal 62.2 degrees.
+    \item Interface: Connected via 15-pin ribbon cable to the Raspberry Pi's CSI (Camera Serial Interface) port.
+    \item APIs/Libraries: Supports Python libraries such as Picamera and OpenCV for image capture and processing.
+    \item Dimensions: 25 mm x 24 mm x 9 mm.
+\end{itemize}
 
 \subsubsection{DC Motor}
 \begin{figure}[!htbp]
@@ -43,6 +78,23 @@ It is chosen for its balance of performance and affordability, making it suitabl
 	\caption{12 Volt DC Gear Motor}
 	\label{fig:dc_motor_fig}
 \end{figure}
+This is the description of the dc motor.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item Gearbox Type: Spur gear design
+    \item Operating Voltage: 12V (operational range: 6-12V)
+    \item No-load Current Consumption: 0.8A
+    \item Rated Current Draw: 3A (under standard load)
+    \item No-load Speed: 282 RPM (maximum)
+    \item Operating Speed: 248 RPM (under rated load)
+    \item Torque Output: 18 kg-cm (rated)
+    \item Stall Torque: 60 kg-cm (maximum)
+    \item Power Rating: 50W (maximum)
+    \item Unit Weight: 350 grams
+\end{itemize}
+
 
 \subsubsection{MicroSD Card}
 \begin{figure}[!htbp]
@@ -51,7 +103,16 @@ It is chosen for its balance of performance and affordability, making it suitabl
 	\caption{SanDisk Ultra MicroSD Card}
 	\label{fig:sdCard_fig}
 \end{figure}
-
+This is the description of the sd card.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item Capacity: 256GB
+    \item Type: MicroSDXC (Secure Digital eXtended Capacity)
+    \item Form Factor: MicroSD (11mm x 15mm x 1mm)
+    \item File System: Pre-formatted exFAT (supports large files >4GB).
+\end{itemize}
 
 \subsubsection{LED Lights}
 \gls{led} lights are used to provide consistent lighting for image capture, ensuring accurate color representation and feature extraction.
@@ -63,7 +124,22 @@ It is chosen for its balance of performance and affordability, making it suitabl
 	\caption{Bench Power Supply}
 	\label{fig:Power_Supply_fig}
 \end{figure}
-
+This is the description of the bench power supply.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item Type: SMPS (Switch-Mode Power Supply)
+    \item Input: 110V AC, 50/60Hz (U.S. Standard)
+    \item Output Range: 0-30V DC / 0-5A DC
+    \item Voltage Precision: ±0.010V (10 mV) resolution
+    \item Current Precision: ±0.001A (1 mA) resolution
+    \item Power Precision: ±0.1W resolution
+    \item Weight: 5 lbs (2.27 kg)
+    \item Dimensions: 11.1" x 4.92" x 6.14" (28.2 cm x 12.5 cm x 15.6 cm)
+    \item Maximum Power: 195W
+    \item Power Source: AC input only
+\end{itemize}
 
 \subsubsection{4 Channel Relay Module}
 \begin{figure}[!htbp]
@@ -72,7 +148,23 @@ It is chosen for its balance of performance and affordability, making it suitabl
 	\caption{4 Channel Relay Module}
 	\label{fig:relay_module_fig}
 \end{figure}
-
+This is the description of the 4 channel relay module.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item Operating Voltage: 5V DC (compatible with Arduino, Raspberry Pi, and other microcontrollers).
+    \item Number of Relays: 4 independent channels.
+    \item Relay Type: Electromechanical (mechanical switching).
+    \item Max AC Load: 10A @ 250V AC (resistive).
+    \item Max DC Load: 10A @ 30V DC (resistive).
+    \item Contact Type: SPDT (Single Pole Double Throw) - NO (Normally Open), NC (Normally Closed), COM (Common).
+    \item Dimensions: ~50mm x 70mm x 20mm 
+    \item Weight: ~50-80 grams.
+    \item Status LEDs: Individual LEDs for each relay (indicates ON/OFF state).
+    \item Input Pins: 4 digital control pins (one per relay).
+    \item Output Terminals: Screw terminals for connecting loads (NO/NC/COM).
+\end{itemize}
 
 \section{Software Considerations}
 The software stack includes Python for programming PyTorch for machine learning and OpenCV for image processing. These tools are selected for their robustness, ease of use, and extensive community support, ensuring efficient system development.
