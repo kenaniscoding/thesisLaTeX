@@ -26,7 +26,9 @@ The hardware components include high-resolution cameras, lighting systems for co
 	\label{fig:rpi4b_fig}
 \end{figure}
 The Raspberry Pi 4 Model B is a compact, low-cost computer that serves as the system's main processing unit. 
-It is chosen for its balance of performance and affordability, making it suitable for real-time image processing tasks.
+It was chosen for its balance of performance and affordability, making it suitable for image processing tasks.
+Furthermore, it was selected for its compatibility with various peripherals through the GPIO pins and USB-A ports together
+with its ease of integration into the prototype.
 \\
 \\
 \textbf{Specifications:}
@@ -55,7 +57,12 @@ It is chosen for its balance of performance and affordability, making it suitabl
 	\caption{Raspberry Pi Camera Module Version 2}
 	\label{fig:rpi_cam_fig}
 \end{figure}
-This is the description of the raspberry pi camera.
+The Raspberry Pi Camera Module Version 2 is a high-quality camera module designed for the Raspberry Pi platform.
+Likewise, it is capable of capturing still images at 8 megapixels, and supports video recording at 1080p @ 30fps, 
+720p @ 60fps, and 480p @ 90fps. 
+Moreover, it has a fixed-focus lens with a diagonal field of view of 62.2 degrees, and an optical format of 1/4 inch. 
+Furthermore, it supports various Python libraries such as Picamera and OpenCV for image capture and processing.
+As such, it was selected for its compact size, ease of integration, and ability to capture high-resolution images. 
 \\
 \\
 \textbf{Specifications:}
@@ -78,7 +85,13 @@ This is the description of the raspberry pi camera.
 	\caption{12 Volt DC Gear Motor}
 	\label{fig:dc_motor_fig}
 \end{figure}
-This is the description of the dc motor.
+The 12 Volt DC Gear Motor is a compact, high-torque, and low-noise motor suitable for a 
+wide range of applications, including robotics, automation, and industrial control systems. 
+It features a spur gear design, which provides a high reduction ratio for increased torque output. 
+The motor is designed for continuous operation and has a low power consumption under standard load 
+conditions. Likewise, it is also capable of withstanding high temperatures and has a high reliability.
+This motor was selected for its high torque output, low power consumption, and compact size, 
+making it ideal for the conveyor system.
 \\
 \\
 \textbf{Specifications:}
@@ -103,7 +116,11 @@ This is the description of the dc motor.
 	\caption{SanDisk Ultra MicroSD Card}
 	\label{fig:sdCard_fig}
 \end{figure}
-This is the description of the sd card.
+The SanDisk Ultra MicroSD Card is a compact, high-capacity, and secure digital memory card 
+that is suitable for a wide range of applications, including digital cameras, smartphones, and tablets.
+It features a high-speed data transfer rate, making it ideal for storing large files such as images and videos.
+This card was selected for its high capacity, secure data protection, and ease of use,
+making it ideal for the storage system for the prototype. 
 \\
 \\
 \textbf{Specifications:}
@@ -111,11 +128,32 @@ This is the description of the sd card.
     \item Capacity: 256GB
     \item Type: MicroSDXC (Secure Digital eXtended Capacity)
     \item Form Factor: MicroSD (11mm x 15mm x 1mm)
-    \item File System: Pre-formatted exFAT (supports large files >4GB).
+    \item File System: Pre-formatted exFAT
 \end{itemize}
 
 \subsubsection{LED Lights}
-\gls{led} lights are used to provide consistent lighting for image capture, ensuring accurate color representation and feature extraction.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{led}
+	\caption{LED Light Strip}
+	\label{fig:led_fig}
+\end{figure}
+For the \gls{LED}, they were used to provide consistent lighting for image capture, ensuring accurate color representation and feature extraction.
+The LED lights were selected for their energy efficiency, long lifespan, and ability to produce a uniform light output.
+\\
+\\
+\textbf{Specifications:}
+\begin{itemize}
+    \item Power Input: 5V DC (USB-powered, compatible with laptops, power banks, or USB adapters).
+    \item Waterproof Design: Suitable for indoor/outdoor use.
+    \item LED Type: SMD 2835 (surface-mount diodes for high brightness and efficiency).
+    \item Color Type: White (cool white)
+    \item Length: 1m 
+    \item Beam Angle: 120°
+    \item Operating Temperature: -25°C to 60°C.
+    \item Storage Temperature: -40°C to 80°C.
+\end{itemize}
+
 
 \subsubsection{Power Supply}
 \begin{figure}[!htbp]
@@ -124,7 +162,11 @@ This is the description of the sd card.
 	\caption{Bench Power Supply}
 	\label{fig:Power_Supply_fig}
 \end{figure}
-This is the description of the bench power supply.
+The bench power supply is a versatile and adjustable power source used to 
+provide stable voltage and current for various electronic projects.
+It is designed for testing applications, allowing users to set specific voltage and current levels.
+This power supply was selected for its versatility, 
+ease of use, and ability to provide accurate voltage and current control for the prototype.
 \\
 \\
 \textbf{Specifications:}
@@ -148,7 +190,11 @@ This is the description of the bench power supply.
 	\caption{4 Channel Relay Module}
 	\label{fig:relay_module_fig}
 \end{figure}
-This is the description of the 4 channel relay module.
+The 4 Channel Relay Module is a compact and versatile relay 
+board that allows for the control of multiple devices using a single microcontroller.
+This module was selected for its compact size, ease of use, and ability to control multiple devices simultaneously.
+It is designed to be used with microcontrollers such as Arduino and Raspberry Pi,
+allowing for easy integration into the prototype.
 \\
 \\
 \textbf{Specifications:}
@@ -184,8 +230,8 @@ Potential vulnerabilities, such as data corruption during image capture, are add
 The system is designed to handle large volumes of mangoes by optimizing the machine learning model and using parallel processing techniques. Efficiency is improved through techniques like model quantization and hardware acceleration.
 
 \section{User Interface}
-A \gls{ui} is designed to display grading results, system status. Wireframes illustrate the layout, ensuring usability and accessibility for operators. 
-Likewise, a \gls{gui} is also used to allow users to customize the system's grading priorities.
+A \gls{UI} is designed to display grading results, system status. Wireframes illustrate the layout, ensuring usability and accessibility for operators. 
+Likewise, a \gls{GUI} is also used to allow users to customize the system's grading priorities.
 
 \section{Constraints and Limitations}
 Challenges include variations in mango appearance due to lighting and environmental factors. Trade-offs are made between model complexity and real-time performance to balance accuracy and speed.
