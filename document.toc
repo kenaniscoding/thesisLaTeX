@@ -105,7 +105,7 @@
 \contentsline {section}{\numberline {7.2}Contributions}{64}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Recommendations}{64}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Future Prospects}{64}{section.7.4}%
-\contentsline {chapter}{References}{66}{chapter*.32}%
+\contentsline {chapter}{References}{66}{chapter*.33}%
 \contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{68}{appendix.A}%
 \contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{70}{appendix.B}%
 \contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{79}{appendix.C}%
