@@ -25,6 +25,30 @@ to capture mango images, while the preprocessing module enhances image quality f
 	\label{fig:h_bridge_fig}
 \end{figure}
 
+In figure \ref{fig:h_bridge_fig} presents the electronic circuit diagram,
+designed using Proteus. The diagram illustrates a system where a Raspberry Pi 4
+serves as the central control unit, managing four motors through a relay
+mechanism. The Raspberry Pi 4, represented by a rectangular box on the left,
+showcases various pin connections, including GPIO pins, power supply pins (5V
+and 3V3), ground pins (GND), and communication pins (TXD, RXD, SDA, SCL).
+
+In the center of the diagram, an 18-pin integrated circuit labeled "ULN2803A" is
+depicted. This component, a Darlington transistor array, likely functions as a
+buffer, providing the necessary current to drive the relays. Four relays,
+designated as RL1, RL2, RL3, and RL4, are positioned on the right side of the
+diagram, each connected to a motor (represented by a circle with an "M" inside)
+and a +12V power source. Additionally, four resistors are placed between the
+ULN2803A and the relays, serving to limit current. The circuit section
+containing these resistors is labeled "4 Channel Relay Driver," indicating its
+purpose.
+
+The camera module is labeled "PICAMERA" is located in the top center of the
+diagram. It is represented by a square with a circle inside, symbolizing the
+camera lens. The camera module is connected to the Raspberry Pi 4 through the
+CSI (Camera Serial Interface) pins. The overall circuit is designed for a 12V
+system, with the +12V power supply indicated at various points. The Raspberry Pi
+4's GPIO pins are used to control the relays.
+
 \section{Hardware Considerations}
 The hardware components include high-resolution cameras, lighting systems for consistent image capture, and 
 microcontrollers like Raspberry Pi or Arduino for system control, actuators like DC and stepper motors to move 

@@ -13,17 +13,28 @@ Likewise, the purpose of this chapter is to go through the important theories in
 	\label{fig:theoreticalDiagram1}
 \end{figure}
 
-
-The theoretical framework seen in figure x revolves around the concepts that revolve around the research topic. 
-Embedded systems include the Raspberry Pi, which is the microcontroller that will be the brain of the system, 
-\gls{DC} motors, 4 channel relays, and the conveyor belt. The machine learning portion includes a neural network 
-model, namely the Convolutional Neural Network, which will use computer vision as a method of seeing and classifying
- the mangoes based on their physical traits. The image processing will include methods such as size calculation and 
- background removal using OpenCV. Lastly, the Carabao mango will be the test subject of the system.
+The theoretical framework seen in figure \ref{fig:theoreticalDiagram1} 
+follows the IPO (Input-Process-Output) Model for a Carabao Mango Sorting
+System. The Input section includes user-defined priority values for size,
+ripeness, and bruises, along with a single mango for analysis. The Process
+section highlights the use of a machine learning algorithm and a
+user-priority-based formula to classify the mango. The Output consists of the
+mango’s grade, predicted size, ripeness, and bruises. Below the IPO model, the
+diagram categorizes variables into three groups: Independent (mango’s size,
+ripeness, and bruises), Dependent (classification report with accuracy,
+precision, recall, and confusion matrix), and Controlled (image dataset,
+microcontroller, camera, and LED lights).
 
 \section{Technical Background}
 
-At its core, the system will be using machine learning concepts pertaining to \gls{CNN} and OpenCV, and may use other algorithms such as Naive Bayes and k-Nearest Neighbors to supplement the classification tasks, particularly for assessing mango ripeness, bruise detection, and size determination. The system will be built on an embedded framework, integrating a Raspberry Pi microcontroller to control the RaspberryPi camera, actuators, LED lights, and motors. A user-friendly GUI will also be utilized to ensure users can customize the prioritization of the mango sorting system.
+At its core, the system will be using machine learning concepts pertaining to
+\gls{CNN} and OpenCV, and may use other algorithms such as Naive Bayes and
+k-Nearest Neighbors to supplement the classification tasks, particularly for
+assessing mango ripeness, bruise detection, and size determination. The system
+will be built on an embedded framework, integrating a Raspberry Pi
+microcontroller to control the RaspberryPi camera, actuators, LED lights, and
+motors. A user-friendly GUI will also be utilized to ensure users can customize
+the prioritization of the mango sorting system.
 
 \section{Conceptual Framework Background}
 
@@ -33,6 +44,16 @@ At its core, the system will be using machine learning concepts pertaining to \g
 	\caption{Conceptual Framework Diagram.}
 	\label{fig:theoreticalDiagram2}
 \end{figure}
+ 
+The conceptual framework seen in figure \ref{fig:theoreticalDiagram2}
+illustrates the key components involved in the Carabao Mango Sorter and Grader
+system. At the center, the system is represented as the core element, surrounded
+by six interconnected components: Carabao Mango (Mangifera indica L.), Embedded
+Systems, Machine Learning, Computer Vision, User Priority-Based Formula, and
+Training and Testing of the Model. These elements represent the different
+technologies, methodologies, and considerations required for the development and
+operation of the sorter and grader. The diagram provides an overview of how
+various disciplines contribute to the project’s functionality.
 
 \section{Software Concepts}
 
