@@ -94,22 +94,22 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{57}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Training and Testing Results of the Model}{62}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Ripeness Classification Results}{62}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Bruises Classification Results}{63}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Size Determination Results}{64}{section.6.2}%
-\contentsline {section}{\numberline {6.3}User Priority Formula}{64}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Physical Prototype}{64}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Software Application}{64}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Summary}{64}{section.6.6}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{65}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Concluding Remarks}{66}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Contributions}{66}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Recommendations}{66}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Future Prospects}{66}{section.7.4}%
-\contentsline {chapter}{References}{68}{chapter*.36}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{70}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{72}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{81}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{87}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{91}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{92}{appendix.F}%
+\contentsline {subsection}{\numberline {6.1.2}Bruises Classification Results}{64}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Size Determination Results}{65}{section.6.2}%
+\contentsline {section}{\numberline {6.3}User Priority Formula}{65}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Physical Prototype}{65}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Software Application}{66}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Summary}{66}{section.6.6}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{68}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Concluding Remarks}{69}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Contributions}{69}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Recommendations}{69}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Prospects}{69}{section.7.4}%
+\contentsline {chapter}{References}{71}{chapter*.43}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{73}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{75}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{84}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{90}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{94}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{95}{appendix.F}%
 \contentsfinish 

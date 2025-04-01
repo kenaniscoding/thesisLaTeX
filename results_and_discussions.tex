@@ -168,6 +168,66 @@ Add the \gls{F1-Score} and etc here
 	\label{tab:efficientnet_performance}
 \end{table}
 
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+	  \hline
+	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+	  \hline
+	  Green & 0.95 & 0.94 & 0.95 & 135 \\
+	  \hline
+	  Yellow Green & 0.70 & 0.71 & 0.71 & 80 \\
+	  \hline
+	  Yellow & 0.77 & 0.78 & 0.77 & 81 \\
+	  \hline
+	  Accuracy &  &  & 0.83 & 296 \\
+	  \hline
+	  Macro Avg & 0.81 & 0.81 & 0.81 & 296 \\
+	  \hline
+	  Weighted Avg & 0.84 & 0.83 & 0.84 & 296 \\
+	  \hline
+	\end{tabular}
+	\caption{Ripeness Classification Report using kNN}
+	\label{tab:bruises_classification_report_knn}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{kNN confusion matrix}
+	\caption{Ripeness Confusion Matrix using kNN}
+	\label{fig:ripeness_confusion_matrix_knn_fig}
+\end{figure}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+		\hline
+		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+		\hline
+		Green & 0.96 & 0.76 & 0.85 & 135 \\
+		\hline
+		Yellow Green & 0.45 & 0.88 & 0.59 & 80 \\
+		\hline
+		Yellow & 0.75 & 0.30 & 0.42 & 81 \\
+		\hline
+		Accuracy &  &  & 0.67 & 296 \\
+		\hline
+		Macro Avg & 0.72 & 0.64 & 0.62 & 296 \\
+		\hline
+		Weighted Avg & 0.76 & 0.67 & 0.66 & 296 \\
+		\hline
+	\end{tabular}
+	\caption{Ripeness Classification Report using Naive Bayes}
+	\label{tab:bruises_classification_report_naive_bayes}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{naive_bayes_confusion_matrix}
+	\caption{Ripeness Confusion Matrix using Naive Bayes}
+	\label{fig:ripeness_confusion_matrix_nv_fig}
+\end{figure}
+
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
 
 \begin{table}[htbp]
@@ -187,14 +247,14 @@ Add the \gls{F1-Score} and etc here
 	  Weighted Avg & 0.93 & 0.93 & 0.93 & 2661 \\
 	  \hline
 	\end{tabular}
-	\caption{Bruises Classification Report}
+	\caption{Bruises Classification Report using CNN}
 	\label{tab:bruises_classification_report}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{bruises_confusion_matrix}
-	\caption{Bruises Confusion Matrix}
+	\caption{Bruises Confusion Matrix using CNN}
 	\label{fig:bruises_confusion_matrix_fig}
 \end{figure}
 
@@ -211,7 +271,7 @@ Add the \gls{F1-Score} and etc here
 	  F1 Score &  0.9278 \\
 	  \hline
 	\end{tabular}
-	\caption{Summarized Classification Report}
+	\caption{Summarized Classification Report using CNN}
 	\label{tab:sum_bruises_classification_report}
 \end{table}
 
@@ -235,6 +295,27 @@ Add pictures of the hardware prototype here with description
 \section{Software Application}
 
 Show the raspberry pi app UI and demonstrate it here 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{UI_v1}
+	\caption{Raspberry Pi App UI Version 1}
+	\label{fig:app_v1_fig}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{UI_v2}
+	\caption{Raspberry Pi App UI Version 2}
+	\label{fig:app_v2_fig}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{UI_v3}
+	\caption{Raspberry Pi App UI Version 3}
+	\label{fig:app_v3_fig}
+\end{figure}
 
 \section{Summary} \label{sec:summary_results_and_discussions}
 
