@@ -59,8 +59,31 @@ various disciplines contribute to the project’s functionality.
 
 \subsection{Thresholding}
 % add thresholding concept and how it is used in the system
+Thresholding is a computer vision image segmentation technique that is used to
+separate objects from their surroundings by converting a grayscale image to
+binary. The conversion is done by choosing a certain threshold intensity value.
+It is usually done by assigning pixels with an intensity higher than the
+threshold are mapped to one value (commonly white), and pixels with an intensity
+lower than the threshold are mapped to another (commonly black). The result of
+this technique is in a high-contrast image that makes it easy to detect the
+object's boundary and shape in the image.\\
+
+In this project, two types of thresholding were applied:
+\begin{itemize}
+
+    \item Absolute Difference Thresholding – This method involves computing the absolute difference between two images. The first image is one of the object, and the other of the same background without the object. The result isolates only the pixels that have changed between the two images, thus isolating the mango from its background successfully.
+    \item Binary Thresholding – Once the difference image has been created, binary thresholding is used. A threshold value is employed to threshold the difference image into a binary image. Values greater than the threshold are made white (foreground), and values less than that are made black (background). This creates a clear silhouette of the mango, which is appropriate for size estimation and contour detection.
+
+\end{itemize}
 
 \subsection{Object Size Calculation}
+
+Object size calculation is the calculation of a certain object's true size from
+image data. This is essential in computer vision systems to efficiently process
+object features in real-time. In this research, the size of the Carabao mango is
+estimated through image measurement techniques based on geometric principles and
+camera calibration.
+
 % (pixel_dimension * distance_camera_to_object) / focal_length_pixels = real_world_dimension
 The size of the mango can be determined given:
 
@@ -78,8 +101,36 @@ where \gls{not:real_world_dimension} is the real world dimension of the object,
  \gls{not:distance_from_cam_to_object} is the distance from the camera to the object,
   and \gls{not:focal_length} is the focal length of the camera.
 
+After capture and preprocessing of the image, the binary image so obtained is
+processed with contour detection to find the largest object, which is assumed to
+be the mango. The contour is then bounded with a minimum-area bounding box, and
+pixel-based length and width are calculated using Euclidean distance between the
+corner points.
+
+This size estimation method offers a consistent and efficient way of taking the
+measurements with only standard camera input, providing consistency in
+classification and reducing the necessity for physical measuring devices.
+
+
 \subsection{Convolutional Neural Network}
 % describe CNN and show the architecture of the CNN model
+Convolutional Neural Networks are a class of deep learning models is commonly
+used in analyzing visual data. CNNs are particularly effective in image
+classification tasks due to their ability to automatically extract and
+effectively learn the spatial hierarchies of features directly from the pixels
+of a given image. This makes it highly suitable for functions such as object
+detection and, in the case of this study, image classification.
+
+CNN usually applies filters to input images.  These filters are designed to
+detect local patterns such as edges, textures, and color gradients. The network
+is able to learn more patterns as the data goes through the layers. This enables
+it to recognize effectively the characteristics that it is looking for.
+
+The use of CNNs in this study allows for accurate, automated classification of
+mango images which contributes to the development of a reliable, non-destructive
+grading system that minimizes human error and ensures consistent quality
+assessment
+
 
 \subsection{Classification Report}
 % describe classification report and how it is used in the system
@@ -150,8 +201,37 @@ Accuracy measures the proportion of correct predictions (both true positives and
 
 \subsection{Camera Module} 
 
+The camera module serves as the main image acquisition tool in the mango sorter
+and grader system. Its role is to capture clear, high-resolution images of each
+mango as it moves along the conveyor. These images are critical for analyzing
+physical traits like ripeness, bruising, and size through computer vision and
+machine learning techniques.
+
+The camera is directly connected to the Raspberry Pi, which manages both image
+capture and processing. It is fixed in position to ensure consistent distance
+and angle for all images. It is also paired with a lighting system to provide a
+consistent lighting for the images. The system captures images of both the top
+and bottom sides of each mango to ensure a more accurate grading. The prototype
+integrates the Raspberry Pi Camera Module Version 2. This camera is chosen for
+its 8MP resolution which is critical in capturing real-time images. Another
+reason for integrating this camera is because of its compatibility with the
+Raspberry Pi 4, and reliability in capturing detailed images needed for accurate
+classification. It is also cost effective and lightweight which is important for
+the prototype.
+
 \subsection{4 Channel Relay}
 % add Relay H-bridge circuit diagram
+The relay module in this project is used to control the direction and movement
+of the motors that operate the conveyor system and mango sorting mechanism. As
+an electrically operated switch, the relay allows the low-power signals from the
+Raspberry Pi to safely manage the higher voltage and current required by the DC
+motors.
+
+For the prototype, the relay module is responsible for changing the polarity of
+motor connections which enables the motors to rotate in both forward and reverse
+directions. This will drive the conveyor belt system. This is essential for
+moving mangoes along the conveyor, rotating them for the top and bottom image
+capture, and directing them to the appropriate bin based on their grade.
 
 \subsection{1:3 Pulley Belt}
 % add picture of a pulley belt and concept behind it (what is a pulley belt)
