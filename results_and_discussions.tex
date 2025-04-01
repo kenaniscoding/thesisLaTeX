@@ -170,6 +170,52 @@ Add the \gls{F1-Score} and etc here
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
 
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+	  \hline
+	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+	  \hline
+	  Bruised & 0.97 & 0.90 & 0.93 & 1515 \\
+	  \hline
+	  Not Bruised & 0.88 & 0.97 & 0.92 & 1146 \\
+	  \hline
+	  Accuracy &  &  & 0.93 & 2661 \\
+	  \hline
+	  Macro Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+	  \hline
+	  Weighted Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+	  \hline
+	\end{tabular}
+	\caption{Bruises Classification Report}
+	\label{tab:bruises_classification_report}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{bruises_confusion_matrix}
+	\caption{Bruises Confusion Matrix}
+	\label{fig:bruises_confusion_matrix_fig}
+\end{figure}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c}
+	  \hline
+	  \textbf{Metrics} & \textbf{Results} \\
+	  \hline
+	  Precision & 0.9318 \\
+	  \hline
+	  Recall & 0.9275 \\
+	  \hline
+	  F1 Score &  0.9278 \\
+	  \hline
+	\end{tabular}
+	\caption{Summarized Classification Report}
+	\label{tab:sum_bruises_classification_report}
+\end{table}
+
+
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
 
 \section{User Priority Formula} \label{sec:userPriorityFormula}
