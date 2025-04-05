@@ -1,12 +1,12 @@
 \contentsline {chapter}{Oral Defense Recommendation Sheet}{ii}{section*.1}%
 \contentsline {chapter}{Abstract}{iii}{section*.2}%
 \contentsline {chapter}{Table of Contents}{iv}{section*.4}%
-\contentsline {chapter}{List of Figures}{vii}{section*.5}%
-\contentsline {chapter}{List of Tables}{viii}{section*.6}%
-\contentsline {chapter}{Abbreviations and Acronyms}{ix}{section*.7}%
-\contentsline {chapter}{Notations}{x}{section*.9}%
-\contentsline {chapter}{Glossary}{xi}{section*.11}%
-\contentsline {chapter}{Listings}{xii}{section*.13}%
+\contentsline {chapter}{List of Figures}{viii}{section*.5}%
+\contentsline {chapter}{List of Tables}{ix}{section*.6}%
+\contentsline {chapter}{Abbreviations and Acronyms}{x}{section*.7}%
+\contentsline {chapter}{Notations}{xi}{section*.9}%
+\contentsline {chapter}{Glossary}{xii}{section*.11}%
+\contentsline {chapter}{Listings}{xiv}{section*.13}%
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introduction}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background of the Study}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Prior Studies}{4}{section.1.2}%
@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {1.4.3}Expected Deliverables}{7}{subsection.1.4.3}%
 \contentsline {section}{\numberline {1.5}Significance of the Study}{9}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Technical Benefit}{10}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Social Impact}{10}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.2}Social Impact}{11}{subsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.5.3}Environmental Welfare}{11}{subsection.1.5.3}%
 \contentsline {section}{\numberline {1.6}Assumptions, Scope, and Delimitations}{11}{section.1.6}%
 \contentsline {subsection}{\numberline {1.6.1}Assumptions}{11}{subsection.1.6.1}%
@@ -35,42 +35,80 @@
 \contentsline {section}{\numberline {3.2}Relevant Theories and Models}{24}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Technical Background}{25}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Conceptual Framework Background}{25}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Summary}{25}{section.3.5}%
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}System Architecture}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hardware Considerations}{29}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Software Considerations}{29}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Security and Reliability considerations}{29}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Scalability and Efficiency Considerations}{29}{section.4.6}%
-\contentsline {section}{\numberline {4.7}User Interface}{30}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Constraints and Limitations}{30}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Technical Standards}{30}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Prototyping and Simulation}{30}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Design Validation}{31}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Summary}{31}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Standards}{31}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Summary}{32}{section.4.14}%
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{34}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Research Approach}{34}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Experimental Setup}{34}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Data Collection Methods}{35}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Testing and Evaluation Methods}{36}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Ethical Considerations}{37}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Summary}{38}{section.5.7}%
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary}{40}{section.6.1}%
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{41}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Concluding Remarks}{42}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Contributions}{42}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Recommendations}{42}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Future Prospects}{42}{section.7.4}%
-\contentsline {chapter}{References}{44}{chapter*.22}%
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{46}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{48}{appendix.B}%
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{57}{appendix.C}%
-\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{63}{appendix.D}%
-\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{67}{appendix.E}%
-\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{68}{appendix.F}%
+\contentsline {section}{\numberline {3.5}Software Concepts}{26}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Thresholding}{26}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Object Size Calculation}{27}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Convolutional Neural Network}{28}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Classification Report}{28}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}Confusion Matrix}{28}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}Precision}{29}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}Recall}{29}{subsubsection.3.5.4.3}%
+\contentsline {subsubsection}{\numberline {3.5.4.4}F1 Score}{30}{subsubsection.3.5.4.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.5}Accuracy}{30}{subsubsection.3.5.4.5}%
+\contentsline {section}{\numberline {3.6}Hardware Concepts}{30}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Camera Module}{30}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}4 Channel Relay}{31}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Gear Ratio}{31}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Summary}{32}{section.3.7}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Design Considerations}}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.2}System Architecture}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hardware Considerations}{36}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}General Prototype Framework}{36}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Prototype Flowchart}{37}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Prototype 3D Model}{40}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Hardware Specifications}{40}{subsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.4.1}Raspberry Pi}{40}{subsubsection.4.3.4.1}%
+\contentsline {subsubsection}{\numberline {4.3.4.2}Raspberry Pi Camera}{42}{subsubsection.4.3.4.2}%
+\contentsline {subsubsection}{\numberline {4.3.4.3}DC Motor}{43}{subsubsection.4.3.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.4.4}MicroSD Card}{45}{subsubsection.4.3.4.4}%
+\contentsline {subsubsection}{\numberline {4.3.4.5}LED Lights}{46}{subsubsection.4.3.4.5}%
+\contentsline {subsubsection}{\numberline {4.3.4.6}Power Supply}{47}{subsubsection.4.3.4.6}%
+\contentsline {subsubsection}{\numberline {4.3.4.7}4 Channel Relay Module}{49}{subsubsection.4.3.4.7}%
+\contentsline {section}{\numberline {4.4}Software Considerations}{50}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}PyTorch}{50}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}OpenCV}{51}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}CustomTkinter}{51}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Security and Reliability Considerations}{51}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Scalability and Efficiency Considerations}{52}{section.4.6}%
+\contentsline {section}{\numberline {4.7}User Interface}{52}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Constraints and Limitations}{52}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Technical Standards}{52}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Prototyping and Simulation}{53}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Design Validation}{53}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Summary}{53}{section.4.12}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Methodology}}{54}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{57}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Research Approach}{57}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Hardware Design}{57}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Software Design}{58}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Data Collection Methods}{59}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Testing and Evaluation Methods}{59}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Ripeness Training and Testing}{60}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Bruises Training and Testing}{60}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Size Determination}{60}{subsection.5.6.3}%
+\contentsline {section}{\numberline {5.7}Formula for User Priority}{60}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Ethical Considerations}{60}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Summary}{61}{section.5.9}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Results and Discussions}}{62}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Training and Testing Results of the Model}{67}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Ripeness Classification Results}{67}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Bruises Classification Results}{69}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Size Determination Results}{70}{section.6.2}%
+\contentsline {section}{\numberline {6.3}User Priority Formula}{70}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Physical Prototype}{70}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Software Application}{74}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Summary}{74}{section.6.6}%
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase []{Conclusions, Recommendations, and Future Directives}}{76}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Concluding Remarks}{77}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Contributions}{77}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Recommendations}{77}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Future Prospects}{78}{section.7.4}%
+\contentsline {chapter}{References}{79}{chapter*.49}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Student Research Ethics Clearance}}{81}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Answers to Questions to this Thesis}}{83}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase []{Revisions to the Proposal}}{92}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {D}\MakeTextUppercase []{Revisions to the Final}}{98}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {E}\MakeTextUppercase []{Vita}}{102}{appendix.E}%
+\contentsline {appendix}{\chapternumberline {F}\MakeTextUppercase []{Article Paper(s)}}{103}{appendix.F}%
 \contentsfinish 
