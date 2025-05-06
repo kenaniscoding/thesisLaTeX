@@ -92,8 +92,79 @@ that each of the components works as expected when operating separately. After c
 on an individual basis, integration testing is conducted to ensure communication between hardware
  and software is correct to ensure the image processing system, motors, and sorting actuators work
   in concert as required. System testing is conducted to conduct overall system performance
+  testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
 
-testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
+  
+\subsection{Classification Report}
+% describe classification report and how it is used in the system
+
+\subsubsection{Confusion Matrix}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{c|c|c}
+	\hline
+	& \textbf{Predicted Positive} & \textbf{Predicted Negative} \\
+	\hline
+	\textbf{Actual Positive} & TP & FN \\
+	\hline
+	\textbf{Actual Negative} & FP & TN \\
+	\hline
+	\end{tabular}
+	\caption{Confusion Matrix Example}
+	\label{tab:confusion_matrix}
+\end{table}
+
+A confusion matrix is a table that visualizes the performance 
+of a classification model. For a binary classification problem, it has four
+components: \\
+
+\begin{itemize}
+	\item True Positives (TP): Cases correctly predicted as positive
+	\item True Negatives (TN): Cases correctly predicted as negative
+	\item False Positives (FP): Cases incorrectly predicted as positive. (Type I error)
+	\item False Negatives (FN): Cases incorrectly predicted as negative (Type II error)
+\end{itemize}
+
+
+\subsubsection{Precision}
+\begin{eqnarray}
+	\text{Precision} = \frac{TP}{TP + FP}
+	\label{eq:precision}
+\end{eqnarray}
+
+Precision measures how many of the predicted positives are actually positive. It answers the question: 
+"When the model predicts the positive class, how often is it correct?" High precision means low false positives.
+
+\subsubsection{Recall}
+\begin{eqnarray}
+	\text{Recall} = \frac{TP}{TP + FN}
+	\label{eq:recall}
+\end{eqnarray}
+
+Recall, which is also called sensitivity, measures how many of the actual positives were correctly identified. 
+It answers the question: 
+"Of all the actual positive cases, how many did the model catch?" High recall means low false negatives.
+
+\subsubsection{F1 Score}
+\begin{eqnarray}
+	F_1 = 2\times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+	\label{eq:f1_score}
+\end{eqnarray}
+
+The F1 score is the harmonic mean of precision and recall. It provides a single metric that balances 
+both concerns. This is particularly useful when you need to 
+find a balance between precision and recall, as optimizing for one often decreases the other.
+
+\subsubsection{Accuracy}
+\begin{eqnarray}
+	\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+	\label{eq:accuracy}
+\end{eqnarray}
+
+Accuracy measures the proportion of correct predictions (both true positives and true negatives)
+ among the total cases. While intuitive, accuracy can be misleading with imbalanced datasets.
+
 
 To test system performance, various measures of performance are used to evaluate. 
 As seen on equation~\ref{eq:accuracy}, \gls{accuracy score} is used to measure the percentage of 
