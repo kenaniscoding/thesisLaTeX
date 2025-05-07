@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  30 MAR 2025 22:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.4)  7 MAY 2025 11:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,8 +527,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `article_forum_paper.out' has not changed.
-(rerunfilecheck)             Checksum: 30AD509E7F8547749D3A9FCB33F2A340;1056.
+
+Package rerunfilecheck Warning: File `article_forum_paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `article_forum_paper.out':
+(rerunfilecheck)             Before: 4FF17B42EF7314C87F21CCBBE6E69165;1062
+(rerunfilecheck)             After:  30AD509E7F8547749D3A9FCB33F2A340;1056.
  ) 
 Here is how much of TeX's memory you used:
  12110 strings out of 473530

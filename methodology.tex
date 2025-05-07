@@ -182,9 +182,34 @@ Using these methods of testing, the system is constantly optimized to ensure hig
 
 \subsection{Ripeness Training and Testing} \label{sec:ripenesstraining}
 
+For the testing of the ripeness classification, the Carabao mangoes are classified into three ripeness stages which are Green, green yellow, and yellow.
+Likewise, The green would represent the ripe mangoes while the green yellow would represent the semi ripe while the yellow would
+represent the ripe mangoes. As reference, Figure~\ref{fig:mangoDefect} shows the different ripeness stages for Carabao/Pico mangoes.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{ripeness_stages}
+	\caption{Carabao Mango Ripeness Stages}
+	\label{fig:mangoRipeness}
+\end{figure}
+
 \subsection{Bruises Training and Testing} \label{sec:bruisestraining}
 
+For the testing of the bruise classification of the Carabao mangoes, it would classified into two categories which are bruised and not bruised. 
+To define what bruise and not bruise mangoes looked like Figure~\ref{fig:mangoDefect} is used as reference to categorize which mangoes are bruised and not bruised.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{bruise_guide}
+	\caption{Different Kinds of Mango Defects}
+	\label{fig:mangoDefect}
+\end{figure}
+
 \subsection{Size Determination} \label{sec:sizeDetermination}
+
+To get the size of the mangoes, computer vision techniques such as Gaussian Blur and Thresholding are used to get the length and width of the mangoes.
+% will add that the theoretical length and width would be compared to the actual length and width
+% also that the predicted size and actual size classification would be shown
 
 \section{Formula for User Priority} \label{sec:formula}
 % The Formula for getting the linear formula for getting the grade for the mango
