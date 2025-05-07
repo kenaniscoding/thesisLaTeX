@@ -82,7 +82,27 @@ For the programming language used for the prototype and training and testing the
 Furthermore, the rest of the software components are of utmost importance to mango classification. Image processing algorithms in OpenCV and CNN models extract features such as color, size, and bruises that are known to determine quality parameters of mangoes. Mangoes are classified based on ripeness and defects by using machine learning algorithms, which further enhances accuracy using deep learning techniques. A user interface (UI) is designed for users to control and observe the system in real time. Finally, the interface programming of the microcontroller provides the necessary synchronization between sensors, actuators, and motors throughout the sorting operation scenario.
 
 \section{Data Collection Methods} \label{sec:dataset}
-The system acquires high-resolution images of mangoes under pre-specified lighting conditions through systematic acquisition. Apart from that, this corpus of data is based on the real-time images acquired from the camera system, where classification operations are carried out based on real-time data. Pre-processing image operations such as flipping, rotating, resizing, normalization, and Gaussian blur are also carried out in order to enhance image clarity and feature detection. Then, the feature extraction process is carried out, where the intensity of color, shape, and texture are analyzed for the detection of characteristic features in terms of the mango. All these aspects lead to the creation of a reliable dataset for the machine learning algorithm that will allow the system to classify and grade mangoes more accurately.
+% The system acquires high-resolution images of mangoes under pre-specified lighting conditions through systematic acquisition. 
+% Apart from that, this corpus of data is based on the real-time images acquired from the camera system, where classification 
+% operations are carried out based on real-time data. Pre-processing image operations such as flipping, rotating, resizing, 
+% normalization, and Gaussian blur are also carried out in order to enhance image clarity and feature detection. Then, 
+% the feature extraction process is carried out, where the intensity of color, shape, and texture are analyzed for the 
+% detection of characteristic features in terms of the mango. All these aspects lead to the creation of a reliable dataset 
+% for the machine learning algorithm that will allow the system to classify and grade mangoes more accurately.
+
+For the data collection, online available image datasets with Carabao mangoes were used together with the captured Carabao mango
+images. For the setup of the captured Carabao mangoes, the height of the camera to the white flat surface is 26 cm which can 
+be seen on Figure~\ref{fig:mangoImageCollection}. Furthermore,
+the S24's camera is used for capturing both cheeks of the Carabao mango. Initially, the Carabao mangoes would be unripe and green
+and each day the Carabao mangoes would be pictured until they are ripe. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth, angle=-90]{camera_setup}
+	\caption{Carabao Mango Image Data Collection}
+	\label{fig:mangoImageCollection}
+\end{figure}
+
 
 \section{Testing and Evaluation Methods} \label{sec:trainandtest}
 In a bid to ensure the mango sorting and grading system is accurate and reliable, there is 
