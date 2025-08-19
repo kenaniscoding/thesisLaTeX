@@ -232,7 +232,16 @@ To get the size of the mangoes, computer vision techniques such as Gaussian Blur
 % also that the predicted size and actual size classification would be shown
 
 \section{Formula for User Priority} \label{sec:formula}
-% The Formula for getting the linear formula for getting the grade for the mango
+The Formula for getting the linear formula for getting the grade for the mango is shown below. \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
+Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
+The formula for the user priority is given by:
+
+
+\begin{equation}
+	\label{eq:userPriorityInput}
+	\text{User Priority} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
+\end{equation}
+
 
 \section{Ethical Considerations}
 Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
