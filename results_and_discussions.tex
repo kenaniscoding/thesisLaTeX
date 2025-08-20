@@ -278,15 +278,36 @@ Add the \gls{F1-Score} and etc here
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
 
-\section{User Priority Formula} \label{sec:userPriorityFormula}
+\section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
 Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
 The formula for the user priority is given by:
 \begin{equation}
-	\label{eq:userPriority}
-	\text{User Priority} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
+	\label{eq:userPriority}	
+  \text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
 \end{equation}
 
+\noindent The machine learning predictions are assigned the following numerical values:
+
+\noindent \textbf{Ripeness Scores:}
+\begin{align}
+r(\text{yellow}) &= 1.0 \\
+r(\text{yellow\_green}) &= 2.0 \\
+r(\text{green}) &= 3.0
+\end{align}
+
+\noindent \textbf{Bruises Scores:}
+\begin{align}
+b(\text{bruised}) &= 1.0 \\
+b(\text{unbruised}) &= 2.0
+\end{align}
+
+\noindent \textbf{Size Scores:}
+\begin{align}
+s(\text{small}) &= 1.0 \\
+s(\text{medium}) &= 2.0 \\
+s(\text{large}) &= 3.0
+\end{align}
 
 \section{Physical Prototype} \label{sec:physicalPrototype}
 

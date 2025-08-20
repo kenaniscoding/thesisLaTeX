@@ -231,14 +231,37 @@ To get the size of the mangoes, computer vision techniques such as Gaussian Blur
 % will add that the theoretical length and width would be compared to the actual length and width
 % also that the predicted size and actual size classification would be shown
 
-\section{Formula for User Priority} \label{sec:formula}
+\section{Mango Formula with User Priority} \label{sec:formula}
 The linear equation used to calculate the Carabao mango grade is shown below. Likewise, the variables \gls{not:bprio}, \gls{not:rprio}, and \gls{not:sprio} represent the user-defined priority weightings for bruising, ripeness, and size characteristics in the \gls{User Priority-Based Grading} system.
 Additionally, \gls{not:bpred}, \gls{not:rpred}, and \gls{not:spred} correspond to the machine learning model's predicted values for the bruising, ripeness, and size attributes of the Carabao mango.
 
 \begin{equation}
 	\label{eq:userPriorityInput}
-	\text{User Priority} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
+	\text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
 \end{equation}
+
+\noindent The machine learning predictions are assigned the following numerical values:
+
+\noindent \textbf{Ripeness Scores:}
+\begin{align}
+r(\text{yellow}) &= 1.0 \\
+r(\text{yellow\_green}) &= 2.0 \\
+r(\text{green}) &= 3.0
+\end{align}
+
+\noindent \textbf{Bruises Scores:}
+\begin{align}
+b(\text{bruised}) &= 1.0 \\
+b(\text{unbruised}) &= 2.0
+\end{align}
+
+\noindent \textbf{Size Scores:}
+\begin{align}
+s(\text{small}) &= 1.0 \\
+s(\text{medium}) &= 2.0 \\
+s(\text{large}) &= 3.0
+\end{align}
+
 
 \section{Ethical Considerations}
 Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
