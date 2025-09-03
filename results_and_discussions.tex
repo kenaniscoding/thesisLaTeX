@@ -280,81 +280,122 @@ Add the \gls{F1-Score} and etc here
 \subsection{Method 1: Thresholding}
 To get the length and width of the mango. An initial image without the mango is taken which would be the background image. 
 After that another image is taken with the mango which would be the foreground image.
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{mango_1_bottom}
+% 	\caption{Bottom Side Mango 1}
+% 	\label{fig:mango_1_bottom}
+% \end{figure}
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{mango_1_fgMask_bottom}
+% 	\caption{Mango 1 with Foreground Masking}
+% 	\label{fig:mango_1_fgMask_bottom}
+% \end{figure}
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{mango_1_thresh_bottom}
+% 	\caption{Mango 1 with Thresholding}
+% 	\label{fig:mango_1_thresh_bottom}
+% \end{figure}
+
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_1_bottom}
-	\caption{Bottom Side Mango 1}
-	\label{fig:mango_1_bottom}
+    \centering
+    \subbottom[A sub-figure in the upper-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_1_bottom}
+        \label{fig:m3_top}
+    }
+    \hfill
+    \subbottom[A sub-figure in the upper-right corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_1_fgMask_bottom}
+        \label{fig:m3_fm_top}
+    }
+    \vfill
+    \subbottom[A sub-figure in the lower-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_1_thresh_bottom}
+        \label{fig:m3_thresh_top}
+    }
+
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{mango_2_bottom}
+% 	\caption{Bottom Side Mango 2}
+% 	\label{fig:mango_2_bottom}
+% \end{figure}
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{mango_2_thresh_bottom}
+% 	\caption{Mango 2 with Thresholding}
+% 	\label{fig:mango_2_thresh_bottom}
+% \end{figure}
+
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_1_fgMask_bottom}
-	\caption{Mango 1 with Foreground Masking}
-	\label{fig:mango_1_fgMask_bottom}
-\end{figure}
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_1_thresh_bottom}
-	\caption{Mango 1 with Thresholding}
-	\label{fig:mango_1_thresh_bottom}
+    \centering
+    \subbottom[A sub-figure in the upper-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_2_bottom}
+        \label{fig:m3_top}
+    }
+    \hfill
+    \subbottom[A sub-figure in the upper-right corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_2_thresh_bottom}
+        \label{fig:m3_fm_top}
+    }
+    \vfill
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_2_bottom}
-	\caption{Bottom Side Mango 2}
-	\label{fig:mango_2_bottom}
-\end{figure}
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_2_thresh_bottom}
-	\caption{Mango 2 with Thresholding}
-	\label{fig:mango_2_thresh_bottom}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_background}
-	\caption{Background Side Mango 3}
-	\label{fig:mango_3_background}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_bottom}
-	\caption{Bottom Side Mango 3}
-	\label{fig:mango_3_bottom}
-\end{figure}
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_fgMask_bottom}
-	\caption{Mango 3 with Foreground Masking}
-	\label{fig:mango_3_fgMask_bottom}
-\end{figure}
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_thresh_bottom}
-	\caption{Mango 3 with Thresholding}
-	\label{fig:mango_3_thresh_bottom}
+    \centering
+    \subbottom[A sub-figure in the upper-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_top}
+        \label{fig:m3_top}
+    }
+    \hfill
+    \subbottom[A sub-figure in the upper-right corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_fgMask_top}
+        \label{fig:m3_fm_top}
+    }
+    \vfill
+    \subbottom[A sub-figure in the lower-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_background}
+        \label{fig:m3_thresh_top}
+    }
+    \hfill
+    \subbottom[A sub-figure in the lower-right corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_thresh_top}
+        \label{fig:m3_background}
+    }
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_top}
-	\caption{Top Side Mango 3}
-	\label{fig:mango_3_top}
-\end{figure}
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_fgMask_top}
-	\caption{Mango 3 with Foreground Masking}
-	\label{fig:mango_3_fgMask_top}
-\end{figure}
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{mango_3_thresh_bottom}
-	\caption{Mango 3 with Thresholding}
-	\label{fig:mango_3_thresh_top}
+    \centering
+    \subbottom[A sub-figure in the upper-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_bottom}
+        \label{fig:m3_bottom}
+    }
+    \hfill
+    \subbottom[A sub-figure in the upper-right corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_fgMask_bottom}
+        \label{fig:m3_fm_bottom}
+    }
+    \vfill
+    \subbottom[A sub-figure in the lower-left corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_background}
+        \label{fig:m3_thresh_bottom}
+    }
+    \hfill
+    \subbottom[A sub-figure in the lower-right corner.]{
+        \includegraphics[width=0.45\textwidth]{mango_3_thresh_bottom}
+        \label{fig:lowright}
+    }
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs1} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig1}
 \end{figure}
 
 \subsection{Method 2: Object Detection}
@@ -365,7 +406,10 @@ For the training of the object detection, the researchers annotated 488 images t
 
 \subsubsection{Calibration to the Prototype}
 To calibrate the model to measure the real world length and width of the mango, the researchers calibrated the model using a Philippine peso coin which has a diameter of 2.4 cm.
-
+\begin{verbatim}
+    self.reference_box = [815, 383, 999, 556]
+    self.reference_size_cm = 2.4 
+\end{verbatim}
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
