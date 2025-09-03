@@ -280,38 +280,20 @@ Add the \gls{F1-Score} and etc here
 \subsection{Method 1: Thresholding}
 To get the length and width of the mango. An initial image without the mango is taken which would be the background image. 
 After that another image is taken with the mango which would be the foreground image.
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{mango_1_bottom}
-% 	\caption{Bottom Side Mango 1}
-% 	\label{fig:mango_1_bottom}
-% \end{figure}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{mango_1_fgMask_bottom}
-% 	\caption{Mango 1 with Foreground Masking}
-% 	\label{fig:mango_1_fgMask_bottom}
-% \end{figure}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{mango_1_thresh_bottom}
-% 	\caption{Mango 1 with Thresholding}
-% 	\label{fig:mango_1_thresh_bottom}
-% \end{figure}
 
 \begin{figure}[!htbp]
     \centering
-    \subbottom[A sub-figure in the upper-left corner.]{
+    \subbottom[Original]{
         \includegraphics[width=0.45\textwidth]{mango_1_bottom}
         \label{fig:m3_top}
     }
     \hfill
-    \subbottom[A sub-figure in the upper-right corner.]{
+    \subbottom[Foreground Masking]{
         \includegraphics[width=0.45\textwidth]{mango_1_fgMask_bottom}
         \label{fig:m3_fm_top}
     }
     \vfill
-    \subbottom[A sub-figure in the lower-left corner.]{
+    \subbottom[Thresholding]{
         \includegraphics[width=0.45\textwidth]{mango_1_thresh_bottom}
         \label{fig:m3_thresh_top}
     }
@@ -319,27 +301,15 @@ After that another image is taken with the mango which would be the foreground i
     \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
     \label{fig:fourfig}
 \end{figure}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{mango_2_bottom}
-% 	\caption{Bottom Side Mango 2}
-% 	\label{fig:mango_2_bottom}
-% \end{figure}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{mango_2_thresh_bottom}
-% 	\caption{Mango 2 with Thresholding}
-% 	\label{fig:mango_2_thresh_bottom}
-% \end{figure}
 
 \begin{figure}[!htbp]
     \centering
-    \subbottom[A sub-figure in the upper-left corner.]{
+    \subbottom[Original]{
         \includegraphics[width=0.45\textwidth]{mango_2_bottom}
         \label{fig:m3_top}
     }
     \hfill
-    \subbottom[A sub-figure in the upper-right corner.]{
+    \subbottom[Thresholding]{
         \includegraphics[width=0.45\textwidth]{mango_2_thresh_bottom}
         \label{fig:m3_fm_top}
     }
@@ -350,22 +320,22 @@ After that another image is taken with the mango which would be the foreground i
 
 \begin{figure}[!htbp]
     \centering
-    \subbottom[A sub-figure in the upper-left corner.]{
+    \subbottom[Original]{
         \includegraphics[width=0.45\textwidth]{mango_3_top}
         \label{fig:m3_top}
     }
     \hfill
-    \subbottom[A sub-figure in the upper-right corner.]{
+    \subbottom[Foreground Masking]{
         \includegraphics[width=0.45\textwidth]{mango_3_fgMask_top}
         \label{fig:m3_fm_top}
     }
     \vfill
-    \subbottom[A sub-figure in the lower-left corner.]{
+    \subbottom[Background]{
         \includegraphics[width=0.45\textwidth]{mango_3_background}
         \label{fig:m3_thresh_top}
     }
     \hfill
-    \subbottom[A sub-figure in the lower-right corner.]{
+    \subbottom[Thresholding]{
         \includegraphics[width=0.45\textwidth]{mango_3_thresh_top}
         \label{fig:m3_background}
     }
@@ -375,22 +345,22 @@ After that another image is taken with the mango which would be the foreground i
 
 \begin{figure}[!htbp]
     \centering
-    \subbottom[A sub-figure in the upper-left corner.]{
+    \subbottom[Original View]{
         \includegraphics[width=0.45\textwidth]{mango_3_bottom}
         \label{fig:m3_bottom}
     }
     \hfill
-    \subbottom[A sub-figure in the upper-right corner.]{
+    \subbottom[Foreground Masking]{
         \includegraphics[width=0.45\textwidth]{mango_3_fgMask_bottom}
         \label{fig:m3_fm_bottom}
     }
     \vfill
-    \subbottom[A sub-figure in the lower-left corner.]{
+    \subbottom[Background]{
         \includegraphics[width=0.45\textwidth]{mango_3_background}
         \label{fig:m3_thresh_bottom}
     }
     \hfill
-    \subbottom[A sub-figure in the lower-right corner.]{
+    \subbottom[Thresholding]{
         \includegraphics[width=0.45\textwidth]{mango_3_thresh_bottom}
         \label{fig:lowright}
     }
@@ -446,85 +416,160 @@ s(\text{large}) &= 3.0
 
 Add pictures of the hardware prototype here with description
 
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{top_view}
-	\caption{Prototype Top View}
-	\label{fig:top_view_fig}
-\end{figure}
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{top_view}
+% 	\caption{Prototype Top View}
+% 	\label{fig:top_view_fig}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{side1}
+% 	\caption{Entrance Conveyor Belt View}
+% 	\label{fig:side1_fig}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{side2}
+% 	\caption{Side Conveyor Belt View}
+% 	\label{fig:side2_fig}
+% \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{side1}
-	\caption{Entrance Conveyor Belt View}
-	\label{fig:side1_fig}
+    \centering
+    \subbottom[Prototype Top View]{
+        \includegraphics[width=0.45\textwidth]{top_view}
+        \label{fig:upprleft}
+    }
+    \hfill
+    \subbottom[Entrance Conveyor Belt View]{
+        \includegraphics[width=0.45\textwidth]{side1}
+        \label{fig:uppright}
+    }
+    \vfill
+    \subbottom[Side Conveyor Belt View]{
+        \includegraphics[width=0.45\textwidth]{side2}
+        \label{fig:lowerleft}
+    }
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
+
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{schematic1}
+% 	\caption{Prototype Main Hardware}
+% 	\label{fig:main_hardware_fig}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{DC_Motor_Pulley}
+% 	\caption{DC Motor and Pulley}
+% 	\label{fig:dc_motor_pulley_fig}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{camera}
+% 	\caption{LED Lights and Camera Module}
+% 	\label{fig:camera_fig_results}
+% \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{side2}
-	\caption{Side Conveyor Belt View}
-	\label{fig:side2_fig}
+    \centering
+    \subbottom[Prototype Main Hardware]{
+        \includegraphics[width=0.45\textwidth]{schematic1}
+        \label{fig:upprleft}
+    }
+    \hfill
+    \subbottom[DC Motor and Pulley]{
+        \includegraphics[width=0.45\textwidth]{DC_Motor_Pulley}
+        \label{fig:uppright}
+    }
+    \vfill
+    \subbottom[LED Lights and Camera Module]{
+        \includegraphics[width=0.45\textwidth]{camera}
+        \label{fig:lowerleft}
+    }
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
+
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.5\textwidth]{new-side-view}
+% 	\caption{Side View of Improved Prototype}
+% 	\label{fig:improved_side_view}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering \includegraphics[width=0.5\textwidth]{new-top-view}
+% 	\caption{Top View Improved Prototype}
+%   \label{fig:improved_top_vieimproved_top_view}
+% \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{schematic1}
-	\caption{Prototype Main Hardware}
-	\label{fig:main_hardware_fig}
+    \centering
+    \subbottom[Side View of Improved Prototype]{
+        \includegraphics[width=0.45\textwidth]{new-side-view}
+        \label{fig:upprleft}
+    }
+    \hfill
+    \subbottom[Top View of Improved Prototype]{
+        \includegraphics[width=0.45\textwidth]{new-top-view}
+        \label{fig:uppright}
+    }
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{DC_Motor_Pulley}
-	\caption{DC Motor and Pulley}
-	\label{fig:dc_motor_pulley_fig}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{camera}
-	\caption{LED Lights and Camera Module}
-	\label{fig:camera_fig_results}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{new-side-view}
-	\caption{Side View of Improved Prototype}
-	\label{fig:improved_side_view}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering \includegraphics[width=0.5\textwidth]{new-top-view}
-	\caption{Top View Improved Prototype}
-  \label{fig:improved_top_vieimproved_top_view}
-\end{figure}
-
 
 \section{Software Application}
 
 Show the raspberry pi app UI and demonstrate it here 
 
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{UI_v1}
-	\caption{Raspberry Pi App UI Version 1}
-	\label{fig:app_v1_fig}
-\end{figure}
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.9\textwidth]{UI_v1}
+% 	\caption{Raspberry Pi App UI Version 1}
+% 	\label{fig:app_v1_fig}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.9\textwidth]{UI_v2}
+% 	\caption{Raspberry Pi App UI Version 2}
+% 	\label{fig:app_v2_fig}
+% \end{figure}
+%
+% \begin{figure}[!htbp]
+% 	\centering
+% 	\includegraphics[width=0.9\textwidth]{UI_v3}
+% 	\caption{Raspberry Pi App UI Version 3}
+% 	\label{fig:app_v3_fig}
+% \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{UI_v2}
-	\caption{Raspberry Pi App UI Version 2}
-	\label{fig:app_v2_fig}
-\end{figure}
+    \centering
+    \subbottom[Raspberry Pi App UI Version 1]{
+        \includegraphics[width=0.45\textwidth]{UI_v1}
+        \label{fig:upprleft}
+    }
+    \hfill
+    \subbottom[Raspberry Pi App UI Version 2]{
+        \includegraphics[width=0.45\textwidth]{UI_v2}
+        \label{fig:uppright}
+    }
+    \vfill
+    \subbottom[Raspberry Pi App UI Version 3]{
+        \includegraphics[width=0.45\textwidth]{UI_v3}
+        \label{fig:lowerleft}
+    }
 
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{UI_v3}
-	\caption{Raspberry Pi App UI Version 3}
-	\label{fig:app_v3_fig}
+    \caption{Four figures in each corner. See List.~\ref{lst:fourfigs} for the corresponding \LaTeX\ code.}
+    \label{fig:fourfig}
 \end{figure}
 
 \begin{figure}[!htbp]
