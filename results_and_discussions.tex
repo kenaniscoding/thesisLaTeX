@@ -289,7 +289,7 @@ After that another image is taken with the mango which would be the foreground i
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{mango_1_fgMask_bottom}
-	\caption{Mango 1 with Foreground Mask}
+	\caption{Mango 1 with Foreground Masking}
 	\label{fig:mango_1_fgMask_bottom}
 \end{figure}
 \begin{figure}[!htbp]
@@ -328,7 +328,7 @@ After that another image is taken with the mango which would be the foreground i
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{mango_3_fgMask_bottom}
-	\caption{Mango 3 with Foreground Mask}
+	\caption{Mango 3 with Foreground Masking}
 	\label{fig:mango_3_fgMask_bottom}
 \end{figure}
 \begin{figure}[!htbp]
@@ -347,7 +347,7 @@ After that another image is taken with the mango which would be the foreground i
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{mango_3_fgMask_top}
-	\caption{Mango 3 with Foreground Mask}
+	\caption{Mango 3 with Foreground Masking}
 	\label{fig:mango_3_fgMask_top}
 \end{figure}
 \begin{figure}[!htbp]
@@ -358,6 +358,14 @@ After that another image is taken with the mango which would be the foreground i
 \end{figure}
 
 \subsection{Method 2: Object Detection}
+For the second method, the researchers train an object detection which is a faster RCNN specifically the MobileNetV3.
+This was used because of its lightweight properties for the RaspberryPi deployment.
+\subsubsection{Training and Testing}
+For the training of the object detection, the researchers annotated 488 images to detect the mango.
+
+\subsubsection{Calibration to the Prototype}
+To calibrate the model to measure the real world length and width of the mango, the researchers calibrated the model using a Philippine peso coin which has a diameter of 2.4 cm.
+
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
@@ -488,6 +496,8 @@ Show the raspberry pi app UI and demonstrate it here
 	\caption{Raspberry Pi App UI Version 5}
 	\label{fig:app_v5_fig}
 \end{figure}
+
+
 \section{Summary} \label{sec:summary_results_and_discussions}
 
 Provide the gist of this chapter such that it reflects the contents and the message. This is a compile test
