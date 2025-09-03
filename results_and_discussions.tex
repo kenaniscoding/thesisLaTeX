@@ -229,6 +229,7 @@ Add the \gls{F1-Score} and etc here
 \end{figure}
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
+Add description on how the bruises results were taken and how many images were used.
 
 \begin{table}[htbp]
 	\centering
@@ -380,6 +381,13 @@ To calibrate the model to measure the real world length and width of the mango, 
     self.reference_box = [815, 383, 999, 556]
     self.reference_size_cm = 2.4 
 \end{verbatim}
+% image of the coin
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{coin_box}
+	\caption{Calibration using Faster RCNN and a Philippine one peso coin}
+	\label{fig:one_peso_coin}
+\end{figure}
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
@@ -432,8 +440,8 @@ Add pictures of the hardware prototype here with description
         \includegraphics[width=0.45\textwidth]{side2}
         \label{fig:side2}
     }
-    \caption{Prototype First Iteration}
-    \label{fig:prototype_1}
+    \caption{Version 1: Prototype}
+    \label{fig:v1_prototype}
 \end{figure}
 
 \begin{figure}[!htbp]
@@ -467,34 +475,13 @@ Add pictures of the hardware prototype here with description
         \includegraphics[width=0.45\textwidth]{new-top-view}
         \label{fig:new-top-view}
     }
-    \caption{Improved Prototype}
-    \label{fig:Improved Prototype}
+    \caption{Version 2: Improved Prototype}
+    \label{fig:v2_prototype}
 \end{figure}
 
 \section{Software Application}
 
 Show the raspberry pi app UI and demonstrate it here 
-
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.9\textwidth]{UI_v1}
-% 	\caption{Raspberry Pi App UI Version 1}
-% 	\label{fig:app_v1_fig}
-% \end{figure}
-%
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.9\textwidth]{UI_v2}
-% 	\caption{Raspberry Pi App UI Version 2}
-% 	\label{fig:app_v2_fig}
-% \end{figure}
-%
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.9\textwidth]{UI_v3}
-% 	\caption{Raspberry Pi App UI Version 3}
-% 	\label{fig:app_v3_fig}
-% \end{figure}
 
 \begin{figure}[!htbp]
     \centering
@@ -513,24 +500,24 @@ Show the raspberry pi app UI and demonstrate it here
         \label{fig:ui_v3}
     }
 
-    \caption{User Interface of the Raspberry Pi}
+    \caption{Version 1: User Interface of the Raspberry Pi}
     \label{fig:user_interface_v1}
 \end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{UI_v5}
-	\caption{Raspberry Pi App UI Version 2.1}
-	\label{fig:app_v4_fig}
+    \centering
+    \subbottom[Version 2.1 with Background Image]{
+        \includegraphics[width=0.45\textwidth]{UI_v4}
+        \label{fig:app_v4}
+    }
+    \hfill
+    \subbottom[Version 2.2 without Background Image]{
+        \includegraphics[width=0.45\textwidth]{UI_v5}
+        \label{fig:app_v5}
+    }
+    \caption{Version 2: User Interfaceof the Raspberry Pi}
+    \label{fig:ui_main_v2}
 \end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{UI_v4}
-	\caption{Raspberry Pi App UI Version 2.2}
-	\label{fig:app_v5_fig}
-\end{figure}
-
 
 \section{Summary} \label{sec:summary_results_and_discussions}
 
