@@ -142,41 +142,41 @@
 
 \section{Training and Testing Results of the Model} \label{sec:main_trainAndTestResults}
 
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{c|cc}
-  \hline
-                & \multicolumn{2}{c}{Accuracy}            \\ \hline
-  Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-  EfficientNetB0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
-  VggNet16       & \multicolumn{1}{c|}{43}       & 54      \\ \hline
-  AlexNet        & \multicolumn{1}{c|}{43}       & 54      \\ \hline
-  ResNet50       & \multicolumn{1}{c|}{87}       & 84      \\ \hline
-  GoogleNet      & \multicolumn{1}{c|}{89}       & 81      \\ \hline
-  MobileNetV2    & \multicolumn{1}{c|}{90}       & 86      \\ \hline
-  DenseNet121    & \multicolumn{1}{c|}{88}       & 84      \\ \hline
-  \end{tabular}
-  \caption{Overall Accuracy Results of Different CNN Models}
-  \label{tab:overall_accuracy_cnn}
-\end{table}
-
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{c|cc}
-  \hline
-                & \multicolumn{2}{c}{Accuracy}            \\ \hline
-  EfficientNet          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-  B0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
-  B1 & \multicolumn{1}{c|}{86}       & 90      \\ \hline
-  B2 & \multicolumn{1}{c|}{92}       & 90      \\ \hline
-  B3 & \multicolumn{1}{c|}{88}       & 91      \\ \hline
-  B4 & \multicolumn{1}{c|}{90}       & 90      \\ \hline
-  B5 & \multicolumn{1}{c|}{92}       & 88      \\ \hline
-  B6 & \multicolumn{1}{c|}{93}       & 88      \\ \hline
-  \end{tabular}
-  \caption{Overall Accuracy Results of Different EfficientNet Versions}
-  \label{tab:overall_accuracy_effnet}
-\end{table}
+% \begin{table}[htbp]
+%   \centering
+%   \begin{tabular}{c|cc}
+%   \hline
+%                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
+%   Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+%   EfficientNetB0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
+%   VggNet16       & \multicolumn{1}{c|}{43}       & 54      \\ \hline
+%   AlexNet        & \multicolumn{1}{c|}{43}       & 54      \\ \hline
+%   ResNet50       & \multicolumn{1}{c|}{87}       & 84      \\ \hline
+%   GoogleNet      & \multicolumn{1}{c|}{89}       & 81      \\ \hline
+%   MobileNetV2    & \multicolumn{1}{c|}{90}       & 86      \\ \hline
+%   DenseNet121    & \multicolumn{1}{c|}{88}       & 84      \\ \hline
+%   \end{tabular}
+%   \caption{Overall Accuracy Results of Different CNN Models}
+%   \label{tab:overall_accuracy_cnn}
+% \end{table}
+%
+% \begin{table}[htbp]
+%   \centering
+%   \begin{tabular}{c|cc}
+%   \hline
+%                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
+%   EfficientNet          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+%   B0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
+%   B1 & \multicolumn{1}{c|}{86}       & 90      \\ \hline
+%   B2 & \multicolumn{1}{c|}{92}       & 90      \\ \hline
+%   B3 & \multicolumn{1}{c|}{88}       & 91      \\ \hline
+%   B4 & \multicolumn{1}{c|}{90}       & 90      \\ \hline
+%   B5 & \multicolumn{1}{c|}{92}       & 88      \\ \hline
+%   B6 & \multicolumn{1}{c|}{93}       & 88      \\ \hline
+%   \end{tabular}
+%   \caption{Overall Accuracy Results of Different EfficientNet Versions}
+%   \label{tab:overall_accuracy_effnet}
+% \end{table}
 
 
 \subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
@@ -204,6 +204,9 @@ Add the \gls{F1-Score} and etc here
 	\caption{Performance Metrics for different EfficientNet versions}
 	\label{tab:efficientnet_performance}
 \end{table}
+
+\subsubsection{Naive Bayes}
+Add explanation of the confusion matrix and the precision, recall, and f1 score. 
 
 \begin{table}[htbp]
 	\centering
@@ -235,6 +238,10 @@ Add the \gls{F1-Score} and etc here
 	\label{fig:ripeness_confusion_matrix_nv_fig}
 \end{figure}
 
+
+\subsubsection{KMeans}
+Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{c|c|c|c|c}
@@ -261,9 +268,12 @@ Add the \gls{F1-Score} and etc here
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{kmean-francis}
-	\caption{Ripeness Confusion Matrix using Kmeans}
+	\caption{Ripeness Confusion Matrix using KMeans}
 	\label{fig:ripeness_confusion_matrix_kmeans_fig}
 \end{figure}
+
+\subsubsection{KNN}
+Add explanation of the confusion matrix and the precision, recall, and f1 score. 
 
 \begin{table}[htbp]
 	\centering
@@ -295,6 +305,8 @@ Add the \gls{F1-Score} and etc here
 	\label{fig:ripeness_confusion_matrix_knn_fig}
 \end{figure}
 
+\subsubsection{CNN}
+Add explanation of the confusion matrix and the precision, recall, and f1 score. 
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
 Add description on how the bruises results were taken and how many images were used.
@@ -309,7 +321,7 @@ Add description on how the bruises results were taken and how many images were u
 	  \hline
 	  Not Bruised & 0.88 & 0.97 & 0.92 & 1146 \\
 	  \hline
-	  Accuracy &  &  & 0.93 & 2661 \\
+	  Accuracy &  \multicolumn{2}{|c|}{ }  & 0.93 & 2661 \\
 	  \hline
 	  Macro Avg & 0.93 & 0.93 & 0.93 & 2661 \\
 	  \hline
