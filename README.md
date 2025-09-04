@@ -3,6 +3,13 @@
 
 My group's thesis documentation in LaTeX format. 
 
+## TO READ THE DOCUMENT.PDF
+run this command
+```bash
+pdflatex document.tex && pdflatex document.tex
+```
+`always run this after pulling the repo or cloning it`
+
 
 ## How to PUSH and COMMIT
 Add File
