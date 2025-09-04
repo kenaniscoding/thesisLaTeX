@@ -142,6 +142,43 @@
 
 \section{Training and Testing Results of the Model} \label{sec:main_trainAndTestResults}
 
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|cc}
+  \hline
+                & \multicolumn{2}{c}{Accuracy}            \\ \hline
+  Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  EfficientNetB0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
+  VggNet16       & \multicolumn{1}{c|}{43}       & 54      \\ \hline
+  AlexNet        & \multicolumn{1}{c|}{43}       & 54      \\ \hline
+  ResNet50       & \multicolumn{1}{c|}{87}       & 84      \\ \hline
+  GoogleNet      & \multicolumn{1}{c|}{89}       & 81      \\ \hline
+  MobileNetV2    & \multicolumn{1}{c|}{90}       & 86      \\ \hline
+  DenseNet121    & \multicolumn{1}{c|}{88}       & 84      \\ \hline
+  \end{tabular}
+  \caption{Overall Accuracy Results of Different CNN Models}
+  \label{tab:overall_accuracy_cnn}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{c|cc}
+  \hline
+                & \multicolumn{2}{c}{Accuracy}            \\ \hline
+  EfficientNet          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  B0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
+  B1 & \multicolumn{1}{c|}{86}       & 90      \\ \hline
+  B2 & \multicolumn{1}{c|}{92}       & 90      \\ \hline
+  B3 & \multicolumn{1}{c|}{88}       & 91      \\ \hline
+  B4 & \multicolumn{1}{c|}{90}       & 90      \\ \hline
+  B5 & \multicolumn{1}{c|}{92}       & 88      \\ \hline
+  B6 & \multicolumn{1}{c|}{93}       & 88      \\ \hline
+  \end{tabular}
+  \caption{Overall Accuracy Results of Different EfficientNet Versions}
+  \label{tab:overall_accuracy_effnet}
+\end{table}
+
+
 \subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
 Add the \gls{F1-Score} and etc here
 
@@ -389,6 +426,8 @@ To calibrate the model to measure the real world length and width of the mango, 
 	\caption{Calibration using Faster RCNN and a Philippine one peso coin}
 	\label{fig:one_peso_coin}
 \end{figure}
+
+Likewise, the reference box that contain the four coordinate points to the coin and the reference size in cm is added to the prototype's code.
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
