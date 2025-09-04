@@ -211,28 +211,28 @@ Add the \gls{F1-Score} and etc here
 	  \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
-	  Green & 0.95 & 0.94 & 0.95 & 135 \\
+	  Green & 0.78 & 0.79 & 0.78 & 132 \\
 	  \hline
-	  Green Yellow & 0.77 & 0.78 & 0.77 & 81 \\
+	  Yellow & 0.75 & 0.86 & 0.80 & 66 \\
 	  \hline
-	  Yellow & 0.70 & 0.71 & 0.71 & 80 \\
+	  Yellow\_Green & 0.58 & 0.51 & 0.55 & 101 \\ 
 	  \hline
-	  Accuracy &  &  & 0.83 & 296 \\
+	  Accuracy &  \multicolumn{2}{|c|}{ } & 0.71 & 299 \\
 	  \hline
-	  Macro Avg & 0.81 & 0.81 & 0.81 & 296 \\
+	  Macro Avg & 0.70 & 0.72 & 0.71 & 299 \\
 	  \hline
-	  Weighted Avg & 0.84 & 0.83 & 0.84 & 296 \\
+	  Weighted Avg & 0.71 & 0.71 & 0.71 & 299 \\
 	  \hline
 	\end{tabular}
-	\caption{Ripeness Classification Report using kNN}
-	\label{tab:bruises_classification_report_knn}
+	\caption{Ripeness Classification Report using Naive Bayes}
+	\label{tab:bruises_classification_report_naive_bayes}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{kNN confusion matrix}
-	\caption{Ripeness Confusion Matrix using kNN}
-	\label{fig:ripeness_confusion_matrix_knn_fig}
+	\includegraphics[width=0.5\textwidth]{nb-francis}
+	\caption{Ripeness Confusion Matrix using Naive Bayes}
+	\label{fig:ripeness_confusion_matrix_nv_fig}
 \end{figure}
 
 \begin{table}[htbp]
@@ -241,29 +241,60 @@ Add the \gls{F1-Score} and etc here
 		\hline
 		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 		\hline
-		Green & 0.96 & 0.76 & 0.85 & 135 \\
+		Green & 0.57 & 0.80 & 0.67 & 132 \\
 		\hline
-		Yellow Green & 0.75 & 0.30 & 0.42 & 81 \\
+		Yellow & 0.83 & 0.52 & 0.64 & 66 \\
 		\hline
-		Yellow & 0.45 & 0.88 & 0.59 & 80 \\
+		Yellow\_Green & 0.41 & 0.30 & 0.34 & 101 \\
 		\hline
-		Accuracy &  &  & 0.67 & 296 \\
+		Accuracy & \multicolumn{2}{|c|}{ } & 0.57 & 299 \\
 		\hline
-		Macro Avg & 0.72 & 0.64 & 0.62 & 296 \\
+		Macro Avg & 0.60 & 0.54 & 0.55 & 299 \\
 		\hline
-		Weighted Avg & 0.76 & 0.67 & 0.66 & 296 \\
+		Weighted Avg & 0.57 & 0.57 & 0.55 & 299 \\
 		\hline
 	\end{tabular}
-	\caption{Ripeness Classification Report using Naive Bayes}
-	\label{tab:bruises_classification_report_naive_bayes}
+	\caption{Ripeness Classification Report using KMeans}
+	\label{tab:bruises_classification_report_kmeans}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{naive_bayes_confusion_matrix}
-	\caption{Ripeness Confusion Matrix using Naive Bayes}
-	\label{fig:ripeness_confusion_matrix_nv_fig}
+	\includegraphics[width=0.5\textwidth]{kmean-francis}
+	\caption{Ripeness Confusion Matrix using Kmeans}
+	\label{fig:ripeness_confusion_matrix_kmeans_fig}
 \end{figure}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+		\hline
+		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+		\hline
+		Green & 0.85 & 0.85 & 0.85 & 132 \\
+		\hline
+		Yellow & 0.83 & 0.79 & 0.81 & 66 \\
+		\hline
+		Yellow\_Green & 0.67 & 0.69 & 0.68 & 101 \\
+		\hline
+		Accuracy & \multicolumn{2}{|c|}{ }  & 0.78 & 299 \\
+		\hline
+		Macro Avg & 0.78 & 0.78 & 0.78 & 299 \\
+		\hline
+		Weighted Avg & 0.78 & 0.78 & 0.78 & 299 \\
+		\hline
+	\end{tabular}
+	\caption{Ripeness Classification Report using KNN}
+	\label{tab:bruises_classification_report_knn}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{knn-francis}
+	\caption{Ripeness Confusion Matrix using KNN}
+	\label{fig:ripeness_confusion_matrix_knn_fig}
+\end{figure}
+
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
 Add description on how the bruises results were taken and how many images were used.
