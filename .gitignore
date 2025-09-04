@@ -12,6 +12,10 @@
 *.cb2
 *.lb
 
+# pdf files
+document.pdf
+document_with_extra_guides_in_the_appendices.pdf
+
 # Intermediate files
 *.dvi
 *.xdv
