@@ -220,7 +220,7 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 	  \hline
 	  Yellow\_Green & 0.58 & 0.51 & 0.55 & 101 \\ 
 	  \hline
-	  Accuracy &  \multicolumn{2}{|c|}{ } & 0.71 & 299 \\
+	  Accuracy &  \multicolumn{2}{c|}{ } & 0.71 & 299 \\
 	  \hline
 	  Macro Avg & 0.70 & 0.72 & 0.71 & 299 \\
 	  \hline
@@ -254,7 +254,7 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 		\hline
 		Yellow\_Green & 0.41 & 0.30 & 0.34 & 101 \\
 		\hline
-		Accuracy & \multicolumn{2}{|c|}{ } & 0.57 & 299 \\
+		Accuracy & \multicolumn{2}{c|}{ } & 0.57 & 299 \\
 		\hline
 		Macro Avg & 0.60 & 0.54 & 0.55 & 299 \\
 		\hline
@@ -287,7 +287,7 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 		\hline
 		Yellow\_Green & 0.67 & 0.69 & 0.68 & 101 \\
 		\hline
-		Accuracy & \multicolumn{2}{|c|}{ }  & 0.78 & 299 \\
+		Accuracy & \multicolumn{2}{c|}{ }  & 0.78 & 299 \\
 		\hline
 		Macro Avg & 0.78 & 0.78 & 0.78 & 299 \\
 		\hline
@@ -307,10 +307,6 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 
 \subsubsection{CNN}
 Add explanation of the confusion matrix and the precision, recall, and f1 score. 
-
-\subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
-Add description on how the bruises results were taken and how many images were used.
-
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{c|c|c|c|c}
@@ -321,7 +317,62 @@ Add description on how the bruises results were taken and how many images were u
 	  \hline
 	  Not Bruised & 0.88 & 0.97 & 0.92 & 1146 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{|c|}{ }  & 0.93 & 2661 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.93 & 2661 \\
+	  \hline
+	  Macro Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+	  \hline
+	  Weighted Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+	  \hline
+	\end{tabular}
+	\caption{Ripeness Classification Report using CNN}
+	\label{tab:ripeness_classification_report}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/effnet-b4-ripeness/confusion_matrix_ripeness}
+	\caption{Ripeness Confusion Matrix using CNN}
+	\label{fig:ripeness_confusion_matrix_fig}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Test Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-ripeness/test_class_distribution_ripeness}
+        \label{fig:ripeness_test_cnn}
+    }
+    \hfill
+    \subbottom[Train Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-ripeness/train_class_distribution_ripeness}
+        \label{fig:ripeness_train_cnn}
+    }
+    \vfill
+    \subbottom[Validation Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-ripeness/valid_class_distribution_ripeness}
+        \label{fig:ripeness_valid_cnn}
+    }
+    \hfill
+    \subbottom[Validation Accuracy and Loss Plot]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-ripeness/val_loss_accuracy_curve_ripeness}
+        \label{fig:val_curve_cnn}
+    }
+    \caption{Ripeness Training and Testing}
+    \label{fig:cnn_ripeness_info}
+\end{figure}
+\subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
+Add description on how the bruises results were taken and how many images were used.
+% todo: replace the results with kenan's current results
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+	  \hline
+	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+	  \hline
+	  Bruised & 0.97 & 0.90 & 0.93 & 1515 \\
+	  \hline
+	  Not Bruised & 0.88 & 0.97 & 0.92 & 1146 \\
+	  \hline
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.93 & 2661 \\
 	  \hline
 	  Macro Avg & 0.93 & 0.93 & 0.93 & 2661 \\
 	  \hline
@@ -334,9 +385,34 @@ Add description on how the bruises results were taken and how many images were u
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{bruises_confusion_matrix}
+	\includegraphics[width=0.5\textwidth]{/effnet-b4-bruises/confusion_matrix_bruises}
 	\caption{Bruises Confusion Matrix using CNN}
 	\label{fig:bruises_confusion_matrix_fig}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Test Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-bruises/test_class_distribution_bruises}
+        \label{fig:bruises_test_cnn}
+    }
+    \hfill
+    \subbottom[Train Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-bruises/train_class_distribution_bruises}
+        \label{fig:bruises_train_cnn}
+    }
+    \vfill
+    \subbottom[Validation Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-bruises/valid_class_distribution_bruises}
+        \label{fig:bruises_valid_cnn}
+    }
+    \hfill
+    \subbottom[Validation Accuracy and Loss Plot]{
+        \includegraphics[width=0.45\textwidth]{/effnet-b4-bruises/val_loss_accuracy_curve_bruises}
+        \label{fig:val_curve_cnn}
+    }
+    \caption{Bruises Training and Testing}
+    \label{fig:cnn_bruises_info}
 \end{figure}
 
 \begin{table}[htbp]
