@@ -548,6 +548,50 @@ To calibrate the model to measure the real world length and width of the mango, 
 
 Likewise, the reference box that contain the four coordinate points to the coin and the reference size in cm is added to the prototype's code.
 
+\subsection{Test Comparison Between Both Methods}
+To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
+compare and contrast both methods.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Original]{
+        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_1}
+        \label{fig:m3_top}
+    }
+    \hfill
+    \subbottom[Foreground Masking]{
+        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_2}
+        \label{fig:m3_fm_top}
+    }
+    \vfill
+    \subbottom[Background]{
+        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_3}
+        \label{fig:m3_thresh_top}
+    }
+    \hfill
+    \subbottom[Thresholding]{
+        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_4}
+        \label{fig:m3_background}
+    }
+    \caption{Mango Top Side with White Conveyor}
+    \label{fig:mango_3_top}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Original]{
+        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_5}
+        \label{fig:m3_top}
+    }
+    \hfill
+    \subbottom[Foreground Masking]{
+        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_6}
+        \label{fig:m3_fm_top}
+    }
+    \caption{Mango Top Side with White Conveyor}
+    \label{fig:mango_3_top}
+\end{figure}
+
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
 Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
