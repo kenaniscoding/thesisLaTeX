@@ -312,19 +312,21 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 	\begin{tabular}{c|c|c|c|c}
 	  \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+    \hline
+	  Green & 0.97 & 0.97 & 0.97 & 293 \\
+    \hline
+	  Yellow & 0.98 & 0.98 & 0.98 & 124 \\
 	  \hline
-	  Bruised & 0.97 & 0.90 & 0.93 & 1515 \\
+	  Yellow\_Green & 0.95 & 0.96 & 0.95 & 188 \\
 	  \hline
-	  Not Bruised & 0.88 & 0.97 & 0.92 & 1146 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.97 & 551 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.93 & 2661 \\
+	  Macro Avg & 0.97 & 0.97 & 0.97 & 551 \\
 	  \hline
-	  Macro Avg & 0.93 & 0.93 & 0.93 & 2661 \\
-	  \hline
-	  Weighted Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+	  Weighted Avg & 0.97 & 0.97 & 0.97 & 551 \\
 	  \hline
 	\end{tabular}
-	\caption{Ripeness Classification Report using CNN}
+	\caption{EfficientNetV2 Ripeness Classification Report}
 	\label{tab:ripeness_classification_report}
 \end{table}
 
@@ -369,15 +371,15 @@ Add description on how the bruises results were taken and how many images were u
 	  \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
-	  Bruised & 0.97 & 0.90 & 0.93 & 1515 \\
+	  Bruised & 0.94 & 1.00 & 0.97 & 141 \\
 	  \hline
-	  Not Bruised & 0.88 & 0.97 & 0.92 & 1146 \\
+	  Not Bruised & 1.00 & 0.96 & 0.98 & 239 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.93 & 2661 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 380 \\
 	  \hline
-	  Macro Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+	  Macro Avg & 0.97 & 0.98 & 0.97 & 380 \\
 	  \hline
-	  Weighted Avg & 0.93 & 0.93 & 0.93 & 2661 \\
+    Weighted Avg & 0.98 & 0.98 & 0.98 & 380 \\
 	  \hline
 	\end{tabular}
 	\caption{EfficientNetV2 Bruises Classification Report}
