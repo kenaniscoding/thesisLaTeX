@@ -597,6 +597,31 @@ compare and contrast both methods.
     \label{fig:mango_3_top}
 \end{figure}
 
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Sample 1]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/1}
+        \label{fig:box1}
+    }
+    \hfill
+    \subbottom[Sample 2]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/2}
+        \label{fig:box2}
+    }
+    \vfill
+    \subbottom[Sample 3]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/3}
+        \label{fig:box3}
+    }
+    \hfill
+    \subbottom[Sample 4]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/4}
+        \label{fig:box4}
+    }
+    \caption{Resulting Bounding Boxes of the Mangoes}
+    \label{fig:bounding_boxes}
+\end{figure}
+
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
 Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
@@ -628,7 +653,6 @@ s(\text{medium}) &= 2.0 \\
 s(\text{large}) &= 3.0
 \end{align}
 
-% image of the coin
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{/priority/bruises-only}
