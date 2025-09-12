@@ -76,6 +76,26 @@ This study applies the experimental approach for research in order to develop an
 \section{Hardware Design} \label{sec:hardwareDesign}
 The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller (Raspberry Pi 4b), coordinating actions of all components. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient. 
 
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Left View]{
+        \includegraphics[width=0.45\textwidth]{/dimensions/left}
+        \label{fig:left-view}
+    }
+    \hfill
+    \subbottom[Top View]{
+        \includegraphics[width=0.45\textwidth]{/dimensions/top}
+        \label{fig:top-view}
+    }
+    \vfill
+    \subbottom[Right View]{
+        \includegraphics[width=0.45\textwidth]{/dimensions/zoom}
+        \label{fig:right-view}
+    }
+    \caption{Image Acquision Dimensions}
+    \label{fig:img-acquision-design}
+\end{figure}
+
 \section{Software Design} 
 For the programming language used for the prototype and training and testing the CNN model, Python was used for training and testing the CNN model and it was also used in the microcontroller to run the application containing the UI and CNN model. PyTorch was the main library used in using the EfficientNet model that is used in classifying the ripeness and bruises of the mango. Likewise, tkinter is the used library when designing the UI in Python.
 
