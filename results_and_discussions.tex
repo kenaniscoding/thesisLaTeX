@@ -353,13 +353,15 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
         \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/valid_class_distribution_ripeness}
         \label{fig:ripeness_valid_cnn}
     }
-    \hfill
-    \subbottom[Validation Accuracy and Loss Plot]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/val_loss_accuracy_curve_ripeness}
-        \label{fig:val_curve_cnn}
-    }
-    \caption{EfficientNetV2 Ripeness Training and Testing}
+    \caption{EfficientNetV2 Ripeness Datasplit}
     \label{fig:cnn_ripeness_info}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{/graphs/ripeness}
+	\caption{EfficientNetV2 Ripeness Accuracy and Loss Graph}
+	\label{fig:ripeness-graph}
 \end{figure}
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
@@ -409,31 +411,17 @@ Add description on how the bruises results were taken and how many images were u
         \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/valid_class_distribution_bruises}
         \label{fig:bruises_valid_cnn}
     }
-    \hfill
-    \subbottom[Validation Accuracy and Loss Plot]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/val_loss_accuracy_curve_bruises}
-        \label{fig:val_curve_cnn}
-    }
-    \caption{Bruises Training and Testing}
+    \caption{Bruises Datasplit}
     \label{fig:cnn_bruises_info}
 \end{figure}
 
-\begin{table}[htbp]
+
+\begin{figure}[!htbp]
 	\centering
-	\begin{tabular}{c|c}
-	  \hline
-	  \textbf{Metrics} & \textbf{Results} \\
-	  \hline
-	  Precision & 0.9318 \\
-	  \hline
-	  Recall & 0.9275 \\
-	  \hline
-	  F1 Score &  0.9278 \\
-	  \hline
-	\end{tabular}
-	\caption{Summarized Classification Report using CNN}
-	\label{tab:sum_bruises_classification_report}
-\end{table}
+	\includegraphics[width=0.9\textwidth]{/graphs/bruises}
+	\caption{EfficientNetV2 Bruises Accuracy and Loss Graph}
+	\label{fig:bruises-graph}
+\end{figure}
 
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
