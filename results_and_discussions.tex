@@ -353,13 +353,15 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
         \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/valid_class_distribution_ripeness}
         \label{fig:ripeness_valid_cnn}
     }
-    \hfill
-    \subbottom[Validation Accuracy and Loss Plot]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/val_loss_accuracy_curve_ripeness}
-        \label{fig:val_curve_cnn}
-    }
-    \caption{EfficientNetV2 Ripeness Training and Testing}
+    \caption{EfficientNetV2 Ripeness Datasplit}
     \label{fig:cnn_ripeness_info}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{/graphs/ripeness}
+	\caption{EfficientNetV2 Ripeness Accuracy and Loss Graph}
+	\label{fig:ripeness-graph}
 \end{figure}
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
@@ -409,31 +411,17 @@ Add description on how the bruises results were taken and how many images were u
         \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/valid_class_distribution_bruises}
         \label{fig:bruises_valid_cnn}
     }
-    \hfill
-    \subbottom[Validation Accuracy and Loss Plot]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/val_loss_accuracy_curve_bruises}
-        \label{fig:val_curve_cnn}
-    }
-    \caption{Bruises Training and Testing}
+    \caption{Bruises Datasplit}
     \label{fig:cnn_bruises_info}
 \end{figure}
 
-\begin{table}[htbp]
+
+\begin{figure}[!htbp]
 	\centering
-	\begin{tabular}{c|c}
-	  \hline
-	  \textbf{Metrics} & \textbf{Results} \\
-	  \hline
-	  Precision & 0.9318 \\
-	  \hline
-	  Recall & 0.9275 \\
-	  \hline
-	  F1 Score &  0.9278 \\
-	  \hline
-	\end{tabular}
-	\caption{Summarized Classification Report using CNN}
-	\label{tab:sum_bruises_classification_report}
-\end{table}
+	\includegraphics[width=0.9\textwidth]{/graphs/bruises}
+	\caption{EfficientNetV2 Bruises Accuracy and Loss Graph}
+	\label{fig:bruises-graph}
+\end{figure}
 
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
@@ -554,6 +542,20 @@ Likewise, the reference box that contain the four coordinate points to the coin 
 \subsection{Test Comparison Between Both Methods}
 To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
 compare and contrast both methods.
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Unripe Carabao Mangoes]{
+        \includegraphics[width=0.45\textwidth]{/size-mango-test/unripe}
+        \label{fig:unripe-mango}
+    }
+    \hfill
+    \subbottom[Ripe Carabao Mangoes]{
+        \includegraphics[width=0.45\textwidth]{/size-mango-test/ripe}
+        \label{fig:ripe-mango}
+    }
+    \caption{Mangoes Tested for Size Measurement}
+    \label{fig:mango_size_test}
+\end{figure}
 
 \begin{figure}[!htbp]
     \centering
@@ -595,6 +597,31 @@ compare and contrast both methods.
     \label{fig:mango_3_top}
 \end{figure}
 
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Sample 1]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/1}
+        \label{fig:box1}
+    }
+    \hfill
+    \subbottom[Sample 2]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/2}
+        \label{fig:box2}
+    }
+    \vfill
+    \subbottom[Sample 3]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/3}
+        \label{fig:box3}
+    }
+    \hfill
+    \subbottom[Sample 4]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/4}
+        \label{fig:box4}
+    }
+    \caption{Resulting Bounding Boxes of the Mangoes}
+    \label{fig:bounding_boxes}
+\end{figure}
+
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
 Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
@@ -626,7 +653,6 @@ s(\text{medium}) &= 2.0 \\
 s(\text{large}) &= 3.0
 \end{align}
 
-% image of the coin
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{/priority/bruises-only}
