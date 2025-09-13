@@ -62,7 +62,7 @@ the mangoes. The choice of hardware is justified based on cost, performance, and
 	\label{fig:prototypeDiagram_fig}
 \end{figure}
 
-The Figure 4.2 presents the overall prototype layout of the automated Carabao
+The Figure~\ref{fig:prototypeDiagram_fig} presents the overall prototype layout of the automated Carabao
 mango sorter and grader. The diagram illustrates the flow of operations from
 mango loading onto the conveyor belt to sorting them. It illustrates the major
 elements of the system, that is, the image acquisition area, lighting system,
@@ -82,7 +82,7 @@ actual prototype development.
 	\label{fig:pro2typeDiagram_fig}
 \end{figure}
 
-The flowchart in Figure 4.3 represents the overall operational logic of the
+The flowchart in Figure~\ref{fig:pro2typeDiagram_fig} represents the overall operational logic of the
 mango grading and sorting system. The process starts with system initialization,
 where the camera and lighting modules are switched on and the machine learning
 algorithms are initialised. The input of the user priority values as well as the
@@ -104,7 +104,7 @@ process.
 	\label{fig:3dModel_fig}
 \end{figure}
 
-Figure 4.4 shows the first 3D model of the initial physical prototype developed
+Figure~\ref{fig:3dModel_fig} shows the first 3D model of the initial physical prototype developed
 for the sorting and grading system. This model shows the skeleton of the system
 and where the conveyor system is going to be placed strategically in order to
 flip the mango for image acquisition. It is useful for where the hardware
@@ -123,7 +123,7 @@ integrated.
 	\label{fig:rpi4b_fig}
 \end{figure}
 
-Figure 4.5 depicts the Raspberry Pi 4 Model B which is the core of the
+Figure~\ref{fig:rpi4b_fig} depicts the Raspberry Pi 4 Model B which is the core of the
 processing unit of the prototype. It was selected due to its small size, low
 cost, and high computing power for image processing and machine learning. The
 image depicts the most critical aspects of the board, such as the GPIO (General
@@ -359,12 +359,15 @@ Challenges include variations in mango appearance due to lighting and environmen
 
 \section{Technical Standards}
 The system adheres to industry standards for image processing and machine learning, ensuring compatibility and interoperability with other systems.
+% todo update the technical standards
 
 \section{Prototyping and Simulation}
 Prototypes are developed using tools like MATLAB and Simulink to simulate the system’s performance. These simulations help identify design flaws and optimize the system before deployment.,
+% todo add the done prototyep simulation such as error testing and fake gpio and fake rpi cam
 
 \section{Design Validation}
 The design is validated through testing, including unit testing of individual modules and integration testing of the entire system. Peer reviews and iterative improvements ensure the system meets the desired performance metrics.
+% todo MIGHT DELETE THIS CAUSE WE DIDT VALIDATE THE DESIGN
 
 \section{Summary}
 This chapter outlined the key design considerations, including system architecture, hardware and software choices, and validation methods. These decisions are critical for developing a reliable and efficient mango sorting and grading system.
