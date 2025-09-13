@@ -181,8 +181,67 @@ on an individual basis, integration testing is conducted to ensure communication
  and software is correct to ensure the image processing system, motors, and sorting actuators work
   in concert as required. System testing is conducted to conduct overall system performance
   testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
+% todo put the specs of daniel laptop here for training
 
-  
+\subsection{Data Augmentation and Splitting}
+For the used methods to increase the Carabao mango image dataset, data augmentation techniques such as rotation, flipping, Gaussian blur, brightness adjustment,
+noise, crop, and resizing of the images were done.
+Note that the split ratio of the dataset is 70-15-15 where it refers to the training, testing, and validation as seen on the Listing~\ref{lst:datasplit_logs}.
+\begin{lstlisting}[
+float=h,
+caption=Datasplit Logs, 
+label=lst:datasplit_logs,
+language=TeX,
+frame=single]
+Class Mapping:
+------------------------------
+green        -> ripeness/green
+yellow       -> ripeness/yellow
+yellow_green -> ripeness/yellow_green
+bruised      -> bruises/bruised
+unbruised    -> bruises/not_bruised
+Splitting dataset into hierarchical structure...
+Processing green -> ripeness/green
+  Train: 1225, Val: 262, Test: 263
+Processing yellow -> ripeness/yellow
+  Train: 616, Val: 132, Test: 132
+Processing yellow_green -> ripeness/yellow_green
+  Train: 935, Val: 200, Test: 201
+Processing bruised -> bruises/bruised
+  Train: 1363, Val: 292, Test: 293
+Processing unbruised -> bruises/not_bruised
+  Train: 1143, Val: 245, Test: 246
+Applying massive augmentation to generate 10000 additional images...
+Total augmentation combinations available: 309
+Original training images: 6832
+Total augmented images created: 13664
+Target was: 10000
+
+Dataset Statistics:
+============================================================
+
+RIPENESS Category:
+----------------------------------------
+  green        - Train: 7830, Val:  488, Test:  478
+  yellow       - Train: 4010, Val:  242, Test:  248
+  yellow_green - Train: 6130, Val:  376, Test:  376
+  Subtotal     - Train: 17970, Val: 1106, Test: 1102
+
+BRUISES Category:
+----------------------------------------
+  bruised      - Train: 8820, Val:  526, Test:  538
+  not_bruised  - Train: 7370, Val:  446, Test:  450
+  Subtotal     - Train: 16190, Val:  972, Test:  988
+
+============================================================
+TOTAL        - Train: 34160, Val: 2078, Test: 2090
+Ratios       - Train: 89.1%, Val: 5.4%, Test: 5.5%
+
+Dataset processing complete! Output saved to: E:\dir
+
+========================================
+\end{lstlisting} 
+
 \subsection{Classification Report}
 % describe classification report and how it is used in the system
 
