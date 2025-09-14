@@ -181,6 +181,12 @@ deep learning algorithm methods.
   \label{tab:overall_accuracy_effnet}
 \end{table}
 
+The performance of the seven convolutional neural network models shown in Table~\ref{tab:overall_accuracy_cnn} was evaluated and tested for the two classification tasks that are required for the automation in this project which are the ripeness and bruising detection of  mangoes. The table summarizes the overall accuracy of the models in said tasks.
+
+For the classification of the ripeness, the highest accuracy was obtained of the MobileNetV2, which had an accuracy of 90\%. This model is followed by the EfficientNet-B0 and GoogLeNet, both with 89\% and then DenseNet121 with 88\% and ResNet50 with 87\%. However, both VGGNet16 and AlexNet models underperformed in the testing with just 43\% accuracy. The performance gap of both of these models compared to the others is very notable as these two were usually used for image classification. Both the VGGNet16 and the AlexNet failed to generalize in the dataset probably because of the inefficient feature reuse. 
+Additionally, the parameters of the training might have benefited the modern CNN architectures such as the EfficientNet and MobileNetV2 which allowed them to converge faster using fewer epochs than other models.
+
+For the bruise detection, EfficientNet-B0 had the highest accuracy with 87\% followed by MobileNetV2 with 86\%, then DenseNet121 with 84\%, ResNet50 with 84\% and then GoogLeNet with 81\%. Both VGGNet16 and AlexNet only had 54\% accuracy. Both of these models again had significant gap with the other models. This can indicate that modern lightweight and deeper architectures of CNNs can outperform the older models as they can be more effective the extracting the subtle variations of the color and textures of mangoes.
 
 \subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
 Results such as the \gls{F1-Score} are shown.
