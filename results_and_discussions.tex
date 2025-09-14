@@ -534,12 +534,18 @@ frame=single]
 % image of the coin
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{coin_box}
+	\includegraphics[width=0.8\textwidth]{coin_box}
 	\caption{Calibration using Faster RCNN and a Philippine one peso coin}
 	\label{fig:one_peso_coin}
 \end{figure}
 
 Likewise, the reference box that contain the four coordinate points to the coin and the reference size in cm is added to the prototype's code.
+
+For the training the mango object detection, the base model use is the Faster R-CNN with MobileNetV3-Large-FPN backbone. 
+Furthermore, the pre-trained weights are the COCO\_V1 with 7 classes based on the annotated Carabao mango images.
+Note that mobilenet was chosen for its low memory usage. The training parameters are 15 epochs, 2 batch size, learning rate of 0.005, momentum of 0.9, weight decay of 0.0005, 
+and SGD (Stochastic Gradient Descent) Optimizer. 
+% todo make this as an \acr
 
 \subsection{Test Comparison Between Both Methods}
 To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
@@ -559,44 +565,57 @@ compare and contrast both methods.
     \label{fig:mango_size_test}
 \end{figure}
 
+% \begin{figure}[!htbp]
+%     \centering
+%     \subbottom[Length Comparison in cm]{
+%         \includegraphics[width=0.45\textwidth]{/size_new_graph/fig01}
+%         \label{fig:length_cm}
+%     }
+%     \hfill
+%     \subbottom[Width Comparison in cm]{
+%         \includegraphics[width=0.45\textwidth]{/size_new_graph/fig02}
+%         \label{fig:width_cm}
+%     }
+%     \caption{Predicted Length and Width for Both Methods}
+%     \label{fig:length_and_width}
+% \end{figure}
+
 \begin{figure}[!htbp]
-    \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_1}
-        \label{fig:m3_top}
-    }
-    \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_2}
-        \label{fig:m3_fm_top}
-    }
-    \vfill
-    \subbottom[Background]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_3}
-        \label{fig:m3_thresh_top}
-    }
-    \hfill
-    \subbottom[Thresholding]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_4}
-        \label{fig:m3_background}
-    }
-    \caption{Mango Top Side with White Conveyor}
-    \label{fig:mango_3_top}
+	\centering
+	\includegraphics[width=1\textwidth]{/size_new_graph/fig01}
+	\caption{Length Comparison in cm}
+	\label{fig:length_cm}
+\end{figure}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{/size_new_graph/fig02}
+	\caption{Width Comparison in cm}
+	\label{fig:width_cm}
 \end{figure}
 
 \begin{figure}[!htbp]
     \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_5}
-        \label{fig:m3_top}
+    \subbottom[Absolute Difference for Length in cm]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig05}
+        \label{fig:abs_length}
     }
     \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_6}
-        \label{fig:m3_fm_top}
+    \subbottom[Absolute Difference for Width in cm]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig06}
+        \label{fig:abs_width}
     }
-    \caption{Mango Top Side with White Conveyor}
-    \label{fig:mango_3_top}
+    \vfill
+    \subbottom[Percent Difference for Length]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig03}
+        \label{fig:percent_diff_length}
+    }
+    \hfill
+    \subbottom[Percent Difference for Width]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig04}
+        \label{fig:percent_diff_width}
+    }
+    \caption{Percent and Absolute Difference between Both Methods}
+    \label{fig:percent_absolute_diff}
 \end{figure}
 
 \begin{figure}[!htbp]
