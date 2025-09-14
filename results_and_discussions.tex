@@ -679,7 +679,7 @@ Add pictures of the hardware prototype here with description
         \includegraphics[width=0.45\textwidth]{side2}
         \label{fig:side2}
     }
-    \caption{Version 1: Prototype}
+    \caption{Version 1 of the Prototype}
     \label{fig:v1_prototype}
 \end{figure}
 
@@ -739,7 +739,7 @@ Show the raspberry pi app UI and demonstrate it here
         \label{fig:ui_v3}
     }
 
-    \caption{Version 1: User Interface of the Raspberry Pi}
+    \caption{Version 1 of the RPi's User Interface}
     \label{fig:user_interface_v1}
 \end{figure}
 
@@ -754,7 +754,7 @@ Show the raspberry pi app UI and demonstrate it here
         \includegraphics[width=0.45\textwidth]{/ui/ui-version2}
         \label{fig:app_v5}
     }
-    \caption{Version 2: User Interface of the Raspberry Pi}
+    \caption{Version 2 of the RPi's User Interface}
     \label{fig:ui_main_v2}
 \end{figure}
 
@@ -836,6 +836,71 @@ Show the raspberry pi app UI and demonstrate it here
     \label{fig:ripeness-all}
 \end{figure}
 
+\begin{lstlisting}[
+float=h,
+caption=More CNN Training Results for GPU, 
+label=lst:more_cnn_training_gpu,
+language=TeX,
+frame=single]
+Network            | Prec  | Rec   | F1    | Acc | Time    | VRAM
+-------------------|-------|-------|-------|-----|---------|-----
+VGG16              | 0.188 | 0.434 | 0.263 | 43  | 2h57m   | 7.0
+ALEXNET            | 0.188 | 0.434 | 0.263 | 43  | 4h23m   | 2.3
+RESNET50           | 0.870 | 0.869 | 0.868 | 87  | 7h13m   | 4.1
+GOOGLENET          | 0.898 | 0.895 | 0.892 | 89  | 3h3m    | 2.9
+MOBILENETV2        | 0.898 | 0.898 | 0.897 | 90  | 2h0m    | 3.6
+DENSENET121        | 0.877 | 0.877 | 0.875 | 88  | 2h10m   | 5.5
+EFFICIENTNET B0    | 0.890 | 0.888 | 0.887 | 89  | 2h26m   | 4.1
+EFFICIENTNET B1    | 0.867 | 0.862 | 0.859 | 86  | 2h30m   | 5.3
+EFFICIENTNET B2    | 0.927 | 0.924 | 0.925 | 92  | 2h14m   | 5.5
+EFFICIENTNET B3    | 0.882 | 0.880 | 0.879 | 88  | 2h25m   | 6.8
+EFFICIENTNET B4    | 0.899 | 0.898 | 0.896 | 90  | 2h50m   | 8.0
+EFFICIENTNET B5    | 0.925 | 0.924 | 0.924 | 92  | 5h49m   | 11.6
+EFFICIENTNET B6    | 0.934 | 0.933 | 0.933 | 93  | 7h51m   | 14.5
+EFFICIENTNET B7    | 0.883 | 0.871 | 0.873 | 87  | 10h34m  | 18.8
+EFFICIENTNETV2-B0  | 0.915 | 0.913 | 0.913 | 91  | 1h53m   | 3.0
+EFFICIENTNETV2-B1  | 0.904 | 0.904 | 0.902 | 90  | 2h0m    | 3.6
+EFFICIENTNETV2-B2  | 0.902 | 0.900 | 0.901 | 90  | 2h17m   | 3.8
+EFFICIENTNETV2-B3  | 0.926 | 0.926 | 0.925 | 93  | 2h2m    | 4.5
+EFFICIENTNETV2-S   | 0.894 | 0.893 | 0.891 | 89  | 1h59m   | 6.1
+EFFICIENTNETV2-M   | 0.893 | 0.893 | 0.892 | 89  | 2h58m   | 9.9
+EFFICIENTNETV2-L   | 0.875 | 0.871 | 0.870 | 87  | 14h58m  | 16.8
+-------------------|-------|-------|-------|-----|---------|-----
+AVERAGE            | 0.830 | 0.852 | 0.835 | 85  | -       | 7.0
+\end{lstlisting} 
+
+\begin{lstlisting}[
+float=h,
+caption=More CNN Training Results for CPU, 
+label=lst:more_cnn_training_cpu,
+language=TeX,
+frame=single]
+Network            | Prec  | Rec   | F1    | Acc | Time    | Mem
+-------------------|-------|-------|-------|-----|---------|----
+VGG16              | 0.297 | 0.545 | 0.384 | 54  | 5h38m   | 6.5
+ALEXNET            | 0.297 | 0.545 | 0.384 | 54  | 4h25m   | 3.3
+RESNET50           | 0.858 | 0.844 | 0.844 | 84  | 8h24m   | 5.4
+GOOGLENET          | 0.843 | 0.808 | 0.799 | 81  | 3h14m   | 4.0
+MOBILENETV2        | 0.859 | 0.858 | 0.858 | 86  | 3h44m   | 4.8
+DENSENET121        | 0.839 | 0.838 | 0.838 | 84  | 3h8m    | 6.7
+EFFICIENTNET B0    | 0.873 | 0.870 | 0.870 | 87  | 2h37m   | 5.3
+EFFICIENTNET B1    | 0.898 | 0.897 | 0.896 | 90  | 3h8m    | 6.7
+EFFICIENTNET B2    | 0.901 | 0.901 | 0.901 | 90  | 2h56m   | 6.7
+EFFICIENTNET B3    | 0.913 | 0.913 | 0.913 | 91  | 3h27m   | 8.0
+EFFICIENTNET B4    | 0.897 | 0.897 | 0.897 | 90  | 4h17m   | 9.8
+EFFICIENTNET B5    | 0.892 | 0.883 | 0.881 | 88  | 5h45m   | 12.2
+EFFICIENTNET B6    | 0.884 | 0.883 | 0.882 | 88  | 7h12m   | 14.5
+EFFICIENTNET B7    | 0.857 | 0.856 | 0.856 | 86  | 9h9m    | 18.0
+EFFICIENTNETV2-B0  | 0.873 | 0.860 | 0.858 | 86  | 2h6m    | 4.4
+EFFICIENTNETV2-B1  | 0.893 | 0.893 | 0.893 | 89  | 3h30m   | 5.1
+EFFICIENTNETV2-B2  | 0.888 | 0.881 | 0.881 | 88  | 2h45m   | 5.4
+EFFICIENTNETV2-B3  | 0.905 | 0.905 | 0.905 | 90  | 2h32m   | 6.2
+EFFICIENTNETV2-S   | 0.860 | 0.836 | 0.831 | 84  | 2h55m   | 7.7
+EFFICIENTNETV2-M   | 0.856 | 0.846 | 0.846 | 85  | 2h37m   | 9.3
+EFFICIENTNETV2-L   | 0.849 | 0.836 | 0.836 | 84  | 13h39m  | 17.9
+-------------------|-------|-------|-------|-----|---------|----
+AVERAGE            | 0.820 | 0.838 | 0.821 | 84  | -       | 8.0
+\end{lstlisting} 
 
 \section{Summary} \label{sec:summary_results_and_discussions}
 
