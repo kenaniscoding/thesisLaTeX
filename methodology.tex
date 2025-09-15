@@ -114,8 +114,14 @@ Furthermore, the rest of the software components are of utmost importance to man
 % detection of characteristic features in terms of the mango. All these aspects lead to the creation of a reliable dataset 
 % for the machine learning algorithm that will allow the system to classify and grade mangoes more accurately.
 
-For the data collection, online available image datasets with Carabao mangoes were used together with the captured Carabao mango
-images. 
+For data collection, publicly available datasets were used along with our own
+gathered dataset. to gather the images of the mangoes the setup seen in Figure
+~\ref{fig:mangoImageCollection} was used to film the mangoes for about 5 seconds
+each side. Using a python script every 20th frame per second was extracted. The
+collected images were then sorted into the following directories for use in
+training the model: non-bruised, bruised, green, yellow-green, and yellow.
+
+
 % todo: ask francis on what software and method did he use to annotate the mangoes
 \begin{figure}[!htbp]
     \centering
