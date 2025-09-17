@@ -460,6 +460,7 @@ the original image show on Figure~\ref{fig:mango_1_main}. Moreover, the foregrou
 grayscale and then it would be thresholded with the lower and upper limit range of 50 and
 255 as seen on Listing~\ref{lst:foreground_masking1}. Lastly note that this was taken on the first iteration of the image
 acquisition system which is why the conveyor belt isn’t white.
+
 \begin{figure}[!htbp]
     \centering
     \subbottom[Original]{
@@ -480,12 +481,14 @@ acquisition system which is why the conveyor belt isn’t white.
     \caption{Mango Size with Reflective Material}
     \label{fig:mango_1_main}
 \end{figure}
+
 For the ideal and best case scenario when doing method 1 of foreground masking and
 thresholding, it can be seen on Figure~\ref{fig:mango_2_main} where the foreground masking and thresholding
 were sucessfully able to remove the background. One of the reasons it was sucessfully for
 this instance is because of the black conveyor belt. However, one of the weaknesses of this
 black conveyor belt is that the material is too stiff causing conveyor belt not to move the
 mango.
+
 \begin{figure}[!htbp]
     \centering
     \subbottom[Original]{
@@ -501,6 +504,7 @@ mango.
     \caption{Mango Size Best Case}
     \label{fig:mango_2_main}
 \end{figure}
+
 Moreover, Figure~\ref{fig:mango_3_top}and Figure ~\ref{fig:mango_3_bottom} shows the both cheek sides of the green Carabao
 mango. Notice that there are now four images which are the original image, foreground
 masking, background, and thresholding image. Notice that at the thresholding image there
@@ -509,6 +513,7 @@ happened, the white and green background caused a blue with white top corner and
 bottom corners. Because of the black corners on the at the middle of the mango, it creates
 a black line that cuts the mango in half for its width. This is also why the Width percent
 difference for this method is 56.89\% as seen on Table~\ref{tab:mean_and_std_results}.
+
 \begin{figure}[!htbp]
     \centering
     \subbottom[Original]{
@@ -534,7 +539,6 @@ difference for this method is 56.89\% as seen on Table~\ref{tab:mean_and_std_res
     \label{fig:mango_3_top}
 \end{figure} 
 
-
 For the Listing~\ref{lst:foreground_masking2}, it converts it to grayscale for processing. Likewise, a Gaussian blur
 with a 7x7 kernel is applied to reduce noise and smooth the image, followed by Canny
 edge detection using thresholds of 50 and 100 to identify object boundaries. Once the
@@ -544,6 +548,7 @@ largest contour. For the selected contour, it fits a minimum area rectangle arou
 corner points of this rectangle are extracted to get the largest contour. Finally, these pixel
 measurements are converted to real-world dimensions formula with the parameters such as
 focal length (3500 pixels) and the known distance from camera to object (40).
+
 \begin{figure}[!htbp]
     \centering
     \subbottom[Original View]{
@@ -699,6 +704,31 @@ Note that mobilenet was chosen for its low memory usage. The training parameters
 and SGD (Stochastic Gradient Descent) Optimizer. 
 % todo make this as an \acr
 
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Sample 1]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/1}
+        \label{fig:box1}
+    }
+    \hfill
+    \subbottom[Sample 2]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/2}
+        \label{fig:box2}
+    }
+    \vfill
+    \subbottom[Sample 3]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/3}
+        \label{fig:box3}
+    }
+    \hfill
+    \subbottom[Sample 4]{
+        \includegraphics[width=0.45\textwidth]{/rcnn-result/4}
+        \label{fig:box4}
+    }
+    \caption{Resulting Bounding Boxes of the Mangoes}
+    \label{fig:bounding_boxes}
+\end{figure}
+
 \subsection{Test Comparison Between Both Methods}
 To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
 compare and contrast both methods.
@@ -717,20 +747,7 @@ compare and contrast both methods.
     \label{fig:mango_size_test}
 \end{figure}
 
-% \begin{figure}[!htbp]
-%     \centering
-%     \subbottom[Length Comparison in cm]{
-%         \includegraphics[width=0.45\textwidth]{/size_new_graph/fig01}
-%         \label{fig:length_cm}
-%     }
-%     \hfill
-%     \subbottom[Width Comparison in cm]{
-%         \includegraphics[width=0.45\textwidth]{/size_new_graph/fig02}
-%         \label{fig:width_cm}
-%     }
-%     \caption{Predicted Length and Width for Both Methods}
-%     \label{fig:length_and_width}
-% \end{figure}
+% todo explain the unripe and ripe mango imgs fig show above
 
 \begin{figure}[!htbp]
 	\centering
@@ -738,6 +755,9 @@ compare and contrast both methods.
 	\caption{Length Comparison in cm}
 	\label{fig:length_cm}
 \end{figure}
+
+% todo explain the length and width comparison in cm fig above and below
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=1\textwidth]{/size_new_graph/fig02}
@@ -770,30 +790,7 @@ compare and contrast both methods.
     \label{fig:percent_absolute_diff}
 \end{figure}
 
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Sample 1]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/1}
-        \label{fig:box1}
-    }
-    \hfill
-    \subbottom[Sample 2]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/2}
-        \label{fig:box2}
-    }
-    \vfill
-    \subbottom[Sample 3]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/3}
-        \label{fig:box3}
-    }
-    \hfill
-    \subbottom[Sample 4]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/4}
-        \label{fig:box4}
-    }
-    \caption{Resulting Bounding Boxes of the Mangoes}
-    \label{fig:bounding_boxes}
-\end{figure}
+% todo will add explanation of the absolute and percent diff for the four graphs
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
