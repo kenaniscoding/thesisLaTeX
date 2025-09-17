@@ -27,113 +27,118 @@
 			\hline
 			
 			\Paste{GO} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully developed a user-priority-based grading and sorting system using machine learning and computer vision which can assess the mangoes’ ripeness, size and bruises.
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
-				\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
-			\end{enumerate} 
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
+			% 	\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
+			% \end{enumerate} 
 			& Sec.~\ref{sec:summary_results_and_discussions} on p.~\pageref{sec:summary_results_and_discussions} \\ \hline
 			
 			\Paste{SO1} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
 				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
 				\item Successfully fixed the hardware components in place
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
-				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
-				\item Need to fix the hardware components in place
-			\end{enumerate} 
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
+			% 	\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
+			% 	\item Need to fix the hardware components in place
+			% \end{enumerate} 
 			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO2} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruises classification of Carabao mangoes
+				\item Successfully achieved 97\% overall accuracy for ripeness classification of Carabao mangoes
+				\item Successfully achieved 98\% overall accuracy for bruises classification of Carabao mangoes
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
-				\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
-			\end{enumerate}
+			% Results:
+			% \begin{enumerate}
+			% 	\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
+			% 	\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:main_trainAndTestResults} on p.~\pageref{sec:main_trainAndTestResults} \\ \hline
 			
 			\Paste{SO3} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
 				\item Successfully mounted the image acquisition system on the the prototype
 				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
-				\item Temporarily mounted the image acquisition system on the the prototype
-				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
+			% 	\item Temporarily mounted the image acquisition system on the the prototype
+			% 	\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
+			% \end{enumerate}
 			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO4} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
 				\item Successfully verified with qualified individual the results 
 				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
-				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
-				\item Need to look for a qualified person to evaluate the graded mango for ground truth
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
+			% 	\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
+			% 	\item Need to look for a qualified person to evaluate the graded mango for ground truth
+			% \end{enumerate}
 			 & Sec.~\ref{sec:userPriorityFormula} on p.~\pageref{sec:userPriorityFormula} \\ \hline
 			
 			\Paste{SO5} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Achieve at least 90\% accuracy on performance metrics
-				\item Obtain performance metrics for kNN, k-mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
-				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+        \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for ripeness
+				\item Achieved 97\% accuracy on performance metrics using EfficientNetV2
+				\item Obtain performance metrics for KNN, K-Mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing model, and testing other CNN hyperparameters
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
+			% 	\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:ripenessClassificationResults} on p.~\pageref{sec:ripenessClassificationResults} \\ \hline
 			
 			\Paste{SO6} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Successfully classified mango size using computer vision techniques
-				\item Successfully tuned to have an accurate size with an 80 percent accuracy rating
+        \item Compared and tested two methods, which are the foreground masking then thresholding and Object Detection, to measure the length and width of the Carabao mangoes
+        \item Version 1, which is the foreground masking then thresholding, has a 12.04\% and 3.24\% percent difference to the ground truth for length and width.
+        \item Version 2, which is the Object Detection, has a 13.57\% and 3.24\% percent difference to the ground truth for the length and width.
+				% \item Successfully classified mango size using Faster R-CNN
+				% \item Successfully tuned to have an accurate size with an 80 percent accuracy rating
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully classified mango size using computer vision techniques
-				\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully classified mango size using computer vision techniques
+			% 	\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
+			% \end{enumerate}
 			 & Sec.~\ref{sec:sizeDeterminationResults} on p.~\pageref{sec:sizeDeterminationResults} \\ \hline
 			
 			\Paste{SO7} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Achieve at least 90\% accuracy on performance metrics
-				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+        \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for bruises
+				\item Achieved 98\% accuracy on performance metrics
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing, and testing other CNN hyperparameters
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
+			% 	\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:bruisesClassificationResults} on p.~\pageref{sec:bruisesClassificationResults} \\ \hline
 			
 		\end{tabularx}
