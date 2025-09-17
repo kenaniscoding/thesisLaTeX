@@ -198,14 +198,22 @@ Results such as the \gls{F1-Score} are shown.
 
 \subsubsection{Naive Bayes}
 % [ ] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
-With the model using Naive Bayes the precision scores are quite low with both
-green and yellow to be around 79 percent. It seems to be struggling to identify
-yellow-green with a score of 58 percent. The recall metric of the model suggests
-that it had an easier time identify true postives of yellow with a score of 86
-percent while it struggled to identify yellow-green as it has a low score of 51
-percent. the F1 score suggest the same of the other metrics that the model
-struggles to correctly identify yellow-green mangoes with a socre of 55 percent.
-
+Based on the evaluation metrics, the Naive Bayes model demonstrates a clear
+strength in identifying ripe, yellow mangoes but reveals a significant weakness
+in classifying those in the transitional yellow-green stage. The model's
+precision scores for the green and yellow classes are reasonably similar at
+around 79\%. However, its performance drops considerably for the yellow-green
+class, where a precision of just 58\% nearly half of its predictions for this
+category are incorrect. This pattern is reinforced by the recall scores. The
+model excels at finding true yellow mangoes, capturing 86\% of them, which is
+its highest performance metric.  Conversely, it struggles to identify
+yellow-green mangoes, with a recall of only 51\%, meaning it misses almost half
+of all true instances of this class. The F1-score, which balances precision and
+recall, provides summary of this performance, yielding a strong score of 80\%
+for yellow but a very poor score of 55\% for yellow-green. This confirms that
+the transitional yellow-green stage is the model's primary source of confusion,
+likely due to its visual ambiguity, sharing features with both the green and
+ripe yellow classes.
 
 \begin{table}[htbp]
 	\centering
@@ -238,7 +246,20 @@ struggles to correctly identify yellow-green mangoes with a socre of 55 percent.
 \end{figure}
 
 \subsubsection{KMeans}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+% [ ] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
+The KMeans model achieved a weak overall accuracy of 57\%, with its performance
+characterized by a severe precision-recall trade-off across classes and a
+fundamental failure to identify the transitional stage. The model exhibited high
+recall for Green with score of 80\% but low precision of 57\%, which indicates
+that it captured most green mangoes but also frequently misclassified others as
+green. It was the opposite for Yellow, where high precision score of 83\% and a
+low recall score of 52\%, meaning its yellow predictions were reliable but it
+missed nearly half of them. Most critically, performance on the Yellow Green
+class was exceptionally poor with a F1 score of 34\%, the model struggled both
+to correctly label them and to find them at all, this reveals that the clusters
+formed by KMeans are poorly separated for this specific ripeness classification
+task.
 
 \begin{table}[htbp]
 	\centering
