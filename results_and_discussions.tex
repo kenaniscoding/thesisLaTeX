@@ -447,7 +447,19 @@ Add description on how the bruises results were taken and how many images were u
 \subsection{Method 1: Computer Vision}
 To get the length and width of the mango. An initial image without the mango is taken which would be the background image. 
 After that another image is taken with the mango which would be the foreground image.
-
+To get the length and width of the mango. An initial image without the mango is taken
+which would be the background image. After that another image is taken with the mango
+which would be the foreground image. As seen on Figure~\ref{fig:mango_1_main}, there are three images
+which are the original image taken with the RPi camera on the image acquisition system
+which goes through foreground masking as seen on the second image, then the third image
+is the thresholding image. Note that Figure~\ref{fig:mango_1_main} shows one of the flaws of the first method
+or version which is that due to the bright reflection from the LED lights attached to the
+image acquisition system. It causes an inconsistency when subtracting the foreground
+to the background. Furthermore, note that the background image was taken first before
+the original image show on Figure~\ref{fig:mango_1_main}. Moreover, the foreground masking is converted to
+grayscale and then it would be thresholded with the lower and upper limit range of 50 and
+255 as seen on Listing~\ref{lst:foreground_masking1}. Lastly note that this was taken on the first iteration of the image
+acquisition system which is why the conveyor belt isn’t white.
 \begin{figure}[!htbp]
     \centering
     \subbottom[Original]{
@@ -534,6 +546,90 @@ After that another image is taken with the mango which would be the foreground i
     \caption{Mango Bottom Side with White Conveyor}
     \label{fig:mango_3_bottom}
 \end{figure}
+
+\begin{lstlisting}[
+float=h,
+caption=Getting Size through Foreground Masking part 1, 
+label=lst:foreground_masking1,
+language=TeX,
+frame=single]
+def calculate_size(img, top, dir):
+    fg = img['m']
+    bg = img['g']
+    formatted_date_time = img['f_dt']
+    FOCAL_LENGTH_PIXELS = 3500
+    DISTANCE_CAMERA_TO_OBJECT = 40
+    try:
+        suffix = "top" if top else "bottom"
+        foreground = cv2.imread(fg)
+        background = cv2.imread(bg)
+        if foreground is None or background is None:
+            print(f"Error: Unable to read image files. Foreground: {fg}, Background: {bg}")
+            return 0, 0
+            
+        fgMask = cv2.absdiff(foreground, background)
+        fgMask_filename = f"{formatted_date_time}_fgMask_{suffix}.png"
+        # cv2.imwrite(fgMask_filename, fgMask)
+        cv2.imwrite(os.path.join(dir, fgMask_filename), fgMask)
+        # print(f"Foreground mask saved as {fgMask_filename}")
+        
+        _, thresh = cv2.threshold(cv2.cvtColor(fgMask, cv2.COLOR_BGR2GRAY), 50, 255, cv2.THRESH_BINARY)
+        thresh_filename = f"{formatted_date_time}_thresh_{suffix}.png"
+        # cv2.imwrite(thresh_filename, thresh)        
+        thresh_path = os.path.join(dir, thresh_filename)
+        cv2.imwrite(thresh_path, thresh)
+        # print(f"Threshold saved as {thresh_filename}")
+\end{lstlisting} 
+
+\begin{lstlisting}[
+float=h,
+caption=Getting Size through Foreground Masking part 2, 
+label=lst:foreground_masking2,
+language=TeX,
+frame=single]
+        image = cv2.imread(thresh_path)
+        if image is None:
+            print(f"Error: Unable to read threshold image {thresh_filename}")
+            return 0, 0
+            
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        gray = cv2.GaussianBlur(gray, (7, 7), 0)
+        edged = cv2.Canny(gray, 50, 100)
+        edged = cv2.dilate(edged, None, iterations=1)
+        edged = cv2.erode(edged, None, iterations=1)
+        
+        cnts = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        
+        # If no contours found, return zero dimensions
+        if not cnts:
+            return 0, 0
+            
+        # Find the largest contour by area
+        largest_contour = max(cnts, key=cv2.contourArea)
+        
+        # Only process if the contour area is significant enough
+        if cv2.contourArea(largest_contour) < 100:
+            return 0, 0
+            
+        # Process the largest contour
+        box = cv2.minAreaRect(largest_contour)
+        box = cv2.boxPoints(box)
+        box = np.array(box, dtype="int")
+        box = imutils.perspective.order_points(box)
+        (tl, tr, br, bl) = box
+        
+        pixel_width = dist.euclidean(tl, tr)
+        pixel_length = dist.euclidean(tr, br)
+        real_width = calculate_real_world_dimension(pixel_width, DISTANCE_CAMERA_TO_OBJECT, FOCAL_LENGTH_PIXELS)
+        real_length = calculate_real_world_dimension(pixel_length, DISTANCE_CAMERA_TO_OBJECT, FOCAL_LENGTH_PIXELS)
+        
+        return real_width, real_length
+        
+    except Exception as e:
+        print(f"Error in calculate_size: {e}")
+        return 0, 0
+\end{lstlisting}
 
 \subsection{Method 2: Object Detection}
 For the second method, the researchers train an object detection which is a faster RCNN specifically the MobileNetV3.
