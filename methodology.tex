@@ -103,7 +103,14 @@ For the programming language used for the prototype and training and testing the
 
 Furthermore, the rest of the software components are of utmost importance to mango classification. Image processing algorithms in OpenCV and CNN models extract features such as color, size, and bruises that are known to determine quality parameters of mangoes. Mangoes are classified based on ripeness and defects by using machine learning algorithms, which further enhances accuracy using deep learning techniques. A user interface (UI) is designed for users to control and observe the system in real time. Finally, the interface programming of the microcontroller provides the necessary synchronization between sensors, actuators, and motors throughout the sorting operation scenario.
 
-% todo: Add the explanation that we trained and tested cnn, knn, naive bayes, etc
+% [o] todo: Add the explanation that we trained and tested cnn, knn, naive bayes, etc
+The processed dataset is to be then used to create models using a variety of
+machine learning methods. For a comprehensive evaluation, the processed dataset
+was used to train and test a variety of machine learning models. The training
+included Convolutional Neural Network (CNN), k-Nearest Neighbors (k-NN), Naive
+Bayes, and k-Means clustering and various Efficientnet models. This comparative
+analysis was conducted to benchmark the performance of the deep learning
+approach against traditional machine learning algorithms.
 
 \section{Data Collection Methods} \label{sec:dataset}
 % The system acquires high-resolution images of mangoes under pre-specified lighting conditions through systematic acquisition. 
@@ -122,7 +129,7 @@ collected images were then sorted into the following directories for use in
 training the model: non-bruised, bruised, green, yellow-green, and yellow.
 
 
-% todo: ask francis on what software and method did he use to annotate the mangoes
+% [o]  todo: ask francis on what software and method did he use to annotate the mangoes
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.45\textwidth, angle=-90]{camera_setup}
@@ -181,15 +188,22 @@ Note that the mangoes were individually captured one at a time at both cheek sid
 \end{figure}
 
 \section{Testing and Evaluation Methods} \label{sec:trainandtest}
-In a bid to ensure the mango sorting and grading system is accurate and reliable, there is 
-intensive testing conducted at different levels. Unit testing is initially conducted 
-on each component separately, for instance, the conveyor belt, sensors, and cameras, to ensure 
-that each of the components works as expected when operating separately. After component testing 
-on an individual basis, integration testing is conducted to ensure communication between hardware
- and software is correct to ensure the image processing system, motors, and sorting actuators work
-  in concert as required. System testing is conducted to conduct overall system performance
-  testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
-% todo put the specs of daniel laptop here for training
+In a bid to ensure the mango sorting and grading system is accurate and
+reliable, there is intensive testing conducted at different levels. Unit testing
+is initially conducted on each component separately, for instance, the conveyor
+belt, sensors, and cameras, to ensure that each of the components works as
+expected when operating separately. After component testing on an individual
+basis, integration testing is conducted to ensure communication between hardware
+and software is correct to ensure the image processing system, motors, and
+sorting actuators work in concert as required. System testing is conducted to
+conduct overall system performance testing in real-world conditions to ensure
+mangoes are accurately and efficiently sorted and graded.
+
+% [o] todo put the specs of daniel laptop here for training
+
+For the training everything was done on laptop with the specific model: Ph16-71
+acer predator helios 16 2023. The technical specifications of this particular
+model I9 13900hx Rtx4070 8gb vram 32gb 5600mhz ddr5 ram
 
 \subsection{Data Augmentation and Splitting}
 For the used methods to increase the Carabao mango image dataset, data augmentation techniques such as rotation, flipping, Gaussian blur, brightness adjustment,
