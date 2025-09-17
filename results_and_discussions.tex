@@ -801,7 +801,7 @@ The formula for the user priority is given by:
   \text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
 \end{equation}
 
-\noindent The machine learning predictions are assigned the following numerical values:
+\noindent The machine learning predictions are assigned the following numerical values shown below.
 
 \subsection{Ripeness Scores:}
 \begin{align}
@@ -823,12 +823,20 @@ s(\text{medium}) &= 2.0 \\
 s(\text{large}) &= 3.0
 \end{align}
 
+Note that the scores value for each respective classification cannot be changed
+by the user. This means that only the weight of either the ripeness, bruises, and size
+can be changed to either low, high, or remove it by setting it to zero.
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{/priority/bruises-only}
 	\caption{Only Bruises as a None Zero Value}
 	\label{fig:bruises-only-input}
 \end{figure}
+
+An example of where the user only prioritizes bruises is shown on Figure~\ref{fig:bruises-only-input}.
+This implies that the user disregards the ripeness and the size of the Carabao mangoes 
+by setting the input priority value to zero.
 
 \begin{figure}[!htbp]
 	\centering
@@ -837,6 +845,11 @@ s(\text{large}) &= 3.0
 	\label{fig:ripeness-bruises-only-input}
 \end{figure}
 
+Another example shown on Figure~\ref{fig:ripeness-bruises-only-input} shows where the user only
+prioritized two mango charactgeristics which are the bruises and the ripeness. This is because 
+the user set the size to zero. As such when grading the mangoes, it would still show the prediction
+of the size however when grading the Carabao mango it would disregard the size in its calculation.
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{/priority/ripeness-only}
@@ -844,9 +857,22 @@ s(\text{large}) &= 3.0
 	\label{fig:ripeness-only-input}
 \end{figure}
 
+Another similar user priority input to Figure~\ref{fig:bruises-only-input} is 
+Figure~\ref{fig:ripeness-only-input} where it only prioritizes one parameter which is the ripeness.
+Furthermore, notice the range of values for each grade has a maximum of 3.00 and a minimum of 1.00.
+This is because the input weight of the ripeness is 1.0 meaning that the possible values are 1.00, 2.00, and 3.00.
+
 \section{Physical Prototype} \label{sec:physicalPrototype}
 
-Add pictures of the hardware prototype here with description
+For the physical prototype, there are two main parts which are the image acquisition system and
+the conveyor belt. Both of these parts are being controllered by an \acr{RPi} through a python script.
+For the first version of the prototype, Figure~\ref{fig:v1_prototype} shows three images which are 
+the top view, entrance view of the Carabao mangoes and the side view of the prototype.
+Notice that it is a barebone prototype made out of plywood with four rollers and black matte sheets.
+to move the Carabao mangoes. There are two DC motors controlling each conveyor belt.
+As seen on the side of the prototype on Figure~\ref{fig:v1_prototype}, the black sheet is not 
+flexible and too stiff to be able to move it with the mangoes. This means that the conveyor 
+belt would not be able to rotate and move the Carabao mangoes consistency.
 
 \begin{figure}[!htbp]
     \centering
