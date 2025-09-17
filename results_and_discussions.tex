@@ -27,113 +27,118 @@
 			\hline
 			
 			\Paste{GO} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully developed a user-priority-based grading and sorting system using machine learning and computer vision which can assess the mangoes’ ripeness, size and bruises.
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
-				\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
-			\end{enumerate} 
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
+			% 	\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
+			% \end{enumerate} 
 			& Sec.~\ref{sec:summary_results_and_discussions} on p.~\pageref{sec:summary_results_and_discussions} \\ \hline
 			
 			\Paste{SO1} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
 				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
 				\item Successfully fixed the hardware components in place
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
-				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
-				\item Need to fix the hardware components in place
-			\end{enumerate} 
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
+			% 	\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
+			% 	\item Need to fix the hardware components in place
+			% \end{enumerate} 
 			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO2} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruises classification of Carabao mangoes
+				\item Successfully achieved 97\% overall accuracy for ripeness classification of Carabao mangoes
+				\item Successfully achieved 98\% overall accuracy for bruises classification of Carabao mangoes
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
-				\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
-			\end{enumerate}
+			% Results:
+			% \begin{enumerate}
+			% 	\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
+			% 	\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:main_trainAndTestResults} on p.~\pageref{sec:main_trainAndTestResults} \\ \hline
 			
 			\Paste{SO3} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
 				\item Successfully mounted the image acquisition system on the the prototype
 				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
-				\item Temporarily mounted the image acquisition system on the the prototype
-				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
+			% 	\item Temporarily mounted the image acquisition system on the the prototype
+			% 	\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
+			% \end{enumerate}
 			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO4} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
 				\item Successfully verified with qualified individual the results 
 				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
-				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
-				\item Need to look for a qualified person to evaluate the graded mango for ground truth
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
+			% 	\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
+			% 	\item Need to look for a qualified person to evaluate the graded mango for ground truth
+			% \end{enumerate}
 			 & Sec.~\ref{sec:userPriorityFormula} on p.~\pageref{sec:userPriorityFormula} \\ \hline
 			
 			\Paste{SO5} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Achieve at least 90\% accuracy on performance metrics
-				\item Obtain performance metrics for kNN, k-mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
-				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+        \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for ripeness
+				\item Achieved 97\% accuracy on performance metrics using EfficientNetV2
+				\item Obtain performance metrics for KNN, K-Mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing model, and testing other CNN hyperparameters
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
+			% 	\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:ripenessClassificationResults} on p.~\pageref{sec:ripenessClassificationResults} \\ \hline
 			
 			\Paste{SO6} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Successfully classified mango size using computer vision techniques
-				\item Successfully tuned to have an accurate size with an 80 percent accuracy rating
+        \item Compared and tested two methods, which are the foreground masking then thresholding and Object Detection, to measure the length and width of the Carabao mangoes
+        \item Version 1, which is the foreground masking then thresholding, has a 12.04\% and 3.24\% percent difference to the ground truth for length and width.
+        \item Version 2, which is the Object Detection, has a 13.57\% and 3.24\% percent difference to the ground truth for the length and width.
+				% \item Successfully classified mango size using Faster R-CNN
+				% \item Successfully tuned to have an accurate size with an 80 percent accuracy rating
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully classified mango size using computer vision techniques
-				\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully classified mango size using computer vision techniques
+			% 	\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
+			% \end{enumerate}
 			 & Sec.~\ref{sec:sizeDeterminationResults} on p.~\pageref{sec:sizeDeterminationResults} \\ \hline
 			
 			\Paste{SO7} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Achieve at least 90\% accuracy on performance metrics
-				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+        \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for bruises
+				\item Achieved 98\% accuracy on performance metrics
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing, and testing other CNN hyperparameters
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
+			% 	\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:bruisesClassificationResults} on p.~\pageref{sec:bruisesClassificationResults} \\ \hline
 			
 		\end{tabularx}
@@ -147,8 +152,8 @@ deep learning algorithm methods.
 
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{c|cc}
-  \hline
+  \begin{tabular}{l|cc}
+  \hline \hline
                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
   Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
   EfficientNetB0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
@@ -165,8 +170,8 @@ deep learning algorithm methods.
 
 \begin{table}[htbp]
   \centering
-  \begin{tabular}{c|cc}
-  \hline
+  \begin{tabular}{l|cc}
+  \hline \hline
                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
   EfficientNet          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
   B0 & \multicolumn{1}{c|}{89\%}       & 87\%      \\ \hline
@@ -196,8 +201,8 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
 	  Green & 0.78 & 0.79 & 0.78 & 132 \\
@@ -229,8 +234,8 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-		\hline
+	\begin{tabular}{l|c|c|c|c}
+		\hline \hline
 		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 		\hline
 		Green & 0.57 & 0.80 & 0.67 & 132 \\
@@ -262,8 +267,8 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-		\hline
+	\begin{tabular}{l|c|c|c|c}
+		\hline \hline
 		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 		\hline
 		Green & 0.85 & 0.85 & 0.85 & 132 \\
@@ -294,8 +299,8 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 Add explanation of the confusion matrix and the precision, recall, and f1 score. 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
     \hline
 	  Green & 0.97 & 0.97 & 0.97 & 293 \\
@@ -354,8 +359,8 @@ Add description on how the bruises results were taken and how many images were u
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
 	  Bruised & 0.94 & 1.00 & 0.97 & 141 \\
@@ -879,152 +884,403 @@ Show the raspberry pi app UI and demonstrate it here
     \label{fig:ripeness-all}
 \end{figure}
 
-\begin{lstlisting}[
-float=h,
-caption=More CNN Training Results for GPU, 
-label=lst:more_cnn_training_gpu,
-language=TeX,
-frame=single]
-Network            | Prec  | Rec   | F1    | Acc | Time    | VRAM
--------------------|-------|-------|-------|-----|---------|-----
-VGG16              | 0.188 | 0.434 | 0.263 | 43  | 2h57m   | 7.0
-ALEXNET            | 0.188 | 0.434 | 0.263 | 43  | 4h23m   | 2.3
-RESNET50           | 0.870 | 0.869 | 0.868 | 87  | 7h13m   | 4.1
-GOOGLENET          | 0.898 | 0.895 | 0.892 | 89  | 3h3m    | 2.9
-MOBILENETV2        | 0.898 | 0.898 | 0.897 | 90  | 2h0m    | 3.6
-DENSENET121        | 0.877 | 0.877 | 0.875 | 88  | 2h10m   | 5.5
-EFFICIENTNET B0    | 0.890 | 0.888 | 0.887 | 89  | 2h26m   | 4.1
-EFFICIENTNET B1    | 0.867 | 0.862 | 0.859 | 86  | 2h30m   | 5.3
-EFFICIENTNET B2    | 0.927 | 0.924 | 0.925 | 92  | 2h14m   | 5.5
-EFFICIENTNET B3    | 0.882 | 0.880 | 0.879 | 88  | 2h25m   | 6.8
-EFFICIENTNET B4    | 0.899 | 0.898 | 0.896 | 90  | 2h50m   | 8.0
-EFFICIENTNET B5    | 0.925 | 0.924 | 0.924 | 92  | 5h49m   | 11.6
-EFFICIENTNET B6    | 0.934 | 0.933 | 0.933 | 93  | 7h51m   | 14.5
-EFFICIENTNET B7    | 0.883 | 0.871 | 0.873 | 87  | 10h34m  | 18.8
-EFFICIENTNETV2-B0  | 0.915 | 0.913 | 0.913 | 91  | 1h53m   | 3.0
-EFFICIENTNETV2-B1  | 0.904 | 0.904 | 0.902 | 90  | 2h0m    | 3.6
-EFFICIENTNETV2-B2  | 0.902 | 0.900 | 0.901 | 90  | 2h17m   | 3.8
-EFFICIENTNETV2-B3  | 0.926 | 0.926 | 0.925 | 93  | 2h2m    | 4.5
-EFFICIENTNETV2-S   | 0.894 | 0.893 | 0.891 | 89  | 1h59m   | 6.1
-EFFICIENTNETV2-M   | 0.893 | 0.893 | 0.892 | 89  | 2h58m   | 9.9
-EFFICIENTNETV2-L   | 0.875 | 0.871 | 0.870 | 87  | 14h58m  | 16.8
--------------------|-------|-------|-------|-----|---------|-----
-AVERAGE            | 0.830 | 0.852 | 0.835 | 85  | -       | 7.0
-\end{lstlisting} 
+% \begin{lstlisting}[
+% float=h,
+% caption=More CNN Training Results for GPU, 
+% label=lst:more_cnn_training_gpu,
+% language=TeX,
+% frame=single]
+% Network            | Prec  | Rec   | F1    | Acc | Time    | VRAM
+% -------------------|-------|-------|-------|-----|---------|-----
+% VGG16              | 0.188 | 0.434 | 0.263 | 43  | 2h57m   | 7.0
+% ALEXNET            | 0.188 | 0.434 | 0.263 | 43  | 4h23m   | 2.3
+% RESNET50           | 0.870 | 0.869 | 0.868 | 87  | 7h13m   | 4.1
+% GOOGLENET          | 0.898 | 0.895 | 0.892 | 89  | 3h3m    | 2.9
+% MOBILENETV2        | 0.898 | 0.898 | 0.897 | 90  | 2h0m    | 3.6
+% DENSENET121        | 0.877 | 0.877 | 0.875 | 88  | 2h10m   | 5.5
+% EFFICIENTNET B0    | 0.890 | 0.888 | 0.887 | 89  | 2h26m   | 4.1
+% EFFICIENTNET B1    | 0.867 | 0.862 | 0.859 | 86  | 2h30m   | 5.3
+% EFFICIENTNET B2    | 0.927 | 0.924 | 0.925 | 92  | 2h14m   | 5.5
+% EFFICIENTNET B3    | 0.882 | 0.880 | 0.879 | 88  | 2h25m   | 6.8
+% EFFICIENTNET B4    | 0.899 | 0.898 | 0.896 | 90  | 2h50m   | 8.0
+% EFFICIENTNET B5    | 0.925 | 0.924 | 0.924 | 92  | 5h49m   | 11.6
+% EFFICIENTNET B6    | 0.934 | 0.933 | 0.933 | 93  | 7h51m   | 14.5
+% EFFICIENTNET B7    | 0.883 | 0.871 | 0.873 | 87  | 10h34m  | 18.8
+% EFFICIENTNETV2-B0  | 0.915 | 0.913 | 0.913 | 91  | 1h53m   | 3.0
+% EFFICIENTNETV2-B1  | 0.904 | 0.904 | 0.902 | 90  | 2h0m    | 3.6
+% EFFICIENTNETV2-B2  | 0.902 | 0.900 | 0.901 | 90  | 2h17m   | 3.8
+% EFFICIENTNETV2-B3  | 0.926 | 0.926 | 0.925 | 93  | 2h2m    | 4.5
+% EFFICIENTNETV2-S   | 0.894 | 0.893 | 0.891 | 89  | 1h59m   | 6.1
+% EFFICIENTNETV2-M   | 0.893 | 0.893 | 0.892 | 89  | 2h58m   | 9.9
+% EFFICIENTNETV2-L   | 0.875 | 0.871 | 0.870 | 87  | 14h58m  | 16.8
+% -------------------|-------|-------|-------|-----|---------|-----
+% AVERAGE            | 0.830 | 0.852 | 0.835 | 85  | -       | 7.0
+% \end{lstlisting} 
+%
+% \begin{lstlisting}[
+% float=h,
+% caption=More CNN Training Results for CPU, 
+% label=lst:more_cnn_training_cpu,
+% language=TeX,
+% frame=single]
+% Network            | Prec  | Rec   | F1    | Acc | Time    | Mem
+% -------------------|-------|-------|-------|-----|---------|----
+% VGG16              | 0.297 | 0.545 | 0.384 | 54  | 5h38m   | 6.5
+% ALEXNET            | 0.297 | 0.545 | 0.384 | 54  | 4h25m   | 3.3
+% RESNET50           | 0.858 | 0.844 | 0.844 | 84  | 8h24m   | 5.4
+% GOOGLENET          | 0.843 | 0.808 | 0.799 | 81  | 3h14m   | 4.0
+% MOBILENETV2        | 0.859 | 0.858 | 0.858 | 86  | 3h44m   | 4.8
+% DENSENET121        | 0.839 | 0.838 | 0.838 | 84  | 3h8m    | 6.7
+% EFFICIENTNET B0    | 0.873 | 0.870 | 0.870 | 87  | 2h37m   | 5.3
+% EFFICIENTNET B1    | 0.898 | 0.897 | 0.896 | 90  | 3h8m    | 6.7
+% EFFICIENTNET B2    | 0.901 | 0.901 | 0.901 | 90  | 2h56m   | 6.7
+% EFFICIENTNET B3    | 0.913 | 0.913 | 0.913 | 91  | 3h27m   | 8.0
+% EFFICIENTNET B4    | 0.897 | 0.897 | 0.897 | 90  | 4h17m   | 9.8
+% EFFICIENTNET B5    | 0.892 | 0.883 | 0.881 | 88  | 5h45m   | 12.2
+% EFFICIENTNET B6    | 0.884 | 0.883 | 0.882 | 88  | 7h12m   | 14.5
+% EFFICIENTNET B7    | 0.857 | 0.856 | 0.856 | 86  | 9h9m    | 18.0
+% EFFICIENTNETV2-B0  | 0.873 | 0.860 | 0.858 | 86  | 2h6m    | 4.4
+% EFFICIENTNETV2-B1  | 0.893 | 0.893 | 0.893 | 89  | 3h30m   | 5.1
+% EFFICIENTNETV2-B2  | 0.888 | 0.881 | 0.881 | 88  | 2h45m   | 5.4
+% EFFICIENTNETV2-B3  | 0.905 | 0.905 | 0.905 | 90  | 2h32m   | 6.2
+% EFFICIENTNETV2-S   | 0.860 | 0.836 | 0.831 | 84  | 2h55m   | 7.7
+% EFFICIENTNETV2-M   | 0.856 | 0.846 | 0.846 | 85  | 2h37m   | 9.3
+% EFFICIENTNETV2-L   | 0.849 | 0.836 | 0.836 | 84  | 13h39m  | 17.9
+% -------------------|-------|-------|-------|-----|---------|----
+% AVERAGE            | 0.820 | 0.838 | 0.821 | 84  | -       | 8.0
+% \end{lstlisting} 
+%
+% \begin{lstlisting}[
+% float=h,
+% caption=Mango Size Results, 
+% label=lst:more_size_results01,
+% language=TeX,
+% frame=single]
+% ID | Weight | Ground Truth | V2 Code    | V1 Code    
+%    | (g)    | L   | W      | L    | W   | L    | W    
+% ---|--------|-----|--------|------|-----|------|------
+% 01 | 260.8  | 11.8| 7.80   | 12.86| 7.96| 10.33| 3.08
+% 02 | 299.4  | 12.8| 7.80   | 14.69| 8.30| 11.59| 3.73
+% 03 | 238.4  | 11.4| 7.60   | 12.42| 7.60| 9.17 | 2.36
+% 04 | 335.6  | 13.8| 10.50  | 15.38| 9.33| 12.49| 5.00
+% 05 | 272.4  | 12.9| 8.50   | 15.13| 7.81| 11.52| 3.96
+% 06 | 267.9  | 13.1| 8.20   | 15.72| 7.73| 11.78| 3.58
+% 07 | 274.0  | 12.6| 8.20   | 14.96| 7.88| 11.80| 4.00
+% 08 | 272.3  | 13.3| 8.00   | 15.56| 7.49| 12.02| 4.26
+% 09 | 281.6  | 13.0| 8.00   | 15.20| 7.55| 12.12| 4.26
+% 10 | 286.2  | 13.8| 8.00   | 15.20| 7.55| 12.17| 3.09
+% 11 | 284.6  | 12.6| 9.00   | 15.20| 7.55| 10.90| 3.26
+% 12 | 265.7  | 13.3| 8.00   | 14.80| 8.48| 11.38| 2.98
+% 13 | 278.1  | 13.0| 7.60   | 15.08| 7.87| 11.00| 3.18
+% 14 | 263.8  | 12.9| 7.50   | 15.11| 7.75| 11.28| 4.11
+% 15 | 222.0  | 12.1| 7.80   | 12.96| 7.44| 10.73| 3.17
+% 16 | 240.1  | 13.5| 8.20   | 15.36| 7.14| 11.15| 3.21
+% 17 | 290.7  | 13.5| 8.50   | 14.71| 8.20| 11.76| 3.21
+% 18 | 260.1  | 12.8| 8.00   | 14.52| 7.65| 10.91| 3.12
+% 19 | 253.6  | 12.9| 7.50   | 14.08| 7.66| 11.65| 3.17
+% 20 | 225.9  | 12.0| 7.50   | 13.17| 7.48| 10.49| 3.24
+% ---|--------|-----|--------|------|-----|------|------
+% AVG| 264.1  | 12.8| 8.1    | 14.7 | 7.8 | 11.3 | 3.5
+% \end{lstlisting}
+%
+% \begin{lstlisting}[
+% float=h,
+% caption=Mango Size Difference to Ground Truth Results, 
+% label=lst:more_size_results02,
+% language=TeX,
+% frame=single]
+% ID | V2 Difference | V1 Difference
+%    |  L   |   W    |  L   |   W   
+% ---|------|--------|------|-------
+% 01 | 1.06 |  0.16  | 1.47 |  4.72
+% 02 | 1.89 |  0.50  | 1.21 |  4.07
+% 03 | 1.02 |  0.00  | 2.23 |  5.24
+% 04 | 1.58 |  1.17  | 1.31 |  5.50
+% 05 | 2.23 |  0.69  | 1.38 |  4.54
+% 06 | 2.62 |  0.47  | 1.32 |  4.62
+% 07 | 2.36 |  0.32  | 0.80 |  4.20
+% 08 | 2.26 |  0.51  | 1.28 |  3.74
+% 09 | 2.20 |  0.45  | 1.12 |  3.74
+% 10 | 1.40 |  0.45  | 1.63 |  4.91
+% 11 | 2.60 |  1.45  | 1.70 |  5.74
+% 12 | 1.50 |  0.48  | 1.92 |  5.02
+% 13 | 2.08 |  0.27  | 2.00 |  4.42
+% 14 | 2.21 |  0.25  | 1.62 |  3.39
+% 15 | 0.86 |  0.36  | 1.37 |  4.63
+% 16 | 1.86 |  1.06  | 2.35 |  4.99
+% 17 | 1.21 |  0.30  | 1.74 |  5.29
+% 18 | 1.72 |  0.35  | 1.89 |  4.88
+% 19 | 1.18 |  0.16  | 1.25 |  4.33
+% 20 | 1.17 |  0.02  | 1.51 |  4.26
+% ---|------|--------|------|-------
+% AVG| 1.80 |  0.50  | 1.60 |  4.60
+% \end{lstlisting}
+%
+% \begin{lstlisting}[
+% float=h,
+% caption=Mean and Standard Deviation of Size, 
+% label=lst:mean_and_std_results,
+% language=TeX,
+% frame=single]
+% Metric                    | V2 Code           | V1 Code
+%                           | Mean    | SD      | Mean    | SD
+% --------------------------|---------|---------|---------|--------
+% Length Differences (cm)   | 1.75    | 0.56    | 1.54    | 0.40
+% Width Differences (cm)    | 0.47    | 0.37    | 4.61    | 0.61
+% Length Percent Difference | 13.57%  | 4.20%   | 12.04%  | 3.28%
+% Width Percent Difference  | 3.24%   | 6.16%   | 56.89%  | 6.32%
+% \end{lstlisting}
+%
 
-\begin{lstlisting}[
-float=h,
-caption=More CNN Training Results for CPU, 
-label=lst:more_cnn_training_cpu,
-language=TeX,
-frame=single]
-Network            | Prec  | Rec   | F1    | Acc | Time    | Mem
--------------------|-------|-------|-------|-----|---------|----
-VGG16              | 0.297 | 0.545 | 0.384 | 54  | 5h38m   | 6.5
-ALEXNET            | 0.297 | 0.545 | 0.384 | 54  | 4h25m   | 3.3
-RESNET50           | 0.858 | 0.844 | 0.844 | 84  | 8h24m   | 5.4
-GOOGLENET          | 0.843 | 0.808 | 0.799 | 81  | 3h14m   | 4.0
-MOBILENETV2        | 0.859 | 0.858 | 0.858 | 86  | 3h44m   | 4.8
-DENSENET121        | 0.839 | 0.838 | 0.838 | 84  | 3h8m    | 6.7
-EFFICIENTNET B0    | 0.873 | 0.870 | 0.870 | 87  | 2h37m   | 5.3
-EFFICIENTNET B1    | 0.898 | 0.897 | 0.896 | 90  | 3h8m    | 6.7
-EFFICIENTNET B2    | 0.901 | 0.901 | 0.901 | 90  | 2h56m   | 6.7
-EFFICIENTNET B3    | 0.913 | 0.913 | 0.913 | 91  | 3h27m   | 8.0
-EFFICIENTNET B4    | 0.897 | 0.897 | 0.897 | 90  | 4h17m   | 9.8
-EFFICIENTNET B5    | 0.892 | 0.883 | 0.881 | 88  | 5h45m   | 12.2
-EFFICIENTNET B6    | 0.884 | 0.883 | 0.882 | 88  | 7h12m   | 14.5
-EFFICIENTNET B7    | 0.857 | 0.856 | 0.856 | 86  | 9h9m    | 18.0
-EFFICIENTNETV2-B0  | 0.873 | 0.860 | 0.858 | 86  | 2h6m    | 4.4
-EFFICIENTNETV2-B1  | 0.893 | 0.893 | 0.893 | 89  | 3h30m   | 5.1
-EFFICIENTNETV2-B2  | 0.888 | 0.881 | 0.881 | 88  | 2h45m   | 5.4
-EFFICIENTNETV2-B3  | 0.905 | 0.905 | 0.905 | 90  | 2h32m   | 6.2
-EFFICIENTNETV2-S   | 0.860 | 0.836 | 0.831 | 84  | 2h55m   | 7.7
-EFFICIENTNETV2-M   | 0.856 | 0.846 | 0.846 | 85  | 2h37m   | 9.3
-EFFICIENTNETV2-L   | 0.849 | 0.836 | 0.836 | 84  | 13h39m  | 17.9
--------------------|-------|-------|-------|-----|---------|----
-AVERAGE            | 0.820 | 0.838 | 0.821 | 84  | -       | 8.0
-\end{lstlisting} 
+% Table 1: CNN Training Results for GPU
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+\hline \hline
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{VRAM} \\
+\hline
+VGG16 & 0.188 & 0.434 & 0.263 & 43 & 2h57m & 7.0 \\
+\hline
+ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 4h23m & 2.3 \\
+\hline
+RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 7h13m & 4.1 \\
+\hline
+GOOGLENET & 0.898 & 0.895 & 0.892 & 89 & 3h3m & 2.9 \\
+\hline
+MOBILENETV2 & 0.898 & 0.898 & 0.897 & 90 & 2h0m & 3.6 \\
+\hline
+DENSENET121 & 0.877 & 0.877 & 0.875 & 88 & 2h10m & 5.5 \\
+\hline
+EFFICIENTNET B0 & 0.890 & 0.888 & 0.887 & 89 & 2h26m & 4.1 \\
+\hline
+EFFICIENTNET B1 & 0.867 & 0.862 & 0.859 & 86 & 2h30m & 5.3 \\
+\hline
+EFFICIENTNET B2 & 0.927 & 0.924 & 0.925 & 92 & 2h14m & 5.5 \\
+\hline
+EFFICIENTNET B3 & 0.882 & 0.880 & 0.879 & 88 & 2h25m & 6.8 \\
+\hline
+EFFICIENTNET B4 & 0.899 & 0.898 & 0.896 & 90 & 2h50m & 8.0 \\
+\hline
+EFFICIENTNET B5 & 0.925 & 0.924 & 0.924 & 92 & 5h49m & 11.6 \\
+\hline
+EFFICIENTNET B6 & 0.934 & 0.933 & 0.933 & 93 & 7h51m & 14.5 \\
+\hline
+EFFICIENTNET B7 & 0.883 & 0.871 & 0.873 & 87 & 10h34m & 18.8 \\
+\hline
+EFFICIENTNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 1h53m & 3.0 \\
+\hline
+EFFICIENTNETV2-B1 & 0.904 & 0.904 & 0.902 & 90 & 2h0m & 3.6 \\
+\hline
+EFFICIENTNETV2-B2 & 0.902 & 0.900 & 0.901 & 90 & 2h17m & 3.8 \\
+\hline
+EFFICIENTNETV2-B3 & 0.926 & 0.926 & 0.925 & 93 & 2h2m & 4.5 \\
+\hline
+EFFICIENTNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 1h59m & 6.1 \\
+\hline
+EFFICIENTNETV2-M & 0.893 & 0.893 & 0.892 & 89 & 2h58m & 9.9 \\
+\hline
+EFFICIENTNETV2-L & 0.875 & 0.871 & 0.870 & 87 & 14h58m & 16.8 \\
+\hline
+\textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{--} & \textbf{7.0} \\
+\hline
+\end{tabular}
+\caption{More CNN Training Results for GPU}
+\label{tab:more_cnn_training_gpu}
+\end{table}
 
-\begin{lstlisting}[
-float=h,
-caption=Mango Size Results, 
-label=lst:more_size_results01,
-language=TeX,
-frame=single]
-ID | Weight | Ground Truth | V2 Code    | V1 Code    
-   | (g)    | L   | W      | L    | W   | L    | W    
----|--------|-----|--------|------|-----|------|------
-01 | 260.8  | 11.8| 7.80   | 12.86| 7.96| 10.33| 3.08
-02 | 299.4  | 12.8| 7.80   | 14.69| 8.30| 11.59| 3.73
-03 | 238.4  | 11.4| 7.60   | 12.42| 7.60| 9.17 | 2.36
-04 | 335.6  | 13.8| 10.50  | 15.38| 9.33| 12.49| 5.00
-05 | 272.4  | 12.9| 8.50   | 15.13| 7.81| 11.52| 3.96
-06 | 267.9  | 13.1| 8.20   | 15.72| 7.73| 11.78| 3.58
-07 | 274.0  | 12.6| 8.20   | 14.96| 7.88| 11.80| 4.00
-08 | 272.3  | 13.3| 8.00   | 15.56| 7.49| 12.02| 4.26
-09 | 281.6  | 13.0| 8.00   | 15.20| 7.55| 12.12| 4.26
-10 | 286.2  | 13.8| 8.00   | 15.20| 7.55| 12.17| 3.09
-11 | 284.6  | 12.6| 9.00   | 15.20| 7.55| 10.90| 3.26
-12 | 265.7  | 13.3| 8.00   | 14.80| 8.48| 11.38| 2.98
-13 | 278.1  | 13.0| 7.60   | 15.08| 7.87| 11.00| 3.18
-14 | 263.8  | 12.9| 7.50   | 15.11| 7.75| 11.28| 4.11
-15 | 222.0  | 12.1| 7.80   | 12.96| 7.44| 10.73| 3.17
-16 | 240.1  | 13.5| 8.20   | 15.36| 7.14| 11.15| 3.21
-17 | 290.7  | 13.5| 8.50   | 14.71| 8.20| 11.76| 3.21
-18 | 260.1  | 12.8| 8.00   | 14.52| 7.65| 10.91| 3.12
-19 | 253.6  | 12.9| 7.50   | 14.08| 7.66| 11.65| 3.17
-20 | 225.9  | 12.0| 7.50   | 13.17| 7.48| 10.49| 3.24
----|--------|-----|--------|------|-----|------|------
-AVG| 264.1  | 12.8| 8.1    | 14.7 | 7.8 | 11.3 | 3.5
-\end{lstlisting}
+% Table 2: CNN Training Results for CPU
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+\hline \hline
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{Mem} \\
+\hline
+VGG16 & 0.297 & 0.545 & 0.384 & 54 & 5h38m & 6.5 \\
+\hline
+ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 4h25m & 3.3 \\
+\hline
+RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 8h24m & 5.4 \\
+\hline
+GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 3h14m & 4.0 \\
+\hline
+MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
+\hline
+DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
+\hline
+EFFICIENTNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
+\hline
+EFFICIENTNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
+\hline
+EFFICIENTNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
+\hline
+EFFICIENTNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
+\hline
+EFFICIENTNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
+\hline
+EFFICIENTNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
+\hline
+EFFICIENTNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
+\hline
+EFFICIENTNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
+\hline
+EFFICIENTNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
+\hline
+EFFICIENTNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
+\hline
+EFFICIENTNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
+\hline
+EFFICIENTNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
+\hline
+EFFICIENTNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
+\hline
+EFFICIENTNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
+\hline
+EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
+\hline
+\textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
+\hline
 
-\begin{lstlisting}[
-float=h,
-caption=Mango Size Difference to Ground Truth Results, 
-label=lst:more_size_results02,
-language=TeX,
-frame=single]
-ID | V2 Difference | V1 Difference
-   |  L   |   W    |  L   |   W   
----|------|--------|------|-------
-01 | 1.06 |  0.16  | 1.47 |  4.72
-02 | 1.89 |  0.50  | 1.21 |  4.07
-03 | 1.02 |  0.00  | 2.23 |  5.24
-04 | 1.58 |  1.17  | 1.31 |  5.50
-05 | 2.23 |  0.69  | 1.38 |  4.54
-06 | 2.62 |  0.47  | 1.32 |  4.62
-07 | 2.36 |  0.32  | 0.80 |  4.20
-08 | 2.26 |  0.51  | 1.28 |  3.74
-09 | 2.20 |  0.45  | 1.12 |  3.74
-10 | 1.40 |  0.45  | 1.63 |  4.91
-11 | 2.60 |  1.45  | 1.70 |  5.74
-12 | 1.50 |  0.48  | 1.92 |  5.02
-13 | 2.08 |  0.27  | 2.00 |  4.42
-14 | 2.21 |  0.25  | 1.62 |  3.39
-15 | 0.86 |  0.36  | 1.37 |  4.63
-16 | 1.86 |  1.06  | 2.35 |  4.99
-17 | 1.21 |  0.30  | 1.74 |  5.29
-18 | 1.72 |  0.35  | 1.89 |  4.88
-19 | 1.18 |  0.16  | 1.25 |  4.33
-20 | 1.17 |  0.02  | 1.51 |  4.26
----|------|--------|------|-------
-AVG| 1.80 |  0.50  | 1.60 |  4.60
-\end{lstlisting}
+\end{tabular}
+\caption{More CNN Training Results for CPU}
+\label{tab:more_cnn_training_cpu}
+\end{table}
 
-\begin{lstlisting}[
-float=h,
-caption=Mean and Standard Deviation of Size, 
-label=lst:mean_and_std_results,
-language=TeX,
-frame=single]
-Metric                    | V2 Code           | V1 Code
-                          | Mean    | SD      | Mean    | SD
---------------------------|---------|---------|---------|--------
-Length Differences (cm)   | 1.75    | 0.56    | 1.54    | 0.40
-Width Differences (cm)    | 0.47    | 0.37    | 4.61    | 0.61
-Length Percent Difference | 13.57%  | 4.20%   | 12.04%  | 3.28%
-Width Percent Difference  | 3.24%   | 6.16%   | 56.89%  | 6.32%
-\end{lstlisting}
+% Table 3: Mango Size Results
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\hline \hline
+\multirow{2}{*}{\textbf{ID}} & \multirow{2}{*}{\textbf{Weight (g)}} & \multicolumn{2}{c|}{\textbf{Ground Truth}} & \multicolumn{2}{c|}{\textbf{V2 Code}} & \multicolumn{2}{c}{\textbf{V1 Code}} \\
+\cline{3-8}
+& & \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} \\
+\hline
+01 & 260.8 & 11.8 & 7.80 & 12.86 & 7.96 & 10.33 & 3.08 \\
+\hline
+02 & 299.4 & 12.8 & 7.80 & 14.69 & 8.30 & 11.59 & 3.73 \\
+\hline
+03 & 238.4 & 11.4 & 7.60 & 12.42 & 7.60 & 9.17 & 2.36 \\
+\hline
+04 & 335.6 & 13.8 & 10.50 & 15.38 & 9.33 & 12.49 & 5.00 \\
+\hline
+05 & 272.4 & 12.9 & 8.50 & 15.13 & 7.81 & 11.52 & 3.96 \\
+\hline
+06 & 267.9 & 13.1 & 8.20 & 15.72 & 7.73 & 11.78 & 3.58 \\
+\hline
+07 & 274.0 & 12.6 & 8.20 & 14.96 & 7.88 & 11.80 & 4.00 \\
+\hline
+08 & 272.3 & 13.3 & 8.00 & 15.56 & 7.49 & 12.02 & 4.26 \\
+\hline
+09 & 281.6 & 13.0 & 8.00 & 15.20 & 7.55 & 12.12 & 4.26 \\
+\hline
+10 & 286.2 & 13.8 & 8.00 & 15.20 & 7.55 & 12.17 & 3.09 \\
+\hline
+11 & 284.6 & 12.6 & 9.00 & 15.20 & 7.55 & 10.90 & 3.26 \\
+\hline
+12 & 265.7 & 13.3 & 8.00 & 14.80 & 8.48 & 11.38 & 2.98 \\
+\hline
+13 & 278.1 & 13.0 & 7.60 & 15.08 & 7.87 & 11.00 & 3.18 \\
+\hline
+14 & 263.8 & 12.9 & 7.50 & 15.11 & 7.75 & 11.28 & 4.11 \\
+\hline
+15 & 222.0 & 12.1 & 7.80 & 12.96 & 7.44 & 10.73 & 3.17 \\
+\hline
+16 & 240.1 & 13.5 & 8.20 & 15.36 & 7.14 & 11.15 & 3.21 \\
+\hline
+17 & 290.7 & 13.5 & 8.50 & 14.71 & 8.20 & 11.76 & 3.21 \\
+\hline
+18 & 260.1 & 12.8 & 8.00 & 14.52 & 7.65 & 10.91 & 3.12 \\
+\hline
+19 & 253.6 & 12.9 & 7.50 & 14.08 & 7.66 & 11.65 & 3.17 \\
+\hline
+20 & 225.9 & 12.0 & 7.50 & 13.17 & 7.48 & 10.49 & 3.24 \\
+\hline
+\textbf{AVG} & \textbf{264.1} & \textbf{12.8} & \textbf{8.1} & \textbf{14.7} & \textbf{7.8} & \textbf{11.3} & \textbf{3.5} \\
+\hline
+
+\end{tabular}
+\caption{Mango Size Results}
+\label{tab:more_size_results01}
+\end{table}
+
+% Table 4: Mango Size Difference to Ground Truth Results
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c|c|c|c}
+\hline \hline
+\multirow{2}{*}{\textbf{ID}} & \multicolumn{2}{c|}{\textbf{V2 Difference}} & \multicolumn{2}{c}{\textbf{V1 Difference}} \\
+\cline{2-5}
+& \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} \\
+\hline
+01 & 1.06 & 0.16 & 1.47 & 4.72 \\
+\hline
+02 & 1.89 & 0.50 & 1.21 & 4.07 \\
+\hline
+03 & 1.02 & 0.00 & 2.23 & 5.24 \\
+\hline
+04 & 1.58 & 1.17 & 1.31 & 5.50 \\
+\hline
+05 & 2.23 & 0.69 & 1.38 & 4.54 \\
+\hline
+06 & 2.62 & 0.47 & 1.32 & 4.62 \\
+\hline
+07 & 2.36 & 0.32 & 0.80 & 4.20 \\
+\hline
+08 & 2.26 & 0.51 & 1.28 & 3.74 \\
+\hline
+09 & 2.20 & 0.45 & 1.12 & 3.74 \\
+\hline
+10 & 1.40 & 0.45 & 1.63 & 4.91 \\
+\hline
+11 & 2.60 & 1.45 & 1.70 & 5.74 \\
+\hline
+12 & 1.50 & 0.48 & 1.92 & 5.02 \\
+\hline
+13 & 2.08 & 0.27 & 2.00 & 4.42 \\
+\hline
+14 & 2.21 & 0.25 & 1.62 & 3.39 \\
+\hline
+15 & 0.86 & 0.36 & 1.37 & 4.63 \\
+\hline
+16 & 1.86 & 1.06 & 2.35 & 4.99 \\
+\hline
+17 & 1.21 & 0.30 & 1.74 & 5.29 \\
+\hline
+18 & 1.72 & 0.35 & 1.89 & 4.88 \\
+\hline
+19 & 1.18 & 0.16 & 1.25 & 4.33 \\
+\hline
+20 & 1.17 & 0.02 & 1.51 & 4.26 \\
+\hline
+\textbf{AVG} & \textbf{1.80} & \textbf{0.50} & \textbf{1.60} & \textbf{4.60} \\
+\hline
+
+\end{tabular}
+\caption{Mango Size Difference to Ground Truth Results}
+\label{tab:more_size_results02}
+\end{table}
+
+% Table 5: Mean and Standard Deviation of Size
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c}
+\hline \hline
+\multirow{2}{*}{\textbf{Metric}} & \multicolumn{2}{c|}{\textbf{V2 Code}} & \multicolumn{2}{c}{\textbf{V1 Code}} \\
+\cline{2-5}
+& \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} \\
+\hline
+Length Differences (cm) & 1.75 & 0.56 & 1.54 & 0.40 \\
+\hline
+Width Differences (cm) & 0.47 & 0.37 & 4.61 & 0.61 \\
+\hline
+Length Percent Difference & 13.57\% & 4.20\% & 12.04\% & 3.28\% \\
+\hline
+Width Percent Difference & 3.24\% & 6.16\% & 56.89\% & 6.32\% \\
+\hline
+
+\end{tabular}
+\caption{Mean and Standard Deviation of Size}
+\label{tab:mean_and_std_results}
+\end{table}
 
 \section{Summary} \label{sec:summary_results_and_discussions}
 
