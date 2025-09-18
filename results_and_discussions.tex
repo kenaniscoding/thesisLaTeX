@@ -292,7 +292,19 @@ task.
 \end{figure}
 
 \subsubsection{KNN}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+% [o] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
+K-Nearest Neighbors (KNN) model demonstrates an improvement in performance,
+achieving an overall accuracy of 78\%. Unlike previous models, KNN shows a
+strong and consistent balance between precision and recall across all three
+ripeness classes. The model excels at classifying the fully Green and Yellow
+stages, with high and well-balanced F1-scores of 0.85 and 0.81, respectively,
+indicating it is more reliable when making a prediction and effective at
+identifying all instances of these classes than previous models.  KNN also shows
+improvement in handling the yellow-green class, achieving an F1-score of 68\%.
+While this remains the most challenging class, the model's significantly higher
+scores compared to previous attempts confirm its ability to learn the
+distinguishing features between the stages.
 
 \begin{table}[htbp]
 	\centering
