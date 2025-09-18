@@ -760,6 +760,12 @@ compare and contrast both methods.
 \end{figure}
 
 % todo explain the unripe and ripe mango imgs fig show above
+Note that the current tested Faster RCNN MobileNetV3-Large-FPN was trained with
+batch size of 2 images per iteration, with data shuffling enabled to ensure random 
+sampling during training epochs with the optimization process utilized 
+Stochastic Gradient Descent (SGD) 
+with a learning rate of 0.005, momentum of 0.9, and weight decay of 0.0005 to prevent
+overfitting and ensure stable convergence. 
 
 \begin{figure}[!htbp]
 	\centering
