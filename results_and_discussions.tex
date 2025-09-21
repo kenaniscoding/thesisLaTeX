@@ -454,6 +454,55 @@ Add description on how the bruises results were taken and how many images were u
 	\label{fig:bruises-graph}
 \end{figure}
 
+% [ ] todo: revisit once actual interview and testing with expert is done
+\section{Comparative Analysis: Model Performance vs. Expert Benchmark}
+% placholder till ground truth
+To establish a robust benchmark for model performance, a comparative analysis
+was conducted against the expert assessment of a qualified horticulturist. This
+section outlines the methodology for the expert evaluation and presents a
+comparative summary of the results.
+\subsection{Expert Evaluation Methodology}
+The expert benchmark was established by <insert name here>, <insert
+qualifications>. Their expertise was employed to provide a ground-truth
+classification for mango samples based on two key phenotypic traits:
+\begin{itemize}
+    \item Skin Color: yellow, yellow-green, green
+    \item Bruises: bruised, non-bruised
+\end{itemize}
+To ensure statistical significance and mitigate the potential for coincidental
+agreement, a substantial sample set was utilized. The expert evaluated 30
+individual mangoes, with each fruit imaged from two opposing sides resulting in
+a total of 60 distinct images for classification. This approach accounts for
+phenotypic variability across the surface of a single fruit.
+\subsection{Comparative Results}
+The expert's classifications for the 60-image dataset are presented in
+Table~\ref{tab:expert_results}.
+These results serve as the validated ground truth against which the predictive
+accuracy of the computational models was measured.
+
+% [ ] todo: revisit once actual interview and testing with expert is done
+\begin{table}[htbp]
+    \centering
+    \caption{Expert Classification Results for Mango Phenotypic Traits}
+    \label{tab:expert_results}
+    \begin{tabular}{cccc}
+        \toprule
+        \textbf{Mango ID} & \textbf{Side} & \textbf{Color Category} & \textbf{Bruising Status} \\
+        \midrule
+        001 & A & Yellow-Green & Non-Bruised \\
+        001 & B & Green        & Non-Bruised \\
+        002 & A & Yellow       & Bruised     \\
+        002 & B & Yellow-Green & Non-Bruised \\
+        003 & A & Green        & Non-Bruised \\
+        003 & B & Green        & Non-Bruised \\
+        \vdots & \vdots & \vdots & \vdots \\
+        030 & A & Yellow       & Non-Bruised \\
+        030 & B & Yellow       & Non-Bruised \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
 \subsection{Method 1: Computer Vision}
