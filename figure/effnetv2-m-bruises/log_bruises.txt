@@ -1,39 +1,114 @@
-Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\EfficientNet\dataset_bruises\train_class_distribution_bruises.png
-Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\EfficientNet\dataset_bruises\test_class_distribution_bruises.png
-Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\EfficientNet\dataset_bruises\valid_class_distribution_bruises.png
-Epoch [1/100], Average Loss: 0.1731
-Validation Loss: 0.0756, Validation Accuracy: 0.9765
-Epoch [2/100], Average Loss: 0.0724
-Validation Loss: 0.0300, Validation Accuracy: 0.9922
-Epoch [3/100], Average Loss: 0.0293
-Validation Loss: 0.0596, Validation Accuracy: 0.9791
-EarlyStopping counter: 1 / 5
-Epoch [4/100], Average Loss: 0.0113
-Validation Loss: 0.0344, Validation Accuracy: 0.9869
-EarlyStopping counter: 2 / 5
-Epoch [5/100], Average Loss: 0.0063
-Validation Loss: 0.0372, Validation Accuracy: 0.9896
-EarlyStopping counter: 3 / 5
-Epoch [6/100], Average Loss: 0.0709
-Validation Loss: 0.0669, Validation Accuracy: 0.9713
-EarlyStopping counter: 4 / 5
-Epoch [7/100], Average Loss: 0.0332
-Validation Loss: 0.0574, Validation Accuracy: 0.9869
-EarlyStopping counter: 5 / 5
-Early stopping triggered!
-Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\EfficientNet\dataset_bruises\val_loss_accuracy_curve_bruises.png
-Saved best model from epoch 2 with val_loss=0.0300
+Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\1.Datasets\datasetv5\train_class_distribution_bruises.png
+Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\1.Datasets\datasetv5\test_class_distribution_bruises.png
+Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\1.Datasets\datasetv5\valid_class_distribution_bruises.png
+Epoch [1/100], Avg Train Loss: 1.5806, Train Accuracy: 0.8615
+Validation Loss: 0.3157, Validation Accuracy: 0.9703
+Epoch [2/100], Avg Train Loss: 0.3241, Train Accuracy: 0.9438
+Validation Loss: 0.2033, Validation Accuracy: 0.9954
+Epoch [3/100], Avg Train Loss: 0.2274, Train Accuracy: 0.9700
+Validation Loss: 0.1753, Validation Accuracy: 0.9908
+Epoch [4/100], Avg Train Loss: 0.1928, Train Accuracy: 0.9835
+Validation Loss: 0.1690, Validation Accuracy: 0.9931
+Epoch [5/100], Avg Train Loss: 0.1859, Train Accuracy: 0.9843
+Validation Loss: 0.1872, Validation Accuracy: 0.9954
+EarlyStopping counter: 1 / 10
+Epoch [6/100], Avg Train Loss: 0.1741, Train Accuracy: 0.9891
+Validation Loss: 0.1944, Validation Accuracy: 0.9908
+EarlyStopping counter: 2 / 10
+Epoch [7/100], Avg Train Loss: 0.1763, Train Accuracy: 0.9891
+Validation Loss: 0.1609, Validation Accuracy: 0.9908
+Epoch [8/100], Avg Train Loss: 0.1639, Train Accuracy: 0.9923
+Validation Loss: 0.1584, Validation Accuracy: 0.9954
+Epoch [9/100], Avg Train Loss: 0.1602, Train Accuracy: 0.9938
+Validation Loss: 0.1741, Validation Accuracy: 0.9931
+EarlyStopping counter: 1 / 10
+Epoch [10/100], Avg Train Loss: 0.1654, Train Accuracy: 0.9917
+Validation Loss: 0.1613, Validation Accuracy: 0.9954
+EarlyStopping counter: 2 / 10
+Epoch [11/100], Avg Train Loss: 0.1487, Train Accuracy: 0.9948
+Validation Loss: 0.1443, Validation Accuracy: 0.9931
+Epoch [12/100], Avg Train Loss: 0.1386, Train Accuracy: 0.9978
+Validation Loss: 0.1381, Validation Accuracy: 0.9931
+Epoch [13/100], Avg Train Loss: 0.1356, Train Accuracy: 0.9979
+Validation Loss: 0.1350, Validation Accuracy: 0.9954
+Epoch [14/100], Avg Train Loss: 0.1325, Train Accuracy: 0.9991
+Validation Loss: 0.1352, Validation Accuracy: 0.9954
+EarlyStopping counter: 1 / 10
+Epoch [15/100], Avg Train Loss: 0.1313, Train Accuracy: 0.9995
+Validation Loss: 0.1379, Validation Accuracy: 0.9931
+EarlyStopping counter: 2 / 10
+Epoch [16/100], Avg Train Loss: 0.1352, Train Accuracy: 0.9982
+Validation Loss: 0.1294, Validation Accuracy: 0.9977
+Epoch [17/100], Avg Train Loss: 0.1376, Train Accuracy: 0.9965
+Validation Loss: 0.1295, Validation Accuracy: 0.9977
+EarlyStopping counter: 1 / 10
+Epoch [18/100], Avg Train Loss: 0.1362, Train Accuracy: 0.9958
+Validation Loss: 0.1350, Validation Accuracy: 0.9954
+EarlyStopping counter: 2 / 10
+Epoch [19/100], Avg Train Loss: 0.1342, Train Accuracy: 0.9969
+Validation Loss: 0.1321, Validation Accuracy: 0.9954
+EarlyStopping counter: 3 / 10
+Epoch [20/100], Avg Train Loss: 0.1272, Train Accuracy: 0.9992
+Validation Loss: 0.1357, Validation Accuracy: 0.9908
+EarlyStopping counter: 4 / 10
+Epoch [21/100], Avg Train Loss: 0.1268, Train Accuracy: 0.9990
+Validation Loss: 0.1290, Validation Accuracy: 0.9931
+EarlyStopping counter: 5 / 10
+Epoch [22/100], Avg Train Loss: 0.1234, Train Accuracy: 0.9998
+Validation Loss: 0.1293, Validation Accuracy: 0.9954
+EarlyStopping counter: 6 / 10
+Epoch [23/100], Avg Train Loss: 0.1230, Train Accuracy: 0.9998
+Validation Loss: 0.1293, Validation Accuracy: 0.9954
+EarlyStopping counter: 7 / 10
+Epoch [24/100], Avg Train Loss: 0.1230, Train Accuracy: 0.9995
+Validation Loss: 0.1312, Validation Accuracy: 0.9954
+EarlyStopping counter: 8 / 10
+Epoch [25/100], Avg Train Loss: 0.1230, Train Accuracy: 0.9997
+Validation Loss: 0.1272, Validation Accuracy: 0.9954
+Epoch [26/100], Avg Train Loss: 0.1229, Train Accuracy: 0.9997
+Validation Loss: 0.1265, Validation Accuracy: 0.9954
+EarlyStopping counter: 1 / 10
+Epoch [27/100], Avg Train Loss: 0.1436, Train Accuracy: 0.9929
+Validation Loss: 0.1808, Validation Accuracy: 0.9794
+EarlyStopping counter: 2 / 10
+Epoch [28/100], Avg Train Loss: 0.1641, Train Accuracy: 0.9833
+Validation Loss: 0.1328, Validation Accuracy: 0.9954
+EarlyStopping counter: 3 / 10
+Epoch [29/100], Avg Train Loss: 0.1480, Train Accuracy: 0.9911
+Validation Loss: 0.1352, Validation Accuracy: 0.9931
+EarlyStopping counter: 4 / 10
+Epoch [30/100], Avg Train Loss: 0.1284, Train Accuracy: 0.9975
+Validation Loss: 0.1356, Validation Accuracy: 0.9908
+EarlyStopping counter: 5 / 10
+Epoch [31/100], Avg Train Loss: 0.1322, Train Accuracy: 0.9961
+Validation Loss: 0.1350, Validation Accuracy: 0.9954
+EarlyStopping counter: 6 / 10
+Epoch [32/100], Avg Train Loss: 0.1298, Train Accuracy: 0.9967
+Validation Loss: 0.1304, Validation Accuracy: 0.9954
+EarlyStopping counter: 7 / 10
+Epoch [33/100], Avg Train Loss: 0.1278, Train Accuracy: 0.9975
+Validation Loss: 0.1286, Validation Accuracy: 0.9954
+EarlyStopping counter: 8 / 10
+Epoch [34/100], Avg Train Loss: 0.1243, Train Accuracy: 0.9987
+Validation Loss: 0.1332, Validation Accuracy: 0.9931
+EarlyStopping counter: 9 / 10
+Epoch [35/100], Avg Train Loss: 0.1233, Train Accuracy: 0.9986
+Validation Loss: 0.1321, Validation Accuracy: 0.9931
+EarlyStopping counter: 10 / 10
+Early stopping triggered. Restoring best model weights.
+Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\1.Datasets\datasetv5\val_loss_accuracy_curve_bruises.png
+Best model saved successfully.
 
 Classification Report:
               precision    recall  f1-score   support
 
-     bruised       0.94      1.00      0.97       141
- not_bruised       1.00      0.96      0.98       239
+     bruised       1.00      0.98      0.99       206
+ not_bruised       0.98      1.00      0.99       234
 
-    accuracy                           0.98       380
-   macro avg       0.97      0.98      0.97       380
-weighted avg       0.98      0.98      0.98       380
+    accuracy                           0.99       440
+   macro avg       0.99      0.99      0.99       440
+weighted avg       0.99      0.99      0.99       440
 
 
-Precision: 0.9777, Recall: 0.9763, F1 Score: 0.9765
-Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\EfficientNet\dataset_bruises\confusion_matrix_bruises.png
+Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886
+Saved plot: C:\Users\dangi\OneDrive\Desktop\THESIS\Latest(08_18_2025)\1.Datasets\datasetv5\confusion_matrix_bruises.png

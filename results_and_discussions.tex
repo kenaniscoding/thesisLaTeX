@@ -344,20 +344,20 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
     \hline
-	  Green & 0.97 & 0.97 & 0.97 & 293 \\
+	  Green & 0.98 & 0.99 & 0.99 & 210 \\
     \hline
-	  Yellow & 0.98 & 0.98 & 0.98 & 124 \\
+	  Yellow & 0.99 & 0.99 & 0.99 & 161 \\
 	  \hline
-	  Yellow\_Green & 0.95 & 0.96 & 0.95 & 188 \\
+	  Yellow\_Green & 0.98 & 0.98 & 0.98 & 219 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.97 & 551 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 590 \\
 	  \hline
-	  Macro Avg & 0.97 & 0.97 & 0.97 & 551 \\
+	  Macro Avg & 0.99 & 0.99 & 0.99 & 590 \\
 	  \hline
-	  Weighted Avg & 0.97 & 0.97 & 0.97 & 551 \\
+    Weighted Avg & 0.98 & 0.98 & 0.98 & 590 \\
 	  \hline
 	\end{tabular}
-	\caption{EfficientNetV2 Ripeness Classification Report}
+	\caption{EfficientNetV2 Ripeness Classification Report with Precision: 0.9848, Recall: 0.9847, F1 Score: 0.984}
 	\label{tab:ripeness_classification_report}
 \end{table}
 
@@ -390,7 +390,7 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{/graphs/ripeness}
+	\includegraphics[width=0.9\textwidth]{/graphs/ripeness_plot}
 	\caption{EfficientNetV2 Ripeness Accuracy and Loss Graph}
 	\label{fig:ripeness-graph}
 \end{figure}
@@ -404,18 +404,18 @@ Add description on how the bruises results were taken and how many images were u
 	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
-	  Bruised & 0.94 & 1.00 & 0.97 & 141 \\
+	  Bruised & 1.00 & 0.98 & 0.99 & 206 \\
 	  \hline
-	  Not Bruised & 1.00 & 0.96 & 0.98 & 239 \\
+	  Not Bruised & 0.98 & 1.00 & 0.99 & 234 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 380 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.99 & 440 \\
 	  \hline
-	  Macro Avg & 0.97 & 0.98 & 0.97 & 380 \\
+	  Macro Avg & 0.99 & 0.99 & 0.99 & 440 \\
 	  \hline
-    Weighted Avg & 0.98 & 0.98 & 0.98 & 380 \\
+    Weighted Avg & 0.99 & 0.99 & 0.99 & 440 \\
 	  \hline
 	\end{tabular}
-	\caption{EfficientNetV2 Bruises Classification Report}
+	\caption{EfficientNetV2 Bruises Classification Report with Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886}
 	\label{tab:bruises_classification_report}
 \end{table}
 
@@ -449,7 +449,7 @@ Add description on how the bruises results were taken and how many images were u
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{/graphs/bruises}
+	\includegraphics[width=0.9\textwidth]{/graphs/bruises_plot}
 	\caption{EfficientNetV2 Bruises Accuracy and Loss Graph}
 	\label{fig:bruises-graph}
 \end{figure}
