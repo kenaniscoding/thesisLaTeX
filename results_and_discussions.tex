@@ -147,8 +147,16 @@
 
 \section{Training and Testing Results of the Model} \label{sec:main_trainAndTestResults}
 
-For the method on classifying the ripeness and bruises, the reseachers attempted different
-deep learning algorithm methods. 
+To identify the most suitable convolutional neural network (CNN) architecture
+for grading Carabao mangoes, multiple CNN models were evaluated under fixed
+experimental parameters. These parameters included the number of epochs, input
+image size, batch size, optimizer, data preprocessing methods, and dataset size.
+The only variable factor was the network architecture. Ripeness classification
+models were trained using a GPU, while bruises classification models were
+trained on a CPU to compare training times and assess the impact of hardware
+constraints on accuracy. Model performance was evaluated using precision,
+recall, F1-score, accuracy, resource utilization, and elapsed training time
+
 
 \begin{table}[htbp]
   \centering
@@ -186,15 +194,96 @@ deep learning algorithm methods.
   \label{tab:overall_accuracy_effnet}
 \end{table}
 
-The performance of the seven convolutional neural network models shown in Table~\ref{tab:overall_accuracy_cnn} was evaluated and tested for the two classification tasks that are required for the automation in this project which are the ripeness and bruising detection of  mangoes. The table summarizes the overall accuracy of the models in said tasks.
+The performance of the seven convolutional neural network models shown in
+Table~\ref{tab:overall_accuracy_cnn} was evaluated and tested for the two
+classification tasks that are required for the automation in this project which
+are the ripeness and bruising detection of  mangoes. The table summarizes the
+overall accuracy of the models in said tasks.
 
-For the classification of the ripeness, the highest accuracy was obtained of the MobileNetV2, which had an accuracy of 90\%. This model is followed by the EfficientNet-B0 and GoogLeNet, both with 89\% and then DenseNet121 with 88\% and ResNet50 with 87\%. However, both VGGNet16 and AlexNet models underperformed in the testing with just 43\% accuracy. The performance gap of both of these models compared to the others is very notable as these two were usually used for image classification. Both the VGGNet16 and the AlexNet failed to generalize in the dataset probably because of the inefficient feature reuse. 
-Additionally, the parameters of the training might have benefited the modern CNN architectures such as the EfficientNet and MobileNetV2 which allowed them to converge faster using fewer epochs than other models.
+For the classification of the ripeness, the highest accuracy was obtained of the
+MobileNetV2, which had an accuracy of 90\%. This model is followed by the
+EfficientNet-B0 and GoogLeNet, both with 89\% and then DenseNet121 with 88\% and
+ResNet50 with 87\%. However, both VGGNet16 and AlexNet models underperformed in
+the testing with just 43\% accuracy. The performance gap of both of these models
+compared to the others is very notable as these two were usually used for image
+classification. Both the VGGNet16 and the AlexNet failed to generalize in the
+dataset probably because of the inefficient feature reuse.  Additionally, the
+parameters of the training might have benefited the modern CNN architectures
+such as the EfficientNet and MobileNetV2 which allowed them to converge faster
+using fewer epochs than other models.
 
-For the bruise detection, EfficientNet-B0 had the highest accuracy with 87\% followed by MobileNetV2 with 86\%, then DenseNet121 with 84\%, ResNet50 with 84\% and then GoogLeNet with 81\%. Both VGGNet16 and AlexNet only had 54\% accuracy. Both of these models again had significant gap with the other models. This can indicate that modern lightweight and deeper architectures of CNNs can outperform the older models as they can be more effective the extracting the subtle variations of the color and textures of mangoes.
+For the bruise detection, EfficientNet-B0 had the highest accuracy with 87\%
+followed by MobileNetV2 with 86\%, then DenseNet121 with 84\%, ResNet50 with
+84\% and then GoogLeNet with 81\%. Both VGGNet16 and AlexNet only had 54\%
+accuracy. Both of these models again had significant gap with the other models.
+This can indicate that modern lightweight and deeper architectures of CNNs can
+outperform the older models as they can be more effective the extracting the
+subtle variations of the color and textures of mangoes.
+
+Among the EfficientNet V1 models, EfficientNet-B6 achieved the highest
+performance for ripeness classification, with a precision of 0.9339, recall of
+0.9328, F1-score of 0.9331, and accuracy of 93\%. This was followed by B2 and
+B5, both achieving 92\% accuracy. In contrast, B1 recorded the lowest
+performance (86\% accuracy), and B7—despite being the most computationally
+intensive—achieved only 87\% accuracy after more than 10 hours of training. The
+underperformance of B7 is likely due to VRAM limitations causing memory
+overflow, forcing reliance on slower RAM, and to overfitting caused by the small
+dataset size.
+
+EfficientNetV2 models demonstrated improved resource efficiency and shorter
+training times. Variants B0–B3 showed consistent accuracy gains, with V2-B3
+achieving the highest metrics while maintaining modest computational demands.
+Larger variants (V2-S, V2-M, V2-L) exhibited diminishing returns, likely due to
+overfitting on the limited dataset. Under these conditions, V2-B3 emerged as the
+most effective architecture, balancing accuracy, efficiency, and training time.
+
+For bruises classification, mid-tier EfficientNet V1 models (B1–B4) consistently
+achieved 90–91\% accuracy, with B3 performing best (precision = 0.913, recall =
+0.913, F1-score = 0.9129). Higher-capacity models (B5–B7) showed reduced
+accuracy, again suggesting overfitting. Among V2 models, V2-B3 achieved results
+comparable to the best V1 models while requiring less memory and shorter
+training times, making it suitable for resource-constrained environments.
+
+Across both tasks, models with higher parameter counts often showed declining
+performance under the small dataset constraint. These architectures are designed
+to extract fine-grained features from high-resolution images, and the fixed
+224×224 input size likely underutilized their representational capacity.
+GPU-based training consistently outperformed CPU-based training in both speed
+and scalability. However, in CPU-only training, V1 models generally outperformed
+V2 models, suggesting that V2 architectures may be more sensitive to hardware
+limitations.  To ensure a fair benchmark, all models were re-trained using their
+correct input resolutions while keeping other parameters constant. Among V1
+models, EfficientNet-B1 achieved the highest performance (precision = 0.9161,
+recall = 0.9129, F1-score = 0.9129, accuracy = 91\%), offering competitive
+accuracy at minimal computational cost. Models B4–B7 encountered out-of-memory
+(OOM) errors at their native resolutions, indicating impracticality for
+deployment under the given hardware constraints.
+
+In the V2 family, EfficientNetV2-B2 achieved the highest performance (precision
+= 0.9203, recall = 0.9201, F1-score = 0.9201, accuracy = 92\%), closely followed
+by V2-B1 (accuracy = 92\%). Notably, V2-B0 outperformed its V1 counterpart (91\%
+vs. 89\% accuracy), highlighting the efficiency of the V2 design. When comparing
+the best models from each family, V2-B2 marginally outperformed B1 in all
+metrics, offering a more favorable accuracy-to-computation ratio.
+
+In the final phase, the dataset was expanded to 10,000 images, and models were
+trained at their correct input resolutions. Under these conditions,
+EfficientNetV2-M was identified as the optimal architecture. It provided greater
+representational capacity than smaller variants (V2-B0 to V2-S) while avoiding
+the extreme memory demands of larger models (V2-L, V2-XL). Mixed precision
+training and a reduced batch size (32 → 25) mitigated memory constraints,
+resulting in a manageable training time of approximately three hours.
+
+Performance was further enhanced through the AdamW optimizer, a learning rate
+and weight decay of 0.0001, cosine annealing learning rate scheduling, and early
+stopping (patience = 10 epochs, minimum delta = 0.001). The final V2-M model
+achieved 97\% accuracy for ripeness classification (precision = 0.9692, recall =
+0.9691, F1-score = 0.9692) and 98\% accuracy for bruises classification
+(precision = 0.9777, recall = 0.9763, F1-score = 0.9765).
+
 
 \subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
-Results such as the \gls{F1-Score} are shown.
+% Results such as the \gls{F1-Score} are shown.
 
 \subsubsection{Naive Bayes}
 % [ ] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
