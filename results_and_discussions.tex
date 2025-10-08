@@ -571,19 +571,19 @@ accuracy of the computational models was measured.
 
 % [ ] todo: revisit once actual interview and testing with expert is done
 
-\begin{longtable}{cccccc}
+\begin{longtable}{c|c|c|c|c|c|c}
     \caption{Expert Classification Results for Mango Phenotypic Traits} \\
     \label{tab:expert_results} \\
     \toprule
-    \multirow{2}{*}{\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} \\
+    \multirow{2}{*}{\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & \multirow{2}{*}{\textbf{Result}}\\
     \cmidrule(lr){2-3} \cmidrule(lr){4-5}
      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
     \midrule
     \endfirsthead
     
-    \multicolumn{6}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
+    \multicolumn{7}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
     \toprule
-    \multirow{2}{*}{\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} \\
+    \multirow{2}{*}{\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & \multirow{2}{*}{\textbf{Result}}\\
     \cmidrule(lr){2-3} \cmidrule(lr){4-5}
      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
     \midrule
@@ -595,57 +595,65 @@ accuracy of the computational models was measured.
     
     \bottomrule
     \endlastfoot
-        001 & yg & placholder  & b & placholder \\
-        002 & yg & placholder  & b & placholder \\
-        003 & yg & placholder  & b & placholder \\
-        004 & g & placholder  & nb & placholder \\
-        005 & yg & placholder  & b & placholder \\
-        006 & yg & placholder  & nb & placholder \\
-        007 & yg & placholder  & b & placholder \\
-        008 & y & placholder  & b & placholder \\
-        009 & yg & placholder  & b & placholder \\
-        010 & g & placholder  & b & placholder \\
-        011 & g & placholder  & nb & placholder \\
-        012 & yg & placholder  & b & placholder \\
-        013 & y & placholder  & b & placholder \\
-        014 & y & placholder  & b & placholder \\
-        015 & y & placholder  & b & placholder \\
-        016 & y & placholder  & b & placholder \\
-        017 & y & placholder  & b & placholder \\
-        018 & g & placholder  & nb & placholder \\
-        019 & yg & placholder  & b & placholder \\
-        020 & g & placholder  & nb & placholder \\
-        021 & y & placholder  & b & placholder \\
-        022 & g & placholder  & nb & placholder \\
-        023 & g & placholder  & nb & placholder \\
-        024 & yg & placholder  & nb & placholder \\
-        025 & yg & placholder  & nb & placholder \\
-        026 & g & placholder  & b & placholder \\
-        027 & y & placholder  & b & placholder \\
-        028 & yg & placholder  & nb & placholder \\
-        029 & yg & placholder  & nb & placholder \\
-        030 & g & placholder  & nb & placholder \\
-        031 & yg & placholder  & nb & placholder \\
-        032 & yg & placholder  & b & placholder \\
-        033 & y & placholder  & b & placholder \\
-        034 & g & placholder  & b & placholder \\
-        035 & y & placholder  & b & placholder \\
-        036 & yg & placholder  & b & placholder \\
-        037 & yg & placholder  & b & placholder \\
-        038 & g & placholder  & nb & placholder \\
-        039 & yg & placholder  & b & placholder \\
-        040 & yg & placholder  & b & placholder \\
-        040 & g & placholder  & nb & placholder \\
-        041 & yg & placholder  & b & placholder \\
-        042 & yg & placholder  & nb & placholder \\
-        043 & yg & placholder  & b & placholder \\
-        044 & yg & placholder  & nb & placholder \\
-        045 & y & placholder  & b & placholder \\
-        046 & yg & placholder  & nb & placholder \\
-        047 & yg & placholder  & nb & placholder \\
-        048 & g & placholder  & nb & placholder \\
-        049 & y & placholder  & b & placholder \\
-        050 & y & placholder  & b & placholder \\
+    % -- pg marker 2
+        001 & yg & yg  & b & nb & 0.5\\ % -- 01yg.jpg
+        002 & yg & g  & b & nb  & 0\\ % -- 08_g.jpg
+        003 & yg & yg  & b & b &  1\\ % -- 07b.jpg
+        004 & g & g  & nb & nb  & 1\\ % -- 10nb.jpg
+        005 & yg & yg  & b & nb  & 0.5\\ % -- 05yg.jpg
+        006 & yg & yg  & nb & nb  & 1\\ % --01nb.jpg
+    % -- pg marker 3
+        007 & yg & yg  & b & nb  & 0.5\\ % -- 06nb.jpg
+        008 & y & y  & b & b  & 1\\ % -- 07y.jpg
+        009 & yg & yg  & b & nb  & 0.5\\ % -- 08yg.jpg
+        010 & g & g  & b & nb  & 0.5\\ % -- 04g.jpg
+        011 & g & g  & nb & nb  & 1\\ % -- 09nb.jpg 
+        012 & y & y  & nb & nb  & 1\\ % -- 09y.jpg
+    % -- pg marker 4
+        013 & yg & y  & b & b  & 0.5\\ % -- 07yg.jpg
+        014 & y & yg  & b & b  & 0.5\\ % -- 03y.jpg
+        015 & y & yg  & b & b  & 0.5\\ % -- 09b.jpg
+        016 & yg & yg  & b & nb  & 0.5\\ % -- 08b.jpg
+        017 & y & yg  & b & b  & 0.5\\ % -- 10b.jpg
+        018 & g & yg  & nb & nb  & 0.5\\ % -- 02nb.jpg
+    % -- pg marker 5
+        019 & yg & yg  & b & b  & 1\\ % -- 03b.jpg
+        020 & g & g  & nb & nb  & 1\\ % -- 02g.jpg
+        021 & y & y  & b & nb  & 0.5\\ % -- 02y.jpg
+        022 & g & g  & nb & nb  & 1\\ % -- 01g.jpg
+        023 & g & g  & nb & nb  & 1\\ % -- 08nb.jpg
+        024 & yg & yg  & nb & nb  & 1\\ % -- 05nb.jpg
+    % -- pg marker 6
+        025 & yg & yg  & nb & nb  & 1\\ % -- 03nb.jpg
+        026 & g & g  & b & b  & 1\\ % -- 10g.jpg 
+        027 & y & y  & b & b  & 1\\ % -- 08y.jpg
+        028 & yg & yg  & nb & nb  & 1\\ % -- 06yg.jpg
+        029 & yg & g  & nb & b  & 0\\ % -- 09g.jpg
+        030 & g & g  & nb & nb  & 1\\ % -- 07g.jpg
+    % -- pg marker 7
+        031 & yg & g  & nb & nb  & 0.5\\ % -- 03g.jpg
+        032 & yg & yg  & b & b  & 1\\ % -- 01b.jpg
+        033 & y & y  & b & b  & 1\\ % -- 10y.jpg
+        034 & g & g  & b & nb  & 0.5\\ % -- 05g.jpg
+        035 & y & y  & b & b  & 1\\ % -- 04y.jpg
+        036 & yg & yg  & b & b  & 1\\ % -- 09yg.jpg
+    % -- pg marker 8
+        037 & yg & yg  & b & nb  & 0.5\\ % -- 04yg.jpg
+        038 & g & g  & nb & b  & 0.5 \\ % -- 05b.jpg
+        039 & yg & yg  & b & b  & 1\\ % -- 06b.jpg
+        040 & yg & yg  & b & b  & 1\\ % -- 02yg.jpg
+        041 & g & g  & nb & nb  & 1\\ % -- 06g.jpg
+        042 & yg & yg  & b & nb & 0.5 \\ % -- 04nb.jpg
+    % -- pg marker 9
+        043 & yg & yg  & b & b  & 1\\ % -- 04b.jpg
+        044 & yg & yg  & nb & nb  & 1\\ % -- 07nb.jpg
+        045 & y & y  & b & b  & 1\\ % -- 06y.jpg
+        046 & yg & yg  & nb & nb  & 1\\ % -- 03yg.jpg
+        047 & yg & yg  & nb & nb  & 1\\ % -- 10yg.jpg
+        048 & g & g  & nb & nb  & 1\\ % -- 02b.jpg
+    % -- pg marker 10
+        049 & y & y  & b & b  & 1\\ % -- 05y.jpg
+        050 & y & y  & b & b  & 1\\ % -- 01y.jpg
 \end{longtable}
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
