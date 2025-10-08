@@ -1,11 +1,15 @@
 \section{Background of the Study}
 
-Mangoes, also known as the Mangifera indica, are a member of the cashew family. 
-This fruit can often be seen being farmed by countries such as Myanmar, the Philippines, 
-and India as they have a tropical dry season. Being in a tropical country is an important 
-aspect for mango cultivation as it ensures proper growth for mangoes. 
-If aspects such as temperature and rainfall are not ideal, it may affect the quality 
-of the mango \citep{noauthor-mango-2024}. 
+<<<<<<< HEAD
+=======
+% Mangoes, also known as the Mangifera indica, are a member of the cashew family. 
+% This fruit can often be seen being farmed by countries such as Myanmar, the Philippines, 
+% and India as they have a tropical dry season. Being in a tropical country is an important 
+% aspect for mango cultivation as it ensures proper growth for mangoes. 
+% If aspects such as temperature and rainfall are not ideal, it may affect the quality 
+% of the mango \citep{noauthor-mango-2024}. 
+
+>>>>>>> 514945d1cf914d10e5314335a6e1ce65816d75a3
 Carabao mangoes is a variety of a mango that is found and cultivated in the
 Philippines. It is known for its sweet signature taste that was recognized
 sweetest in the world in the Guinness Book of World Records in 1995. The mango
@@ -22,10 +26,18 @@ during late May to early July \citep{DBpediaCarabao}.
 \end{figure}
 
 Likewise, the Philippines produced an estimated 596.34 thousand metric tons of mangoes 
-during the April-June 2023 quarter, marking an 11.4 percent 
+during the April to June 2023 quarter, marking an 11.4 percent 
 increase from the 535.43 thousand metric tons harvested in the same three-month period of 
-2022. Of this total output, the Carabao mango variety accounted for the vast 
-majority at 495.06 thousand metric tons, or 83.0 percent of the nation's entire mango production \citep{psa2023major}.
+2022. Of this total output, the mango variety accounted for the vast 
+majority at 495.06 thousand metric tons, or 83.0 percent of the nation's entire mango
+production \citep{psa2023major}.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{fig1}
+	\caption{Carabao Mangoes at Different Ripeness Stages \citep{guillermo-determining-2019}}
+	\label{fig:img1}
+\end{figure}
 
 This shows that mangoes are a highly valued fruit in the Philippines as
 it is not only the country’s national fruit but also amongst the leading
@@ -72,11 +84,11 @@ is then compared to a database in order to classify any given mango
 Another study is done by \citet{rizwan-iqbal-classification-2022}, which
 classifies mangoes based on their color, volume, size, and shape This is done by
 making use of Charge Coupled Devices, Complementary Metal-Oxide Semiconductor
-sensors, and 3-layer \gls{Convolutional Neural Network}. To classify the mangoes,
+sensors, and 3-layer \acr{CNN}. To classify the mangoes,
 images are first captured and preprocessed to be used as a data set
 \citep{rizwan-iqbal-classification-2022}. This data set is then augmented to be
-used as a model for the 3-layer \gls{Convolutional Neural Network}. After extracting
-the features of the mango, the 3-layer \gls{Convolutional Neural Network} is used as a
+used as a model for the 3-layer \acr{CNN}. After extracting
+the features of the mango, the 3-layer \acr{CNN} is used as a
 method for their classification as it can mimic the human brain in pattern
 recognition, and process data for decision making. This is important as some
 mangoes have very subtle differences which make it difficult to differentiate
@@ -112,7 +124,7 @@ to control the mangoes \citep{guillergan-naive-2024}.
 \section{Problem Statement}
 As mangoes are among the top exports of the Philippines
 \citep{centino-current-nodate}, assessing the physical deformities is a
-necessity. The physical deformities of the Carabao mango can determine the
+necessity. The physical deformities of the mango can determine the
 global competitiveness of the country. Having higher quality exports can often
 lead to gaining competitive edge, increase in demand, increase export revenues,
 and becoming less susceptible to low-wage competition
@@ -139,11 +151,11 @@ sorting the mangoes. Lastly, not
 all research approaches were able to implement a hardware for their algorithm,
 limiting their output to only a software implementation and not an embedded
 system. As such the proposed system would assess the quality of the
-Carabao mango based on all the mentioned mango traits, namely size,
+ mango based on all the mentioned mango traits, namely size,
 \gls{bruises}, and ripeness while also taking into consideration being
 non-destructive and the user's priority when grading and sorting the mangoes.
 These aspects are important because, as was previously
-mentioned, there is a need to develop a user priority based Carabao mango sorter that 
+mentioned, there is a need to develop a user priority based mango sorter that 
 takes into
 account all these aspects at the same time while being non-destructive.
 
@@ -247,11 +259,11 @@ yields of the \documentType.
 			
 			\Paste{SO7} & \begin{itemize}
 				\item To train a machine learning model such as 
-				CNN capable of distinguishing bruised and non-bruised mangoes.
+          \gls{Convolutional Neural Network} capable of distinguishing bruised and non-bruised mangoes.
 				\item To train a machine learning model such as kNN, k-means, and Naïve Bayes 
 				capable of assessing the extent of bruising on the mangoes if it is significant or partial.
 				\item To gather a dataset of annotated images based on bruises.
-				\item To obtain an evaluation report of performance metrics of both CNN and other machine learning models.
+        \item To obtain an evaluation report of performance metrics of both \acr{CNN} and other machine learning models.
 			\end{itemize} \\ \hline
 			
 		\end{longtable}
