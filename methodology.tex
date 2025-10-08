@@ -454,14 +454,14 @@ Additionally, \gls{not:bpred}, \gls{not:rpred}, and \gls{not:spred} correspond t
 \noindent \textbf{Ripeness Scores:}
 \begin{align}
 r(\text{yellow}) &= 1.0 \\
-r(\text{yellow\_green}) &= 2.0 \\
+r(\text{yellow green}) &= 2.0 \\
 r(\text{green}) &= 3.0
 \end{align}
 
 \noindent \textbf{Bruises Scores:}
 \begin{align}
 b(\text{bruised}) &= 1.0 \\
-b(\text{unbruised}) &= 2.0
+b(\text{not bruised}) &= 2.0
 \end{align}
 
 \noindent \textbf{Size Scores:}
@@ -471,6 +471,12 @@ s(\text{medium}) &= 2.0 \\
 s(\text{large}) &= 3.0
 \end{align}
 
+Note that the scores value for each respective classification cannot be changed
+by the user without changing the code itself. This means that only the weight of either the
+ripeness, bruises, and size
+can be changed to either low, high, or remove it by setting it to zero. Furthermore,
+only real numbers are allowed to be inputted as a weight. This means that 
+negative and imaginary numbers are not considered in Equation \ref{eq:userPriorityInput}.
 
 \section{Ethical Considerations}
 Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.

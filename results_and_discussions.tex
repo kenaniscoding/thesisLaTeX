@@ -1006,39 +1006,43 @@ compare and contrast both methods.
 % todo will add explanation of the absolute and percent diff for the four graphs
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
-\gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
-Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
-The formula for the user priority is given by:
-\begin{equation}
-	\label{eq:userPriority}	
-  \text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
-\end{equation}
+% \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
+% Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
+% The formula for the user priority is given by:
+% \begin{equation}
+% 	\label{eq:userPriority}	
+%   \text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
+% \end{equation}
+%
+% \noindent The machine learning predictions are assigned the following numerical values shown below.
+%
+% \subsection{Ripeness Scores:}
+% \begin{align}
+% r(\text{yellow}) &= 1.0 \\
+% r(\text{yellow\_green}) &= 2.0 \\
+% r(\text{green}) &= 3.0
+% \end{align}
+%
+% \subsection{Bruises Scores:}
+% \begin{align}
+% b(\text{bruised}) &= 1.0 \\
+% b(\text{unbruised}) &= 2.0
+% \end{align}
+%
+% \subsection{Size Scores:}
+% \begin{align}
+% s(\text{small}) &= 1.0 \\
+% s(\text{medium}) &= 2.0 \\
+% s(\text{large}) &= 3.0
+% \end{align}
+%
 
-\noindent The machine learning predictions are assigned the following numerical values shown below.
+The Figures \ref{fig:bruises-only-input}, \ref{fig:ripeness-bruises-only-input} and 
+\ref{fig:ripeness-only-input} are explained in this section where the inputted weight
+values are all real number since negative and imaginary number are not allowed. The
+purpose of this section is to demonstrate the different possible cases of using 
+the zero value in the user priority.
 
-\subsection{Ripeness Scores:}
-\begin{align}
-r(\text{yellow}) &= 1.0 \\
-r(\text{yellow\_green}) &= 2.0 \\
-r(\text{green}) &= 3.0
-\end{align}
-
-\subsection{Bruises Scores:}
-\begin{align}
-b(\text{bruised}) &= 1.0 \\
-b(\text{unbruised}) &= 2.0
-\end{align}
-
-\subsection{Size Scores:}
-\begin{align}
-s(\text{small}) &= 1.0 \\
-s(\text{medium}) &= 2.0 \\
-s(\text{large}) &= 3.0
-\end{align}
-
-Note that the scores value for each respective classification cannot be changed
-by the user. This means that only the weight of either the ripeness, bruises, and size
-can be changed to either low, high, or remove it by setting it to zero.
 
 \begin{figure}[!htbp]
 	\centering
