@@ -14,14 +14,32 @@ the design of the prototype, the researchers considered different computer visio
  the physical design of the conveyor belt was taken into account.
 \section{Engineering Standards}
 \subsection{Eletrical Certifications}
+The UL Listed certification indicates that the Raspberry Pi power supply has been tested and approved by 
+Underwriters Laboratories (UL), meeting safety standards for both the United States and Canada under
+certification number E330985. This certification ensures that the power supply complies with established requirements for electrical safety, 
+insulation, and protection against potential fire hazards. It also carries an Efficiency Level VI rating, which represents the
+highest energy efficiency standard set by the U.S. Department of Energy (DOE) for external power 
+supplies, ensuring minimal energy loss and optimized performance.
 
-\subsection{Safety of Machinery - ISO 13850:2015 }
+\subsection{Safety of Machinery}
+The ISO 13850:2015 – Safety of Machinery (Emergency Stop Function, Principles for Design) standard defines 
+the safety requirements for emergency stop functions in machinery. It specifies that emergency stop devices 
+must be clearly visible, easily accessible, and capable of quickly and safely halting machine operations in 
+the event of a malfunction or hazard. For the prototype, the stop button is located at the bench power supply
+and the \acr{RPi}.
 
-\subsection{Safety Requirements for Audio/Video, Information, and Communication Technology Equipment: IEC 62368-1:2018 / ISO 62368-1:2018 }
+\subsection{Safety Requirements for Technology Equipment}
+The IEC 62368-1:2018 / ISO 62368-1:2018 – Safety Requirements for Audio/Video, Information, and Communication 
+Technology Equipment standard establishes international safety guidelines for modern electronic devices and 
+their power supplies. It replaces older standards (IEC 60065 and 60950) with a hazard-based safety engineering 
+approach, ensuring that equipment in the prototype like the \acr{RPi} power supply and bench powers supply
+are designed to prevent electrical shock, overheating, and fire risks.
 
-\subsection{OpenChain - ISO/IEC 5230e}
-
-% todo update the technical standards
+\subsection{Open-source Software Compliance - ISO/IEC 5230e}
+It ensures that organizations using open-source components in their products maintain proper documentation, 
+license traceability, and transparency in software management. For components in the prototype like the \acr{RPi} operating system,
+which rely on open-source ecosystems, compliance with this standard promotes responsible use and distribution of software, 
+reducing legal and security risks associated with open-source code.
 
 \section{System Architecture}
 The system architecture is represented through a block diagram, showcasing modules such as image acquisition, 
