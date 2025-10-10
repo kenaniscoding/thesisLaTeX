@@ -209,6 +209,113 @@ model I9 13900hx Rtx4070 8gb vram 32gb 5600mhz ddr5 ram
 For the used methods to increase the Carabao mango image dataset, data augmentation techniques such as rotation, flipping, Gaussian blur, brightness adjustment,
 noise, crop, and resizing of the images were done.
 Note that the split ratio of the dataset is 70-15-15 where it refers to the training, testing, and validation as seen on the Listing~\ref{lst:datasplit_logs}.
+
+The dataset for mango classification was organized into five categories: bruised, not bruised, green, 
+yellow-green, and yellow. To ensure robust model training and evaluation, the dataset was initially 
+split into training (70\%), validation (15\%), and test (15\%) sets using PyTorch’s automated splitting 
+functions. Following standard practice in deep learning (Perez, Wang, 2017), only the training set was 
+augmented to increase sample diversity and improve generalization, while 
+the validation and test sets remained unaltered to preserve their role as unbiased evaluation benchmarks.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Training Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/train_ripeness}
+        \label{fig:cnn_train_ripe}
+    }
+    \hfill
+    \subbottom[Test Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/test_ripeness}
+        \label{fig:cnn_test_ripe}
+    }
+    \vfill
+    \subbottom[Validation Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/valid_ripeness}
+        \label{fig:cnn_valid_ripe}
+    }
+
+    \caption{CNN Ripeness 70-15-15 Image Datasplit}
+    \label{fig:ripeness_cnn_datasplit}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Training Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/train_bruises}
+        \label{fig:cnn_train_bruises}
+    }
+    \hfill
+    \subbottom[Test Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/test_bruises}
+        \label{fig:cnn_test_bruises}
+    }
+    \vfill
+    \subbottom[Validation Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/valid_bruises}
+        \label{fig:cnn_valid_bruises}
+    }
+
+    \caption{CNN Bruises 70-15-15 Image Datasplit}
+    \label{fig:bruises_cnn_datasplit}
+\end{figure}
+
+The dataset for mango classification was organized into five categories: 
+bruised, not bruised, green, yellow-green, and yellow. To ensure robust model
+training and evaluation, the dataset was initially split into training (70\%), 
+validation (15\%), and test (15\%) sets using PyTorch’s automated splitting 
+functions. Following standard practice in deep learning \cite{perez2017effectivenessdataaugmentationimage}
+, only the training set was augmented to increase sample diversity and improve 
+generalization, while the validation and test sets remained unaltered to 
+preserve their role as unbiased evaluation benchmarks.
+
+The validation set contains a balanced representation of the five mango classes. 
+In the bruise-based categories shown on Table~\ref{fig:ripeness_cnn_datasplit}, the 
+distribution shows slightly more bruised samples ($\sim$260) compared to not bruised 
+($\sim$240). On the other hand, for the ripeness-based categories as shown in 
+Tables~\ref{fig:bruises_cnn_datasplit}, 
+green has the highest count ($\sim$250), followed by yellow-green ($\sim$175), and yellow 
+($\sim$125).
+This distribution ensures that the validation set provides a fair assessment of the 
+model’s performance across both damage-related and ripeness-related classifications.
+
+The test set mirrors the validation set in structure, maintaining proportional 
+representation across classes. Approximately 260 bruised samples and ($\sim$240) not 
+bruised samples are included as seen in Table~\ref{fig:ripeness_cnn_datasplit}. 
+For the ripeness categories seen 
+in Table~\ref{fig:bruises_cnn_datasplit}, green ($\sim$225), yellow-green ($\sim$175), and 
+yellow ($\sim$125) are represented. This balanced distribution allows for reliable final
+evaluation of the trained CNN model, ensuring that results are not biased toward any
+single class.
+
+
+The training set underwent augmentation to artificially expand the dataset and introduce variability. 
+Augmentation techniques included transformations such as rotation, flipping, scaling, and brightness 
+adjustments. 
+After augmentation, the dataset contained approximately 5,100 bruised and 4,900 not
+bruised samples as seen in Table~\ref{fig:bruises_cnn_datasplit}. 
+For the ripeness categories, green had the highest representation ($\sim$4,200), followed
+by yellow-green ($\sim$3,400), and yellow ($\sim$2,600) as seen in Table~\ref{fig:ripeness_cnn_datasplit}. 
+This augmentation step increased the training set size substantially, shifting the 
+dataset distribution from 70-15-15 to approximately 90-5-5. 
+Such a shift is expected, as augmentation only affects the training set, thereby 
+increasing its relative proportion.
+
+Augmenting only the training set is a widely accepted best practice in deep learning. 
+According to \citet{ShortenKhoshgoftaar2019}, data augmentation enhances model robustness by
+simulating real-world variability, but applying it to validation or test sets would artificially
+inflate accuracy by exposing the model to transformed versions of already-seen data. 
+Similarly, \citet{Goodfellow-et-al-2016} emphasize that evaluation datasets must remain unseen, 
+original, and unaltered to provide a true measure of generalization. 
+\citet{perez2017effectivenessdataaugmentationimage} further demonstrate that augmentation is
+most effective when applied exclusively to training data, as it improves performance without
+compromising the integrity of evaluation.
+
+The dataset preparation process therefore ensures that the CNN model is trained on a large,
+diverse, and augmented training set, while validation and test sets remain unaltered and
+representative. 
+This methodology aligns with established best practices in computer vision research,
+supporting both robust training and fair evaluation of the mango classification model
+
 \begin{lstlisting}[
 float=h,
 caption=Datasplit Logs, 
@@ -263,6 +370,36 @@ Dataset processing complete! Output saved to: E:\dir
 
 ========================================
 \end{lstlisting} 
+\subsection{Comparative Test of CNN Models}
+
+To identify the most suitable CNN architecture for 
+grading Carabao mangoes, 
+multiple CNN models were evaluated under fixed experimental parameters. 
+Each model was trained for 15 epochs with an input image size of 224 × 224 pixels, a
+batch size of 32, and the Adam optimizer set at a learning rate of 0.001.
+ Data preprocessing included resizing, normalization using ImageNet mean and standard
+ deviation, and augmentation techniques such as random horizontal and vertical flips, 
+ random rotations, and Gaussian blur, which were applied exclusively to the 
+ training set. 
+The validation and test sets remained unaugmented to ensure unbiased evaluation.
+
+
+The performance of several CNN architectures, including EfficientNetV1, EfficientNetV2,
+VGGNet, AlexNet, ResNet50, GoogleNet, MobileNetV2, and DenseNet121 was first compared. 
+Based on these results, a more detailed comparison was then conducted within the 
+EfficientNet family, versions V1 and V2, to determine the most effective variant
+for the task.
+
+
+No advanced optimization techniques such as early stopping, learning rate schedulers,
+or mixed precision training were employed. 
+This decision was intentional to maintain fairness across all experiments and to ensure
+that the only variable factor influencing performance was the network architecture itself. 
+Ripeness classification models were trained using a GPU, while bruise classification models
+were trained on a CPU to compare training times and assess the impact of hardware constraints
+on accuracy. 
+Model performance was evaluated using precision, recall, F1-score, accuracy, resource
+utilization, and elapsed training time.
 
 \subsection{Classification Report}
 % describe classification report and how it is used in the system
