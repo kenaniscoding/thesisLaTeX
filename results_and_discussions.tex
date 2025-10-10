@@ -520,63 +520,117 @@ Its predictive precision makes it suitable for industrial-grade automated qualit
   \label{tab:overall_accuracy_effnet}
 \end{table}
 
-% Table 1: CNN Training Results for GPU
+% % Table: CNN Training Results for GPU (with Train Accuracy)
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{l|c|c|c|c|c|c|c}
+% \hline \hline
+% \textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Test Acc} & \textbf{Train Acc} & \textbf{Time} & \textbf{VRAM} \\
+% \hline
+% VGG16 & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 2h57m & 7.0 \\
+% \hline
+% ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 4h23m & 2.3 \\
+% \hline
+% RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 83.58 & 7h13m & 4.1 \\
+% \hline
+% GOOGLENET & 0.898 & 0.895 & 0.892 & 89 & 83.58 & 3h3m & 2.9 \\
+% \hline
+% MOBILENETV2 & 0.898 & 0.898 & 0.897 & 90 & 91.84 & 2h0m & 3.6 \\
+% \hline
+% DENSENET121 & 0.877 & 0.877 & 0.875 & 88 & 91.37 & 2h10m & 5.5 \\
+% \hline
+% EFFICIENTNET B0 & 0.890 & 0.888 & 0.887 & 89 & 91.47 & 2h26m & 4.1 \\
+% \hline
+% EFFICIENTNET B1 & 0.867 & 0.862 & 0.859 & 86 & 89.91 & 2h30m & 5.3 \\
+% \hline
+% EFFICIENTNET B2 & 0.927 & 0.924 & 0.925 & 92 & 90.27 & 2h14m & 5.5 \\
+% \hline
+% EFFICIENTNET B3 & 0.882 & 0.880 & 0.879 & 88 & 91.84 & 2h25m & 6.8 \\
+% \hline
+% EFFICIENTNET B4 & 0.899 & 0.898 & 0.896 & 90 & 92.34 & 2h50m & 8.0 \\
+% \hline
+% EFFICIENTNET B5 & 0.925 & 0.924 & 0.924 & 92 & 92.84 & 5h49m & 11.6 \\
+% \hline
+% EFFICIENTNET B6 & 0.934 & 0.933 & 0.933 & 93 & 96.03 & 7h51m & 14.5 \\
+% \hline
+% EFFICIENTNET B7 & 0.883 & 0.871 & 0.873 & 87 & 90.03 & 10h34m & 18.8 \\
+% \hline
+% EFFICIENTNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 89.91 & 1h53m & 3.0 \\
+% \hline
+% EFFICIENTNETV2-B1 & 0.904 & 0.904 & 0.902 & 90 & 92.56 & 2h0m & 3.6 \\
+% \hline
+% EFFICIENTNETV2-B2 & 0.902 & 0.900 & 0.901 & 90 & 92.34 & 2h17m & 3.8 \\
+% \hline
+% EFFICIENTNETV2-B3 & 0.926 & 0.926 & 0.925 & 93 & 92.91 & 2h2m & 4.5 \\
+% \hline
+% EFFICIENTNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 90.47 & 1h59m & 6.1 \\
+% \hline
+% EFFICIENTNETV2-M & 0.893 & 0.893 & 0.892 & 89 & 90.47 & 2h58m & 9.9 \\
+% \hline
+% EFFICIENTNETV2-L & 0.875 & 0.871 & 0.870 & 87 & 89.09 & 14h58m & 16.8 \\
+% \hline
+% \textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{85.52} & \textbf{--} & \textbf{7.0} \\
+% \hline
+% \end{tabular}
+% \caption{CNN Training Results for GPU including Train Accuracy}
+% \label{tab:cnn_training_gpu}
+% \end{table}
+
 \begin{table}[htbp]
 \centering
-\begin{tabular}{l|c|c|c|c|c|c}
+\begin{tabular}{l|c|c|c|c|c|c|c}
 \hline \hline
-\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{VRAM} \\
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Test Acc} & \textbf{Train Acc} & \textbf{Time} & \textbf{VRAM} \\
 \hline
-VGG16 & 0.188 & 0.434 & 0.263 & 43 & 2h57m & 7.0 \\
+VGG16 & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 2h57m & 7.0 \\
 \hline
-ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 4h23m & 2.3 \\
+ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 2h43m & 2.3 \\
 \hline
-RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 7h13m & 4.1 \\
+RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 87.58 & 7h13m & 4.1 \\
 \hline
-GOOGLENET & 0.898 & 0.895 & 0.892 & 89 & 3h3m & 2.9 \\
+GOOGLENET & 0.898 & 0.898 & 0.898 & 83 & 83.58 & 3h3m & 4.9 \\
 \hline
-MOBILENETV2 & 0.898 & 0.898 & 0.897 & 90 & 2h0m & 3.6 \\
+MOBILENETV2 & 0.898 & 0.898 & 0.898 & 89 & 89.47 & 2h0m & 3.6 \\
 \hline
-DENSENET121 & 0.877 & 0.877 & 0.875 & 88 & 2h10m & 5.5 \\
+DENSENET121 & 0.877 & 0.877 & 0.877 & 88 & 91.37 & 2h10m & 5.5 \\
 \hline
-EFFICIENTNET B0 & 0.890 & 0.888 & 0.887 & 89 & 2h26m & 4.1 \\
+EFFNET B0 & 0.889 & 0.888 & 0.887 & 89 & 91.47 & 2h26m & 5.1 \\
 \hline
-EFFICIENTNET B1 & 0.867 & 0.862 & 0.859 & 86 & 2h30m & 5.3 \\
+EFFNET B1 & 0.867 & 0.862 & 0.861 & 86 & 90.47 & 2h30m & 5.3 \\
 \hline
-EFFICIENTNET B2 & 0.927 & 0.924 & 0.925 & 92 & 2h14m & 5.5 \\
+EFFNET B2 & 0.927 & 0.927 & 0.927 & 93 & 92.47 & 2h14m & 5.5 \\
 \hline
-EFFICIENTNET B3 & 0.882 & 0.880 & 0.879 & 88 & 2h25m & 6.8 \\
+EFFNET B3 & 0.882 & 0.880 & 0.879 & 88 & 90.24 & 2h25m & 6.8 \\
 \hline
-EFFICIENTNET B4 & 0.899 & 0.898 & 0.896 & 90 & 2h50m & 8.0 \\
+EFFNET B4 & 0.899 & 0.898 & 0.894 & 92 & 92.34 & 2h50m & 8.0 \\
 \hline
-EFFICIENTNET B5 & 0.925 & 0.924 & 0.924 & 92 & 5h49m & 11.6 \\
+EFFNET B5 & 0.925 & 0.924 & 0.924 & 93 & 92.34 & 5h49m & 12.2 \\
 \hline
-EFFICIENTNET B6 & 0.934 & 0.933 & 0.933 & 93 & 7h51m & 14.5 \\
+EFFNET B6 & 0.934 & 0.933 & 0.933 & 93 & 90.34 & 7h51m & 14.5 \\
 \hline
-EFFICIENTNET B7 & 0.883 & 0.871 & 0.873 & 87 & 10h34m & 18.8 \\
+EFFNET B7 & 0.883 & 0.871 & 0.873 & 87 & 90.47 & 10h34m & 18.0 \\
 \hline
-EFFICIENTNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 1h53m & 3.0 \\
+EFFNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 89.91 & 1h53m & 3.0 \\
 \hline
-EFFICIENTNETV2-B1 & 0.904 & 0.904 & 0.902 & 90 & 2h0m & 3.6 \\
+EFFNETV2-B1 & 0.904 & 0.904 & 0.904 & 90 & 92.56 & 2h0m & 3.6 \\
 \hline
-EFFICIENTNETV2-B2 & 0.902 & 0.900 & 0.901 & 90 & 2h17m & 3.8 \\
+EFFNETV2-B2 & 0.920 & 0.888 & 0.902 & 92 & 92.34 & 2h17m & 3.8 \\
 \hline
-EFFICIENTNETV2-B3 & 0.926 & 0.926 & 0.925 & 93 & 2h2m & 4.5 \\
+EFFNETV2-B3 & 0.926 & 0.926 & 0.925 & 92 & 92.91 & 2h2m & 4.5 \\
 \hline
-EFFICIENTNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 1h59m & 6.1 \\
+EFFNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 90.47 & 3h15m & 6.1 \\
 \hline
-EFFICIENTNETV2-M & 0.893 & 0.893 & 0.892 & 89 & 2h58m & 9.9 \\
+EFFNETV2-M & 0.893 & 0.893 & 0.893 & 89 & 89.09 & 3h5m & 9.9 \\
 \hline
-EFFICIENTNETV2-L & 0.875 & 0.871 & 0.870 & 87 & 14h58m & 16.8 \\
+EFFNETV2-L & 0.875 & 0.871 & 0.871 & 87 & 89.09 & 14h58m & 16.8 \\
 \hline
-\textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{--} & \textbf{7.0} \\
+\textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{85.52} & \textbf{--} & \textbf{7.0} \\
 \hline
 \end{tabular}
-\caption{More CNN Training Results for GPU}
+\caption{CNN Training Results for GPU including Train Accuracy}
 \label{tab:more_cnn_training_gpu}
 \end{table}
 
-% Table 2: CNN Training Results for CPU
 \begin{table}[htbp]
 \centering
 \begin{tabular}{l|c|c|c|c|c|c}
@@ -595,43 +649,99 @@ MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
 \hline
 DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
 \hline
-EFFICIENTNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
+EFFNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
 \hline
-EFFICIENTNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
+EFFNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
 \hline
-EFFICIENTNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
+EFFNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
 \hline
-EFFICIENTNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
+EFFNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
 \hline
-EFFICIENTNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
+EFFNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
 \hline
-EFFICIENTNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
+EFFNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
 \hline
-EFFICIENTNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
+EFFNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
 \hline
-EFFICIENTNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
+EFFNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
 \hline
-EFFICIENTNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
+EFFNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
 \hline
-EFFICIENTNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
+EFFNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
 \hline
-EFFICIENTNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
+EFFNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
 \hline
-EFFICIENTNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
+EFFNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
 \hline
-EFFICIENTNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
+EFFNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
 \hline
-EFFICIENTNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
+EFFNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
 \hline
-EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
+EFFNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
 \hline
 \textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
 \hline
-
 \end{tabular}
-\caption{More CNN Training Results for CPU}
+\caption{CNN Training Results for CPU}
 \label{tab:more_cnn_training_cpu}
 \end{table}
+
+% % Table 2: CNN Training Results for CPU
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{l|c|c|c|c|c|c}
+% \hline \hline
+% \textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{Mem} \\
+% \hline
+% VGG16 & 0.297 & 0.545 & 0.384 & 54 & 5h38m & 6.5 \\
+% \hline
+% ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 4h25m & 3.3 \\
+% \hline
+% RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 8h24m & 5.4 \\
+% \hline
+% GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 3h14m & 4.0 \\
+% \hline
+% MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
+% \hline
+% DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
+% \hline
+% EFFICIENTNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
+% \hline
+% EFFICIENTNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
+% \hline
+% EFFICIENTNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
+% \hline
+% EFFICIENTNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
+% \hline
+% EFFICIENTNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
+% \hline
+% EFFICIENTNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
+% \hline
+% EFFICIENTNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
+% \hline
+% EFFICIENTNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
+% \hline
+% EFFICIENTNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
+% \hline
+% EFFICIENTNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
+% \hline
+% EFFICIENTNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
+% \hline
+% EFFICIENTNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
+% \hline
+% EFFICIENTNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
+% \hline
+% EFFICIENTNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
+% \hline
+% EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
+% \hline
+% \textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
+% \hline
+%
+% \end{tabular}
+% \caption{More CNN Training Results for CPU}
+% \label{tab:more_cnn_training_cpu}
+% \end{table}
 
 \subsection{Analysis of Table~\ref{tab:overall_accuracy_cnn}}
 
