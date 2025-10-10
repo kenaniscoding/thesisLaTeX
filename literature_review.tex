@@ -1,37 +1,52 @@
 
 
 \section{Existing Work}
-
+%
 \citet{adam-non-destructive-2022} developed a
 ripeness grader for Carabao mangoes. The Carabao mango ripeness grade
 calculated based on object and color detection which were written in
 microcontroller. These are the systems designed by the researchers that
 consists of Raspberry Pi 4, Arduino Uno, camera, touch screen LCD, MQ3 gas
-sensor, ventilation system. The proposed system was able to ascertain an
-overall reliability of 95\%: therefore, the specified objective of ascertaining
+sensor, ventilation system as seen on Figure~\ref{fig:feu_pro2} The proposed system was able to ascertain an
+overall reliability of 95\% which means that the specified objective of ascertaining
 the ripeness level of the mangoes was met with success. However, accuracy and
 reliability of the software system are there since the hardware design does not
-seem to be workable when one must deal with the scores of mangoes
-\citep{adam-non-destructive-2022}. In addition, the design of the hardware does
+seem to be workable when one must deal with the scores of mangoes. In addition, the design of the hardware does
 not integrate any form of physical automating, say like the conveyor belt.
 Besides, the hardware system only works efficiently when deciding the ripeness
 grade of mangoes separately.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.4\textwidth]{/rrl/feu_prototype}
+	\caption{Prototype for Grading Mangoes \citep{adam-non-destructive-2022}}
+  \label{fig:feu_pro2}
+\end{figure}
+
 
 A study done by
 \citet{school-of-engineering-asia-pacific-college-philippines-carabao-2023}
 supports and has relevant information concerning the aforementioned topic. They
 proposed a fully-perovskite photonic system which has the capability to
 identify and sort or grade mango based on features such as color, weight and,
-conversely, signs of damages
-\citep{school-of-engineering-asia-pacific-college-philippines-carabao-2023}.
+conversely, signs of damages.
 Some of the techniques in image processing that the researchers used included
 image enhancement, image deblurring, edge detection using MATLAB and Arduino as
-well as color image segmentation. By carrying out the multiple trials on the
+well as color image segmentation. Likewise the
+system block diagram containing these equipment used are seen on Figure~\ref{matlab_fig}
+ By carrying out the multiple trials on the
 device they achieved a classification speed of 8.132 seconds and an accuracy of
 91.2\%. The proponents’ metrics used for the ratings were speed wherein the
 results were rated “excellent” while the accuracy rating given was “good”. One
 of the limitations of the paper is that the researchers were only limited to
 the color, texture, and size of the Carabao mango
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/rrl/matlab}
+	\caption{System Block Diagram \citep{school-of-engineering-asia-pacific-college-philippines-carabao-2023}}
+  \label{fig:matlab_fig}
+\end{figure}
 
 Furthermore, \citet{guillergan-naive-2024} designed an Automated Carabao mango
 classifier, in which the mango image database is used to extract the features
@@ -40,7 +55,7 @@ Naïve Bayes Model. Concerning the quantitative test design, one had to control
 and experiment with various methods of image processing that would improve the
 likelihood of improved classification. Their methodology entailed sample
 collection from 300 Carabao mangoes, picture taking using a DSLR camera, and
-feature deconstruction for categorization \citep{guillergan-naive-2024}. The
+feature deconstruction for categorization. The
 system prototype and the software were designed with the programming language
 C\# with integration of Aforge. NET routines. The performance of this model was
 checked with the help of the dataset containing 250 images, precision, recall,
@@ -57,17 +72,24 @@ classifying the maturity stages of bananas, mangoes, and calamansi. With the
 use of 1729 images of bananas together with 711 mango images and 589 calamansi,
 the researchers were able to achieve a high accuracy score of above 90\% for
 all fruits. Some pre-processing techniques used to get this high accuracy are
-the change in hue, saturation, and value channels in the mango image
-\citep{tomas-detection-2022}. To better understand the harvest time of mangoes,
+the change in hue, saturation, and value channels in the mango image. One of 
+the pre-processing methods (background removal) is shown on Figure~\ref{fig:rrl_remove_bg}
+To better understand the harvest time of mangoes,
 the paper by \citet{abu-determination-2021} examined the association of the
 harvest season with seasonal heat units, rainfall, and physical fruit
 attributes for Haden, Kent, Palmer, and Keitt mango varieties to establish
 export and domestic market maturity standards. For the results of the paper, it
 shows that temperature, rainfall, and physical characteristics have a reliable,
-non-destructive indicators for determining mango maturity
-\citep{abu-determination-2021}. This shows that physical characteristics and
+non-destructive indicators for determining mango maturity. 
+This shows that physical characteristics and
 temperature are important when exporting fruits such as mangoes.
 
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/rrl/background_remove}
+	\caption{Background Removal of Mango \citep{tomas-detection-2022}}
+  \label{fig:rrl_remove_bg}
+\end{figure}
 
 \begin{table}[h]
 	\centering
@@ -108,14 +130,14 @@ mangoes. One of the algorithms that was used in the classification of mangoes wa
 CNN or Convolutional Neural Networks. A study done by \citet{zheng-mango-2021}
 explored the effectiveness of CNN, specifically in classifying mangoes through image
 processing. The system that the researchers developed graded mangoes into four groups
-which was based on the Chinese National Standard \citep{zheng-mango-2021}. These mangoes were examined by
+which was based on the Chinese National Standard. These mangoes were examined by
 their shape, color uniformity, and external defects. The system that was developed had
 an impressive accuracy of 97.37\% in correctly classifying the mangoes into these
 grading categories
 Support Vector Machine was also one of the classification algorithms that was
 implemented to detect flaws in mangoes. In that study by \citet{veling-mango-2019}, SVM
 was used in the classification of diseases from mangoes. The study used 4 different
-diseases/defects for testing \citep{veling-mango-2019}. The diseases were Anthracnose, Powdery Mildew, Black
+diseases/defects for testing. The diseases were Anthracnose, Powdery Mildew, Black
 Banded, and Red Rust. and provided 90\% accuracy for both the leaves and the fruit
 
 In the study done by \citet{schulze-development-2015}, Simple
@@ -123,7 +145,7 @@ Linear Regression, Multiple Linear Regression, and Artificial Neural Network mod
 were all studied and compared for the purpose of size-mass estimation for mango fruits.
 The researchers found that the Artificial Neural Network yielded a high accuracy rating
 for mass estimation and for mango classification based on size with a success rate of
-96.7\% \citep{schulze-development-2015}. This is attributed to the Artificial Neural Network model’s ability to learn both
+96.7\%. This is attributed to the Artificial Neural Network model’s ability to learn both
 linear and nonlinear relationships between the inputs and the outputs. However, a
 problem can occur with the use of the model, which is overfitting. This issue occurs
 when the model is overtrained with the data set such that it will start to recognize
@@ -134,7 +156,7 @@ implements a method for sorting and grading Carabao mangoes. This research focus
 on the use of Probabilistic Neural Network, which is another algorithm that is used for
 pattern recognition and classification of objects. For this study, the researchers focused
 on the area, color, and the black spots of the mango for their Probabilistic Neural
-Network model \citep{alejandro-grading-2018}. Their research using the model yielded an accuracy rating of 87.5\% for
+Network model. Their research using the model yielded an accuracy rating of 87.5\% for
 classification of the mangoes which means it is quite accurate for classifying mangoes
 within the predefined categories. However, problems were encountered with the use of
 the model when trying to identify mangoes that did not fit the predefined size categories
