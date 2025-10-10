@@ -302,7 +302,69 @@ distinguishing features between the stages.
 \end{figure}
 
 \subsubsection{CNN}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
+The final CNN model for ripeness and bruise classification utilized EfficientNetV2-B3.
+ Collected experimental data confirmed that it achieved the best performance-to-efficiency ratio.
+ It consistently outperformed other architectures tested during benchmarking and optimization stages.
+ For the final ripeness classification, the complete dataset contained around 14,000 images.
+ The model achieved a test accuracy of 98\%, with precision, recall, and F1-score near 0.985.
+ This consistency across metrics demonstrates both high accuracy and class-balanced reliability.
+ It performed uniformly across all ripeness categories without favoring any particular class.
+ Validation accuracy of 98.41\% closely matched the test accuracy, confirming excellent generalization.
+ The slightly higher training accuracy of 99.37\% indicated minimal overfitting occurrence.
+ The narrow gap between training, validation, and test results reflected stable learning.
+ These findings confirm that dataset refinement and optimization prevented memorization effectively.
+ They also promoted genuine feature learning across ripeness categories and lighting variations.
+
+The confusion matrix in Figure~\ref{fig:ripeness_confusion_matrix_fig} further supports these conclusions clearly.
+ Misclassifications were minimal and occurred mostly between adjacent ripeness categories.
+ Errors were concentrated between transitional stages such as yellow-green and yellow mangoes.
+ This pattern matches the biological ambiguity seen during mango ripening transitions.
+ Even human evaluators sometimes disagree on borderline ripeness due to visual overlap.
+ The model’s strong accuracy in these ambiguous cases reflects superior discriminative ability.
+ It demonstrates practical reliability for deployment in real-world mango grading systems.
+
+Several major modifications to the training pipeline improved overall model effectiveness significantly.
+ Mixed-precision training using GradScaler and autocast reduced GPU memory consumption substantially.
+ This optimization increased batch size from 32 to 56, enhancing training stability.
+ Larger batch sizes improved gradient estimation and smoothed convergence across training epochs.
+ Input resolution was corrected to 300×300, matching EfficientNetV2-B3’s native architecture.
+ This adjustment improved feature extraction and ensured compatibility with pretrained weights.
+ The optimizer was changed from Adam to AdamW for stronger regularization.
+ Learning rate was set to 3e-4, and weight decay to 1e-4.
+ These parameters decoupled regularization from gradient updates, ensuring stable convergence behavior.
+ A cosine annealing warm-restart scheduler with T0 = 5 and Tmult = 2 was applied.
+ It included three warm-up epochs to escape sharp minima effectively during training.
+
+Additional refinements further improved training robustness and model generalization performance.
+ CrossEntropy loss with label smoothing of 0.05 reduced overconfident predictions.
+ This adjustment improved resilience to ambiguous ripeness categories and noisy image labels.
+ Early stopping with a patience of five epochs prevented redundant computation cycles.
+ Checkpointing saved the best weights once performance improvements plateaued consistently.
+ Data loading was optimized with workers set to half of available CPU cores.
+ Pin\_memory and non\_blocking transfers accelerated CPU-to-GPU data streaming throughput.
+ These optimizations minimized data bottlenecks and reduced idle GPU computation time.
+ Regularization through dropout = 0.25 and drop-path = 0.15 improved network robustness.
+ These techniques prevented neuron co-adaptation and encouraged diverse feature representations.
+
+The validation curves in Figure~\ref{fig:ripeness-graph} confirm stable convergence throughout training.
+ Validation accuracy increased steadily before plateauing at a consistently high level.
+ Validation loss showed minor oscillations but followed an overall downward trajectory.
+ This inverse relationship between loss and accuracy indicates strong discriminative learning ability.
+ Accuracy stability despite small loss fluctuations shows resistance to overfitting.
+ These patterns confirm that optimizations such as label smoothing and annealing worked effectively.
+ The model maintained robustness and generalization even in complex visual conditions.
+ Its smooth convergence underscores training stability and computational efficiency across all epochs.
+
+Lastly, dataset enhancements contributed substantially to achieving these superior results overall.
+ The dataset expanded from approximately 6,000 to 14,000 well-curated mango images.
+ New Carabao mango samples were added, improving variety and biological representativeness.
+ Ambiguous or noisy samples were removed to reduce label uncertainty significantly.
+ Augmentation strategies were refined to introduce meaningful color, rotation, and lighting diversity.
+ These augmentations enhanced robustness by exposing the network to realistic visual variations.
+ As a result, the final model generalized strongly and maintained stable performance.
+ Across all dataset splits, it demonstrated consistent accuracy and balanced classification reliability.
+
 \begin{table}[htbp]
 	\centering
 	\begin{tabular}{l|c|c|c|c}
@@ -322,14 +384,14 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
     Weighted Avg & 0.98 & 0.98 & 0.98 & 590 \\
 	  \hline
 	\end{tabular}
-	\caption{EfficientNetV2 Ripeness Classification Report with Precision: 0.9848, Recall: 0.9847, F1 Score: 0.9847}
+	\caption{EfficientNetV2-B3 Ripeness Classification Report with Precision: 0.9848, Recall: 0.9847, F1 Score: 0.9847}
 	\label{tab:ripeness_classification_report}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{/effnetv2-m-ripeness/confusion_matrix_ripeness}
-	\caption{EfficientNetV2 Ripeness Confusion Matrix}
+	\caption{EfficientNetV2-B3 Ripeness Confusion Matrix}
 	\label{fig:ripeness_confusion_matrix_fig}
 \end{figure}
 
@@ -337,12 +399,48 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{/graphs/ripeness_plot}
-	\caption{EfficientNetV2 Ripeness Accuracy and Loss Graph}
+	\caption{EfficientNetV2-B3 Ripeness Accuracy and Loss Graph}
 	\label{fig:ripeness-graph}
 \end{figure}
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
-Add description on how the bruises results were taken and how many images were used.
+
+\subsubsection{CNN} 
+For bruise classification, the final EfficientNetV2-B3 model also performed excellently.
+It achieved a test accuracy of 99\%, with precision, recall, and F1-score near 0.989.
+The validation accuracy of 99.31\% and training accuracy of 99.86\% confirmed stability.
+These results demonstrate exceptional reliability and consistent performance across all dataset splits.
+The training configuration was refined to improve both computational efficiency and robustness.
+Batch size was increased to 60, fully utilizing available GPU memory capacity.
+This adjustment enhanced gradient stability and accelerated convergence across training epochs effectively.
+Regularization parameters were tuned with a dropout rate of 0.2 overall.
+A drop-path rate of 0.1 was also applied to further control overfitting.
+Together, these settings balanced high predictive accuracy with improved model generalization capability.
+Early stopping with a patience of 10 epochs was employed during training.
+This ensured meaningful improvement capture while avoiding unnecessary computation after convergence detection.
+
+The confusion matrix in Figure~\ref{fig:bruises_confusion_matrix_fig} reinforces these excellent quantitative results clearly.
+The model correctly identified nearly all samples across both bruise categories tested.
+Only four false negatives and one false positive occurred in total predictions.
+This minimal error distribution illustrates a well-balanced and highly reliable classification profile.
+The model demonstrated strong sensitivity to bruised fruit and high specificity otherwise.
+Low false negatives are particularly important in postharvest quality control applications.
+Undetected bruises pose a major risk to maintaining consistent product quality standards.
+The low occurrence of such cases underscores the model’s robustness and precision.
+These characteristics make EfficientNetV2-B3 ideal for deployment in real-time inspection systems.
+
+The validation curves in Figure~\ref{fig:bruises-graph} further illustrate stable training convergence behavior.
+Validation accuracy rose rapidly during initial epochs and stabilized near 0.99 overall.
+Meanwhile, validation loss decreased sharply early on and then gradually leveled off.
+Minor fluctuations in loss reflect typical batch-level variations during optimization cycles.
+Despite these oscillations, accuracy remained consistently high and stable throughout training.
+This indicates that the network maintained strong confidence in its classification predictions.
+The inverse correlation between loss and accuracy confirms effective learning of features.
+These patterns demonstrate robust generalization and the absence of significant overfitting problems.
+Together, the curves validate that all applied optimizations improved convergence stability efficiently.
+EfficientNetV2-B3 thus combines exceptional accuracy, reliability, and computational efficiency effectively.
+This performance level establishes it as the optimal model for bruise classification.
+Its predictive precision makes it suitable for industrial-grade automated quality control systems.
 
 \begin{table}[htbp]
 	\centering
@@ -361,14 +459,14 @@ Add description on how the bruises results were taken and how many images were u
     Weighted Avg & 0.99 & 0.99 & 0.99 & 440 \\
 	  \hline
 	\end{tabular}
-	\caption{EfficientNetV2 Bruises Classification Report with Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886}
+	\caption{EfficientNetV2-B3 Bruises Classification Report with Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886}
 	\label{tab:bruises_classification_report}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{/effnetv2-m-bruises/confusion_matrix_bruises}
-	\caption{EfficientNetV2 Bruises Confusion Matrix}
+	\caption{EfficientNetV2-B3 Bruises Confusion Matrix}
 	\label{fig:bruises_confusion_matrix_fig}
 \end{figure}
 
@@ -376,13 +474,11 @@ Add description on how the bruises results were taken and how many images were u
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{/graphs/bruises_plot}
-	\caption{EfficientNetV2 Bruises Accuracy and Loss Graph}
+	\caption{EfficientNetV2-B3 Bruises Accuracy and Loss Graph}
 	\label{fig:bruises-graph}
 \end{figure}
 
 \section{Achieving the Highest Accuracy in CNN Models}
-
-% TODO: [] replace this one with the up to date one on the google docs
 
 \begin{table}[htbp]
   \centering
@@ -739,8 +835,341 @@ predictions across classes, allowing for a clearer understanding of where
 misclassifications occur.
 
 \subsubsection{Ripeness Classification}
+% effnetb5
+
+To start off, for ripeness classification, The EfficientNet-B5 model achieved strong
+overall performance, with a precision of 0.9246, recall of 0.9238, and an
+F1-score of 0.924, corresponding to an overall accuracy of 92\%, being the
+3rd best model for the task. These values indicate that the model is highly
+effective at distinguishing between the three ripeness classes, with balanced
+precision and recall suggesting that it does not disproportionately favor one
+class over another. Training required approximately 5 hours and 45 minutes,
+with an average VRAM usage of 11.6 GB, reflecting the computational demands
+of a high-capacity architecture such as EfficientNet-B5.
+
+Based on the confusion matrix in Figure~\ref{fig:effnetb5}, the model classified the
+majority of samples correctly across all categories, with particularly strong
+results for the green and yellow classes. For instance, 223 out of 239
+green samples were correctly identified, with only 16 misclassified as
+yellow\_green. Similarly, the yellow class showed minimal confusion, with 117
+correct predictions and only 7 misclassified as yellow\_green. The greatest
+overlap occurred in the yellow\_green class, where 169 samples were correctly
+predicted, but 19 were misclassified as either green or yellow. This pattern
+suggests that the transitional nature of the yellow\_green class poses the
+greatest challenge, as its visual features overlap with both neighboring
+categories. Nonetheless, the relatively low misclassification rates confirm that
+the model captures the key discriminative features of each ripeness stage.
+
+The validation loss and accuracy curves in Figure~{fig:effnetb5} further illustrate the
+model’s behavior during training. Validation accuracy remained consistently
+high, stabilizing above 0.90 across all epochs, which indicates that the model
+generalized well to unseen data. In contrast, validation loss exhibited
+noticeable fluctuations, with sharp drops and occasional peaks at specific
+epochs. This divergence between stable accuracy and variable loss suggests
+that while the model consistently predicted the correct class, it sometimes
+assigned lower confidence to its predictions. This behavior is common in
+multi-class classification tasks where class boundaries are less distinct, as
+in the case of the yellow\_green category. Importantly, the absence of a
+downward trend in accuracy despite the oscillations in loss indicates that the
+model did not suffer from severe overfitting.
+
+From a performance requirements perspective, the EfficientNet-B5 model
+demonstrates a favorable balance between accuracy and computational cost.
+Achieving over 92\% accuracy with an F1-score of 0.924 while maintaining
+an average VRAM usage of 11.6 GB indicates that the model is both reliable
+and feasible for deployment on high-end GPUs commonly available in
+research and industrial settings. The total training time of 5 hours and 45
+minutes is reasonable given the model’s depth and parameter count,
+suggesting that retraining or fine-tuning for new datasets is practical within
+typical project timelines. Importantly, the stability of validation accuracy
+across epochs implies that the model converges efficiently without requiring
+excessive epochs, further reducing computational overhead. These results
+highlight that EfficientNet-B5 not only meets accuracy benchmarks but also
+aligns with resource efficiency considerations, making it a strong candidate
+for real-world applications where both predictive performance and hardware
+constraints must be balanced.
+
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b5/confusion_matrix_ripeness}
+        \label{fig:effnetb5_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b5/val_loss_accuracy_curve_ripeness}
+        \label{fig:effnetb5_va}
+    }
+    \caption{Ripeness Training and Testing of EfficientNet-B5}
+    \label{fig:effnetb5}
+\end{figure}
+
+The second-best model for ripeness classification is EfficientNet-B6, achieving a
+ precision of 0.9339, recall of 0.9328, and an F1-score of 0.9331, corresponding
+ to an overall accuracy of 93\%. Like EfficientNet-B5, it demonstrated strong
+ and balanced performance across all three ripeness categories, but with
+ slightly higher accuracy. Training required approximately 7 hours and 12
+ minutes, with an average VRAM usage of 14.5 GB, which is substantially more
+ demanding than B5, reflecting the deeper architecture and larger parameter
+ count.
+
+The confusion matrix in Figure~\ref{fig:effnetb5} shows that the green class was classified
+ with high reliability, with 226 correct predictions and only 13 misclassified as
+ yellow\_green. The yellow class also performed well, with 115 correct
+ predictions and 9 misclassified as yellow\_green. As with B5, the yellow\_green
+ class posed the greatest challenge due to its transitional characteristics, with
+ 173 correct predictions but 15 misclassified as either green or yellow. This
+ reinforces the earlier observation that intermediate ripeness stages are
+ inherently more ambiguous, though overall misclassification rates remained
+ low.
+
+The validation curves in Figure~\ref{fig:effnetb5} further illustrate the model’s training
+ dynamics. Validation loss decreased sharply after the first epoch and
+ stabilized between 0.2 and 0.4, while validation accuracy steadily increased,
+ reaching approximately 0.97 by the final epoch. This consistent improvement
+ indicates effective convergence without signs of severe overfitting. Compared
+ to B5, B6 leveraged its higher representational capacity to refine feature
+ extraction further, leading to more confident predictions.
+
+From a performance standpoint, EfficientNet-B6 clearly delivers superior
+ accuracy compared to B5, but at the cost of significantly higher resource
+ consumption. While its 93\% accuracy and F1-score above 0.93 make it highly
+ reliable for practical applications, the 14.5 GB VRAM requirement and
+ extended training time of over 7 hours highlight the trade-off between
+ accuracy gains and efficiency. As with B5, this makes B6 well-suited for
+ research and industrial environments with high-end GPUs, but less practical
+ for real-time or edge deployment without model compression or optimization.
+
+% effnetb6
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b6/confusion_matrix_ripeness}
+        \label{fig:effnetb6_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b6/val_loss_accuracy_curve_ripeness}
+        \label{fig:effnetb6_va}
+    }
+    \caption{Ripeness Training and Testing of EfficientNet-B6}
+    \label{fig:effnetb6}
+\end{figure}
+
+The best-performing model for ripeness classification was EfficientNetV2-B3, achieving
+ a precision of 0.9258, recall of 0.9256, F1-score of 0.9253, and an overall
+ accuracy of 93\%. These results confirm that the model is highly effective at
+ distinguishing between the three ripeness categories, with balanced precision
+ and recall indicating consistent performance across classes. Training required
+ only 2 hours and 2 minutes with an average VRAM usage of 4.5 GB, making
+ it far more efficient than deeper variants such as B5 and B6 while still
+ achieving comparable accuracy.
+
+The confusion matrix in Figure~\ref{fig:effnetb6} provides further insight into class-level
+ performance. The green class was classified with high reliability, with 231
+ correct predictions and only 8 misclassified as yellow\_green. The yellow class
+ also performed strongly, with 115 correct predictions and 9 misclassified as
+ yellow\_green. As with the other models, the yellow\_green class posed the
+ greatest challenge, with 164 correct predictions but 24 misclassified as either
+ green or yellow. This reflects the inherent ambiguity of the transitional stage,
+ where visual features overlap with both neighboring categories. Despite this,
+ overall misclassification rates remained low, confirming that the model
+ effectively captured the discriminative features of each ripeness stage.
+
+The validation curves in Figure~\ref{fig:effnetb6} further illustrate the model’s training
+ dynamics. Validation accuracy remained consistently high, stabilizing between
+ 0.85 and 0.92 across epochs, while validation loss fluctuated between 0.2 and
+ 0.4. The stability of accuracy, despite minor oscillations in loss, suggests that
+ the model generalized well to unseen data and avoided severe overfitting.
+ The fluctuations in loss likely reflect varying confidence in predictions for the
+ ambiguous yellow\_green class, but the consistently high accuracy
+ demonstrates that the model still assigned correct labels in most cases.
+
+From a performance standpoint, EfficientNetV2-B3 offers the best balance
+ between accuracy and computational efficiency. Achieving 93\% accuracy
+ with an F1-score above 0.92 while requiring only a fraction of the training
+ time and memory of B5 or B6 highlights its practicality for deployment.
+ While B6 achieved slightly higher precision and recall, its steep computational
+ demands, over 7 hours of training and 14.5 GB of VRAM, make it less
+ suitable for iterative experimentation or resource-constrained environments.
+ Similarly, B5 delivered strong accuracy but required nearly 6 hours of training
+ and 11.6 GB of VRAM, reflecting a high resource cost for only marginal gains.
+ In contrast, V2-B3 enables faster experimentation cycles, more accessible
+ deployment, and robust classification of both ripeness extremes and
+ transitional classes.
+
+Ultimately, EfficientNetV2-B3 provides the optimal trade-off between high-
+ quality classification and manageable computational requirements, making it
+ the best candidate for mango ripeness classification.
+
+% effnetv2b3
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/v2b3/confusion_matrix_ripeness}
+        \label{fig:effnetv2b3_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/v2b3/val_loss_accuracy_curve_ripeness}
+        \label{fig:effnetv2b3_va}
+    }
+    \caption{Ripeness Training and Testing of EfficientNetV2-B3}
+    \label{fig:effnetv2b3_rp}
+\end{figure}
+
 
 \subsubsection{Bruises Classification}
+% effnetb2
+
+Moving forward with bruise classification, the EfficientNet-B2 model achieved strong performance overall.
+It reached a precision of 0.9012, recall of 0.9008, and F1-score of 0.9009.
+The overall accuracy was 90\%, ranking as the third-best model tested.
+These results show a well-balanced model with minimal trade-offs in detection.
+It effectively identifies both bruised and not-bruised cases with reliable accuracy.
+Training lasted approximately 3 hours and 8 minutes under stable GPU performance.
+Average VRAM usage was about 6.7 GB during the entire training session.
+This computational demand remains manageable for most modern GPU-based research setups.
+
+The confusion matrix in Figure~\ref{fig:effnetb2} reveals the class-level distribution clearly.
+The model correctly identified 242 bruised and 203 not-bruised fruit samples.
+However, it misclassified 27 bruised items as not bruised, indicating false negatives.
+Additionally, 22 not-bruised items were misclassified as bruised, producing false positives.
+This pattern suggests a slight tendency to under-detect bruised mango samples.
+False negatives are critical in quality control because they allow defects through.
+Despite these errors, the model maintains strong reliability in classification results overall.
+
+The validation curves in Figure~\ref{fig:effnetb2} illustrate training stability and convergence well.
+Validation loss dropped sharply after the first epoch and continued declining steadily.
+Validation accuracy increased quickly, stabilizing around 0.85 after several epochs completed.
+These trends indicate efficient learning and absence of severe overfitting during training.
+Minor oscillations in loss and accuracy reflect normal exploration of local minima.
+Such fluctuations are typical in deep learning models seeking optimal decision boundaries.
+
+From a performance perspective, EfficientNet-B2 satisfies practical requirements for bruise detection systems.
+With 90\% accuracy and balanced precision-recall metrics, it ensures consistent defect detection.
+The model offers reliability without imposing excessive computational or memory resource demands.
+Its three-hour training time supports scalability for mid-range GPU deployment setups.
+However, false negatives remain a primary issue affecting industrial screening reliability.
+Reducing them may involve threshold adjustments or using cost-sensitive learning approaches.
+Ensemble methods could further improve robustness and minimize undetected bruised cases effectively.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b2/confusion_matrix_bruises}
+        \label{fig:effnetb2_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b2/val_loss_accuracy_curve_bruises}
+        \label{fig:effnetb2_va}
+    }
+    \caption{Bruises Training and Testing of EfficientNet-B2}
+    \label{fig:effnetb2}
+\end{figure}
+
+The EfficientNet-B3 model demonstrated strong classification performance across all evaluation metrics.
+It achieved a precision of 0.913, recall of 0.913, and F1-score of 0.9129.
+Overall accuracy reached 91\%, ranking as the second-best model for bruise classification.
+These values reflect high consistency in identifying both bruised and not-bruised samples.
+The trade-offs between false positives and false negatives remained minimal overall.
+Training required approximately 3 hours and 27 minutes using stable GPU resources.
+Average memory usage was 8 GB, slightly higher than EfficientNet-B2’s requirements.
+Despite this, resource demands remained feasible for most modern GPU systems.
+
+The confusion matrix in Figure~\ref{fig:effnetb3} presents the model’s classification outcomes clearly.
+The network correctly identified 250 bruised and 201 not-bruised fruit samples.
+It misclassified 19 bruised items as not bruised, representing false negatives.
+Additionally, 24 not-bruised items were misclassified as bruised, forming false positives.
+Compared to EfficientNet-B2, this model reduced false negatives significantly overall.
+This reduction decreases the likelihood of defective mangoes passing inspection unnoticed.
+Such improvement is crucial in quality control, where undetected bruising is costly.
+False alarms are less concerning than missed detections in industrial screening tasks.
+
+The validation curves in Figure~\ref{fig:effnetb3} depict stable training and convergence performance.
+Validation loss decreased steadily across epochs, showing consistent learning throughout training.
+Validation accuracy stabilized between 0.80 and 0.85 with minimal oscillations.
+This parallel pattern of low loss and stable accuracy suggests good generalization.
+The relatively flat accuracy curve after early epochs indicates efficient convergence overall.
+No signs of instability or severe overfitting were observed during final training.
+
+From a performance perspective, EfficientNet-B3 offers improved reliability over EfficientNet-B2.
+It balances classification accuracy and computational efficiency more effectively for bruise detection.
+Although training time and memory usage slightly increased, accuracy gains justify the cost.
+The reduced false negatives strengthen model dependability for automated quality control.
+This characteristic ensures fewer defective fruits are misclassified as acceptable products.
+Overall, EfficientNet-B3 represents a dependable and scalable choice for industrial bruise inspection.
+
+% effnetb3
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b3/confusion_matrix_bruises}
+        \label{fig:effnetb3_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b3/val_loss_accuracy_curve_bruises}
+        \label{fig:effnetb3_va}
+    }
+    \caption{Bruises Training and Testing of EfficientNet-B3}
+    \label{fig:effnetb3}
+\end{figure}
+
+The EfficientNetV2-B3 model achieved the best overall performance for bruise classification.
+It reached precision, recall, and F1-score values all equal to 0.919.
+The overall accuracy was 92\%, demonstrating strong and balanced predictive capability.
+These metrics confirm consistent performance across both bruised and not-bruised mango classes.
+Neither precision nor recall dominated at the expense of the other.
+Training was notably efficient, finishing in just 2 hours and 55 minutes.
+Average VRAM usage measured only 6.2 GB throughout the training process.
+This requirement was lower than both EfficientNet-B2 and EfficientNet-B3 models.
+Despite lower computational demand, the model still achieved superior classification accuracy.
+This efficiency-accuracy balance makes V2-B3 practical for constrained computing environments.
+
+The confusion matrix in Figure~\ref{fig:effnetv2b3_rp} illustrates the model’s predictive distribution.
+The network correctly classified 245 bruised and 202 not-bruised fruit samples.
+It misclassified 24 bruised items as not bruised, forming false negatives.
+Meanwhile, 23 not-bruised items were incorrectly labeled as bruised, forming false positives.
+Compared to previous models, V2-B3 exhibited a more balanced error profile.
+EfficientNet-B2 and B3 showed slightly higher false negatives or false positives respectively.
+From a practical perspective, false negatives pose greater risks in production.
+Undetected bruised fruit directly threaten overall product quality and customer satisfaction.
+Although the number of missed detections was relatively small, optimization remains beneficial.
+Techniques such as threshold tuning or cost-sensitive loss functions may further reduce them.
+
+The validation curves in \ref{fig:cnn_bruises_info} show consistent training convergence behavior.
+Validation accuracy steadily increased and stabilized close to 0.9 after several epochs.
+Validation loss fluctuated slightly but showed a clear downward trend overall.
+This parallel pattern of stable accuracy and decreasing loss indicates effective generalization.
+Minor oscillations in loss reflect expected variations due to batch differences.
+Such fluctuations were also observed in EfficientNet-B2 and EfficientNet-B3 models.
+However, V2-B3 maintained consistently higher accuracy across the entire training process.
+No severe overfitting or instability was observed during model development or validation.
+
+In summary, EfficientNetV2-B3 outperformed both EfficientNet-B2 and EfficientNet-B3 comprehensively.
+It delivered superior predictive accuracy while reducing training time and memory consumption.
+The model also demonstrated smoother convergence and improved stability during optimization.
+This balance of precision, efficiency, and robustness highlights its deployment suitability.
+EfficientNetV2-B3 stands as the most effective network for automated bruise detection.
+It provides a scalable, reliable, and resource-efficient solution for industrial quality control.
+% effnetv2b3
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/v2b3/confusion_matrix_bruises}
+        \label{fig:effnetv2b3_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/v2b3/val_loss_accuracy_curve_bruises}
+        \label{fig:effnetv2b3_va}
+    }
+    \caption{Bruises Training and Testing of EfficientNetV2-B3}
+    \label{fig:effnetv2b3_rp}
+\end{figure}
 
 % [x] todo: revisit once actual interview and testing with expert is done
 \section{Comparative Analysis: Model Performance vs. Expert Benchmark}

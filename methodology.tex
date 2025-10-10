@@ -498,8 +498,24 @@ to generalize to real-world mango classification scenarios.
 
 \subsection{Classification Report}
 % describe classification report and how it is used in the system
+The classification report provides a detailed summary of the model’s performance
+across all output classes by presenting key evaluation metrics such as precision,
+recall, F1-score, and support. Precision measures the accuracy of positive predictions,
+recall assesses the model’s ability to identify all relevant instances, and
+the F1-score represents their harmonic mean, offering a balanced measure of
+performance. In this system, the classification report was used to evaluate how
+effectively the CNN models identified each mango category—both in ripeness and
+bruise detection. By analyzing these metrics, the report helps determine which
+class predictions are most accurate and where the model may require further
+improvement, ensuring a reliable and interpretable performance assessment for
+real-world mango classification.
 
 \subsubsection{Confusion Matrix}
+
+A confusion matrix is a table that visualizes the performance 
+of a classification model. For a binary classification problem, it has four
+components: \\
+
 
 \begin{table}[h]
 	\centering
@@ -515,10 +531,6 @@ to generalize to real-world mango classification scenarios.
 	\caption{Confusion Matrix Example}
 	\label{tab:confusion_matrix}
 \end{table}
-
-A confusion matrix is a table that visualizes the performance 
-of a classification model. For a binary classification problem, it has four
-components: \\
 
 \begin{itemize}
 	\item True Positives (TP): Cases correctly predicted as positive
