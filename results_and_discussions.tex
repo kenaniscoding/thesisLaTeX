@@ -101,7 +101,7 @@
 			\begin{enumerate}
         \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for ripeness
 				\item Achieved 97\% accuracy on performance metrics using EfficientNetV2
-				\item Obtain performance metrics for KNN, K-Mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
+        \item Obtain performance metrics for \acr{KNN}, K-Mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
 				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing model, and testing other CNN hyperparameters
 			\end{enumerate} 
 			% Actual Results:
@@ -330,7 +330,7 @@ Several major modifications to the training pipeline improved overall model effe
  Larger batch sizes improved gradient estimation and smoothed convergence across training epochs.
  Input resolution was corrected to 300×300, matching EfficientNetV2-B3’s native architecture.
  This adjustment improved feature extraction and ensured compatibility with pretrained weights.
- The optimizer was changed from Adam to AdamW for stronger regularization.
+ The optimizer was changed from Adam to \acr{AdamW} for stronger regularization.
  Learning rate was set to 3e-4, and weight decay to 1e-4.
  These parameters decoupled regularization from gradient updates, ensuring stable convergence behavior.
  A cosine annealing warm-restart scheduler with T0 = 5 and Tmult = 2 was applied.
@@ -489,7 +489,7 @@ Its predictive precision makes it suitable for industrial-grade automated qualit
   EfficientNetB0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
   VggNet16       & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
   AlexNet        & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
-  ResNet50       & \multicolumn{1}{c|}{87\%}       & 84\%      \\ \hline
+    \acr{ResNet}50       & \multicolumn{1}{c|}{87\%}       & 84\%      \\ \hline
   GoogleNet      & \multicolumn{1}{c|}{89\%}       & 81\%      \\ \hline
   MobileNetV2    & \multicolumn{1}{c|}{90\%}       & 86\%      \\ \hline
   DenseNet121    & \multicolumn{1}{c|}{88\%}       & 84\%      \\ \hline
@@ -638,7 +638,7 @@ EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
 For the classification of ripeness, the highest accuracy was obtained
 with EfficientNetV2-B0, which achieved 91\%. This was followed by
 MobileNetV2, which achieved 90\%, EfficientNet-B0 and GoogLeNet at 89\%,
-DenseNet121 at 88\%, and ResNet50 at 87\%. In contrast, both VGGNet16 and
+DenseNet121 at 88\%, and \acr{ResNet}50 at 87\%. In contrast, both VGGNet16 and
 AlexNet severely underperformed, each reaching only 43\% accuracy. A closer
 inspection of their classification reports revealed that these two models
 predicted only the green class across all test samples, completely failing
@@ -680,7 +680,7 @@ computational cost and predictive reliability are critical.
 
 For the classification of bruises, the highest accuracy was obtained with
 EfficientNetV2-B0, which achieved 88\%. This was followed by EfficientNet-B0
-at 87\% and MobileNetV2 at 86\%. ResNet50 and DenseNet121 both reached 84\%,
+at 87\% and MobileNetV2 at 86\%. \acr{ResNet} and DenseNet121 both reached 84\%,
 while GoogLeNet trailed slightly at 81\%. In contrast, both VGG16 and AlexNet
 severely underperformed, each plateauing at only 54\% accuracy. Similar to the
 results from training ripeness, VGG16 and AlexNet collapsed into underfitting,

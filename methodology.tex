@@ -28,7 +28,7 @@
 			
 			\Paste{GO} & 
 			\begin{enumerate}
-				\item Hardware design: Build an image acquisition system with a conveyor belt, LED lights, and Raspberry Pi Camera
+        \item Hardware design: Build an image acquisition system with a conveyor belt, \acr{LED} lights, and Raspberry Pi Camera
 				\item Software design: Coded a Raspberry Pi application to grade and sort the Carabao mangoes
 			\end{enumerate} 
 			& Sec.~\ref{sec:researchApproach} on p.~\pageref{sec:researchApproach} \\ \hline
@@ -385,7 +385,7 @@ The validation and test sets remained unaugmented to ensure unbiased evaluation.
 
 
 The performance of several CNN architectures, including EfficientNetV1, EfficientNetV2,
-VGGNet, AlexNet, ResNet50, GoogleNet, MobileNetV2, and DenseNet121 was first compared. 
+\acr{VGGNet}, AlexNet, ResNet50, GoogleNet, MobileNetV2, and DenseNet121 was first compared. 
 Based on these results, a more detailed comparison was then conducted within the 
 EfficientNet family, versions V1 and V2, to determine the most effective variant
 for the task.
@@ -395,7 +395,7 @@ No advanced optimization techniques such as early stopping, learning rate schedu
 or mixed precision training were employed. 
 This decision was intentional to maintain fairness across all experiments and to ensure
 that the only variable factor influencing performance was the network architecture itself. 
-Ripeness classification models were trained using a GPU, while bruise classification models
+Ripeness classification models were trained using a \acr{GPU}, while bruise classification models
 were trained on a CPU to compare training times and assess the impact of hardware constraints
 on accuracy. 
 Model performance was evaluated using precision, recall, F1-score, accuracy, resource
@@ -675,7 +675,7 @@ Once the largest contour is found then the length and width is calculated using 
 
 \subsubsection{Object Detection}
 For the object detection method, an annotated Carabao mango dataset containing 488 images were used. 
-Likewise, the pretrained Faster RCNN model used is the MobileNetV3.
+Likewise, the pretrained \acr{Faster R-CNN} model used is the MobileNetV3.
 
 \begin{figure}[!htbp]
 	\centering
