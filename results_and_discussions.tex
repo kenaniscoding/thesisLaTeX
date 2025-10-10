@@ -333,25 +333,6 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 	\label{fig:ripeness_confusion_matrix_fig}
 \end{figure}
 
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Test Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/test_class_distribution_ripeness}
-        \label{fig:ripeness_test_cnn}
-    }
-    \hfill
-    \subbottom[Train Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/train_class_distribution_ripeness}
-        \label{fig:ripeness_train_cnn}
-    }
-    \vfill
-    \subbottom[Validation Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/valid_class_distribution_ripeness}
-        \label{fig:ripeness_valid_cnn}
-    }
-    \caption{EfficientNetV2 Ripeness Datasplit}
-    \label{fig:cnn_ripeness_info}
-\end{figure}
 
 \begin{figure}[!htbp]
 	\centering
@@ -391,26 +372,6 @@ Add description on how the bruises results were taken and how many images were u
 	\label{fig:bruises_confusion_matrix_fig}
 \end{figure}
 
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Test Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/test_class_distribution_bruises}
-        \label{fig:bruises_test_cnn}
-    }
-    \hfill
-    \subbottom[Train Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/train_class_distribution_bruises}
-        \label{fig:bruises_train_cnn}
-    }
-    \vfill
-    \subbottom[Validation Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/valid_class_distribution_bruises}
-        \label{fig:bruises_valid_cnn}
-    }
-    \caption{Bruises Datasplit}
-    \label{fig:cnn_bruises_info}
-\end{figure}
-
 
 \begin{figure}[!htbp]
 	\centering
@@ -419,7 +380,7 @@ Add description on how the bruises results were taken and how many images were u
 	\label{fig:bruises-graph}
 \end{figure}
 
-\section{Determining the Most Accurate CNN Models}
+\section{Achieving the Highest Accuracy in CNN Models}
 
 % TODO: [] replace this one with the up to date one on the google docs
 
@@ -429,7 +390,7 @@ Add description on how the bruises results were taken and how many images were u
   \hline \hline
                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
   Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-  EfficientNetV2-B0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
+  EfficientNetB0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
   VggNet16       & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
   AlexNet        & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
   ResNet50       & \multicolumn{1}{c|}{87\%}       & 84\%      \\ \hline
@@ -446,7 +407,7 @@ Add description on how the bruises results were taken and how many images were u
   \begin{tabular}{l|cc}
   \hline \hline
                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
-  EfficientNetV2-B0 & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  EfficientNet & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
   B0 & \multicolumn{1}{c|}{89\%}       & 87\%      \\ \hline
   B1 & \multicolumn{1}{c|}{86\%}       & 90\%      \\ \hline
   B2 & \multicolumn{1}{c|}{92\%}       & 90\%      \\ \hline
@@ -459,6 +420,327 @@ Add description on how the bruises results were taken and how many images were u
   \label{tab:overall_accuracy_effnet}
 \end{table}
 
+% Table 1: CNN Training Results for GPU
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+\hline \hline
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{VRAM} \\
+\hline
+VGG16 & 0.188 & 0.434 & 0.263 & 43 & 2h57m & 7.0 \\
+\hline
+ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 4h23m & 2.3 \\
+\hline
+RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 7h13m & 4.1 \\
+\hline
+GOOGLENET & 0.898 & 0.895 & 0.892 & 89 & 3h3m & 2.9 \\
+\hline
+MOBILENETV2 & 0.898 & 0.898 & 0.897 & 90 & 2h0m & 3.6 \\
+\hline
+DENSENET121 & 0.877 & 0.877 & 0.875 & 88 & 2h10m & 5.5 \\
+\hline
+EFFICIENTNET B0 & 0.890 & 0.888 & 0.887 & 89 & 2h26m & 4.1 \\
+\hline
+EFFICIENTNET B1 & 0.867 & 0.862 & 0.859 & 86 & 2h30m & 5.3 \\
+\hline
+EFFICIENTNET B2 & 0.927 & 0.924 & 0.925 & 92 & 2h14m & 5.5 \\
+\hline
+EFFICIENTNET B3 & 0.882 & 0.880 & 0.879 & 88 & 2h25m & 6.8 \\
+\hline
+EFFICIENTNET B4 & 0.899 & 0.898 & 0.896 & 90 & 2h50m & 8.0 \\
+\hline
+EFFICIENTNET B5 & 0.925 & 0.924 & 0.924 & 92 & 5h49m & 11.6 \\
+\hline
+EFFICIENTNET B6 & 0.934 & 0.933 & 0.933 & 93 & 7h51m & 14.5 \\
+\hline
+EFFICIENTNET B7 & 0.883 & 0.871 & 0.873 & 87 & 10h34m & 18.8 \\
+\hline
+EFFICIENTNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 1h53m & 3.0 \\
+\hline
+EFFICIENTNETV2-B1 & 0.904 & 0.904 & 0.902 & 90 & 2h0m & 3.6 \\
+\hline
+EFFICIENTNETV2-B2 & 0.902 & 0.900 & 0.901 & 90 & 2h17m & 3.8 \\
+\hline
+EFFICIENTNETV2-B3 & 0.926 & 0.926 & 0.925 & 93 & 2h2m & 4.5 \\
+\hline
+EFFICIENTNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 1h59m & 6.1 \\
+\hline
+EFFICIENTNETV2-M & 0.893 & 0.893 & 0.892 & 89 & 2h58m & 9.9 \\
+\hline
+EFFICIENTNETV2-L & 0.875 & 0.871 & 0.870 & 87 & 14h58m & 16.8 \\
+\hline
+\textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{--} & \textbf{7.0} \\
+\hline
+\end{tabular}
+\caption{More CNN Training Results for GPU}
+\label{tab:more_cnn_training_gpu}
+\end{table}
+
+% Table 2: CNN Training Results for CPU
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+\hline \hline
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{Mem} \\
+\hline
+VGG16 & 0.297 & 0.545 & 0.384 & 54 & 5h38m & 6.5 \\
+\hline
+ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 4h25m & 3.3 \\
+\hline
+RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 8h24m & 5.4 \\
+\hline
+GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 3h14m & 4.0 \\
+\hline
+MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
+\hline
+DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
+\hline
+EFFICIENTNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
+\hline
+EFFICIENTNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
+\hline
+EFFICIENTNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
+\hline
+EFFICIENTNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
+\hline
+EFFICIENTNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
+\hline
+EFFICIENTNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
+\hline
+EFFICIENTNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
+\hline
+EFFICIENTNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
+\hline
+EFFICIENTNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
+\hline
+EFFICIENTNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
+\hline
+EFFICIENTNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
+\hline
+EFFICIENTNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
+\hline
+EFFICIENTNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
+\hline
+EFFICIENTNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
+\hline
+EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
+\hline
+\textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
+\hline
+
+\end{tabular}
+\caption{More CNN Training Results for CPU}
+\label{tab:more_cnn_training_cpu}
+\end{table}
+
+\subsection{Analysis of Table~\ref{tab:overall_accuracy_cnn}}
+
+For the classification of ripeness, the highest accuracy was obtained
+with EfficientNetV2-B0, which achieved 91\%. This was followed by
+MobileNetV2, which achieved 90\%, EfficientNet-B0 and GoogLeNet at 89\%,
+DenseNet121 at 88\%, and ResNet50 at 87\%. In contrast, both VGGNet16 and
+AlexNet severely underperformed, each reaching only 43\% accuracy. A closer
+inspection of their classification reports revealed that these two models
+predicted only the green class across all test samples, completely failing
+to recognize yellow and yellow\_green. This explains why their accuracy
+plateaued at 43\%, a value that directly corresponds to the proportion of
+green samples in the dataset. The collapse into a single-class prediction
+highlights the limitations of these older architectures: AlexNet and
+VGGNet16 lack the advanced feature extraction and efficient feature reuse
+mechanisms present in modern CNNs, making them less capable of capturing
+the subtle hue and texture variations that distinguish ripeness stages
+\citep{Krizhevsky2012} \citep{simonyan2015}. AlexNet, while revolutionary
+in 2012, was designed for large-scale but relatively coarse ImageNet
+classification and relies on shallow convolutional layers with large
+receptive fields, which limits its ability to capture fine-grained
+differences. Similarly, VGGNet16, though deeper, uses very uniform 3×3
+convolutions without skip connections or dense connectivity, leading to
+redundancy and inefficient feature reuse, which modern architectures have
+since addressed. Furthermore, the training setup and hyperparameters, which
+favored faster convergence in lightweight and well-optimized models such as
+MobileNetV2 and EfficientNet \citep{howard2017}  \citep{tan2019}, did not
+provide the same benefit to AlexNet and VGGNet16 \citep{Huang2017}.
+Importantly, the train accuracy values further reinforce these findings
+where modern architectures such as EfficientNetV2-B3 (93\% train, 93\%
+test) and EfficientNet-B6 (96\% train, 93\% test) maintained close
+alignment between training and test performance, indicating strong
+generalization. In contrast, AlexNet and VGGNet16 stagnated at 43\% for
+both training and test accuracy, indicating that they were underfitting and
+unable to capture the discriminative features necessary for ripeness
+classification. From a performance requirements perspective, the results
+also demonstrate that modern architectures not only achieved higher
+accuracy but did so with significantly lower training times and more
+efficient VRAM utilization. For instance, EfficientNetV2-B0 reached the
+highest accuracy in under two hours with an average VRAM usage of only 3
+GB, while AlexNet required over four hours yet produced poor results, and
+VGGNet16 consumed the highest VRAM (7 GB) despite its low accuracy. This
+efficiency–accuracy balance makes modern CNNs far more suitable for
+practical deployment in ripeness classification tasks, where both
+computational cost and predictive reliability are critical.
+
+For the classification of bruises, the highest accuracy was obtained with
+EfficientNetV2-B0, which achieved 88\%. This was followed by EfficientNet-B0
+at 87\% and MobileNetV2 at 86\%. ResNet50 and DenseNet121 both reached 84\%,
+while GoogLeNet trailed slightly at 81\%. In contrast, both VGG16 and AlexNet
+severely underperformed, each plateauing at only 54\% accuracy. Similar to the
+results from training ripeness, VGG16 and AlexNet collapsed into underfitting,
+where both models produced very low precision (0.2965) and F1-scores (0.384),
+and their training accuracy stagnated at the same 54\%, confirming their
+inability to learn discriminative features. By contrast, modern architectures
+such as EfficientNet and MobileNetV2 leverage depthwise separable convolutions,
+compound scaling, and optimized feature reuse, enabling them to achieve higher
+accuracy with fewer parameters and faster convergence. EfficientNetV2-B0 not
+only achieved the highest accuracy (88\%) but also did so in just 2 hours and
+6 minutes with an average VRAM usage of 4.4 GB, making it both the most
+accurate and the most computationally efficient. MobileNetV2, while slightly
+less accurate, also demonstrated excellent efficiency, completing training in
+under 4 hours with modest memory requirements. From a performance requirements
+perspective, these results highlight that modern CNNs are not only more
+accurate but also far more resource-efficient. VGG16, despite consuming the
+most VRAM (6.5 GB) and requiring over 5 hours of training, delivered poor
+results, while AlexNet trained for more than 4 hours yet plateaued at the same
+low accuracy. In contrast, EfficientNetV2-B0 and EfficientNet-B0 achieved
+state-of-the-art performance in a fraction of the time and memory.
+
+
+Ultimately, choosing a CNN model from the EfficientNetV2 family
+represents the most practical and forward-looking decision for both ripeness
+and bruise classification tasks. These models consistently delivered the
+highest accuracy across experiments while maintaining shorter training
+times and lower memory footprints compared to other architectures.
+Their compound scaling strategy allows them to balance depth, width,
+and resolution more effectively than earlier CNNs, ensuring strong
+generalization without excessive computational cost \cite{tan2019}.
+This makes them not only state-of-the-art in predictive performance
+but also highly deployable in real-world agricultural settings, where
+efficiency, scalability, and reliability are critical. By combining
+accuracy, speed, and resource efficiency, the EfficientNetV2 family
+provides the best foundation for building robust and sustainable
+computer vision systems for fruit quality assessment.
+
+\subsection{Analysis of Table~\ref{tab:more_cnn_training_cpu} and Table~\ref{tab:more_cnn_training_gpu}} 
+
+For ripeness classification, among the EfficientNet V1 models as seen in
+Table~\ref{tab:more_cnn_training_cpu} and Table~\ref{tab:more_cnn_training_gpu}
+, B0 to B4 exhibited a performance plateau around 89–91\% accuracy.
+This can be explained by the compound scaling principle where each
+successive variant increases depth, width, and input resolution in tandem
+\citep{tan2019}. However, for the benchmark, the input resolution was fixed
+at 224×224 for all models. Since B0–B4 are relatively shallow and narrow,
+their representational capacity is already well-matched to the available
+input information at 224×224. Scaling them further in depth and width
+without increasing resolution does not provide additional discriminative
+power, leading to plateau in accuracy. Notably, their training accuracies,
+ranging from 89.5\% to 92.3\%, closely mirrored their test accuracies,
+suggesting that these models were neither severely underfitting nor
+overfitting, but rather limited by the resolution bottleneck. In contrast,
+B5 and B6 showed measurable improvements (92–93\% accuracy) even under the
+224×224 constraint. This is because their increased depth and width allowed
+them to extract more abstract and hierarchical features, compensating for
+the lack of higher-resolution input. While they were not operating at their
+full theoretical potential, which would require larger input sizes like
+456×456 or 528×528, their additional capacity still translated into better
+generalization for the 3-class ripeness classification task. Essentially,
+B5 and B6 reached a sweet spot where the added representational power was
+still beneficial, even though the input resolution bottleneck limited
+further gains. This is further supported by their training accuracies
+(94.1\% for B5 and 96.0\% for B6), which were slightly higher than their
+test accuracies, indicating strong learning capacity with only a modest
+generalization gap. By contrast, B7 crossed the threshold where additional
+scaling became counterproductive. With 18.8 GB of VRAM usage and a 9-hour
+training time, its extreme depth and parameter count, combined with the
+fixed low-resolution input, led to over-parameterization relative to the
+available information, optimization inefficiency, and degraded performance
+(87\%). This increase in training time and memory usage is expected, as
+higher EfficientNet versions introduce significantly more parameters. For
+instance, B6 has over 43 million parameters compared to B5’s 30 million,
+resulting in longer forward and backward passes and greater memory
+consumption per epoch. If the required memory exceeds available VRAM, the
+system resorts to RAM, which has slower access speeds, thereby
+significantly increasing training time. On the other hand, EfficientNetV2
+models demonstrated superior efficiency and faster convergence. Variants
+B0–B3 consistently achieved 91–93\% accuracy, with V2-B3 emerging as the
+top performer (precision 0.9258, recall 0.9256, F1-score 0.9253, accuracy
+93\%) while maintaining modest VRAM usage (4.5 GB) and a short training
+time ($\sim$2 hours). Their training accuracies (92.3–94.0\%) were well
+aligned with their test accuracies, confirming that these models
+generalized effectively without significant overfitting. In contrast, the
+larger variants (V2-S, V2-M, V2-L) all exhibited diminishing returns, as
+their increased depth and parameter counts did not translate into higher
+accuracy, instead plateauing at 87–89\% while demanding substantially more
+computational resources, similar to the case with EfficientNetV1 series.
+Their longer training times and higher VRAM usage reflect the same scaling
+trade-offs observed in B7, where added complexity does not yield
+proportional performance gains under fixed input resolution
+\citep{tan2021}. This was also reflected in their training accuracies
+(90.0–90.5\%), which showed little advantage over their test results,
+reinforcing that additional complexity did not yield meaningful gains. This
+performance limitation may also be attributed to the fixed input image size
+of 224×224, which constrained the representational capacity of deeper
+models , a phenomenon similarly observed with the EfficientNetV1-B7. This
+suggests that for a 3-class dataset of approximately 6,000 images,
+additional model complexity does not yield proportional performance gains
+and may even hinder optimization efficiency. Under these conditions, V2-B3
+stands out as the most effective architecture, striking the best balance
+between accuracy, efficiency, and training time.assessment.
+
+For bruise classification as seen in
+ Table~\ref{tab:more_cnn_training_cpu}, mid-tier EfficientNet V1 models
+ (B1–B3) delivered the strongest results, with B3 achieving the highest
+ performance (precision = 0.913, recall = 0.913, F1-score = 0.9129,
+ accuracy = 91\%). Their training accuracies ($\sim$90–91\%) were closely
+ aligned with their test results, indicating that these models generalized
+ well without significant overfitting. In contrast, the larger V1 variants
+ (B5–B7) required substantially more training time and memory yet plateaued
+ at 86–88\% accuracy, reflecting the same diminishing returns noted in
+ ripeness classification. This was further supported by their training
+ accuracies ($\sim$90–90.5\%), which were only marginally higher than
+ their test scores, suggesting that additional depth and parameters did
+ not translate into meaningful generalization gains. Among the V2 models,
+ V2-B3 stood out with 92\% accuracy and balanced precision/recall (0.919
+ each), surpassing the best V1 models while maintaining shorter training
+ times and lower memory usage. Meanwhile, the larger V2 variants (S, M, L)
+ mirrored the inefficiencies of their V1 counterparts, consuming more
+ resources without corresponding accuracy gains. Their training
+ accuracies ($\sim$85–86\%) were nearly identical to their test results,
+ confirming that these models were underutilizing their added capacity
+ under the fixed 224×224 input constraint. Across both families, GPU-based
+ training consistently achieved shorter training times than CPU-only runs,
+ even though the bruise classification task involved only two classes and
+ used the same dataset.
+
+ Overall, EfficientNetV2-B3 emerged as the most practical and effective model
+ for both ripeness and bruise classification, combining high accuracy (93\%
+ and 92\%, respectively) with modest VRAM requirements and short training
+ times ($\sim$2–3 hours). Its balance of performance and efficiency makes it
+ particularly well-suited for deployment in real-world agricultural
+ applications, where computational resources may be limited but reliable,
+ high-accuracy classification is essential. Complementing this, training with
+ GPUs proved consistently advantageous across both tasks, as their massively
+ parallel architecture is optimized for the matrix multiplications and
+ convolution operations central to deep learning. This allowed models to
+ converge significantly faster than on CPUs, reducing training times from
+ several hours to just a fraction of that. The efficiency gains were
+ especially evident in deeper networks, where CPU-only training often became
+ impractically slow. Notably, bruise classification, despite involving only
+ two classes and the same dataset size, still trained more slowly on CPU
+ than ripeness classification did on GPU, underscoring the decisive role of
+ hardware acceleration in practical deep learning workflows.
+
+\subsection{Analysis of Confusion Matrix together with Validation Loss and Accuracy}
+In this section, the performance of the top three models for both ripeness
+and bruise classification is examined in greater detail through their
+validation loss and accuracy curves, as well as their corresponding
+confusion matrices. These analyses provide deeper insight into how each
+model converged during training, the stability of their learning process,
+and their ability to generalize beyond the training set. The confusion
+matrices, in particular, highlight the distribution of correct and incorrect
+predictions across classes, allowing for a clearer understanding of where
+misclassifications occur.
+
+\subsubsection{Ripeness Classification}
+
+\subsubsection{Bruises Classification}
 
 % [x] todo: revisit once actual interview and testing with expert is done
 \section{Comparative Analysis: Model Performance vs. Expert Benchmark}
@@ -935,36 +1217,6 @@ compare and contrast both methods.
 % todo will add explanation of the absolute and percent diff for the four graphs
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
-% \gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
-% Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
-% The formula for the user priority is given by:
-% \begin{equation}
-% 	\label{eq:userPriority}	
-%   \text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
-% \end{equation}
-%
-% \noindent The machine learning predictions are assigned the following numerical values shown below.
-%
-% \subsection{Ripeness Scores:}
-% \begin{align}
-% r(\text{yellow}) &= 1.0 \\
-% r(\text{yellow\_green}) &= 2.0 \\
-% r(\text{green}) &= 3.0
-% \end{align}
-%
-% \subsection{Bruises Scores:}
-% \begin{align}
-% b(\text{bruised}) &= 1.0 \\
-% b(\text{unbruised}) &= 2.0
-% \end{align}
-%
-% \subsection{Size Scores:}
-% \begin{align}
-% s(\text{small}) &= 1.0 \\
-% s(\text{medium}) &= 2.0 \\
-% s(\text{large}) &= 3.0
-% \end{align}
-%
 
 The Figures \ref{fig:bruises-only-input}, \ref{fig:ripeness-bruises-only-input} and 
 \ref{fig:ripeness-only-input} are explained in this section where the inputted weight
@@ -1214,118 +1466,6 @@ and the second version which uses a part by part picturing and moving of mangoes
 
 
 
-% Table 1: CNN Training Results for GPU
-\begin{table}[htbp]
-\centering
-\begin{tabular}{l|c|c|c|c|c|c}
-\hline \hline
-\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{VRAM} \\
-\hline
-VGG16 & 0.188 & 0.434 & 0.263 & 43 & 2h57m & 7.0 \\
-\hline
-ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 4h23m & 2.3 \\
-\hline
-RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 7h13m & 4.1 \\
-\hline
-GOOGLENET & 0.898 & 0.895 & 0.892 & 89 & 3h3m & 2.9 \\
-\hline
-MOBILENETV2 & 0.898 & 0.898 & 0.897 & 90 & 2h0m & 3.6 \\
-\hline
-DENSENET121 & 0.877 & 0.877 & 0.875 & 88 & 2h10m & 5.5 \\
-\hline
-EFFICIENTNET B0 & 0.890 & 0.888 & 0.887 & 89 & 2h26m & 4.1 \\
-\hline
-EFFICIENTNET B1 & 0.867 & 0.862 & 0.859 & 86 & 2h30m & 5.3 \\
-\hline
-EFFICIENTNET B2 & 0.927 & 0.924 & 0.925 & 92 & 2h14m & 5.5 \\
-\hline
-EFFICIENTNET B3 & 0.882 & 0.880 & 0.879 & 88 & 2h25m & 6.8 \\
-\hline
-EFFICIENTNET B4 & 0.899 & 0.898 & 0.896 & 90 & 2h50m & 8.0 \\
-\hline
-EFFICIENTNET B5 & 0.925 & 0.924 & 0.924 & 92 & 5h49m & 11.6 \\
-\hline
-EFFICIENTNET B6 & 0.934 & 0.933 & 0.933 & 93 & 7h51m & 14.5 \\
-\hline
-EFFICIENTNET B7 & 0.883 & 0.871 & 0.873 & 87 & 10h34m & 18.8 \\
-\hline
-EFFICIENTNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 1h53m & 3.0 \\
-\hline
-EFFICIENTNETV2-B1 & 0.904 & 0.904 & 0.902 & 90 & 2h0m & 3.6 \\
-\hline
-EFFICIENTNETV2-B2 & 0.902 & 0.900 & 0.901 & 90 & 2h17m & 3.8 \\
-\hline
-EFFICIENTNETV2-B3 & 0.926 & 0.926 & 0.925 & 93 & 2h2m & 4.5 \\
-\hline
-EFFICIENTNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 1h59m & 6.1 \\
-\hline
-EFFICIENTNETV2-M & 0.893 & 0.893 & 0.892 & 89 & 2h58m & 9.9 \\
-\hline
-EFFICIENTNETV2-L & 0.875 & 0.871 & 0.870 & 87 & 14h58m & 16.8 \\
-\hline
-\textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{--} & \textbf{7.0} \\
-\hline
-\end{tabular}
-\caption{More CNN Training Results for GPU}
-\label{tab:more_cnn_training_gpu}
-\end{table}
-
-% Table 2: CNN Training Results for CPU
-\begin{table}[htbp]
-\centering
-\begin{tabular}{l|c|c|c|c|c|c}
-\hline \hline
-\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{Mem} \\
-\hline
-VGG16 & 0.297 & 0.545 & 0.384 & 54 & 5h38m & 6.5 \\
-\hline
-ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 4h25m & 3.3 \\
-\hline
-RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 8h24m & 5.4 \\
-\hline
-GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 3h14m & 4.0 \\
-\hline
-MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
-\hline
-DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
-\hline
-EFFICIENTNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
-\hline
-EFFICIENTNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
-\hline
-EFFICIENTNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
-\hline
-EFFICIENTNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
-\hline
-EFFICIENTNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
-\hline
-EFFICIENTNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
-\hline
-EFFICIENTNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
-\hline
-EFFICIENTNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
-\hline
-EFFICIENTNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
-\hline
-EFFICIENTNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
-\hline
-EFFICIENTNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
-\hline
-EFFICIENTNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
-\hline
-EFFICIENTNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
-\hline
-EFFICIENTNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
-\hline
-EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
-\hline
-\textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
-\hline
-
-\end{tabular}
-\caption{More CNN Training Results for CPU}
-\label{tab:more_cnn_training_cpu}
-\end{table}
 
 % Table 3: Mango Size Results
 \begin{table}[htbp]

@@ -401,6 +401,101 @@ on accuracy.
 Model performance was evaluated using precision, recall, F1-score, accuracy, resource
 utilization, and elapsed training time.
 
+\subsection{Benchmarking Best CNN Model on +10k Mango Dataset}
+
+As one of the improvements for the final CNN models, the dataset for mango
+classification was refined and expanded to improve model robustness and reliability
+across both ripeness and bruise detection tasks for the training of the final
+CNN model where EfficientNetV2-B3 was used. The data was initially split
+into training (70\%), validation (15\%), and test (15\%) sets, with augmentation
+applied only to the training set. However, after augmentation, the effective
+distribution shifted to 90\% training, 5\% validation, and 5\% test. In addition,
+new Carabao mango images were incorporated across all classes to strengthen
+representation and improve generalization. As such, to train the final CNN
+models, the training set for ripeness category in Table~\ref{fig:cnn_ripeness_info}b
+contained 4,900
+images of green mangoes, 3,700 images of yellow mangoes, and 5,000 images
+of yellow\_green mangoes. For validation in Table~\ref{fig:cnn_ripeness_info}c, 
+the set included 200
+green mango images, 175 yellow mango images, and 210 yellow\_green images.
+The test set in Table~\ref{fig:cnn_ripeness_info}a consisted of 200 green mango images,
+160 yellow
+mango images, and 220 yellow\_green images. For the bruises category, the
+training set Table~\ref{fig:cnn_bruises_info}b contained 6,000 images of
+bruised mangoes and 7,000
+images of not\_bruised mangoes after augmentation. The validation set 
+in Table~\ref{fig:cnn_bruises_info}c
+included 200 bruised mango images and 225 not\_bruised mango images,
+while the test set as seen in Table~\ref{fig:cnn_bruises_info}a contained 200 bruised 
+mango images and 225
+not\_bruised mango images. This setup provided a balanced evaluation
+framework for the binary classification task, ensuring that both classes were
+consistently represented across training, validation, and testing.
+
+The dataset was also cleaned to remove sources of noise and ambiguity.
+Images with mixed ripeness features, such as mangoes with both large yellow
+and green portions, were placed under yellow\_green instead, while ambiguous
+samples, such as yellow mangoes with residual greenish portions, were
+excluded to avoid confusing the model. Empty areas present in images were
+also removed to ensure that only the fruit itself was used for training.
+
+Augmentation strategies were further refined to preserve class-defining
+features. For bruise classification, Gaussian blur was removed since it
+obscured critical bruise details. For ripeness classification, brightness and
+contrast adjustments were excluded, as these could shift mango colors
+between adjacent classes, such as yellow\_green to yellow, introducing
+artificial mislabels. Other augmentations, such as rotation, flipping, scaling,
+and minor perspective transform, were retained to maintain variability without
+compromising class integrity.
+
+Through these improvements, expanded augmentation, inclusion of new
+Carabao mango samples, dataset cleaning, and task-specific augmentation
+refinements, the final dataset ensured that both CNN models were trained on
+high-quality, representative, and diverse data. This preparation supports fair
+evaluation on the validation and test sets while maximizing the models’ ability
+to generalize to real-world mango classification scenarios.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Test Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/test_class_distribution_bruises}
+        \label{fig:bruises_test_cnn}
+    }
+    \hfill
+    \subbottom[Train Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/train_class_distribution_bruises}
+        \label{fig:bruises_train_cnn}
+    }
+    \vfill
+    \subbottom[Validation Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/valid_class_distribution_bruises}
+        \label{fig:bruises_valid_cnn}
+    }
+    \caption{Bruises Image Datasplit}
+    \label{fig:cnn_bruises_info}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Test Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/test_class_distribution_ripeness}
+        \label{fig:ripeness_test_cnn}
+    }
+    \hfill
+    \subbottom[Train Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/train_class_distribution_ripeness}
+        \label{fig:ripeness_train_cnn}
+    }
+    \vfill
+    \subbottom[Validation Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/valid_class_distribution_ripeness}
+        \label{fig:ripeness_valid_cnn}
+    }
+    \caption{Ripeness Image Datasplit}
+    \label{fig:cnn_ripeness_info}
+\end{figure}
+
+
 \subsection{Classification Report}
 % describe classification report and how it is used in the system
 
