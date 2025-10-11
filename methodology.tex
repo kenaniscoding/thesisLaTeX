@@ -102,7 +102,7 @@ The prototype consists of hardware and software components for automated mango s
 For the programming language used for the prototype and training and testing the CNN model, Python was used for training and testing the CNN model and it was also used in the microcontroller to run the application containing the UI and CNN model. PyTorch was the main library used in using the EfficientNet model that is used in classifying the ripeness and bruises of the mango. Likewise, tkinter is the used library when designing the UI in Python.
 
 Furthermore, the rest of the software components are of utmost importance to mango classification. Image processing algorithms in OpenCV and CNN models extract features such as color, size, and bruises that are known to determine quality parameters of mangoes. Mangoes are classified based on ripeness and defects by using machine learning algorithms, which further enhances accuracy using deep learning techniques. A user interface (UI) is designed for users to control and observe the system in real time. Finally, the interface programming of the microcontroller provides the necessary synchronization between sensors, actuators, and motors throughout the sorting operation scenario.
-
+\subsection{Machine Learning Methods}
 % [o] todo: Add the explanation that we trained and tested cnn, knn, naive bayes, etc
 The processed dataset is to be then used to create models using a variety of
 machine learning methods. For a comprehensive evaluation, the processed dataset
@@ -111,6 +111,106 @@ included Convolutional Neural Network (CNN), k-Nearest Neighbors (k-NN), Naive
 Bayes, and k-Means clustering and various Efficientnet models. This comparative
 analysis was conducted to benchmark the performance of the deep learning
 approach against traditional machine learning algorithms.
+
+\subsection{Optimizer}
+Choosing the correct optimizer critically impacts both the convergence speed and the
+generalization ability of deep neural networks. The widely used Adam optimizer
+employs adaptive learning rates for each parameter, adjusting them according to the
+first- and second-order moments of gradients. However, Adam implements weight decay as
+a part of gradient updates, which couples regularization and optimization in a way
+that can hamper generalization. AdamW was developed to decouple weight decay from the
+adaptive gradient update. Specifically, in AdamW, weight decay is applied directly to the
+parameters after the Adam update, leading to improved generalization and often more robust
+performance in large-scale tasks. Extensive benchmark comparisons reveal that AdamW outperforms
+standard Adam, especially when it comes to image classification or language modeling tasks
+with deep architectures \citep{Loshchilov2017Decoupled}.
+
+\subsection{Data Loading Optimization}
+Efficient data loading is a vital but often underestimated aspect of deep learning.
+In frameworks like PyTorch, the num\_workers parameter of the DataLoader determines how
+many subprocesses are used to fetch batches of data in parallel. Setting
+num\_workers > 0 enables multiprocessing, which prefetches batches and keeps the GPU
+occupied without idling, especially for large datasets or CPU-intensive augmentations. When
+misconfigured, however, the CPU can become a bottleneck, or resource contention may lead
+to unexpected slowdowns. The ideal number of workers depends on many factors: CPU and
+memory resources, dataset I/O demands, and the complexity of any required preprocessing.
+Practically, practitioners start with a low value for num\_workers, gradually increasing while
+monitoring CPU utilization and GPU occupancy, always balancing throughput gains against system
+constraints \citep{Migacz2020Performance}.
+\subsection{Data Transfer Optimization}
+Data transfer from host (CPU) to device (GPU) is a significant performance
+consideration during training, particularly as model and batch sizes grow. PyTorch
+and similar frameworks provide pin\_memory and non\_blocking options to optimize these transfers.
+When data is loaded with pin\_memory=True, it is allocated in page-locked (pinned)
+memory, which prevents the operating system from swapping it to disk and enables
+direct memory access (DMA) from the GPU, reducing latency. Setting non\_blocking=True in
+transfer calls further allows these memory copies to be overlapped with computation, eliminating
+host-thread blocking and enabling concurrent initiation of multiple transfers. Together, these
+settings can cut data transfer times and better exploit GPU concurrency. However, misuse,
+such as excessive pinned memory allocation, can reduce overall system stability due to
+increased physical memory pressure \citep{Moens2024DataTransfer}.
+
+\subsection{Mixed Precision Training}
+Mixed precision training is now a near-standard approach for accelerating deep learning,
+especially on modern GPUs equipped with specialized compute units, such as NVIDIA Tensor
+Cores, that can handle reduced numerical precision efficiently. By employing 16-bit floating
+point (FP16 or BF16) arithmetic for most operations and retaining 32-bit (FP32) precision
+for critical accumulations and weight updates, mixed precision training achieves two main
+benefits: faster computation throughput and decreased memory footprint. This allows for increased
+model or batch sizes and faster experimentation cycles, while, with proper loss scaling,
+preserving model convergence and final accuracy \citep{Markidis2018TensorCore}.
+
+\subsection{Adaptive learning Rate Schedulers}
+Adaptive learning rate schedules can profoundly affect both convergence speed and the
+ability of a model to generalize. The cosine annealing schedule cyclically adjusts the
+learning rate from a maximum to a minimum according to a cosine function, periodically
+“restarting” back to the initial value. This warm restart strategy prevents the learning
+rate from decaying to zero too rapidly and encourages exploration of flatter minima in
+the loss surface, thereby enhancing generalization. Cosine annealing with restarts is widely
+cited as a simple but effective modification over static or monotonic decay schedules,
+giving superior performance across various deep learning domains from computer vision to
+language modeling \citep{Loshchilov2016SGDR}.
+
+\subsection{CrossEntropy Loss with Label Smoothing}
+Using CrossEntropy loss with label smoothing addressed the issue of overconfidence in
+predictions. Standard CrossEntropy encourages the model to assign near‑absolute probability to
+the correct class, which can lead to poor generalization, especially when classes are
+ambiguous or noisy. Label smoothing redistributes a small fraction of probability mass to
+incorrect classes, effectively softening the target distribution. This discourages the model from
+becoming overly confident, reduces variance in predictions, and improves robustness against
+mislabeled or borderline samples \citep{Guo2024LabelSmoothing, Szegedy2016Rethinking} 
+
+\subsection{Early Stopping and Checkpointing}
+Overfitting is a major concern in deep learning, as models with high
+capacity can easily memorize the training data without learning to generalize to new
+inputs. Early stopping is a widespread technique wherein training is halted when performance
+on a held-out validation set ceases to improve, rather than after a fixed number
+of epochs. This prevents the model from entering the overfitting regime. Model checkpointing
+complements early stopping by routinely saving the model’s parameters and, optionally, optimizer states,
+ensuring recoverability in the event of hardware failure and enabling the best-performing model
+on validation metrics to be retained, rather than simply the last epoch’s snapshot 
+\citep{Hussein2024EarlyStopping, Lee2024CheckQZP}.
+
+\subsection{Input Resolution}
+The spatial resolution of input images materially affects both computational cost and
+prediction accuracy in deep learning, especially for vision tasks. Higher input resolutions
+can theoretically yield better performance, as more visual detail is made available to
+the model, but this often comes at the expense of increased memory and higher
+training times, sometimes forcing smaller batch sizes and less efficient optimization. Conversely,
+reducing input resolution can dramatically decrease resource requirements, permitting faster development
+and larger batch sizes, but at a potential loss of accuracy, especially for tasks
+that demand fine-grained spatial detail \citep{Richter2020FeatureSpace}.
+
+\subsection{Regularization}
+Regularization techniques combat overfitting, and two of the most prominent in
+deep learning are dropout and drop path, also called “stochastic depth”. Dropout
+randomly deactivates a subset of neurons or weights during each training iteration,
+preventing any single unit from becoming indispensable and encouraging redundancy in representation.
+Drop path extends this principle by stochastically skipping entire layers or blocks during
+training, particularly in architectures with skip connections such as ResNet. This approach
+reduces the effective depth of the model during training while maintaining full depth at
+inference, acting as an implicit model ensemble and further strengthening generalization 
+\citep{Huang2016StochasticDepth}.
 
 \section{Data Collection Methods} \label{sec:dataset}
 % The system acquires high-resolution images of mangoes under pre-specified lighting conditions through systematic acquisition. 
@@ -370,6 +470,7 @@ Dataset processing complete! Output saved to: E:\dir
 
 ========================================
 \end{lstlisting} 
+
 \subsection{Comparative Test of CNN Models}
 
 To identify the most suitable CNN architecture for 
