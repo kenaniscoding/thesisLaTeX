@@ -129,7 +129,7 @@ with deep architectures \citep{Loshchilov2017Decoupled}.
 Efficient data loading is a vital but often underestimated aspect of deep learning.
 In frameworks like PyTorch, the num\_workers parameter of the DataLoader determines how
 many subprocesses are used to fetch batches of data in parallel. Setting
-num\_workers > 0 enables multiprocessing, which prefetches batches and keeps the GPU
+num\_workers \textgreater 0 enables multiprocessing, which prefetches batches and keeps the GPU
 occupied without idling, especially for large datasets or CPU-intensive augmentations. When
 misconfigured, however, the CPU can become a bottleneck, or resource contention may lead
 to unexpected slowdowns. The ideal number of workers depends on many factors: CPU and

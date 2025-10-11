@@ -479,47 +479,6 @@ Its predictive precision makes it suitable for industrial-grade automated qualit
 \end{figure}
 
 \section{Achieving the Highest Accuracy in CNN Models}
-
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{l|cc}
-  \hline \hline
-                & \multicolumn{2}{c}{Accuracy}            \\ \hline
-  Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-  EfficientNetB0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
-  VggNet16       & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
-  AlexNet        & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
-    \acr{ResNet}50       & \multicolumn{1}{c|}{87\%}       & 84\%      \\ \hline
-  GoogleNet      & \multicolumn{1}{c|}{89\%}       & 81\%      \\ \hline
-  MobileNetV2    & \multicolumn{1}{c|}{90\%}       & 86\%      \\ \hline
-  DenseNet121    & \multicolumn{1}{c|}{88\%}       & 84\%      \\ \hline
-  \end{tabular}
-  \caption{Accuracy of Different CNN Models}
-  \label{tab:overall_accuracy_cnn}
-\end{table}
-
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{l|cc}
-  \hline \hline
-                & \multicolumn{2}{c}{Test Accuracy}            \\ \hline
-  EfficientNet & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-  B0 & \multicolumn{1}{c|}{89\%}       & 87\%      \\ \hline
-  B1 & \multicolumn{1}{c|}{86\%}       & 90\%      \\ \hline
-  B2 & \multicolumn{1}{c|}{92\%}       & 90\%      \\ \hline
-  B3 & \multicolumn{1}{c|}{88\%}       & 91\%      \\ \hline
-  B4 & \multicolumn{1}{c|}{90\%}       & 90\%      \\ \hline
-  B5 & \multicolumn{1}{c|}{92\%}       & 88\%      \\ \hline
-  B6 & \multicolumn{1}{c|}{93\%}       & 88\%      \\ \hline
-  V2B0 & \multicolumn{1}{c|}{91\%}       & 88\%      \\ \hline
-  V2B1 & \multicolumn{1}{c|}{92\%}       & 89\%      \\ \hline
-  V2B2 & \multicolumn{1}{c|}{92\%}       & 89\%      \\ \hline
-  V2B3 & \multicolumn{1}{c|}{93\%}       & 92\%      \\ \hline
-  \end{tabular}
-  \caption{Test Accuracy of Different EfficientNet Version 1 and 2}
-  \label{tab:overall_accuracy_effnet}
-\end{table}
-
 % % Table: CNN Training Results for GPU (with Train Accuracy)
 % \begin{table}[htbp]
 % \centering
@@ -744,6 +703,46 @@ EFFNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
 % \end{table}
 
 \subsection{Analysis of Table~\ref{tab:overall_accuracy_cnn}}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l|cc}
+  \hline \hline
+                & \multicolumn{2}{c}{Accuracy}            \\ \hline
+  Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  EfficientNetB0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
+  VggNet16       & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
+  AlexNet        & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
+    \acr{ResNet}50       & \multicolumn{1}{c|}{87\%}       & 84\%      \\ \hline
+  GoogleNet      & \multicolumn{1}{c|}{89\%}       & 81\%      \\ \hline
+  MobileNetV2    & \multicolumn{1}{c|}{90\%}       & 86\%      \\ \hline
+  DenseNet121    & \multicolumn{1}{c|}{88\%}       & 84\%      \\ \hline
+  \end{tabular}
+  \caption{Accuracy of Different CNN Models}
+  \label{tab:overall_accuracy_cnn}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l|cc}
+  \hline \hline
+                & \multicolumn{2}{c}{Test Accuracy}            \\ \hline
+  EfficientNet & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  B0 & \multicolumn{1}{c|}{89\%}       & 87\%      \\ \hline
+  B1 & \multicolumn{1}{c|}{86\%}       & 90\%      \\ \hline
+  B2 & \multicolumn{1}{c|}{92\%}       & 90\%      \\ \hline
+  B3 & \multicolumn{1}{c|}{88\%}       & 91\%      \\ \hline
+  B4 & \multicolumn{1}{c|}{90\%}       & 90\%      \\ \hline
+  B5 & \multicolumn{1}{c|}{92\%}       & 88\%      \\ \hline
+  B6 & \multicolumn{1}{c|}{93\%}       & 88\%      \\ \hline
+  V2B0 & \multicolumn{1}{c|}{91\%}       & 88\%      \\ \hline
+  V2B1 & \multicolumn{1}{c|}{92\%}       & 89\%      \\ \hline
+  V2B2 & \multicolumn{1}{c|}{92\%}       & 89\%      \\ \hline
+  V2B3 & \multicolumn{1}{c|}{93\%}       & 92\%      \\ \hline
+  \end{tabular}
+  \caption{Test Accuracy of Different EfficientNet Version 1 and 2}
+  \label{tab:overall_accuracy_effnet}
+\end{table}
 
 For the classification of ripeness, the highest accuracy was obtained
 with EfficientNetV2-B0, which achieved 91\%. This was followed by
