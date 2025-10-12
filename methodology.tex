@@ -823,12 +823,43 @@ can be changed to either low, high, or remove it by setting it to zero. Furtherm
 only real numbers are allowed to be inputted as a weight. This means that 
 negative and imaginary numbers are not considered in Equation \ref{eq:userPriorityInput}.
 
-\section{Ethical Considerations}
-Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
+% \section{Ethical Considerations}
+% Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
 
+\section{Summary} \label{sec:summary_of_methods}
 
+This chapter details the methodology for developing an automated Carabao mango grading
+and sorting system integrating machine learning and computer vision. The research employed
+an experimental approach managed via Scrum agile methodology to iteratively develop and
+test the hardware and software components. The hardware design features a conveyor belt
+system, an image acquisition setup with controlled lighting, and a \acr{RPi}
+microcontroller coordinating DC motors and sorting actuators. The software, built with
+Python and PyTorch, utilizes a custom-trained CNN for
+classification. The core machine learning pipeline involved extensive comparative testing
+of architectures, including EfficientNet, VGGNet, and ResNet, with EfficientNetV2-B3
+ultimately selected for its optimal balance of accuracy and efficiency.
 
+A significant focus was placed on data collection and optimization. A custom
+dataset of Carabao mangoes was created by capturing video of individual fruits
+and extracting frames, which were then sorted into categories for ripeness (green,
+yellow-green, yellow) and bruises (bruised, not bruised). The dataset was split
+70-15-15 for training, validation, and testing, with aggressive data augmentation
+(rotation, flipping, blur) applied only to the training set to improve
+model generalization. The training process incorporated several advanced optimizations:
+the AdamW optimizer for better generalization, mixed-precision training to accelerate
+computation, data loading and transfer optimizations to prevent bottlenecks, and
+regularization techniques like dropout and label smoothing to combat overfitting. A
+cosine annealing learning rate scheduler and early stopping were also implemented to
+ensure stable convergence.
 
-
-\section{Summary}
-This chapter explained how to create an automatic Carabao mango sorter and grader using machine learning and computer vision. The system integrates hardware and software resources, including a conveyor belt, cameras, sensors, and actuators, to offer accurate, real-time sorting by ripeness, size, and bruises. Various testing and evaluation processes ensure its performance to offer reliability. Ethical issues are data privacy, environmental sustainability, and operation safety. With enhanced efficiency, reduced human error, and enhanced quality, this system provides an affordable, scalable, and non-destructive solution to post-harvest mango classification in agricultural industries.
+For system evaluation, the methodology defined specific testing protocols for each
+attribute. Ripeness was classified into three visually distinct stages, while bruise
+detection was trained to identify defects like stem end rot and anthracnose
+based on a standard defect guide. Two methods for size determination were developed
+and compared: a traditional computer vision approach using foreground masking and
+thresholding, and a more robust object detection method using a Faster R-CNN model
+trained on 488 annotated mango images. A key innovation is the user-priority
+formula, a weighted equation that allows users to customize the importance of
+ripeness, bruises, and size in the final grade (A, B, or
+C). 
+\\

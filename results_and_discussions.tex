@@ -2220,7 +2220,9 @@ of the user.
 Figure~\ref{fig:error-handel-1} shows the three possible 
 error messages when the user inputs all zero in the user 
 priority, presses all and none of the buttons when moving
-the conveyor.
+the conveyor. In the case the user inputs a a letter or negative value,
+then the not number error message would pop up as shown in
+Figure~\ref{fig:error-handel-2}.
 
 \begin{figure}[!htbp]
     \centering
@@ -2243,10 +2245,6 @@ the conveyor.
     \label{fig:error-handel-1}
 \end{figure}
 
-In the case the user inputs a a letter or negative value,
-then the not number error message would pop up as shown in
-Figure~\ref{fig:error-handel-2}.
-
 \begin{figure}[!htbp]
     \centering
     \subbottom[Not Number at Conveyor Time]{
@@ -2266,6 +2264,10 @@ Figure~\ref{fig:error-handel-2}.
 Figure~\ref{fig:help_page} shows the help page containing information
 about the button and their purpose to assist the user
 navigate and utilizing the application. 
+Furthermore, Figure~\ref{fig:ripeness-all} shows an example output
+for each possible case of green, yellow\_green, and yellow
+ripeness classification together with bruise and not bruised and
+small and medium size mangoes. 
 
 \begin{figure}[!htbp]
 	\centering
@@ -2274,10 +2276,6 @@ navigate and utilizing the application.
 	\label{fig:help_page}
 \end{figure}
 
-Figure~\ref{fig:ripeness-all} shows an example output
-for each possible case of green, yellow\_green, and yellow
-ripeness classification together with bruise and not bruised and
-small and medium size mangoes. 
 
 \begin{figure}[!htbp]
     \centering
@@ -2303,7 +2301,26 @@ small and medium size mangoes.
 
 
 \section{Summary} \label{sec:summary_results_and_discussions}
-% todo add summary to this results and discussion
-Provide the gist of this chapter such that it reflects the contents and the message. This is a compile test
-\\
 
+This chapter presents a comprehensive evaluation of the automated mango grading and
+sorting system, demonstrating its successful integration of software intelligence, hardware
+functionality, and user-centric design. The core of the system's success lies
+in its high-precision deep learning models, with the final EfficientNetV2-B3 architecture
+achieving exceptional accuracies of 98\% for ripeness classification and 99\% for bruise
+detection. Through extensive benchmarking, modern CNNs like EfficientNet were proven
+superior, offering an optimal balance of accuracy and computational efficiency. For
+physical attribute measurement, an object detection method (Faster R-CNN) was established
+as the most reliable technique for determining mango size, significantly outperforming a
+traditional computer vision approach. The system's practical validity was further
+confirmed through a comparative analysis with a human expert, achieving a 79\% agreement
+rate, which accounts for the inherent subjectivity of manual grading. This robust
+software is embodied in a functional physical prototype that evolved into a refined
+version with an efficient conveyor system and a fully enclosed, three-way sorting
+mechanism that accurately directs mangoes into designated grades. Controlling this
+hardware is an intuitive software application on the Raspberry Pi, featuring a
+user-friendly interface that allows for custom priority weighting of mango characteristics
+and includes comprehensive error handling and data logging. Overall, the results
+conclusively show that the research has successfully bridged the gap between theoretical
+model development and a practical, deployable system capable of automatically and
+accurately grading Carabao mangoes based on customizable, user-defined standards.
+\\
