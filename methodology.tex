@@ -698,12 +698,12 @@ Using these methods of testing, the system is constantly optimized to ensure hig
 
 For the testing of the ripeness classification, the Carabao mangoes are classified into three ripeness stages which are Green, green yellow, and yellow.
 Likewise, The green would represent the ripe mangoes while the green yellow would represent the semi ripe while the yellow would
-represent the ripe mangoes. As reference, Figure~\ref{fig:mangoDefect} shows the different ripeness stages for Carabao/Pico mangoes.
+represent the ripe mangoes. As reference, Figure~\ref{fig:mangoRipeness} shows the different ripeness stages for Carabao/Pico mangoes \citet{doa2004}.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ripeness_stages}
-	\caption{Carabao Mango Ripeness Stages }
+  \caption{Carabao Mango Ripeness Stages \citep{doa2004}}
 	\label{fig:mangoRipeness}
 \end{figure}
 
@@ -725,7 +725,7 @@ to be Yellow for ripeness.
 \subsection{Bruises Training and Testing} \label{sec:bruisestraining}
 For the testing of the bruise classification of the Carabao mangoes, it would classified into two categories which are bruised and not bruised. 
 To define what bruise and not bruise mangoes looked like Figure~\ref{fig:mangoDefect} is used as reference to categorize which mangoes are bruised and not bruised.
-This means that if the mango has any of these
+This means that if the mango has any of these features are shown on the mango then it is considered as bruised.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{bruise_guide}
@@ -734,38 +734,45 @@ This means that if the mango has any of these
 \end{figure}
 
 \subsubsection{Stem End Rots}
-They are characterized by fast-growing, watery, soft rots that penetrate deeply into the flesh. 
-Likewise, it usually appear as grey-brown or black rots starting from the stem end, often without obvious spores, that can spread rapidly into the mango. 
+They are characterized by fast-growing, watery, soft rots that penetrate deeply into the flesh.  
+Likewise, they usually appear as grey-brown or black rots starting from the stem end, often without obvious spores, that can spread rapidly into the mango \citep{Litz2009FruitDiseases,ReviewPostharvestMango2024}.
 
 \subsubsection{Dendritic Spot}
-They are small black spots with irregular edges scattered across the skin. 
-Furthermore, it grow slowly and do not penetrate into the flesh, remaining largely superficial.
+They are small black spots with irregular edges scattered across the skin.  
+Furthermore, they grow slowly and do not penetrate into the flesh, remaining largely superficial \citep{HorticultureAustralia2007DendriticSpot}.  
 
 \subsubsection{Anthracnose}
-It appears in two forms. First form is through body anthracnose. 
-Body anthracnose presents as black rots on the fruit surface that are usually round, slightly sunken, and located on different parts of the mango. 
-Likewise, the second form is stem end anthracnose. 
-Stem end anthracnose occurs around the stem, also presenting as black rots.
-While these rots do not penetrate deeply into the flesh, advanced cases may show pink spores.
+It appears in two forms. First form is body anthracnose.  
+Body anthracnose presents as black rots on the fruit surface that are usually round, slightly sunken, and located on different parts of the mango.  
+Likewise, the second form is stem end anthracnose, occurring around the stem and also presenting as black rots.  
+While these rots do not penetrate deeply into the flesh, advanced cases may show pink spores \citep{Litz2009FruitDiseases,ReviewPostharvestMango2024}.
 
 \subsubsection{Sapburn}
-They appears as dark brown spots or blotches that are often slightly sunken. 
-Likewise, damage can occur as runs or streaks down the cheek or as scattered marks around the stem and shoulder, resulting from sap exposure. 
+They appear as dark brown spots or blotches that are often slightly sunken.  
+Likewise, damage can occur as runs or streaks down the cheek or as scattered marks around the stem and shoulder, resulting from sap exposure \citep{PaullMangoSapburn}.
 
 \subsubsection{Skin Browning}
-It may take two forms. First form is abrasion while the second form is sap browning. 
-Abrasion is recognized as fine brown scratches or rub marks, while sap-related browning appears as light to dark brown flecking, spots, blotches, smears, or rings. 
-These types of browning are generally limited to the skin and do not penetrate deeply.
+It may take two forms. The first form is abrasion while the second form is sap browning.  
+Abrasion is recognized as fine brown scratches or rub marks, while sap-related browning appears as light to dark brown flecking, spots, blotches, smears, or rings.  
+These types of browning are generally limited to the skin and do not penetrate deeply \citep{PaullMangoSapburn}.
 
 \subsubsection{Lenticel Spot}
-They are another common defect, appearing as round or star-shaped brown spots scattered across the skin surface. 
-Furthermore, these defects are usually cosmetic in nature and do not significantly affect the flesh.
+They are another common defect, appearing as round or star-shaped brown spots scattered across the skin surface.  
+Furthermore, these defects are usually cosmetic in nature and do not significantly affect the flesh \citep{NguyenLenticel2015}.
 
 \subsection{Size Determination} \label{sec:sizeDetermination}
 
-To get the size of the mangoes, computer vision techniques such as Gaussian Blur and Thresholding are used to get the length and width of the mangoes.
+To get the size of the mango, computer vision techniques such as Gaussian Blur and Thresholding are used to get the length and width of the mangoes.
+Refer to Figure~\ref{fig:lw_mango} for the location of the length and width of mango.
 % will add that the theoretical length and width would be compared to the actual length and width
 % also that the predicted size and actual size classification would be shown
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/sorting/mango_size}
+  \caption{Length and Width of Mango \citep{doa2006}}
+	\label{fig:lw_mango}
+\end{figure}
 
 \subsubsection{Computer Vision}
 For the computer vision method of getting the length and width of the mango a foreground masking is generated by getting absolute difference
