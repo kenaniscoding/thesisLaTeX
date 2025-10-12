@@ -1366,8 +1366,10 @@ The expert's classifications for the 50 images randomly sampled from the
 dataset are presented in
 Table~\ref{tab:expert_results}.
 These results serve as the validated ground truth against which the predictive
-accuracy of the computational models was measured.
-
+accuracy of the computational models was measured. Note that terms \gls{not:g},
+\gls{not:yg}, and \gls{not:y} refer to the mango color categories:
+green, yellow-green, and yellow, respectively. Likewise, \gls{not:b} and \gls{not:nb} indicate
+bruised and non-bruised mango surfaces.
 % [x] todo: revisit once actual interview and testing with expert is done
 
 \begin{longtable}{cccccc}
@@ -1465,8 +1467,8 @@ This purely human evaluation, while authoritative, inevitably introduces a
 degree of inherent human error.
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
-\subsection{Method 1: Computer Vision}
-To get the length and width of the mango. An initial image without the mango is taken which would be the background image. 
+\subsection{Method 1: Object Size Calculation via Foreground Masking and Thresholding}
+To get the length and width of the mango, an initial image without the mango is taken which would be the background image. 
 After that another image is taken with the mango which would be the foreground image.
 To get the length and width of the mango. An initial image without the mango is taken
 which would be the background image. After that another image is taken with the mango
@@ -1480,7 +1482,8 @@ to the background. Furthermore, note that the background image was taken first b
 the original image show on Figure~\ref{fig:mango_1_main}. Moreover, the foreground masking is converted to
 grayscale and then it would be thresholded with the lower and upper limit range of 50 and
 255 as seen on Listing~\ref{lst:foreground_masking1}. Lastly note that this was taken on the first iteration of the image
-acquisition system which is why the conveyor belt isn’t white.
+acquisition system which is why the conveyor belt isn’t white. Note that the Equation~\ref{eq:objectSizeCalculation2} 
+is used to convert the pixel measurements to get the dimensions in centimeters.
 
 \begin{figure}[!htbp]
     \centering
@@ -1679,7 +1682,7 @@ frame=single]
         return 0, 0
 \end{lstlisting}
 
-\subsection{Method 2: Object Detection}
+\subsection{Method 2: Object Detection using Faster-RCNN}
 For the second method, the researchers train an object detection which is a faster RCNN specifically the MobileNetV3.
 This was used because of its lightweight properties for the Raspberry Pi deployment.
 
