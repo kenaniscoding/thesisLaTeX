@@ -1467,7 +1467,7 @@ This purely human evaluation, while authoritative, inevitably introduces a
 degree of inherent human error.
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
-\subsection{Method 1: Object Size Calculation via Foreground Masking and Thresholding}
+\subsection{Method 1: Real World Object Size Calculation via Foreground Masking and Thresholding}
 To get the length and width of the mango, an initial image without the mango is taken which would be the background image. 
 After that another image is taken with the mango which would be the foreground image.
 To get the length and width of the mango. An initial image without the mango is taken
@@ -1814,6 +1814,16 @@ compare and contrast both methods.
     \caption{Percent and Absolute Difference between Both Methods}
     \label{fig:percent_absolute_diff}
 \end{figure}
+
+Note that the V2 Code refers to \textit{Method 2 (Object Detection)}, while the V1 Code refers to \textit{Method 1 (Real-World Object Size Calculation)}.
+
+Tables~\ref{tab:more_size_results01}, \ref{tab:more_size_results02}, \ref{tab:more_size_results03}, and~\ref{tab:mean_and_std_results} present the mango size estimation results using both V1 and V2 methods compared against the ground truth measurements. The results indicate that the V2 (Object Detection) method achieved higher accuracy and consistency in predicting both length and width dimensions compared to V1 (Real-World Object Size Calculation).
+
+As shown in Tables~\ref{tab:more_size_results01} to~\ref{tab:more_size_results03}, individual sample results demonstrate that the V2 method consistently produces values closer to the actual mango dimensions. Table~\ref{tab:mean_and_std_results} summarizes the overall statistical performance of both methods, showing that the V2 method achieved a mean length difference of 1.75 cm with a standard deviation of 0.56 cm, while the V1 method yielded a mean difference of 1.54 cm and a standard deviation of 0.40 cm. Although both methods performed similarly in estimating length, V2 demonstrated significantly better performance in estimating width, with an average difference of only 0.47 cm compared to the 4.61 cm mean error of V1.
+
+Furthermore, the percentage difference data in Table~\ref{tab:mean_and_std_results} reveal that V2 achieved an average of 13.57\% for length and 3.24\% for width, whereas V1 recorded 12.04\% for length but a notably higher 56.89\% for width. This large discrepancy in V1’s width estimation suggests that the Real-World Object Size Calculation method is more prone to scaling and calibration errors, especially along the horizontal dimension. In contrast, the Object Detection approach provided more stable and reliable measurements across all samples.
+
+Overall, as supported by Tables~\ref{tab:more_size_results01} to~\ref{tab:mean_and_std_results}, the analysis shows that the Object Detection (V2) method offers improved precision and robustness for estimating mango dimensions, particularly in width estimation, making it more suitable for getting the mango's size.
 
 % Table 3: Mango Size Results
 \begin{table}[htbp]
