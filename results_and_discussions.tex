@@ -1786,6 +1786,7 @@ compare and contrast both methods.
 	\label{fig:width_cm}
 \end{figure}
 
+% todo will add explanation of the absolute and percent diff for the four graphs
 \begin{figure}[!htbp]
     \centering
     \subbottom[Absolute Difference for Length in cm]{
@@ -1810,259 +1811,6 @@ compare and contrast both methods.
     \caption{Percent and Absolute Difference between Both Methods}
     \label{fig:percent_absolute_diff}
 \end{figure}
-
-% todo will add explanation of the absolute and percent diff for the four graphs
-
-\section{Formula with User Priority } \label{sec:userPriorityFormula}
-
-The Figures \ref{fig:bruises-only-input}, \ref{fig:ripeness-bruises-only-input} and 
-\ref{fig:ripeness-only-input} are explained in this section where the inputted weight
-values are all real number since negative and imaginary number are not allowed. The
-purpose of this section is to demonstrate the different possible cases of using 
-the zero value in the user priority.
-
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{/priority/bruises-only}
-	\caption{Only Bruises as a None Zero Value}
-	\label{fig:bruises-only-input}
-\end{figure}
-
-An example of where the user only prioritizes bruises is shown on Figure~\ref{fig:bruises-only-input}.
-This implies that the user disregards the ripeness and the size of the Carabao mangoes 
-by setting the input priority value to zero.
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{/priority/ripeness-and-bruises-only}
-	\caption{Only Ripeness and Bruises as a None Zero Value}
-	\label{fig:ripeness-bruises-only-input}
-\end{figure}
-
-Another example shown on Figure~\ref{fig:ripeness-bruises-only-input} shows where the user only
-prioritized two mango charactgeristics which are the bruises and the ripeness. This is because 
-the user set the size to zero. As such when grading the mangoes, it would still show the prediction
-of the size however when grading the Carabao mango it would disregard the size in its calculation.
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{/priority/ripeness-only}
-	\caption{Only Ripeness as a None Zero Value}
-	\label{fig:ripeness-only-input}
-\end{figure}
-
-Another similar user priority input to Figure~\ref{fig:bruises-only-input} is 
-Figure~\ref{fig:ripeness-only-input} where it only prioritizes one parameter which is the ripeness.
-Furthermore, notice the range of values for each grade has a maximum of 3.00 and a minimum of 1.00.
-This is because the input weight of the ripeness is 1.0 meaning that the possible values are 1.00, 2.00, and 3.00.
-
-\section{Physical Prototype} \label{sec:physicalPrototype}
-
-For the physical prototype, there are two main parts which are the image acquisition system and
-the conveyor belt. Both of these parts are being controllered by an \acr{RPi} through a python script.
-For the first version of the prototype, Figure~\ref{fig:v1_prototype} shows three images which are 
-the top view, entrance view of the Carabao mangoes and the side view of the prototype.
-Notice that it is a barebone prototype made out of plywood with four rollers and black matte sheets.
-to move the Carabao mangoes. There are two DC motors controlling each conveyor belt.
-As seen on the side of the prototype on Figure~\ref{fig:v1_prototype}, the black sheet is not 
-flexible and too stiff to be able to move it with the mangoes. This means that the conveyor 
-belt would not be able to rotate and move the Carabao mangoes consistency.
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Prototype Top View]{
-        \includegraphics[width=0.45\textwidth]{top_view}
-        \label{fig:top_view}
-    }
-    \hfill
-    \subbottom[Entrance Conveyor Belt View]{
-        \includegraphics[width=0.45\textwidth]{side1}
-        \label{fig:side1}
-    }
-    \vfill
-    \subbottom[Side Conveyor Belt View]{
-        \includegraphics[width=0.45\textwidth]{side2}
-        \label{fig:side2}
-    }
-    \caption{Version 1 of the Prototype}
-    \label{fig:v1_prototype}
-\end{figure}
-
-% todo explain the shown electronics such as dc motors, relays breadboard, rpi etc
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Prototype Main Hardware]{
-        \includegraphics[width=0.45\textwidth]{schematic1}
-        \label{fig:schematic1}
-    }
-    \hfill
-    \subbottom[DC Motor and Pulley]{
-        \includegraphics[width=0.45\textwidth]{DC_Motor_Pulley}
-        \label{fig:dc_motor_pulley}
-    }
-    \vfill
-    \subbottom[LED Lights and Camera Module]{
-        \includegraphics[width=0.45\textwidth]{camera}
-        \label{fig:camera}
-    }
-    \caption{Hardware View}
-    \label{fig:hardware_view}
-\end{figure}
-
-% todo explain the improved prototype version 2 which are the conveyor belt and enclosing the 
-% prototype on the same black sheet
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Side View of Improved Prototype]{
-        \includegraphics[width=0.45\textwidth]{new-side-view}
-        \label{fig:new-side-view}
-    }
-    \hfill
-    \subbottom[Top View of Improved Prototype]{
-        \includegraphics[width=0.45\textwidth]{new-top-view}
-        \label{fig:new-top-view}
-    }
-    \caption{Version 2: Improved Prototype}
-    \label{fig:v2_prototype}
-\end{figure}
-
-\section{Software Application}
-
-For the software application inside the \acr{RPi}, CustomTkinter is used as the main 
-GUI for the python application. For the versions, there are two main versions. 
-The first version which involves a fully automated capturing of both sides of the Carabao mango
-and the second version which uses a part by part picturing and moving of mangoes. 
-% todo explain the features of the intial prorotype and its problems
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Version 1.1]{
-        \includegraphics[width=0.45\textwidth]{UI_v1}
-        \label{fig:ui_v1}
-    }
-    \hfill
-    \subbottom[Version 1.2]{
-        \includegraphics[width=0.45\textwidth]{UI_v2}
-        \label{fig:ui_v2}
-    }
-    \vfill
-    \subbottom[Version 1.3]{
-        \includegraphics[width=0.45\textwidth]{UI_v3}
-        \label{fig:ui_v3}
-    }
-
-    \caption{Version 1 of the RPi's User Interface}
-    \label{fig:user_interface_v1}
-\end{figure}
-
-% todo explain the second version and its upgrades to the first version
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Version 2.1 with Background Image]{
-        \includegraphics[width=0.45\textwidth]{/ui/ui-version1}
-        \label{fig:app_v4}
-    }
-    \hfill
-    \subbottom[Version 2.2 without Background Image]{
-        \includegraphics[width=0.45\textwidth]{/ui/ui-version2}
-        \label{fig:app_v5}
-    }
-    \caption{Version 2 of the RPi's User Interface}
-    \label{fig:ui_main_v2}
-\end{figure}
-
-% todo explain how it sorts the Carabao mango images
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Version 1]{
-        \includegraphics[width=0.45\textwidth]{sort_tree_1}
-        \label{fig:sort_tree}
-    }
-    \hfill
-    \subbottom[Version 2]{
-        \includegraphics[width=0.45\textwidth]{sort_folder}
-        \label{fig:sort_folder}
-    }
-    \vfill
-    \subbottom[Version 3]{
-        \includegraphics[width=0.45\textwidth]{sort_input_prior}
-        \label{fig:input_folder_prior}
-    }
-
-    \caption{Mango Image Sorted}
-    \label{fig:img_sorted}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[All Zero Error]{
-        \includegraphics[width=0.45\textwidth]{/errors/all-zero}
-        \label{fig:all-zero}
-        \includegraphics[width=0.45\textwidth]{/errors/input-error}
-    }
-    \hfill
-    \subbottom[Input Error]{
-        \label{fig:input-error}
-    }
-    \vfill
-    \subbottom[Null Button Error]{
-        \includegraphics[width=0.45\textwidth]{/errors/null-button}
-        \label{fig:null-button}
-    }
-
-    \caption{Error Messages}
-    \label{fig:error-handel-1}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Not Number at Conveyor Time]{
-        \includegraphics[width=0.45\textwidth]{/errors/letter-time}
-        \label{fig:letter-time}
-    }
-    \hfill
-    \subbottom[Not Number at Priority]{
-        \includegraphics[width=0.45\textwidth]{/errors/letter-priority}
-        \label{fig:letter-priority}
-    }
-    \caption{Error message for Letter as Input}
-    \label{fig:error-handel-2}
-\end{figure}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{/ui/help}
-	\caption{Help Page UI}
-	\label{fig:help_page}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Green and Unbruised]{
-        \includegraphics[width=0.45\textwidth]{/ripe-class/green}
-        \label{fig:green-result}
-    }
-    \hfill
-    \subbottom[Yellow\_Green and Bruised]{
-        \includegraphics[width=0.45\textwidth]{/ripe-class/yellow-green}
-        \label{fig:yellow-green-result}
-    }
-    \vfill
-    \subbottom[Yellow and Bruised]{
-        \includegraphics[width=0.45\textwidth]{/ripe-class/yellow}
-        \label{fig:yellow-result}
-    }
-
-    \caption{Sample Ripeness and Bruises Results}
-    \label{fig:ripeness-all}
-\end{figure}
-
-
-
 
 % Table 3: Mango Size Results
 \begin{table}[htbp]
@@ -2201,8 +1949,361 @@ Width Percent Difference & 3.24\% & 6.16\% & 56.89\% & 6.32\% \\
 \label{tab:mean_and_std_results}
 \end{table}
 
-\section{Summary} \label{sec:summary_results_and_discussions}
+\section{Formula with User Priority } \label{sec:userPriorityFormula}
 
+The Figures \ref{fig:bruises-only-input}, \ref{fig:ripeness-bruises-only-input} and 
+\ref{fig:ripeness-only-input} are explained in this section where the inputted weight
+values are all real number since negative and imaginary number are not allowed. The
+purpose of this section is to demonstrate the different possible cases of using 
+the zero value in the user priority.
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{/priority/bruises-only}
+	\caption{Only Bruises as a None Zero Value}
+	\label{fig:bruises-only-input}
+\end{figure}
+
+An example of where the user only prioritizes bruises is shown on Figure~\ref{fig:bruises-only-input}.
+This implies that the user disregards the ripeness and the size of the Carabao mangoes 
+by setting the input priority value to zero.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{/priority/ripeness-and-bruises-only}
+	\caption{Only Ripeness and Bruises as a None Zero Value}
+	\label{fig:ripeness-bruises-only-input}
+\end{figure}
+
+Another example shown on Figure~\ref{fig:ripeness-bruises-only-input} shows where the user only
+prioritized two mango charactgeristics which are the bruises and the ripeness. This is because 
+the user set the size to zero. As such when grading the mangoes, it would still show the prediction
+of the size however when grading the Carabao mango it would disregard the size in its calculation.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{/priority/ripeness-only}
+	\caption{Only Ripeness as a None Zero Value}
+	\label{fig:ripeness-only-input}
+\end{figure}
+
+Another similar user priority input to Figure~\ref{fig:bruises-only-input} is 
+Figure~\ref{fig:ripeness-only-input} where it only prioritizes one parameter which is the ripeness.
+Furthermore, notice the range of values for each grade has a maximum of 3.00 and a minimum of 1.00.
+This is because the input weight of the ripeness is 1.0 meaning that the possible values are 1.00, 2.00, and 3.00.
+
+\section{Physical Prototype} \label{sec:physicalPrototype}
+
+\subsection{Version 1: Barebone with Black Conveyor Sheets}
+
+For the physical prototype, there are two main parts which are the image acquisition system and
+the conveyor belt. Both of these parts are being controllered by an \acr{RPi} through a python script.
+Note that the DC motors, 4 channel relay, and camera can be seen on Figure~\ref{fig:hardware_view}.
+For the first version of the prototype, Figure~\ref{fig:v1_prototype} shows three images which are 
+the top view, entrance view of the Carabao mangoes and the side view of the prototype.
+Notice that it is a barebone prototype made out of plywood with four rollers and black matte sheets.
+to move the Carabao mangoes. There are two DC motors controlling each conveyor belt.
+As seen on the side of the prototype on Figure~\ref{fig:v1_prototype}, the black sheet is not 
+flexible and too stiff to be able to move it with the mangoes. This means that the conveyor 
+belt would not be able to rotate and move the Carabao mangoes consistency.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Prototype Top View]{
+        \includegraphics[width=0.45\textwidth]{top_view}
+        \label{fig:top_view}
+    }
+    \hfill
+    \subbottom[Entrance Conveyor Belt View]{
+        \includegraphics[width=0.45\textwidth]{side1}
+        \label{fig:side1}
+    }
+    \vfill
+    \subbottom[Side Conveyor Belt View]{
+        \includegraphics[width=0.45\textwidth]{side2}
+        \label{fig:side2}
+    }
+    \caption{Version 1 of the Prototype}
+    \label{fig:v1_prototype}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Prototype Main Hardware]{
+        \includegraphics[width=0.45\textwidth]{schematic1}
+        \label{fig:schematic1}
+    }
+    \hfill
+    \subbottom[DC Motor and Pulley]{
+        \includegraphics[width=0.45\textwidth]{DC_Motor_Pulley}
+        \label{fig:dc_motor_pulley}
+    }
+    \vfill
+    \subbottom[LED Lights and Camera Module]{
+        \includegraphics[width=0.45\textwidth]{camera}
+        \label{fig:camera}
+    }
+    \caption{Hardware View}
+    \label{fig:hardware_view}
+\end{figure}
+
+\subsection{Version 2: Enclosed with White Conveyor Sheets and Physical Sorter}
+% todo explain the improved prototype version 2 which are the conveyor belt and enclosing the 
+% prototype on the same black sheet
+For the second version of the prototype as seen on
+Figure~\ref{fig:v2_prototype}, improvements such as 
+replacing the black sheet to a white sheet which improved the
+efficiency and reduced the frequncy of requiring maintenance.
+Another improvement for this version is enclosing the 
+electronic devices in a container. This helps protect it from
+unwanted liquid spills. For the sorting of mangoes,
+the conveyors would sort it into three grades
+which are Grade A, B, and C.
+It would first go through the longest conveyor and the 
+the shorter conveyor depending on the grade.
+This is because if the Grade is A (which is the highest),
+then it would exit to the east of the prototype
+and not go through the shorter conveyor belt.
+For Grade B, it would go through the west side and then north of 
+the prototype.
+Finally for grade C, it would go through west side and then south
+of the prototype.
+The code for this can be seen on Listing~\ref{lst:mango_sorter}.
+
+\begin{lstlisting}[
+float=h,
+caption=Sorting the Mangoes, 
+label=lst:mango_sorter,
+language=TeX,
+frame=single]
+        if ave_letter.upper()  == 'A':
+            button_state_array = [0, 1, 0, 0]
+            print(button_state_array)
+            self.sort.set_motors(button_state_array)
+        elif ave_letter.upper() == 'B':
+            button_state_array = [1, 0, 1, 0]
+            print(button_state_array)
+            self.sort.set_motors(button_state_array)
+        elif ave_letter.upper() == 'C':
+            button_state_array = [1, 0, 0, 1]
+            print(button_state_array)
+            self.sort.set_motors(button_state_array)
+\end{lstlisting}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Side View of Improved Prototype]{
+        \includegraphics[width=0.45\textwidth]{new-side-view}
+        \label{fig:new-side-view}
+    }
+    \hfill
+    \subbottom[Top View of Improved Prototype]{
+        \includegraphics[width=0.45\textwidth]{new-top-view}
+        \label{fig:new-top-view}
+    }
+    \vfill
+    \subbottom[Inside Hardware View]{
+        \includegraphics[width=0.45\textwidth]{/sorting/hardware}
+        \label{fig:T_sort}
+    }
+    \hfill
+    \subbottom[Sorting Mangoes Using Two Conveyor Belts]{
+        \includegraphics[width=0.45\textwidth]{/sorting/T}
+        \label{fig:T_sort}
+    }
+    \caption{Version 2: Improved Prototype}
+    \label{fig:v2_prototype}
+\end{figure}
+
+\section{Software Application}
+
+\subsection{Version 1: Progress Bar with Black Conveyor Sheets}
+For the software application inside the \acr{RPi}, CustomTkinter is used as the main 
+GUI for the python application. For the versions, there are two main versions. 
+The first version which involves a fully automated capturing of both sides of the Carabao mango
+and the second version which uses a part by part picturing and moving of mangoes. 
+
+For this version, some of the initial UI design are shown on 
+Figure~\ref{fig:user_interface_v1}. There are two three main columns which are 
+the live video feed with a progress bar,
+two sides of the mango cheek, and the control panel
+with the different buttons such as the user priority, and reset, stop, export,
+and help. The approach to this one involves fully automatically 
+moving and grading the mango which caused the grading to be inconsistent 
+because it was not able to fully rotate the mango at most cases.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Version 1.1]{
+        \includegraphics[width=0.45\textwidth]{UI_v1}
+        \label{fig:ui_v1}
+    }
+    \hfill
+    \subbottom[Version 1.2]{
+        \includegraphics[width=0.45\textwidth]{UI_v2}
+        \label{fig:ui_v2}
+    }
+    \vfill
+    \subbottom[Version 1.3]{
+        \includegraphics[width=0.45\textwidth]{UI_v3}
+        \label{fig:ui_v3}
+    }
+
+    \caption{Version 1 of the RPi's User Interface}
+    \label{fig:user_interface_v1}
+\end{figure}
+
+\subsection{Version 2: Improved UI without Progress Bar}
+% todo explain the second version and its upgrades to the first version
+For the second version of the software as seen on Figure~\ref{fig:ui_main_v2}, 
+an overhall of the 
+UI design was done with the hopes that it would be cleaner
+and intuitive. Some features such as the progress bar was removed because 
+this method uses a step by step approach for rotating the mango
+where the user would rotate it using the buttons and 
+how long they want to move the conveyors. Likewise, the stop buttons
+for all the conveyors are added.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Version 2.1 with Background Image]{
+        \includegraphics[width=0.45\textwidth]{/ui/ui-version1}
+        \label{fig:app_v4}
+    }
+    \hfill
+    \subbottom[Version 2.2 without Background Image]{
+        \includegraphics[width=0.45\textwidth]{/ui/ui-version2}
+        \label{fig:app_v5}
+    }
+    \vfill
+    \subbottom[Version 2.3 with Stop Sorting Button]{
+      \includegraphics[width=0.45\textwidth]{/sorting/stop_sort}
+        \label{fig:stop_sort_button}
+    }
+
+    \caption{Version 2 of the RPi's User Interface}
+    \label{fig:ui_main_v2}
+\end{figure}
+
+% todo explain how it sorts the Carabao mango images
+\subsection{Mango Image Sorting}
+Figure~\ref{fig:img_sorted} shows the 
+method sorting the mango images through
+a directory containing the year, date, and time.
+Likewise, inside that directory, is the three 
+possible grades from A to C and the input priorities
+of the user.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Folder Tree Directory of Each Grade]{
+        \includegraphics[width=0.45\textwidth]{sort_tree_1}
+        \label{fig:sort_tree}
+    }
+    \hfill
+    \subbottom[Directory with Year, Date, and Time]{
+        \includegraphics[width=0.45\textwidth]{sort_folder}
+        \label{fig:sort_folder}
+    }
+    \vfill
+    \subbottom[Saved Input Priority/Weights]{
+        \includegraphics[width=0.45\textwidth]{sort_input_prior}
+        \label{fig:input_folder_prior}
+    }
+
+    \caption{Mango Image Data Sorting}
+    \label{fig:img_sorted}
+\end{figure}
+
+\subsection{Error Handling}
+Figure~\ref{fig:error-handel-1} shows the three possible 
+error messages when the user inputs all zero in the user 
+priority, presses all and none of the buttons when moving
+the conveyor.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[All Zero Error]{
+        \includegraphics[width=0.45\textwidth]{/errors/all-zero}
+        \label{fig:all-zero}
+    }
+    \hfill
+    \subbottom[Input Error]{
+        \includegraphics[width=0.45\textwidth]{/errors/input-error}
+        \label{fig:input-error}
+    }
+    \vfill
+    \subbottom[Null Button Error]{
+        \includegraphics[width=0.45\textwidth]{/errors/null-button}
+        \label{fig:null-button}
+    }
+
+    \caption{Error Messages}
+    \label{fig:error-handel-1}
+\end{figure}
+
+In the case the user inputs a a letter or negative value,
+then the not number error message would pop up as shown in
+Figure~\ref{fig:error-handel-2}.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Not Number at Conveyor Time]{
+        \includegraphics[width=0.45\textwidth]{/errors/letter-time}
+        \label{fig:letter-time}
+    }
+    \hfill
+    \subbottom[Not Number at Priority]{
+        \includegraphics[width=0.45\textwidth]{/errors/letter-priority}
+        \label{fig:letter-priority}
+    }
+    \caption{Error message for Letter as Input}
+    \label{fig:error-handel-2}
+\end{figure}
+
+\subsection{Sample UI Outputs}
+Figure~\ref{fig:help_page} shows the help page containing information
+about the button and their purpose to assist the user
+navigate and utilizing the application. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{/ui/help}
+	\caption{Help Page UI}
+	\label{fig:help_page}
+\end{figure}
+
+Figure~\ref{fig:ripeness-all} shows an example output
+for each possible case of green, yellow\_green, and yellow
+ripeness classification together with bruise and not bruised and
+small and medium size mangoes. 
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Green and Unbruised]{
+        \includegraphics[width=0.45\textwidth]{/ripe-class/green}
+        \label{fig:green-result}
+    }
+    \hfill
+    \subbottom[Yellow\_Green and Bruised]{
+        \includegraphics[width=0.45\textwidth]{/ripe-class/yellow-green}
+        \label{fig:yellow-green-result}
+    }
+    \vfill
+    \subbottom[Yellow and Bruised]{
+        \includegraphics[width=0.45\textwidth]{/ripe-class/yellow}
+        \label{fig:yellow-result}
+    }
+
+    \caption{Sample Ripeness and Bruises Results}
+    \label{fig:ripeness-all}
+\end{figure}
+
+
+
+\section{Summary} \label{sec:summary_results_and_discussions}
+% todo add summary to this results and discussion
 Provide the gist of this chapter such that it reflects the contents and the message. This is a compile test
 \\
 
