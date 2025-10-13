@@ -14,23 +14,23 @@ Likewise, the purpose of this chapter is to go through the important theories in
 The theoretical framework seen in figure \ref{fig:theoreticalDiagram1} 
 follows the IPO (Input-Process-Output) Model for a Carabao Mango Sorting
 System. The Input section includes user-defined priority values for size,
-ripeness, and bruises, along with a single mango for analysis. The Process
+\gls{ripeness}, and \gls{bruises}, along with a single mango for analysis. The Process
 section highlights the use of a machine learning algorithm and a
 user-priority-based formula to classify the mango. The Output consists of the
 mango’s grade, predicted size, ripeness, and bruises. Below the IPO model, the
 diagram categorizes variables into three groups: Independent (mango’s size,
 ripeness, and bruises), Dependent (classification report with accuracy,
 precision, recall, and confusion matrix), and Controlled (image dataset,
-microcontroller, camera, and LED lights).
+microcontroller, camera, and \acr{LED} lights).
 
 \section{Technical Background}
 
 At its core, the system will be using machine learning concepts pertaining to
 \gls{CNN} and OpenCV, and may use other algorithms such as Naive Bayes and
-k-Nearest Neighbors to supplement the classification tasks, particularly for
+\acr{KNN} to supplement the classification tasks, particularly for
 assessing mango ripeness, bruise detection, and size determination. The system
 will be built on an embedded framework, integrating a Raspberry Pi
-microcontroller to control the Raspberry Pi camera, actuators, LED lights, and
+microcontroller to control the Raspberry Pi camera, actuators, \acr{LED} lights, and
 motors. A user-friendly GUI will also be utilized to ensure users can customize
 the prioritization of the mango sorting system.
 
@@ -80,11 +80,9 @@ Object size calculation is the calculation of a certain object's true size from
 image data. This is essential in computer vision systems to efficiently process
 object features in real-time. In this research, the size of the Carabao mango is
 estimated through image measurement techniques based on geometric principles and
-camera calibration.
+camera calibration.  
 
 % (pixel_dimension * distance_camera_to_object) / focal_length_pixels = real_world_dimension
-The size of the mango can be determined given:
-
 \begin{equation}
 	\label{eq:objectSizeCalculation}
 	\text{Real World Dimension} = \frac{\text{Pixel Dimension} \times \text{Distance from Camera to Object}}{\text{Focal Length}}
@@ -97,7 +95,10 @@ The size of the mango can be determined given:
 where \gls{not:real_world_dimension} is the real world dimension of the object,
  \gls{not:pixel_dimension} is the pixel dimension of the object, 
  \gls{not:distance_from_cam_to_object} is the distance from the camera to the object,
-  and \gls{not:focal_length} is the focal length of the camera.
+  and \gls{not:focal_length} is the focal length of the camera. This relationship 
+  follows from the pinhole camera model, where the real-world  
+  dimension is proportional to the image dimension and the ratio
+   of distance to focal length \cite{badali2005scale}.
 
 After capture and preprocessing of the image, the binary image so obtained is
 processed with contour detection to find the largest object, which is assumed to

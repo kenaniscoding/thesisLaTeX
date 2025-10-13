@@ -56,11 +56,11 @@
 \newcommand{\documentAdviser}{Reggie C. Gustilo}
 
 \newcommand{\examinerChairTitle}{Dr.} 
-\newcommand{\examinerChair}{Donable de Veas Abuan}
+\newcommand{\examinerChair}{Donabel de Veas Abuan}
 
 % Sort in alphabetically ascending manner the surnames of the examiners
-\newcommand{\examinerATitle}{Engr.} 
-\newcommand{\examinerA}{Jose Martin Maningo}
+\newcommand{\examinerATitle}{Dr.} 
+\newcommand{\examinerA}{Ronnel P. Agulto}
 
 \newcommand{\examinerBTitle}{Dr.} 
 \newcommand{\examinerB}{Alexander Co Abad}
@@ -97,7 +97,7 @@
 
 \newcommand{\documentTitle}{Non-Destructive Carabao Mango Sorter and Grader based on Physical Characteristics using Machine Learning} % put tilde (~) between words to indicate non-breaking adjacent words
 
-\newcommand{\keywords}{Machine Learning, Carabao Mangoes, Sorting and Grading Mangoes, Machine Vision, Microcontroller}
+\newcommand{\keywords}{\glspl{machine learning}, \gls{Carabao mango}, \glspl{bruises}, \glspl{ripeness}, \glspl{microcontroller}}
 
 \newcommand{\finalDefenseDate}{\usdate\today} % replace ''\usdate\today'' by your final defense date; you may need to use non-breaking space with the use of tildes (~); if so, do not remove the tildes in order to not break the date
 
@@ -311,12 +311,12 @@
 	\cleardoublepage
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\chapter{Answers to Questions to this \documentType}
-	%\startcontents[chapters]
-	%\Mprintcontents 
-	\include{answers_to_questions}
-	%\stopcontents[chapters]
-	\cleardoublepage
+	% \chapter{Answers to Questions to this \documentType}
+	% %\startcontents[chapters]
+	% %\Mprintcontents 
+	% \include{answers_to_questions}
+	% %\stopcontents[chapters]
+	% \cleardoublepage
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\chapter{Revisions to the Proposal} 
@@ -332,14 +332,27 @@
 	%\stopcontents[chapters]
 	\cleardoublepage
 	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\chapter{Revisions to the Final} 
-	\label{ch:revisions_to_the_final}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter{Questionaire to the Expert} 
+	\label{ch:questionaire_to_expert}
 	%\startcontents[chapters]
 	%\Mprintcontents  
-	\include{revisions_to_the_final}
-	%\stopcontents[chapters]	
+	%\include{revisions_to_the_proposal}
+	\includepdf[pages={1-10},
+	offset=3.5mm -10mm,%
+	scale=0.75,%
+	pagecommand={},
+	]{./figure/questions.pdf} % Includes all pages (1 to 5)
+	%\stopcontents[chapters]
 	\cleardoublepage
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% \chapter{Revisions to the Final} 
+	% \label{ch:revisions_to_the_final}
+	% %\startcontents[chapters]
+	% %\Mprintcontents  
+	% \include{revisions_to_the_final}
+	% %\stopcontents[chapters]	
+	% \cleardoublepage
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%\chapter{Usage Examples} 
@@ -368,17 +381,17 @@
 	\fi
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\chapter{Article Paper(s)} 
-	\label{ch:article_paper}
-	\cleardoublepage
-	{
-	\ClearWallPaper
-	\includepdf[pages=-,%
-	scale=1.0,%
-	frame,%
-	]
-	{article_forum_paper.pdf}
-	}
-	\cleardoublepage
+	% \chapter{Article Paper(s)} 
+	% \label{ch:article_paper}
+	% \cleardoublepage
+	% {
+	% \ClearWallPaper
+	% \includepdf[pages=-,%
+	% scale=1.0,%
+	% frame,%
+	% ]
+	% {article_forum_paper.pdf}
+	% }
+	% \cleardoublepage
 
 \end{document}

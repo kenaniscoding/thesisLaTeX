@@ -28,7 +28,7 @@
 			
 			\Paste{GO} & 
 			\begin{enumerate}
-				\item Hardware design: Build an image acquisition system with a conveyor belt, LED lights, and Raspberry Pi Camera
+        \item Hardware design: Build an image acquisition system with a conveyor belt, \acr{LED} lights, and Raspberry Pi Camera
 				\item Software design: Coded a Raspberry Pi application to grade and sort the Carabao mangoes
 			\end{enumerate} 
 			& Sec.~\ref{sec:researchApproach} on p.~\pageref{sec:researchApproach} \\ \hline
@@ -72,14 +72,145 @@ The methodology for this research outlines the development of the Carabao Mango 
 
 \section{Research Approach} \label{sec:researchApproach}
 This study applies the experimental approach for research in order to develop and properly test the proposed system. The experimental approach of the methodology will allow the researchers to fine-tune the parameters and other factors in the classification of mangoes in order to get optimal results with high accuracy scores while maintaining the quality of the mangoes. This approach will also allow for real-time data processing and classification which will improve the previous static grading systems.
+To efficiently design and build the prototype, the researchers employed a Scrum agile methodology for managing the two main clusters of the prototype which are the
+software and hardware design.
 
 \section{Hardware Design} \label{sec:hardwareDesign}
-The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller (Raspberry Pi 4b), coordinating actions of all components. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient. 
+The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller \acr{RPi}, coordinating actions of all components. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient. 
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Left View]{
+        \includegraphics[width=0.45\textwidth]{/dimensions/left}
+        \label{fig:left-view}
+    }
+    \hfill
+    \subbottom[Top View]{
+        \includegraphics[width=0.45\textwidth]{/dimensions/top}
+        \label{fig:top-view}
+    }
+    \vfill
+    \subbottom[Right View]{
+        \includegraphics[width=0.45\textwidth]{/dimensions/zoom}
+        \label{fig:right-view}
+    }
+    \caption{Image Acquision Dimensions}
+    \label{fig:img-acquision-design}
+\end{figure}
 
 \section{Software Design} 
 For the programming language used for the prototype and training and testing the CNN model, Python was used for training and testing the CNN model and it was also used in the microcontroller to run the application containing the UI and CNN model. PyTorch was the main library used in using the EfficientNet model that is used in classifying the ripeness and bruises of the mango. Likewise, tkinter is the used library when designing the UI in Python.
 
 Furthermore, the rest of the software components are of utmost importance to mango classification. Image processing algorithms in OpenCV and CNN models extract features such as color, size, and bruises that are known to determine quality parameters of mangoes. Mangoes are classified based on ripeness and defects by using machine learning algorithms, which further enhances accuracy using deep learning techniques. A user interface (UI) is designed for users to control and observe the system in real time. Finally, the interface programming of the microcontroller provides the necessary synchronization between sensors, actuators, and motors throughout the sorting operation scenario.
+\subsection{Machine Learning Methods}
+% [o] todo: Add the explanation that we trained and tested cnn, knn, naive bayes, etc
+The processed dataset is to be then used to create models using a variety of
+machine learning methods. For a comprehensive evaluation, the processed dataset
+was used to train and test a variety of machine learning models. The training
+included Convolutional Neural Network (CNN), k-Nearest Neighbors (k-NN), Naive
+Bayes, and k-Means clustering and various Efficientnet models. This comparative
+analysis was conducted to benchmark the performance of the deep learning
+approach against traditional machine learning algorithms.
+
+\subsection{Optimizer}
+Choosing the correct optimizer critically impacts both the convergence speed and the
+generalization ability of deep neural networks. The widely used \gls{Adam} optimizer
+employs adaptive learning rates for each parameter, adjusting them according to the
+first- and second-order moments of gradients. However, Adam implements weight decay as
+a part of gradient updates, which couples regularization and optimization in a way
+that can hamper generalization. AdamW was developed to decouple weight decay from the
+adaptive gradient update. Specifically, in AdamW, weight decay is applied directly to the
+parameters after the Adam update, leading to improved generalization and often more robust
+performance in large-scale tasks. Extensive benchmark comparisons reveal that AdamW outperforms
+standard Adam, especially when it comes to image classification or language modeling tasks
+with deep architectures \citep{Loshchilov2017Decoupled}.
+
+\subsection{Data Loading Optimization}
+Efficient data loading is a vital but often underestimated aspect of deep learning.
+In frameworks like PyTorch, the num\_workers parameter of the DataLoader determines how
+many subprocesses are used to fetch batches of data in parallel. Setting
+num\_workers \textgreater 0 enables multiprocessing, which prefetches batches and keeps the GPU
+occupied without idling, especially for large datasets or CPU-intensive augmentations. When
+misconfigured, however, the CPU can become a bottleneck, or resource contention may lead
+to unexpected slowdowns. The ideal number of workers depends on many factors: CPU and
+memory resources, dataset I/O demands, and the complexity of any required preprocessing.
+Practically, practitioners start with a low value for num\_workers, gradually increasing while
+monitoring CPU utilization and GPU occupancy, always balancing throughput gains against system
+constraints \citep{Migacz2020Performance}.
+\subsection{Data Transfer Optimization}
+Data transfer from host (CPU) to device (GPU) is a significant performance
+consideration during training, particularly as model and batch sizes grow. PyTorch
+and similar frameworks provide pin\_memory and non\_blocking options to optimize these transfers.
+When data is loaded with pin\_memory=True, it is allocated in page-locked (pinned)
+memory, which prevents the operating system from swapping it to disk and enables
+direct memory access (DMA) from the GPU, reducing latency. Setting non\_blocking=True in
+transfer calls further allows these memory copies to be overlapped with computation, eliminating
+host-thread blocking and enabling concurrent initiation of multiple transfers. Together, these
+settings can cut data transfer times and better exploit GPU concurrency. However, misuse,
+such as excessive pinned memory allocation, can reduce overall system stability due to
+increased physical memory pressure \citep{Moens2024DataTransfer}.
+
+\subsection{Mixed Precision Training}
+Mixed precision training is now a near-standard approach for accelerating deep learning,
+especially on modern GPUs equipped with specialized compute units, such as NVIDIA Tensor
+Cores, that can handle reduced numerical precision efficiently. By employing 16-bit floating
+point (FP16 or BF16) arithmetic for most operations and retaining 32-bit (FP32) precision
+for critical accumulations and weight updates, mixed precision training achieves two main
+benefits: faster computation throughput and decreased memory footprint. This allows for increased
+model or batch sizes and faster experimentation cycles, while, with proper loss scaling,
+preserving model convergence and final accuracy \citep{Markidis2018TensorCore}.
+
+\subsection{Adaptive learning Rate Schedulers}
+Adaptive learning rate schedules can profoundly affect both convergence speed and the
+ability of a model to generalize. The cosine annealing schedule cyclically adjusts the
+learning rate from a maximum to a minimum according to a cosine function, periodically
+“restarting” back to the initial value. This warm restart strategy prevents the learning
+rate from decaying to zero too rapidly and encourages exploration of flatter minima in
+the loss surface, thereby enhancing generalization. Cosine annealing with restarts is widely
+cited as a simple but effective modification over static or monotonic decay schedules,
+giving superior performance across various deep learning domains from computer vision to
+language modeling \citep{Loshchilov2016SGDR}.
+
+\subsection{CrossEntropy Loss with Label Smoothing}
+Using CrossEntropy loss with label smoothing addressed the issue of overconfidence in
+predictions. Standard CrossEntropy encourages the model to assign near‑absolute probability to
+the correct class, which can lead to poor generalization, especially when classes are
+ambiguous or noisy. Label smoothing redistributes a small fraction of probability mass to
+incorrect classes, effectively softening the target distribution. This discourages the model from
+becoming overly confident, reduces variance in predictions, and improves robustness against
+mislabeled or borderline samples \citep{Guo2024LabelSmoothing, Szegedy2016Rethinking} 
+
+\subsection{Early Stopping and Checkpointing}
+Overfitting is a major concern in deep learning, as models with high
+capacity can easily memorize the training data without learning to generalize to new
+inputs. Early stopping is a widespread technique wherein training is halted when performance
+on a held-out validation set ceases to improve, rather than after a fixed number
+of epochs. This prevents the model from entering the overfitting regime. Model checkpointing
+complements early stopping by routinely saving the model’s parameters and, optionally, optimizer states,
+ensuring recoverability in the event of hardware failure and enabling the best-performing model
+on validation metrics to be retained, rather than simply the last epoch’s snapshot 
+\citep{Hussein2024EarlyStopping, Lee2024CheckQZP}.
+
+\subsection{Input Resolution}
+The spatial resolution of input images materially affects both computational cost and
+prediction accuracy in deep learning, especially for vision tasks. Higher input resolutions
+can theoretically yield better performance, as more visual detail is made available to
+the model, but this often comes at the expense of increased memory and higher
+training times, sometimes forcing smaller batch sizes and less efficient optimization. Conversely,
+reducing input resolution can dramatically decrease resource requirements, permitting faster development
+and larger batch sizes, but at a potential loss of accuracy, especially for tasks
+that demand fine-grained spatial detail \citep{Richter2020FeatureSpace}.
+
+\subsection{Regularization}
+Regularization techniques combat overfitting, and two of the most prominent in
+deep learning are dropout and drop path, also called “stochastic depth”. Dropout
+randomly deactivates a subset of neurons or weights during each training iteration,
+preventing any single unit from becoming indispensable and encouraging redundancy in representation.
+Drop path extends this principle by stochastically skipping entire layers or blocks during
+training, particularly in architectures with skip connections such as ResNet. This approach
+reduces the effective depth of the model during training while maintaining full depth at
+inference, acting as an implicit model ensemble and further strengthening generalization 
+\citep{Huang2016StochasticDepth}.
 
 \section{Data Collection Methods} \label{sec:dataset}
 % The system acquires high-resolution images of mangoes under pre-specified lighting conditions through systematic acquisition. 
@@ -90,18 +221,50 @@ Furthermore, the rest of the software components are of utmost importance to man
 % detection of characteristic features in terms of the mango. All these aspects lead to the creation of a reliable dataset 
 % for the machine learning algorithm that will allow the system to classify and grade mangoes more accurately.
 
-For the data collection, online available image datasets with Carabao mangoes were used together with the captured Carabao mango
-images. For the setup of the captured Carabao mangoes, the height of the camera to the white flat surface is 26 cm which can 
-be seen on Figure~\ref{fig:mangoImageCollection}. Furthermore,
-the S24's camera is used for capturing both cheeks of the Carabao mango. Initially, the Carabao mangoes would be unripe and green
-and each day the Carabao mangoes would be pictured until they are ripe. 
+For data collection, publicly available datasets were used along with our own
+gathered dataset. to gather the images of the mangoes the setup seen in Figure
+~\ref{fig:mangoImageCollection} was used to film the mangoes for about 5 seconds
+each side. Using a python script every 20th frame per second was extracted. The
+collected images were then sorted into the following directories for use in
+training the model: non-bruised, bruised, green, yellow-green, and yellow.
+
+
+% [o]  todo: ask francis on what software and method did he use to annotate the mangoes
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.45\textwidth, angle=-90]{camera_setup}
+    \caption{Camera Setup}
+    \label{fig:mangoImageCollection}
+\end{figure}
 
 \begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth, angle=-90]{camera_setup}
-	\caption{Carabao Mango Image Data Collection}
-	\label{fig:mangoImageCollection}
+    \centering
+    \subbottom[Boxes of Carabao Mangoes]{
+        \includegraphics[width=0.45\textwidth]{/dataset-mangoes/box-mangoes}
+        \label{fig:boxes-mangoes}
+    }
+    \hfill
+    \subbottom[Table of Carabao Mangoes]{
+        \includegraphics[width=0.45\textwidth]{/dataset-mangoes/table-mangoes}
+        \label{fig:table-mangoes}
+    }
+    \caption{Carabao Mangoes Image Dataset Collection}
+    \label{fig:image-collection}
 \end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.45\textwidth]{/dataset-mangoes/sample-frame}
+    \caption{Sample Mango Image}
+    \label{fig:sample-mango-image}
+\end{figure}
+
+For the setup of the captured Carabao mangoes, the height of the camera to the white flat surface is 26 cm which can 
+be seen on Figure~\ref{fig:mangoImageCollection}. Furthermore,
+the Samsung S24's camera is used for capturing both cheeks of the Carabao mango. Initially, the Carabao mangoes would be unripe and green
+and each day the Carabao mangoes would be pictured until they are yellow ripe. Likewise, Figure~\ref{fig:image-collection} shows
+the 8 kilogram green Carabao mangoes from the Bicol region. The same mangoes from Bicol are seen on the Figure~\ref{fig:image-collection}.
+Note that the mangoes were individually captured one at a time at both cheek sides as a video format which can be seen on Figure~\ref{fig:sample-mango-image}. 
 
 \begin{figure}[!htbp]
     \centering
@@ -125,20 +288,335 @@ and each day the Carabao mangoes would be pictured until they are ripe.
 \end{figure}
 
 \section{Testing and Evaluation Methods} \label{sec:trainandtest}
-In a bid to ensure the mango sorting and grading system is accurate and reliable, there is 
-intensive testing conducted at different levels. Unit testing is initially conducted 
-on each component separately, for instance, the conveyor belt, sensors, and cameras, to ensure 
-that each of the components works as expected when operating separately. After component testing 
-on an individual basis, integration testing is conducted to ensure communication between hardware
- and software is correct to ensure the image processing system, motors, and sorting actuators work
-  in concert as required. System testing is conducted to conduct overall system performance
-  testing in real-world conditions to ensure mangoes are accurately and efficiently sorted and graded.
+In a bid to ensure the mango sorting and grading system is accurate and
+reliable, there is intensive testing conducted at different levels. Unit testing
+is initially conducted on each component separately, for instance, the conveyor
+belt, sensors, and cameras, to ensure that each of the components works as
+expected when operating separately. After component testing on an individual
+basis, integration testing is conducted to ensure communication between hardware
+and software is correct to ensure the image processing system, motors, and
+sorting actuators work in concert as required. System testing is conducted to
+conduct overall system performance testing in real-world conditions to ensure
+mangoes are accurately and efficiently sorted and graded.
 
-  
+% [o] todo put the specs of daniel laptop here for training
+
+For the training everything was done on laptop with the specific model: Ph16-71
+acer predator helios 16 2023. The technical specifications of this particular
+model I9 13900hx Rtx4070 8gb vram 32gb 5600mhz ddr5 ram
+
+\subsection{Data Augmentation and Splitting}
+For the used methods to increase the Carabao mango image dataset, data augmentation techniques such as rotation, flipping, Gaussian blur, brightness adjustment,
+noise, crop, and resizing of the images were done.
+Note that the split ratio of the dataset is 70-15-15 where it refers to the training, testing, and validation as seen on the Listing~\ref{lst:datasplit_logs}.
+
+The dataset for mango classification was organized into five categories: bruised, not bruised, green, 
+yellow-green, and yellow. To ensure robust model training and evaluation, the dataset was initially 
+split into training (70\%), validation (15\%), and test (15\%) sets using PyTorch’s automated splitting 
+functions. Following standard practice in deep learning (Perez, Wang, 2017), only the training set was 
+augmented to increase sample diversity and improve generalization, while 
+the validation and test sets remained unaltered to preserve their role as unbiased evaluation benchmarks.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Training Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/train_ripeness}
+        \label{fig:cnn_train_ripe}
+    }
+    \hfill
+    \subbottom[Test Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/test_ripeness}
+        \label{fig:cnn_test_ripe}
+    }
+    \vfill
+    \subbottom[Validation Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/valid_ripeness}
+        \label{fig:cnn_valid_ripe}
+    }
+
+    \caption{CNN Ripeness 70-15-15 Image Datasplit}
+    \label{fig:ripeness_cnn_datasplit}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Training Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/train_bruises}
+        \label{fig:cnn_train_bruises}
+    }
+    \hfill
+    \subbottom[Test Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/test_bruises}
+        \label{fig:cnn_test_bruises}
+    }
+    \vfill
+    \subbottom[Validation Dataset]{
+        \includegraphics[width=0.45\textwidth]{method/valid_bruises}
+        \label{fig:cnn_valid_bruises}
+    }
+
+    \caption{CNN Bruises 70-15-15 Image Datasplit}
+    \label{fig:bruises_cnn_datasplit}
+\end{figure}
+
+The dataset for mango classification was organized into five categories: 
+bruised, not bruised, green, yellow-green, and yellow. To ensure robust model
+training and evaluation, the dataset was initially split into training (70\%), 
+validation (15\%), and test (15\%) sets using PyTorch’s automated splitting 
+functions. Following standard practice in deep learning \cite{perez2017effectivenessdataaugmentationimage}
+, only the training set was augmented to increase sample diversity and improve 
+generalization, while the validation and test sets remained unaltered to 
+preserve their role as unbiased evaluation benchmarks.
+
+The validation set contains a balanced representation of the five mango classes. 
+In the bruise-based categories shown on Table~\ref{fig:ripeness_cnn_datasplit}, the 
+distribution shows slightly more bruised samples ($\sim$260) compared to not bruised 
+($\sim$240). On the other hand, for the ripeness-based categories as shown in 
+Tables~\ref{fig:bruises_cnn_datasplit}, 
+green has the highest count ($\sim$250), followed by yellow-green ($\sim$175), and yellow 
+($\sim$125).
+This distribution ensures that the validation set provides a fair assessment of the 
+model’s performance across both damage-related and ripeness-related classifications.
+
+The test set mirrors the validation set in structure, maintaining proportional 
+representation across classes. Approximately 260 bruised samples and ($\sim$240) not 
+bruised samples are included as seen in Table~\ref{fig:ripeness_cnn_datasplit}. 
+For the ripeness categories seen 
+in Table~\ref{fig:bruises_cnn_datasplit}, green ($\sim$225), yellow-green ($\sim$175), and 
+yellow ($\sim$125) are represented. This balanced distribution allows for reliable final
+evaluation of the trained CNN model, ensuring that results are not biased toward any
+single class.
+
+
+The training set underwent augmentation to artificially expand the dataset and introduce variability. 
+Augmentation techniques included transformations such as rotation, flipping, scaling, and brightness 
+adjustments. 
+After augmentation, the dataset contained approximately 5,100 bruised and 4,900 not
+bruised samples as seen in Table~\ref{fig:bruises_cnn_datasplit}. 
+For the ripeness categories, green had the highest representation ($\sim$4,200), followed
+by yellow-green ($\sim$3,400), and yellow ($\sim$2,600) as seen in Table~\ref{fig:ripeness_cnn_datasplit}. 
+This augmentation step increased the training set size substantially, shifting the 
+dataset distribution from 70-15-15 to approximately 90-5-5. 
+Such a shift is expected, as augmentation only affects the training set, thereby 
+increasing its relative proportion.
+
+Augmenting only the training set is a widely accepted best practice in deep learning. 
+According to \citet{ShortenKhoshgoftaar2019}, data augmentation enhances model robustness by
+simulating real-world variability, but applying it to validation or test sets would artificially
+inflate accuracy by exposing the model to transformed versions of already-seen data. 
+Similarly, \citet{Goodfellow-et-al-2016} emphasize that evaluation datasets must remain unseen, 
+original, and unaltered to provide a true measure of generalization. 
+\citet{perez2017effectivenessdataaugmentationimage} further demonstrate that augmentation is
+most effective when applied exclusively to training data, as it improves performance without
+compromising the integrity of evaluation.
+
+The dataset preparation process therefore ensures that the CNN model is trained on a large,
+diverse, and augmented training set, while validation and test sets remain unaltered and
+representative. 
+This methodology aligns with established best practices in computer vision research,
+supporting both robust training and fair evaluation of the mango classification model
+
+\begin{lstlisting}[
+float=h,
+caption=Datasplit Logs, 
+label=lst:datasplit_logs,
+language=TeX,
+frame=single]
+Class Mapping:
+------------------------------
+green        -> ripeness/green
+yellow       -> ripeness/yellow
+yellow_green -> ripeness/yellow_green
+bruised      -> bruises/bruised
+unbruised    -> bruises/not_bruised
+Splitting dataset into hierarchical structure...
+Processing green -> ripeness/green
+  Train: 1225, Val: 262, Test: 263
+Processing yellow -> ripeness/yellow
+  Train: 616, Val: 132, Test: 132
+Processing yellow_green -> ripeness/yellow_green
+  Train: 935, Val: 200, Test: 201
+Processing bruised -> bruises/bruised
+  Train: 1363, Val: 292, Test: 293
+Processing unbruised -> bruises/not_bruised
+  Train: 1143, Val: 245, Test: 246
+Applying massive augmentation to generate 10000 additional images...
+Total augmentation combinations available: 309
+Original training images: 6832
+Total augmented images created: 13664
+Target was: 10000
+
+Dataset Statistics:
+============================================================
+
+RIPENESS Category:
+----------------------------------------
+  green        - Train: 7830, Val:  488, Test:  478
+  yellow       - Train: 4010, Val:  242, Test:  248
+  yellow_green - Train: 6130, Val:  376, Test:  376
+  Subtotal     - Train: 17970, Val: 1106, Test: 1102
+
+BRUISES Category:
+----------------------------------------
+  bruised      - Train: 8820, Val:  526, Test:  538
+  not_bruised  - Train: 7370, Val:  446, Test:  450
+  Subtotal     - Train: 16190, Val:  972, Test:  988
+
+============================================================
+TOTAL        - Train: 34160, Val: 2078, Test: 2090
+Ratios       - Train: 89.1%, Val: 5.4%, Test: 5.5%
+
+Dataset processing complete! Output saved to: E:\dir
+
+========================================
+\end{lstlisting} 
+
+\subsection{Comparative Test of CNN Models}
+
+To identify the most suitable CNN architecture for 
+grading Carabao mangoes, 
+multiple CNN models were evaluated under fixed experimental parameters. 
+Each model was trained for 15 epochs with an input image size of 224 × 224 pixels, a
+batch size of 32, and the \acr{Adam} optimizer set at a learning rate of 0.001.
+ Data preprocessing included resizing, normalization using ImageNet mean and standard
+ deviation, and augmentation techniques such as random horizontal and vertical flips, 
+ random rotations, and Gaussian blur, which were applied exclusively to the 
+ training set. 
+The validation and test sets remained unaugmented to ensure unbiased evaluation.
+
+
+The performance of several CNN architectures, including EfficientNetV1, EfficientNetV2,
+\acr{VGGNet}, AlexNet, ResNet50, GoogleNet, MobileNetV2, and DenseNet121 was first compared. 
+Based on these results, a more detailed comparison was then conducted within the 
+EfficientNet family, versions V1 and V2, to determine the most effective variant
+for the task.
+
+
+No advanced optimization techniques such as early stopping, learning rate schedulers,
+or mixed precision training were employed. 
+This decision was intentional to maintain fairness across all experiments and to ensure
+that the only variable factor influencing performance was the network architecture itself. 
+Ripeness classification models were trained using a \acr{GPU}, while bruise classification models
+were trained on a CPU to compare training times and assess the impact of hardware constraints
+on accuracy. 
+Model performance was evaluated using precision, recall, F1-score, accuracy, resource
+utilization, and elapsed training time.
+
+\subsection{Benchmarking Best CNN Model on +10k Mango Dataset}
+
+As one of the improvements for the final CNN models, the dataset for mango
+classification was refined and expanded to improve model robustness and reliability
+across both ripeness and bruise detection tasks for the training of the final
+CNN model where EfficientNetV2-B3 was used. The data was initially split
+into training (70\%), validation (15\%), and test (15\%) sets, with augmentation
+applied only to the training set. However, after augmentation, the effective
+distribution shifted to 90\% training, 5\% validation, and 5\% test. In addition,
+new Carabao mango images were incorporated across all classes to strengthen
+representation and improve generalization. As such, to train the final CNN
+models, the training set for ripeness category in Table~\ref{fig:cnn_ripeness_info}b
+contained 4,900
+images of green mangoes, 3,700 images of yellow mangoes, and 5,000 images
+of yellow\_green mangoes. For validation in Table~\ref{fig:cnn_ripeness_info}c, 
+the set included 200
+green mango images, 175 yellow mango images, and 210 yellow\_green images.
+The test set in Table~\ref{fig:cnn_ripeness_info}a consisted of 200 green mango images,
+160 yellow
+mango images, and 220 yellow\_green images. For the bruises category, the
+training set Table~\ref{fig:cnn_bruises_info}b contained 6,000 images of
+bruised mangoes and 7,000
+images of not\_bruised mangoes after augmentation. The validation set 
+in Table~\ref{fig:cnn_bruises_info}c
+included 200 bruised mango images and 225 not\_bruised mango images,
+while the test set as seen in Table~\ref{fig:cnn_bruises_info}a contained 200 bruised 
+mango images and 225
+not\_bruised mango images. This setup provided a balanced evaluation
+framework for the binary classification task, ensuring that both classes were
+consistently represented across training, validation, and testing.
+
+The dataset was also cleaned to remove sources of noise and ambiguity.
+Images with mixed ripeness features, such as mangoes with both large yellow
+and green portions, were placed under yellow\_green instead, while ambiguous
+samples, such as yellow mangoes with residual greenish portions, were
+excluded to avoid confusing the model. Empty areas present in images were
+also removed to ensure that only the fruit itself was used for training.
+
+Augmentation strategies were further refined to preserve class-defining
+features. For bruise classification, Gaussian blur was removed since it
+obscured critical bruise details. For ripeness classification, brightness and
+contrast adjustments were excluded, as these could shift mango colors
+between adjacent classes, such as yellow\_green to yellow, introducing
+artificial mislabels. Other augmentations, such as rotation, flipping, scaling,
+and minor perspective transform, were retained to maintain variability without
+compromising class integrity.
+
+Through these improvements, expanded augmentation, inclusion of new
+Carabao mango samples, dataset cleaning, and task-specific augmentation
+refinements, the final dataset ensured that both CNN models were trained on
+high-quality, representative, and diverse data. This preparation supports fair
+evaluation on the validation and test sets while maximizing the models’ ability
+to generalize to real-world mango classification scenarios.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Test Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/test_class_distribution_bruises}
+        \label{fig:bruises_test_cnn}
+    }
+    \hfill
+    \subbottom[Train Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/train_class_distribution_bruises}
+        \label{fig:bruises_train_cnn}
+    }
+    \vfill
+    \subbottom[Validation Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/valid_class_distribution_bruises}
+        \label{fig:bruises_valid_cnn}
+    }
+    \caption{Bruises Image Datasplit}
+    \label{fig:cnn_bruises_info}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Test Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/test_class_distribution_ripeness}
+        \label{fig:ripeness_test_cnn}
+    }
+    \hfill
+    \subbottom[Train Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/train_class_distribution_ripeness}
+        \label{fig:ripeness_train_cnn}
+    }
+    \vfill
+    \subbottom[Validation Image Size]{
+        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/valid_class_distribution_ripeness}
+        \label{fig:ripeness_valid_cnn}
+    }
+    \caption{Ripeness Image Datasplit}
+    \label{fig:cnn_ripeness_info}
+\end{figure}
+
+
 \subsection{Classification Report}
 % describe classification report and how it is used in the system
+The classification report provides a detailed summary of the model’s performance
+across all output classes by presenting key evaluation metrics such as precision,
+recall, F1-score, and support. Precision measures the accuracy of positive predictions,
+recall assesses the model’s ability to identify all relevant instances, and
+the F1-score represents their harmonic mean, offering a balanced measure of
+performance. In this system, the classification report was used to evaluate how
+effectively the CNN models identified each mango category—both in ripeness and
+bruise detection. By analyzing these metrics, the report helps determine which
+class predictions are most accurate and where the model may require further
+improvement, ensuring a reliable and interpretable performance assessment for
+real-world mango classification.
 
 \subsubsection{Confusion Matrix}
+
+A confusion matrix is a table that visualizes the performance 
+of a classification model. For a binary classification problem, it has four
+components: \\
+
 
 \begin{table}[h]
 	\centering
@@ -154,10 +632,6 @@ on an individual basis, integration testing is conducted to ensure communication
 	\caption{Confusion Matrix Example}
 	\label{tab:confusion_matrix}
 \end{table}
-
-A confusion matrix is a table that visualizes the performance 
-of a classification model. For a binary classification problem, it has four
-components: \\
 
 \begin{itemize}
 	\item True Positives (TP): Cases correctly predicted as positive
@@ -224,12 +698,12 @@ Using these methods of testing, the system is constantly optimized to ensure hig
 
 For the testing of the ripeness classification, the Carabao mangoes are classified into three ripeness stages which are Green, green yellow, and yellow.
 Likewise, The green would represent the ripe mangoes while the green yellow would represent the semi ripe while the yellow would
-represent the ripe mangoes. As reference, Figure~\ref{fig:mangoDefect} shows the different ripeness stages for Carabao/Pico mangoes.
+represent the ripe mangoes. As reference, Figure~\ref{fig:mangoRipeness} shows the different ripeness stages for Carabao/Pico mangoes \citet{doa2004}.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{ripeness_stages}
-	\caption{Carabao Mango Ripeness Stages}
+  \caption{Carabao Mango Ripeness Stages \citep{doa2004}}
 	\label{fig:mangoRipeness}
 \end{figure}
 
@@ -251,58 +725,65 @@ to be Yellow for ripeness.
 \subsection{Bruises Training and Testing} \label{sec:bruisestraining}
 For the testing of the bruise classification of the Carabao mangoes, it would classified into two categories which are bruised and not bruised. 
 To define what bruise and not bruise mangoes looked like Figure~\ref{fig:mangoDefect} is used as reference to categorize which mangoes are bruised and not bruised.
-This means that if the mango has any of these
+This means that if the mango has any of these features are shown on the mango then it is considered as bruised.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{bruise_guide}
-	\caption{Different Kinds of Mango Defects}
+	\caption{Different Kinds of Mango Defects \citep{qld-mango-defect-guide}}
 	\label{fig:mangoDefect}
 \end{figure}
 
 \subsubsection{Stem End Rots}
-They are characterized by fast-growing, watery, soft rots that penetrate deeply into the flesh. 
-Likewise, it usually appear as grey-brown or black rots starting from the stem end, often without obvious spores, that can spread rapidly into the mango. 
+They are characterized by fast-growing, watery, soft rots that penetrate deeply into the flesh.  
+Likewise, they usually appear as grey-brown or black rots starting from the stem end, often without obvious spores, that can spread rapidly into the mango \citep{Litz2009FruitDiseases,ReviewPostharvestMango2024}.
 
 \subsubsection{Dendritic Spot}
-They are small black spots with irregular edges scattered across the skin. 
-Furthermore, it grow slowly and do not penetrate into the flesh, remaining largely superficial.
+They are small black spots with irregular edges scattered across the skin.  
+Furthermore, they grow slowly and do not penetrate into the flesh, remaining largely superficial \citep{HorticultureAustralia2007DendriticSpot}.  
 
 \subsubsection{Anthracnose}
-It appears in two forms. First form is through body anthracnose. 
-Body anthracnose presents as black rots on the fruit surface that are usually round, slightly sunken, and located on different parts of the mango. 
-Likewise, the second form is stem end anthracnose. 
-Stem end anthracnose occurs around the stem, also presenting as black rots.
-While these rots do not penetrate deeply into the flesh, advanced cases may show pink spores.
+It appears in two forms. First form is body anthracnose.  
+Body anthracnose presents as black rots on the fruit surface that are usually round, slightly sunken, and located on different parts of the mango.  
+Likewise, the second form is stem end anthracnose, occurring around the stem and also presenting as black rots.  
+While these rots do not penetrate deeply into the flesh, advanced cases may show pink spores \citep{Litz2009FruitDiseases,ReviewPostharvestMango2024}.
 
 \subsubsection{Sapburn}
-They appears as dark brown spots or blotches that are often slightly sunken. 
-Likewise, damage can occur as runs or streaks down the cheek or as scattered marks around the stem and shoulder, resulting from sap exposure. 
+They appear as dark brown spots or blotches that are often slightly sunken.  
+Likewise, damage can occur as runs or streaks down the cheek or as scattered marks around the stem and shoulder, resulting from sap exposure \citep{PaullMangoSapburn}.
 
 \subsubsection{Skin Browning}
-It may take two forms. First form is abrasion while the second form is sap browning. 
-Abrasion is recognized as fine brown scratches or rub marks, while sap-related browning appears as light to dark brown flecking, spots, blotches, smears, or rings. 
-These types of browning are generally limited to the skin and do not penetrate deeply.
+It may take two forms. The first form is abrasion while the second form is sap browning.  
+Abrasion is recognized as fine brown scratches or rub marks, while sap-related browning appears as light to dark brown flecking, spots, blotches, smears, or rings.  
+These types of browning are generally limited to the skin and do not penetrate deeply \citep{PaullMangoSapburn}.
 
 \subsubsection{Lenticel Spot}
-They are another common defect, appearing as round or star-shaped brown spots scattered across the skin surface. 
-Furthermore, these defects are usually cosmetic in nature and do not significantly affect the flesh.
+They are another common defect, appearing as round or star-shaped brown spots scattered across the skin surface.  
+Furthermore, these defects are usually cosmetic in nature and do not significantly affect the flesh \citep{NguyenLenticel2015}.
 
 \subsection{Size Determination} \label{sec:sizeDetermination}
 
-To get the size of the mangoes, computer vision techniques such as Gaussian Blur and Thresholding are used to get the length and width of the mangoes.
+To get the size of the mango, computer vision techniques such as Gaussian Blur and Thresholding are used to get the length and width of the mangoes.
+Refer to Figure~\ref{fig:lw_mango} for the location of the length and width of mango.
 % will add that the theoretical length and width would be compared to the actual length and width
 % also that the predicted size and actual size classification would be shown
 
-\subsubsection{Computer Vision}
-For the computer vision method of getting the length and width of the mango a foreground masking is generated by getting absolute difference
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/sorting/mango_size}
+  \caption{Length and Width of Mango \citep{doa2006}}
+	\label{fig:lw_mango}
+\end{figure}
+
+\subsubsection{Real World Dimensions}
+For the real world dimensions method of getting the length and width of the mango a foreground masking is generated by getting absolute difference
 between the foreground, that is the mango, and the background. 
 Furthermore, image augmentation techniques such as Gaussian blur, grayscale, and Canny edge detection are used. 
 After that, the largest contour on the foreground masking image is used. 
-Once the largest contour is found then the length and width is calculated using equation~\ref{eq:objectSizeCalculation2}.
+Once the largest contour is found then the length and width is calculated using Equation~\ref{eq:objectSizeCalculation2}.
 
 \subsubsection{Object Detection}
 For the object detection method, an annotated Carabao mango dataset containing 488 images were used. 
-Likewise, the pretrained Faster RCNN model used is the MobileNetV3.
+Likewise, the pretrained \acr{Faster R-CNN} model used is the MobileNetV3.
 
 \begin{figure}[!htbp]
 	\centering
@@ -325,14 +806,14 @@ Additionally, \gls{not:bpred}, \gls{not:rpred}, and \gls{not:spred} correspond t
 \noindent \textbf{Ripeness Scores:}
 \begin{align}
 r(\text{yellow}) &= 1.0 \\
-r(\text{yellow\_green}) &= 2.0 \\
+r(\text{yellow green}) &= 2.0 \\
 r(\text{green}) &= 3.0
 \end{align}
 
 \noindent \textbf{Bruises Scores:}
 \begin{align}
 b(\text{bruised}) &= 1.0 \\
-b(\text{unbruised}) &= 2.0
+b(\text{not bruised}) &= 2.0
 \end{align}
 
 \noindent \textbf{Size Scores:}
@@ -342,13 +823,50 @@ s(\text{medium}) &= 2.0 \\
 s(\text{large}) &= 3.0
 \end{align}
 
+Note that the scores value for each respective classification cannot be changed
+by the user without changing the code itself. This means that only the weight of either the
+ripeness, bruises, and size
+can be changed to either low, high, or remove it by setting it to zero. Furthermore,
+only real numbers are allowed to be inputted as a weight. This means that 
+negative and imaginary numbers are not considered in Equation \ref{eq:userPriorityInput}.
 
-\section{Ethical Considerations}
-Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
+% \section{Ethical Considerations}
+% Ethical considerations ensure that the system is operated safely and responsibly. Data privacy is ensured by securely storing and anonymizing extracted images and classification data so that unauthorized access becomes impossible. The system is also eco-friendly through non-destructive testing, saving mangoes while also ensuring that they are of good quality. Safety in operations is also ensured by protecting moving parts to prevent mechanical harm and incorporating fail-safes to securely stop operation in case of malfunction. Addressing these concerns, the system is not only accurate and efficient but also secure, eco-friendly, and safe for operators, thus a sustainable solution to automated mango sorting and grading.
 
+\section{Summary} \label{sec:summary_of_methods}
 
+This chapter details the methodology for developing an automated Carabao mango grading
+and sorting system integrating machine learning and computer vision. The research employed
+an experimental approach managed via Scrum agile methodology to iteratively develop and
+test the hardware and software components. The hardware design features a conveyor belt
+system, an image acquisition setup with controlled lighting, and a \acr{RPi}
+microcontroller coordinating DC motors and sorting actuators. The software, built with
+Python and PyTorch, utilizes a custom-trained CNN for
+classification. The core machine learning pipeline involved extensive comparative testing
+of architectures, including EfficientNet, VGGNet, and ResNet, with EfficientNetV2-B3
+ultimately selected for its optimal balance of accuracy and efficiency.
 
+A significant focus was placed on data collection and optimization. A custom
+dataset of Carabao mangoes was created by capturing video of individual fruits
+and extracting frames, which were then sorted into categories for ripeness (green,
+yellow-green, yellow) and bruises (bruised, not bruised). The dataset was split
+70-15-15 for training, validation, and testing, with aggressive data augmentation
+(rotation, flipping, blur) applied only to the training set to improve
+model generalization. The training process incorporated several advanced optimizations:
+the AdamW optimizer for better generalization, mixed-precision training to accelerate
+computation, data loading and transfer optimizations to prevent bottlenecks, and
+regularization techniques like dropout and label smoothing to combat overfitting. A
+cosine annealing learning rate scheduler and early stopping were also implemented to
+ensure stable convergence.
 
-
-\section{Summary}
-This chapter explained how to create an automatic Carabao mango sorter and grader using machine learning and computer vision. The system integrates hardware and software resources, including a conveyor belt, cameras, sensors, and actuators, to offer accurate, real-time sorting by ripeness, size, and bruises. Various testing and evaluation processes ensure its performance to offer reliability. Ethical issues are data privacy, environmental sustainability, and operation safety. With enhanced efficiency, reduced human error, and enhanced quality, this system provides an affordable, scalable, and non-destructive solution to post-harvest mango classification in agricultural industries.
+For system evaluation, the methodology defined specific testing protocols for each
+attribute. Ripeness was classified into three visually distinct stages, while bruise
+detection was trained to identify defects like stem end rot and anthracnose
+based on a standard defect guide. Two methods for size determination were developed
+and compared: a traditional computer vision approach using foreground masking and
+thresholding, and a more robust object detection method using a Faster R-CNN model
+trained on 488 annotated mango images. A key innovation is the user-priority
+formula, a weighted equation that allows users to customize the importance of
+ripeness, bruises, and size in the final grade (A, B, or
+C). 
+\\

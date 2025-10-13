@@ -1,98 +1,200 @@
 \DTLgidxSetDefaultDB{glossary}
-%todo use these glossary terms
-\newterm 
-[%
-description={The black or brown area of the mango that is visible on the skin of the mango. \\},% brief description
-plural={}% the plural
-]%
-{bruises}% the name
-
-\newterm 
-[%
-description={A popular variety of mango grown in the Philippines, known for its sweet and juicy flesh. \\},
-plural={Carabao mangoes}% the plural
-]%
-{Carabao mango}% the name
-
-\newterm
-[%
-description={A performance metric that measures the overall proportion of correct
-	predictions made by a machine learning model. \\},% brief description
-plural={}% the plural
-]%
-{accuracy score}% the name
-
-\newterm
-[%
-description={A table that summarizes the performance of a classification model, showing the number of true positives, true negatives, false positives,
-	and false negatives. \\},% brief description
-plural={}% the plural
-]%
-{confusion matrix}% the name
-
-\newterm
-[%
-description={A type of deep neural network that is highly effective in analyzing
-	and processing visual data, such as images. \\},% brief description
-plural={}% the plural
-]%
-{CNN}% the name
-
-\newterm
-[%
-description={A balanced performance metric that is the harmonic mean of
-	precision and recall, taking both into account. \\},% brief description
-plural={}% the plural
-]%
-{F1-Score}% the name
-
-\newterm
-[%
-description={A subset of Artificial Intelligence that enables systems to learn and
-	improve from data. \\},% brief description
-plural={}% the plural
-]%
-{machine learning}% the name
-
-\newterm
-[%
-description={The use of cameras and algorithms to provide imaging-based
-	inspection and analysis. \\},% brief description
-plural={}% the plural
-]%
-{computer vision}% the name
-
-\newterm
-[%
-description={A small computing device that controls other parts of a system such
-	as sensors. \\},% brief description
-plural={}% the plural
-]%
-{microcontroller}% the name
-
-\newterm
-[%
-description={A performance metric that reflects the percentage of instances
-	classified as positive that are truly positive. \\},% brief description
-plural={}% the plural
-]%
-{Precision}% the name
 
 
-\newterm
-[%
-description={A performance metric that measures the proportion of actual positive
-	instances that the model correctly identified. \\},% brief description
-plural={}% the plural
-]%
-{recall}% the name
+\newterm[%
+    description={An electric current that periodically reverses direction and is used in most power distribution systems.},
+    short={AC},
+    long={Alternating Current},
+    plural={}
+]{AC}
 
+\newterm[%
+    description={A semiconductor light source that emits light when current flows through it.},
+    short={LED},
+    long={Light Emitting Diode},
+    plural={LEDs}
+]{LED}
 
-\newterm
-[%
-description={A customizable grading system where users can assign weights to
-	grading factors. \\},% brief description
-plural={}% the plural
-]%
-{User Priority-Based Grading}% the name
+\newterm[%
+    description={A user interface that allows users to interact with electronic devices through graphical icons and visual indicators.},
+    short={GUI},
+    long={Graphical User Interface},
+    plural={GUIs}
+]{GUI}
 
+\newterm[%
+    description={The space where interactions between humans and machines occur.},
+    short={UI},
+    long={User Interface},
+    plural={UIs}
+]{UI}
+
+\newterm[%
+    description={A simple, instance-based learning algorithm that classifies objects based on the closest training examples in the feature space.},
+    short={KNN},
+    long={k-Nearest Neighbors},
+    plural={}
+]{KNN}
+
+\newterm[%
+    description={An electric current that flows consistently in one direction.},
+    short={DC},
+    long={Direct Current},
+    plural={}
+]{DC}
+
+\newterm[%
+    description={An optimizer that computes adaptive learning rates for each parameter, combining the advantages of two other extensions of stochastic gradient descent.},
+    short={Adam},
+    long={Adaptive Moment Estimation},
+    plural={}
+]{Adam}
+
+\newterm[%
+    description={A variant of Adam that decouples the weight decay from the gradient update, which often leads to better generalization and more stable convergence.},
+    short={AdamW},
+    long={Adam with Decoupled Weight Decay},
+    plural={}
+]{AdamW}
+
+\newterm[%
+    description={The primary component of a computer that performs most of the processing inside a computer, executing instructions from programs.},
+    short={CPU},
+    long={Central Processing Unit},
+    plural={Central Processing Units}
+]{CPU}
+
+\newterm[%
+    description={A type of deep neural network that is highly effective in analyzing and processing visual data, such as images.},
+    short={CNN},
+    long={Convolutional Neural Network},
+    plural={Convolutional Neural Networks}
+]{CNN}
+
+\newterm[%
+    description={An object detection system that improves upon R-CNN by using a Region Proposal Network for faster and more efficient detection.},
+    short={Faster R-CNN},
+    long={Faster Region-based Convolutional Neural Network},
+    plural={}
+]{Faster R-CNN}
+
+\newterm[%
+    description={A series of small single-board computers developed for teaching basic computer science and for DIY electronics projects.},
+    short={RPi},
+    long={Raspberry Pi},
+    plural={Raspberry Pis}
+]{RPi}
+
+\newterm[%
+    description={A specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images, and now widely used for parallel computation in deep learning.},
+    short={GPU},
+    long={Graphics Processing Unit},
+    plural={Graphics Processing Units}
+]{GPU}
+
+\newterm[%
+    description={A feature of computer systems that allows certain hardware subsystems to access main system memory independently of the central processing unit, significantly speeding up data transfer.},
+    short={DMA},
+    long={Direct Memory Access},
+    plural={}
+]{DMA}
+
+\newterm[%
+    description={A half-precision floating-point format using 16 bits, commonly used in deep learning to reduce memory usage and computation time.},
+    plural={}
+]{FP16}
+
+\newterm[%
+    description={A 16-bit floating-point format designed for machine learning and AI workloads, offering a different dynamic range trade-off compared to FP16 for improved stability.},
+    plural={}
+]{BF16}
+
+\newterm[%
+    description={The standard single-precision floating-point format using 32 bits, providing a high level of precision for numerical computations.},
+    plural={}
+]{FP32}
+
+\newterm[%
+    description={A learning rate schedule that simulates warm restarts during training, where the learning rate is periodically reset to a high value to help escape local minima.},
+    plural={}
+]{SGDR}
+
+\newterm[%
+    description={The communication between an information processing system and the outside world, often referring to data transfer operations which can be a bottleneck in computing.},
+    plural={}
+]{I/O}
+
+\newterm[%
+    description={A deep neural network architecture that uses skip connections or residual blocks to mitigate the vanishing gradient problem, enabling the training of very deep networks.},
+    short={ResNet},
+    long={Residual Network},
+    plural={}
+]{ResNet}
+
+\newterm[%
+    description={A convolutional neural network architecture characterized by its simplicity, using multiple stacked 3x3 convolutional layers to increase depth and representational power.},
+    short={VGGNet},
+    long={Visual Geometry Group Network},
+    plural={}
+]{VGGNet}
+
+\newterm[%
+    description={The darkened black or brown region on the mango's skin resulting from impact, compression, or over-ripening, indicating tissue damage beneath the surface.},
+    plural={Bruises}
+]{bruises}
+
+\newterm[%
+    description={The stage at which a mango has developed its optimal color, texture, flavor, and aroma for consumption.},
+    plural={Ripeness}
+]{ripeness}
+
+\newterm[%
+    description={A popular variety of mango grown in the Philippines, known for its sweet and juicy flesh.},
+    plural={Carabao mangoes}
+]{Carabao mango}
+
+% Machine learning performance metrics
+\newterm[%
+    description={A performance metric that measures the overall proportion of correct predictions made by a machine learning model.},
+    plural={}
+]{accuracy score}
+
+\newterm[%
+    description={A table that summarizes the performance of a classification model, showing the number of true positives, true negatives, false positives, and false negatives.},
+    plural={confusion matrices}
+]{confusion matrix}
+
+\newterm[%
+    description={A balanced performance metric that is the harmonic mean of precision and recall, taking both into account.},
+    plural={}
+]{F1-Score}
+
+\newterm[%
+    description={A subset of Artificial Intelligence that enables systems to learn and improve from data.},
+    plural={Machine Learning}
+]{machine learning}
+
+\newterm[%
+    description={The use of cameras and algorithms to provide imaging-based inspection and analysis.},
+    plural={}
+]{computer vision}
+
+\newterm[%
+    description={A small computing device that controls other parts of a system such as sensors.},
+    plural={Microcontrollers}
+]{microcontroller}
+
+\newterm[%
+    description={A performance metric that reflects the percentage of instances classified as positive that are truly positive.},
+    plural={}
+]{Precision}
+
+\newterm[%
+    description={A performance metric that measures the proportion of actual positive instances that the model correctly identified.},
+    plural={}
+]{recall}
+
+\newterm[%
+    description={A customizable grading system where users can assign weights to grading factors.},
+    plural={}
+]{User Priority-Based Grading}

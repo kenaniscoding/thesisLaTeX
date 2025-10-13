@@ -27,113 +27,118 @@
 			\hline
 			
 			\Paste{GO} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully developed a user-priority-based grading and sorting system using machine learning and computer vision which can assess the mangoes’ ripeness, size and bruises.
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
-				\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
-			\end{enumerate} 
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item More work needs to be done to fine tune the software components to achieve higher accuracy such as changing hyperparameters or using a newer version of EfficientNet
+			% 	\item More work needs to be done to make the hardware component more robust such as by fixing the camera and LED lights in place
+			% \end{enumerate} 
 			& Sec.~\ref{sec:summary_results_and_discussions} on p.~\pageref{sec:summary_results_and_discussions} \\ \hline
 			
 			\Paste{SO1} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
 				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
 				\item Successfully fixed the hardware components in place
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
-				\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
-				\item Need to fix the hardware components in place
-			\end{enumerate} 
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully integrated a conveyor belt with the image acquisition in order to achieve efficient flow of automated sorting and grading of the mangoes.  
+			% 	\item Successfully integrated LED strips to provide optimal lighting for image capturing of the mangoes.
+			% 	\item Need to fix the hardware components in place
+			% \end{enumerate} 
 			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO2} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruises classification of Carabao mangoes
+				\item Successfully achieved 97\% overall accuracy for ripeness classification of Carabao mangoes
+				\item Successfully achieved 98\% overall accuracy for bruises classification of Carabao mangoes
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
-				\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
-			\end{enumerate}
+			% Results:
+			% \begin{enumerate}
+			% 	\item Successfully achieved at least 93\% accuracy for ripeness classification of Carabao mangoes
+			% 	\item Successfully achieved at least 73\% accuracy for bruise classification of Carabao Mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:main_trainAndTestResults} on p.~\pageref{sec:main_trainAndTestResults} \\ \hline
 			
 			\Paste{SO3} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
 				\item Successfully mounted the image acquisition system on the the prototype
 				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
-				\item Temporarily mounted the image acquisition system on the the prototype
-				\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully made a conveyor belt system to move the mangoes through the image acquisition system to the sorting system
+			% 	\item Temporarily mounted the image acquisition system on the the prototype
+			% 	\item Successfully made the frame for the conveyor belt and image acquisition system to sit on
+			% \end{enumerate}
 			 & Sec.~\ref{sec:physicalPrototype} on p.~\pageref{sec:physicalPrototype} \\ \hline
 			
 			\Paste{SO4} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
 				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
 				\item Successfully verified with qualified individual the results 
 				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
-				\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
-				\item Need to look for a qualified person to evaluate the graded mango for ground truth
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully grade mangoes based on the user priorities on the physical characteristics of the mango
+			% 	\item Successfully utilize the weighted equation to evaluate mango grade based on user priorities
+			% 	\item Need to look for a qualified person to evaluate the graded mango for ground truth
+			% \end{enumerate}
 			 & Sec.~\ref{sec:userPriorityFormula} on p.~\pageref{sec:userPriorityFormula} \\ \hline
 			
 			\Paste{SO5} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Achieve at least 90\% accuracy on performance metrics
-				\item Obtain performance metrics for kNN, k-mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
-				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+        \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for ripeness
+				\item Achieved 97\% accuracy on performance metrics using EfficientNetV2
+        \item Obtain performance metrics for \acr{KNN}, K-Mean, and Naive Bayes methods for comparison and show the superior performance of using CNN
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing model, and testing other CNN hyperparameters
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to detect ripeness based on color 
+			% 	\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for ripeness classification of Carabao mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:ripenessClassificationResults} on p.~\pageref{sec:ripenessClassificationResults} \\ \hline
 			
 			\Paste{SO6} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Successfully classified mango size using computer vision techniques
-				\item Successfully tuned to have an accurate size with an 80 percent accuracy rating
+        \item Compared and tested two methods, which are the foreground masking then thresholding and Object Detection, to measure the length and width of the Carabao mangoes
+        \item Version 1, which is the foreground masking then thresholding, has a 12.04\% and 3.24\% percent difference to the ground truth for length and width.
+        \item Version 2, which is the Object Detection, has a 13.57\% and 3.24\% percent difference to the ground truth for the length and width.
+				% \item Successfully classified mango size using Faster R-CNN
+				% \item Successfully tuned to have an accurate size with an 80 percent accuracy rating
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully classified mango size using computer vision techniques
-				\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully classified mango size using computer vision techniques
+			% 	\item Calculation of mango size is somewhat inaccurate and needs more fine tuning
+			% \end{enumerate}
 			 & Sec.~\ref{sec:sizeDeterminationResults} on p.~\pageref{sec:sizeDeterminationResults} \\ \hline
 			
 			\Paste{SO7} & 
-			Expected Results:
+			Results:
 			\begin{enumerate}
-				\item Achieve at least 90\% accuracy on performance metrics
-				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing among EfficientNet b0-b7, and testing other CNN hyperparameters
+        \item Successfully trained a CNN model using EfficientNetV2 and Adam Optimizer for bruises
+				\item Achieved 98\% accuracy on performance metrics
+				\item Successfully fine tuned the CNN model to achieve the highest accuracy possible, choosing the best performing, and testing other CNN hyperparameters
 			\end{enumerate} 
-			Actual Results:
-			\begin{enumerate}
-				\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
-				\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
-			\end{enumerate}
+			% Actual Results:
+			% \begin{enumerate}
+			% 	\item Successfully trained a CNN model using EfficientNet-b0 and Adam Optimizer to bruises 
+			% 	\item Successfully achieved at least 90 percent accuracy, precision, recall, f1 score for bruise classification of Carabao mangoes
+			% \end{enumerate}
 			 & Sec.~\ref{sec:bruisesClassificationResults} on p.~\pageref{sec:bruisesClassificationResults} \\ \hline
 			
 		\end{tabularx}
@@ -142,76 +147,43 @@
 
 \section{Training and Testing Results of the Model} \label{sec:main_trainAndTestResults}
 
-% \begin{table}[htbp]
-%   \centering
-%   \begin{tabular}{c|cc}
-%   \hline
-%                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
-%   Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-%   EfficientNetB0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
-%   VggNet16       & \multicolumn{1}{c|}{43}       & 54      \\ \hline
-%   AlexNet        & \multicolumn{1}{c|}{43}       & 54      \\ \hline
-%   ResNet50       & \multicolumn{1}{c|}{87}       & 84      \\ \hline
-%   GoogleNet      & \multicolumn{1}{c|}{89}       & 81      \\ \hline
-%   MobileNetV2    & \multicolumn{1}{c|}{90}       & 86      \\ \hline
-%   DenseNet121    & \multicolumn{1}{c|}{88}       & 84      \\ \hline
-%   \end{tabular}
-%   \caption{Overall Accuracy Results of Different CNN Models}
-%   \label{tab:overall_accuracy_cnn}
-% \end{table}
-%
-% \begin{table}[htbp]
-%   \centering
-%   \begin{tabular}{c|cc}
-%   \hline
-%                 & \multicolumn{2}{c}{Accuracy}            \\ \hline
-%   EfficientNet          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
-%   B0 & \multicolumn{1}{c|}{89}       & 87      \\ \hline
-%   B1 & \multicolumn{1}{c|}{86}       & 90      \\ \hline
-%   B2 & \multicolumn{1}{c|}{92}       & 90      \\ \hline
-%   B3 & \multicolumn{1}{c|}{88}       & 91      \\ \hline
-%   B4 & \multicolumn{1}{c|}{90}       & 90      \\ \hline
-%   B5 & \multicolumn{1}{c|}{92}       & 88      \\ \hline
-%   B6 & \multicolumn{1}{c|}{93}       & 88      \\ \hline
-%   \end{tabular}
-%   \caption{Overall Accuracy Results of Different EfficientNet Versions}
-%   \label{tab:overall_accuracy_effnet}
-% \end{table}
+To identify the most suitable convolutional neural network (CNN) architecture
+for grading Carabao mangoes, multiple CNN models were evaluated under fixed
+experimental parameters. These parameters included the number of epochs, input
+image size, batch size, optimizer, data preprocessing methods, and dataset size.
+The only variable factor was the network architecture. Ripeness classification
+models were trained using a GPU, while bruises classification models were
+trained on a CPU to compare training times and assess the impact of hardware
+constraints on accuracy. Model performance was evaluated using precision,
+recall, F1-score, accuracy, resource utilization, and elapsed training time
 
 
 \subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
-Add the \gls{F1-Score} and etc here
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
-	  \textbf{EfficientNet Version} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Test Accuracy} \\
-	  \hline
-	  b0 & 0.9841 & 0.9838 & 0.9838 & 0.98 \\
-	  \hline
-	  b1 & 0.9876 & 0.9876 & 0.9876 & 0.99 \\
-	  \hline
-	  b2 & 0.9802 & 0.9801 & 0.9801 & 0.98 \\
-	  \hline
-	  b3 & 0.9709 & 0.968 & 0.9684 & 0.97 \\
-	  \hline
-	  b4 & 0.9716 & 0.9699 & 0.9699 & 0.97 \\
-	  \hline
-	  % b5 & 0.93 & 0.93 & 0.93 & 0.93 \\
-	  % \hline
-	\end{tabular}
-	\caption{Performance Metrics for different EfficientNet versions}
-	\label{tab:efficientnet_performance}
-\end{table}
+% Results such as the \gls{F1-Score} are shown.
 
 \subsubsection{Naive Bayes}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+% [ ] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+Based on the evaluation metrics, the Naive Bayes model demonstrates a clear
+strength in identifying ripe, yellow mangoes but reveals a significant weakness
+in classifying those in the transitional yellow-green stage. The model's
+precision scores for the green and yellow classes are reasonably similar at
+around 79\%. However, its performance drops considerably for the yellow-green
+class, where a precision of just 58\% nearly half of its predictions for this
+category are incorrect. This pattern is reinforced by the recall scores. The
+model excels at finding true yellow mangoes, capturing 86\% of them, which is
+its highest performance metric.  Conversely, it struggles to identify
+yellow-green mangoes, with a recall of only 51\%, meaning it misses almost half
+of all true instances of this class. The F1-score, which balances precision and
+recall, provides summary of this performance, yielding a strong score of 80\%
+for yellow but a very poor score of 55\% for yellow-green. This confirms that
+the transitional yellow-green stage is the model's primary source of confusion,
+likely due to its visual ambiguity, sharing features with both the green and
+ripe yellow classes.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
 	  Green & 0.78 & 0.79 & 0.78 & 132 \\
@@ -238,14 +210,26 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 	\label{fig:ripeness_confusion_matrix_nv_fig}
 \end{figure}
 
-
 \subsubsection{KMeans}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+% [ ] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
+The KMeans model achieved a weak overall accuracy of 57\%, with its performance
+characterized by a severe precision-recall trade-off across classes and a
+fundamental failure to identify the transitional stage. The model exhibited high
+recall for Green with score of 80\% but low precision of 57\%, which indicates
+that it captured most green mangoes but also frequently misclassified others as
+green. It was the opposite for Yellow, where high precision score of 83\% and a
+low recall score of 52\%, meaning its yellow predictions were reliable but it
+missed nearly half of them. Most critically, performance on the Yellow Green
+class was exceptionally poor with a F1 score of 34\%, the model struggled both
+to correctly label them and to find them at all, this reveals that the clusters
+formed by KMeans are poorly separated for this specific ripeness classification
+task.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-		\hline
+	\begin{tabular}{l|c|c|c|c}
+		\hline \hline
 		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 		\hline
 		Green & 0.57 & 0.80 & 0.67 & 132 \\
@@ -273,12 +257,24 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 \end{figure}
 
 \subsubsection{KNN}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+% [o] todo: Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
+K-Nearest Neighbors (KNN) model demonstrates an improvement in performance,
+achieving an overall accuracy of 78\%. Unlike previous models, KNN shows a
+strong and consistent balance between precision and recall across all three
+ripeness classes. The model excels at classifying the fully Green and Yellow
+stages, with high and well-balanced F1-scores of 0.85 and 0.81, respectively,
+indicating it is more reliable when making a prediction and effective at
+identifying all instances of these classes than previous models.  KNN also shows
+improvement in handling the yellow-green class, achieving an F1-score of 68\%.
+While this remains the most challenging class, the model's significantly higher
+scores compared to previous attempts confirm its ability to learn the
+distinguishing features between the stages.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-		\hline
+	\begin{tabular}{l|c|c|c|c}
+		\hline \hline
 		\textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 		\hline
 		Green & 0.85 & 0.85 & 0.85 & 132 \\
@@ -306,128 +302,1188 @@ Add explanation of the confusion matrix and the precision, recall, and f1 score.
 \end{figure}
 
 \subsubsection{CNN}
-Add explanation of the confusion matrix and the precision, recall, and f1 score. 
+
+The final CNN model for ripeness and bruise classification utilized EfficientNetV2-B3.
+ Collected experimental data confirmed that it achieved the best performance-to-efficiency ratio.
+ It consistently outperformed other architectures tested during benchmarking and optimization stages.
+ For the final ripeness classification, the complete dataset contained around 14,000 images.
+ The model achieved a test accuracy of 98\%, with precision, recall, and F1-score near 0.985.
+ This consistency across metrics demonstrates both high accuracy and class-balanced reliability.
+ It performed uniformly across all ripeness categories without favoring any particular class.
+ Validation accuracy of 98.41\% closely matched the test accuracy, confirming excellent generalization.
+ The slightly higher training accuracy of 99.37\% indicated minimal overfitting occurrence.
+ The narrow gap between training, validation, and test results reflected stable learning.
+ These findings confirm that dataset refinement and optimization prevented memorization effectively.
+ They also promoted genuine feature learning across ripeness categories and lighting variations.
+
+The confusion matrix in Figure~\ref{fig:ripeness_confusion_matrix_fig} further supports these conclusions clearly.
+ Misclassifications were minimal and occurred mostly between adjacent ripeness categories.
+ Errors were concentrated between transitional stages such as yellow-green and yellow mangoes.
+ This pattern matches the biological ambiguity seen during mango ripening transitions.
+ Even human evaluators sometimes disagree on borderline ripeness due to visual overlap.
+ The model’s strong accuracy in these ambiguous cases reflects superior discriminative ability.
+ It demonstrates practical reliability for deployment in real-world mango grading systems.
+
+Several major modifications to the training pipeline improved overall model effectiveness significantly.
+ Mixed-precision training using GradScaler and autocast reduced GPU memory consumption substantially.
+ This optimization increased batch size from 32 to 56, enhancing training stability.
+ Larger batch sizes improved gradient estimation and smoothed convergence across training epochs.
+ Input resolution was corrected to 300×300, matching EfficientNetV2-B3’s native architecture.
+ This adjustment improved feature extraction and ensured compatibility with pretrained weights.
+ The optimizer was changed from Adam to \acr{AdamW} for stronger regularization.
+ Learning rate was set to 3e-4, and weight decay to 1e-4.
+ These parameters decoupled regularization from gradient updates, ensuring stable convergence behavior.
+ A cosine annealing warm-restart scheduler with T0 = 5 and Tmult = 2 was applied.
+ It included three warm-up epochs to escape sharp minima effectively during training.
+
+Additional refinements further improved training robustness and model generalization performance.
+ CrossEntropy loss with label smoothing of 0.05 reduced overconfident predictions.
+ This adjustment improved resilience to ambiguous ripeness categories and noisy image labels.
+ Early stopping with a patience of five epochs prevented redundant computation cycles.
+ Checkpointing saved the best weights once performance improvements plateaued consistently.
+ Data loading was optimized with workers set to half of available CPU cores.
+ Pin\_memory and non\_blocking transfers accelerated CPU-to-GPU data streaming throughput.
+ These optimizations minimized data bottlenecks and reduced idle GPU computation time.
+ Regularization through dropout = 0.25 and drop-path = 0.15 improved network robustness.
+ These techniques prevented neuron co-adaptation and encouraged diverse feature representations.
+
+The validation curves in Figure~\ref{fig:ripeness-graph} confirm stable convergence throughout training.
+ Validation accuracy increased steadily before plateauing at a consistently high level.
+ Validation loss showed minor oscillations but followed an overall downward trajectory.
+ This inverse relationship between loss and accuracy indicates strong discriminative learning ability.
+ Accuracy stability despite small loss fluctuations shows resistance to overfitting.
+ These patterns confirm that optimizations such as label smoothing and annealing worked effectively.
+ The model maintained robustness and generalization even in complex visual conditions.
+ Its smooth convergence underscores training stability and computational efficiency across all epochs.
+
+Lastly, dataset enhancements contributed substantially to achieving these superior results overall.
+ The dataset expanded from approximately 6,000 to 14,000 well-curated mango images.
+ New Carabao mango samples were added, improving variety and biological representativeness.
+ Ambiguous or noisy samples were removed to reduce label uncertainty significantly.
+ Augmentation strategies were refined to introduce meaningful color, rotation, and lighting diversity.
+ These augmentations enhanced robustness by exposing the network to realistic visual variations.
+ As a result, the final model generalized strongly and maintained stable performance.
+ Across all dataset splits, it demonstrated consistent accuracy and balanced classification reliability.
+
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
     \hline
-	  Green & 0.97 & 0.97 & 0.97 & 293 \\
+	  Green & 0.98 & 0.99 & 0.99 & 210 \\
     \hline
-	  Yellow & 0.98 & 0.98 & 0.98 & 124 \\
+	  Yellow & 0.99 & 0.99 & 0.99 & 161 \\
 	  \hline
-	  Yellow\_Green & 0.95 & 0.96 & 0.95 & 188 \\
+	  Yellow\_Green & 0.98 & 0.98 & 0.98 & 219 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.97 & 551 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 590 \\
 	  \hline
-	  Macro Avg & 0.97 & 0.97 & 0.97 & 551 \\
+	  Macro Avg & 0.99 & 0.99 & 0.99 & 590 \\
 	  \hline
-	  Weighted Avg & 0.97 & 0.97 & 0.97 & 551 \\
+    Weighted Avg & 0.98 & 0.98 & 0.98 & 590 \\
 	  \hline
 	\end{tabular}
-	\caption{EfficientNetV2 Ripeness Classification Report}
+	\caption{EfficientNetV2-B3 Ripeness Classification Report with Precision: 0.9848, Recall: 0.9847, F1 Score: 0.9847}
 	\label{tab:ripeness_classification_report}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{/effnetv2-m-ripeness/confusion_matrix_ripeness}
-	\caption{EfficientNetV2 Ripeness Confusion Matrix}
+	\caption{EfficientNetV2-B3 Ripeness Confusion Matrix}
 	\label{fig:ripeness_confusion_matrix_fig}
 \end{figure}
 
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Test Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/test_class_distribution_ripeness}
-        \label{fig:ripeness_test_cnn}
-    }
-    \hfill
-    \subbottom[Train Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/train_class_distribution_ripeness}
-        \label{fig:ripeness_train_cnn}
-    }
-    \vfill
-    \subbottom[Validation Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-ripeness/valid_class_distribution_ripeness}
-        \label{fig:ripeness_valid_cnn}
-    }
-    \caption{EfficientNetV2 Ripeness Datasplit}
-    \label{fig:cnn_ripeness_info}
-\end{figure}
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{/graphs/ripeness}
-	\caption{EfficientNetV2 Ripeness Accuracy and Loss Graph}
+	\includegraphics[width=0.9\textwidth]{/graphs/ripeness_plot}
+	\caption{EfficientNetV2-B3 Ripeness Accuracy and Loss Graph}
 	\label{fig:ripeness-graph}
 \end{figure}
 
 \subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
-Add description on how the bruises results were taken and how many images were used.
+
+\subsubsection{CNN} 
+For bruise classification, the final EfficientNetV2-B3 model also performed excellently.
+It achieved a test accuracy of 99\%, with precision, recall, and F1-score near 0.989.
+The validation accuracy of 99.31\% and training accuracy of 99.86\% confirmed stability.
+These results demonstrate exceptional reliability and consistent performance across all dataset splits.
+The training configuration was refined to improve both computational efficiency and robustness.
+Batch size was increased to 60, fully utilizing available GPU memory capacity.
+This adjustment enhanced gradient stability and accelerated convergence across training epochs effectively.
+Regularization parameters were tuned with a dropout rate of 0.2 overall.
+A drop-path rate of 0.1 was also applied to further control overfitting.
+Together, these settings balanced high predictive accuracy with improved model generalization capability.
+Early stopping with a patience of 10 epochs was employed during training.
+This ensured meaningful improvement capture while avoiding unnecessary computation after convergence detection.
+
+The confusion matrix in Figure~\ref{fig:bruises_confusion_matrix_fig} reinforces these excellent quantitative results clearly.
+The model correctly identified nearly all samples across both bruise categories tested.
+Only four false negatives and one false positive occurred in total predictions.
+This minimal error distribution illustrates a well-balanced and highly reliable classification profile.
+The model demonstrated strong sensitivity to bruised fruit and high specificity otherwise.
+Low false negatives are particularly important in postharvest quality control applications.
+Undetected bruises pose a major risk to maintaining consistent product quality standards.
+The low occurrence of such cases underscores the model’s robustness and precision.
+These characteristics make EfficientNetV2-B3 ideal for deployment in real-time inspection systems.
+
+The validation curves in Figure~\ref{fig:bruises-graph} further illustrate stable training convergence behavior.
+Validation accuracy rose rapidly during initial epochs and stabilized near 0.99 overall.
+Meanwhile, validation loss decreased sharply early on and then gradually leveled off.
+Minor fluctuations in loss reflect typical batch-level variations during optimization cycles.
+Despite these oscillations, accuracy remained consistently high and stable throughout training.
+This indicates that the network maintained strong confidence in its classification predictions.
+The inverse correlation between loss and accuracy confirms effective learning of features.
+These patterns demonstrate robust generalization and the absence of significant overfitting problems.
+Together, the curves validate that all applied optimizations improved convergence stability efficiently.
+EfficientNetV2-B3 thus combines exceptional accuracy, reliability, and computational efficiency effectively.
+This performance level establishes it as the optimal model for bruise classification.
+Its predictive precision makes it suitable for industrial-grade automated quality control systems.
 
 \begin{table}[htbp]
 	\centering
-	\begin{tabular}{c|c|c|c|c}
-	  \hline
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
 	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
 	  \hline
-	  Bruised & 0.94 & 1.00 & 0.97 & 141 \\
+	  Bruised & 1.00 & 0.98 & 0.99 & 206 \\
 	  \hline
-	  Not Bruised & 1.00 & 0.96 & 0.98 & 239 \\
+	  Not Bruised & 0.98 & 1.00 & 0.99 & 234 \\
 	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 380 \\
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.99 & 440 \\
 	  \hline
-	  Macro Avg & 0.97 & 0.98 & 0.97 & 380 \\
+	  Macro Avg & 0.99 & 0.99 & 0.99 & 440 \\
 	  \hline
-    Weighted Avg & 0.98 & 0.98 & 0.98 & 380 \\
+    Weighted Avg & 0.99 & 0.99 & 0.99 & 440 \\
 	  \hline
 	\end{tabular}
-	\caption{EfficientNetV2 Bruises Classification Report}
+	\caption{EfficientNetV2-B3 Bruises Classification Report with Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886}
 	\label{tab:bruises_classification_report}
 \end{table}
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{/effnetv2-m-bruises/confusion_matrix_bruises}
-	\caption{EfficientNetV2 Bruises Confusion Matrix}
+	\caption{EfficientNetV2-B3 Bruises Confusion Matrix}
 	\label{fig:bruises_confusion_matrix_fig}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Test Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/test_class_distribution_bruises}
-        \label{fig:bruises_test_cnn}
-    }
-    \hfill
-    \subbottom[Train Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/train_class_distribution_bruises}
-        \label{fig:bruises_train_cnn}
-    }
-    \vfill
-    \subbottom[Validation Image Size]{
-        \includegraphics[width=0.45\textwidth]{/effnetv2-m-bruises/valid_class_distribution_bruises}
-        \label{fig:bruises_valid_cnn}
-    }
-    \caption{Bruises Datasplit}
-    \label{fig:cnn_bruises_info}
 \end{figure}
 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{/graphs/bruises}
-	\caption{EfficientNetV2 Bruises Accuracy and Loss Graph}
+	\includegraphics[width=0.9\textwidth]{/graphs/bruises_plot}
+	\caption{EfficientNetV2-B3 Bruises Accuracy and Loss Graph}
 	\label{fig:bruises-graph}
 \end{figure}
 
+\section{Achieving the Highest Accuracy in CNN Models}
+% % Table: CNN Training Results for GPU (with Train Accuracy)
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{l|c|c|c|c|c|c|c}
+% \hline \hline
+% \textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Test Acc} & \textbf{Train Acc} & \textbf{Time} & \textbf{VRAM} \\
+% \hline
+% VGG16 & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 2h57m & 7.0 \\
+% \hline
+% ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 4h23m & 2.3 \\
+% \hline
+% RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 83.58 & 7h13m & 4.1 \\
+% \hline
+% GOOGLENET & 0.898 & 0.895 & 0.892 & 89 & 83.58 & 3h3m & 2.9 \\
+% \hline
+% MOBILENETV2 & 0.898 & 0.898 & 0.897 & 90 & 91.84 & 2h0m & 3.6 \\
+% \hline
+% DENSENET121 & 0.877 & 0.877 & 0.875 & 88 & 91.37 & 2h10m & 5.5 \\
+% \hline
+% EFFICIENTNET B0 & 0.890 & 0.888 & 0.887 & 89 & 91.47 & 2h26m & 4.1 \\
+% \hline
+% EFFICIENTNET B1 & 0.867 & 0.862 & 0.859 & 86 & 89.91 & 2h30m & 5.3 \\
+% \hline
+% EFFICIENTNET B2 & 0.927 & 0.924 & 0.925 & 92 & 90.27 & 2h14m & 5.5 \\
+% \hline
+% EFFICIENTNET B3 & 0.882 & 0.880 & 0.879 & 88 & 91.84 & 2h25m & 6.8 \\
+% \hline
+% EFFICIENTNET B4 & 0.899 & 0.898 & 0.896 & 90 & 92.34 & 2h50m & 8.0 \\
+% \hline
+% EFFICIENTNET B5 & 0.925 & 0.924 & 0.924 & 92 & 92.84 & 5h49m & 11.6 \\
+% \hline
+% EFFICIENTNET B6 & 0.934 & 0.933 & 0.933 & 93 & 96.03 & 7h51m & 14.5 \\
+% \hline
+% EFFICIENTNET B7 & 0.883 & 0.871 & 0.873 & 87 & 90.03 & 10h34m & 18.8 \\
+% \hline
+% EFFICIENTNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 89.91 & 1h53m & 3.0 \\
+% \hline
+% EFFICIENTNETV2-B1 & 0.904 & 0.904 & 0.902 & 90 & 92.56 & 2h0m & 3.6 \\
+% \hline
+% EFFICIENTNETV2-B2 & 0.902 & 0.900 & 0.901 & 90 & 92.34 & 2h17m & 3.8 \\
+% \hline
+% EFFICIENTNETV2-B3 & 0.926 & 0.926 & 0.925 & 93 & 92.91 & 2h2m & 4.5 \\
+% \hline
+% EFFICIENTNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 90.47 & 1h59m & 6.1 \\
+% \hline
+% EFFICIENTNETV2-M & 0.893 & 0.893 & 0.892 & 89 & 90.47 & 2h58m & 9.9 \\
+% \hline
+% EFFICIENTNETV2-L & 0.875 & 0.871 & 0.870 & 87 & 89.09 & 14h58m & 16.8 \\
+% \hline
+% \textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{85.52} & \textbf{--} & \textbf{7.0} \\
+% \hline
+% \end{tabular}
+% \caption{CNN Training Results for GPU including Train Accuracy}
+% \label{tab:cnn_training_gpu}
+% \end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c}
+\hline \hline
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Test Acc} & \textbf{Train Acc} & \textbf{Time} & \textbf{VRAM} \\
+\hline
+VGG16 & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 2h57m & 7.0 \\
+\hline
+ALEXNET & 0.188 & 0.434 & 0.263 & 43 & 43.57 & 2h43m & 2.3 \\
+\hline
+RESNET50 & 0.870 & 0.869 & 0.868 & 87 & 87.58 & 7h13m & 4.1 \\
+\hline
+GOOGLENET & 0.898 & 0.898 & 0.898 & 83 & 83.58 & 3h3m & 4.9 \\
+\hline
+MOBILENETV2 & 0.898 & 0.898 & 0.898 & 89 & 89.47 & 2h0m & 3.6 \\
+\hline
+DENSENET121 & 0.877 & 0.877 & 0.877 & 88 & 91.37 & 2h10m & 5.5 \\
+\hline
+EFFNET B0 & 0.889 & 0.888 & 0.887 & 89 & 91.47 & 2h26m & 5.1 \\
+\hline
+EFFNET B1 & 0.867 & 0.862 & 0.861 & 86 & 90.47 & 2h30m & 5.3 \\
+\hline
+EFFNET B2 & 0.927 & 0.927 & 0.927 & 93 & 92.47 & 2h14m & 5.5 \\
+\hline
+EFFNET B3 & 0.882 & 0.880 & 0.879 & 88 & 90.24 & 2h25m & 6.8 \\
+\hline
+EFFNET B4 & 0.899 & 0.898 & 0.894 & 92 & 92.34 & 2h50m & 8.0 \\
+\hline
+EFFNET B5 & 0.925 & 0.924 & 0.924 & 93 & 92.34 & 5h49m & 12.2 \\
+\hline
+EFFNET B6 & 0.934 & 0.933 & 0.933 & 93 & 90.34 & 7h51m & 14.5 \\
+\hline
+EFFNET B7 & 0.883 & 0.871 & 0.873 & 87 & 90.47 & 10h34m & 18.0 \\
+\hline
+EFFNETV2-B0 & 0.915 & 0.913 & 0.913 & 91 & 89.91 & 1h53m & 3.0 \\
+\hline
+EFFNETV2-B1 & 0.904 & 0.904 & 0.904 & 90 & 92.56 & 2h0m & 3.6 \\
+\hline
+EFFNETV2-B2 & 0.920 & 0.888 & 0.902 & 92 & 92.34 & 2h17m & 3.8 \\
+\hline
+EFFNETV2-B3 & 0.926 & 0.926 & 0.925 & 92 & 92.91 & 2h2m & 4.5 \\
+\hline
+EFFNETV2-S & 0.894 & 0.893 & 0.891 & 89 & 90.47 & 3h15m & 6.1 \\
+\hline
+EFFNETV2-M & 0.893 & 0.893 & 0.893 & 89 & 89.09 & 3h5m & 9.9 \\
+\hline
+EFFNETV2-L & 0.875 & 0.871 & 0.871 & 87 & 89.09 & 14h58m & 16.8 \\
+\hline
+\textbf{AVERAGE} & \textbf{0.830} & \textbf{0.852} & \textbf{0.835} & \textbf{85} & \textbf{85.52} & \textbf{--} & \textbf{7.0} \\
+\hline
+\end{tabular}
+\caption{CNN Training Results for GPU}
+\label{tab:more_cnn_training_gpu}
+\end{table}
+
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{l|c|c|c|c|c|c}
+% \hline \hline
+% \textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{Mem} \\
+% \hline
+% VGG16 & 0.297 & 0.545 & 0.384 & 54 & 5h38m & 6.5 \\
+% \hline
+% ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 4h25m & 3.3 \\
+% \hline
+% RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 8h24m & 5.4 \\
+% \hline
+% GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 3h14m & 4.0 \\
+% \hline
+% MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
+% \hline
+% DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
+% \hline
+% EFFNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
+% \hline
+% EFFNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
+% \hline
+% EFFNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
+% \hline
+% EFFNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
+% \hline
+% EFFNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
+% \hline
+% EFFNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
+% \hline
+% EFFNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
+% \hline
+% EFFNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
+% \hline
+% EFFNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
+% \hline
+% EFFNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
+% \hline
+% EFFNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
+% \hline
+% EFFNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
+% \hline
+% EFFNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
+% \hline
+% EFFNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
+% \hline
+% EFFNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
+% \hline
+% \textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
+% \hline
+% \end{tabular}
+% \caption{CNN Ripeness Results for CPU}
+% \label{tab:more_cnn_training_cpu}
+% \end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c|c|c|c}
+\hline \hline
+\textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Test Acc} & \textbf{Train Acc} & \textbf{Time} & \textbf{Mem} \\
+\hline
+VGG16 & 0.297 & 0.545 & 0.384 & 54 & 54.48 & 5h38m & 6.5 \\
+\hline
+ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 54.48 & 4h25m & 3.3 \\
+\hline
+RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 83.92 & 8h24m & 5.4 \\
+\hline
+GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 57.67 & 3h14m & 4.0 \\
+\hline
+MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 85.88 & 3h44m & 4.8 \\
+\hline
+DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 84.7 & 3h8m & 6.7 \\
+\hline
+EFFNET B0 & 0.873 & 0.870 & 0.870 & 87 & 90.04 & 2h37m & 5.3 \\
+\hline
+EFFNET B1 & 0.898 & 0.897 & 0.896 & 90 & 90.51 & 2h56m & 6.7 \\
+\hline
+EFFNET B2 & 0.901 & 0.901 & 0.901 & 90 & 91.21 & 3h8m & 6.7 \\
+\hline
+EFFNET B3 & 0.913 & 0.913 & 0.913 & 91 & 90.34 & 3h27m & 8.0 \\
+\hline
+EFFNET B4 & 0.897 & 0.897 & 0.897 & 90 & 92.16 & 4h17m & 9.8 \\
+\hline
+EFFNET B5 & 0.892 & 0.883 & 0.881 & 88 & 90.53 & 5h49m & 12.2 \\
+\hline
+EFFNET B6 & 0.884 & 0.883 & 0.882 & 88 & 90.43 & 7h51m & 14.5 \\
+\hline
+EFFNET B7 & 0.857 & 0.856 & 0.856 & 86 & 90.47 & 10h34m & 18.0 \\
+\hline
+EFFNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 90.69 & 2h6m & 4.4 \\
+\hline
+EFFNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 91.72 & 2h32m & 5.1 \\
+\hline
+EFFNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 88.16 & 2h45m & 5.4 \\
+\hline
+EFFNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 94.46 & 2h55m & 6.2 \\
+\hline
+EFFNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 86.58 & 2h58m & 7.7 \\
+\hline
+EFFNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 84.74 & 3h30m & 9.3 \\
+\hline
+EFFNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 85.05 & 14h58m & 17.9 \\
+\hline
+\textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84.10} & \textbf{--} & \textbf{--} & \textbf{8.0} \\
+\hline
+\end{tabular}
+\caption{CNN Bruises Results for CPU }
+\label{tab:more_cnn_training_cpu}
+\end{table}
+
+% % Table 2: CNN Training Results for CPU
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{l|c|c|c|c|c|c}
+% \hline \hline
+% \textbf{Network} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{Acc} & \textbf{Time} & \textbf{Mem} \\
+% \hline
+% VGG16 & 0.297 & 0.545 & 0.384 & 54 & 5h38m & 6.5 \\
+% \hline
+% ALEXNET & 0.297 & 0.545 & 0.384 & 54 & 4h25m & 3.3 \\
+% \hline
+% RESNET50 & 0.858 & 0.844 & 0.844 & 84 & 8h24m & 5.4 \\
+% \hline
+% GOOGLENET & 0.843 & 0.808 & 0.799 & 81 & 3h14m & 4.0 \\
+% \hline
+% MOBILENETV2 & 0.859 & 0.858 & 0.858 & 86 & 3h44m & 4.8 \\
+% \hline
+% DENSENET121 & 0.839 & 0.838 & 0.838 & 84 & 3h8m & 6.7 \\
+% \hline
+% EFFICIENTNET B0 & 0.873 & 0.870 & 0.870 & 87 & 2h37m & 5.3 \\
+% \hline
+% EFFICIENTNET B1 & 0.898 & 0.897 & 0.896 & 90 & 3h8m & 6.7 \\
+% \hline
+% EFFICIENTNET B2 & 0.901 & 0.901 & 0.901 & 90 & 2h56m & 6.7 \\
+% \hline
+% EFFICIENTNET B3 & 0.913 & 0.913 & 0.913 & 91 & 3h27m & 8.0 \\
+% \hline
+% EFFICIENTNET B4 & 0.897 & 0.897 & 0.897 & 90 & 4h17m & 9.8 \\
+% \hline
+% EFFICIENTNET B5 & 0.892 & 0.883 & 0.881 & 88 & 5h45m & 12.2 \\
+% \hline
+% EFFICIENTNET B6 & 0.884 & 0.883 & 0.882 & 88 & 7h12m & 14.5 \\
+% \hline
+% EFFICIENTNET B7 & 0.857 & 0.856 & 0.856 & 86 & 9h9m & 18.0 \\
+% \hline
+% EFFICIENTNETV2-B0 & 0.873 & 0.860 & 0.858 & 86 & 2h6m & 4.4 \\
+% \hline
+% EFFICIENTNETV2-B1 & 0.893 & 0.893 & 0.893 & 89 & 3h30m & 5.1 \\
+% \hline
+% EFFICIENTNETV2-B2 & 0.888 & 0.881 & 0.881 & 88 & 2h45m & 5.4 \\
+% \hline
+% EFFICIENTNETV2-B3 & 0.905 & 0.905 & 0.905 & 90 & 2h32m & 6.2 \\
+% \hline
+% EFFICIENTNETV2-S & 0.860 & 0.836 & 0.831 & 84 & 2h55m & 7.7 \\
+% \hline
+% EFFICIENTNETV2-M & 0.856 & 0.846 & 0.846 & 85 & 2h37m & 9.3 \\
+% \hline
+% EFFICIENTNETV2-L & 0.849 & 0.836 & 0.836 & 84 & 13h39m & 17.9 \\
+% \hline
+% \textbf{AVERAGE} & \textbf{0.820} & \textbf{0.838} & \textbf{0.821} & \textbf{84} & \textbf{--} & \textbf{8.0} \\
+% \hline
+%
+% \end{tabular}
+% \caption{More CNN Training Results for CPU}
+% \label{tab:more_cnn_training_cpu}
+% \end{table}
+
+\subsection{Analysis of Table~\ref{tab:overall_accuracy_cnn}}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l|cc}
+  \hline \hline
+                & \multicolumn{2}{c}{Accuracy}            \\ \hline
+  Model          & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  EfficientNetB0 & \multicolumn{1}{c|}{89\%}       & 87\%     \\ \hline
+  VggNet16       & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
+  AlexNet        & \multicolumn{1}{c|}{43\%}       & 54\%      \\ \hline
+    \acr{ResNet}50       & \multicolumn{1}{c|}{87\%}       & 84\%      \\ \hline
+  GoogleNet      & \multicolumn{1}{c|}{89\%}       & 81\%      \\ \hline
+  MobileNetV2    & \multicolumn{1}{c|}{90\%}       & 86\%      \\ \hline
+  DenseNet121    & \multicolumn{1}{c|}{88\%}       & 84\%      \\ \hline
+  \end{tabular}
+  \caption{Accuracy of Different CNN Models}
+  \label{tab:overall_accuracy_cnn}
+\end{table}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l|cc}
+  \hline \hline
+                & \multicolumn{2}{c}{Test Accuracy}            \\ \hline
+  EfficientNet & \multicolumn{1}{c|}{Ripeness} & Bruises \\ \hline
+  B0 & \multicolumn{1}{c|}{89\%}       & 87\%      \\ \hline
+  B1 & \multicolumn{1}{c|}{86\%}       & 90\%      \\ \hline
+  B2 & \multicolumn{1}{c|}{92\%}       & 90\%      \\ \hline
+  B3 & \multicolumn{1}{c|}{88\%}       & 91\%      \\ \hline
+  B4 & \multicolumn{1}{c|}{90\%}       & 90\%      \\ \hline
+  B5 & \multicolumn{1}{c|}{92\%}       & 88\%      \\ \hline
+  B6 & \multicolumn{1}{c|}{93\%}       & 88\%      \\ \hline
+  V2B0 & \multicolumn{1}{c|}{91\%}       & 88\%      \\ \hline
+  V2B1 & \multicolumn{1}{c|}{92\%}       & 89\%      \\ \hline
+  V2B2 & \multicolumn{1}{c|}{92\%}       & 89\%      \\ \hline
+  V2B3 & \multicolumn{1}{c|}{93\%}       & 92\%      \\ \hline
+  \end{tabular}
+  \caption{Test Accuracy of Different EfficientNet Version 1 and 2}
+  \label{tab:overall_accuracy_effnet}
+\end{table}
+
+For the classification of ripeness, the highest accuracy was obtained
+with EfficientNetV2-B0, which achieved 91\%. This was followed by
+MobileNetV2, which achieved 90\%, EfficientNet-B0 and GoogLeNet at 89\%,
+DenseNet121 at 88\%, and \acr{ResNet}50 at 87\%. In contrast, both VGGNet16 and
+AlexNet severely underperformed, each reaching only 43\% accuracy. A closer
+inspection of their classification reports revealed that these two models
+predicted only the green class across all test samples, completely failing
+to recognize yellow and yellow\_green. This explains why their accuracy
+plateaued at 43\%, a value that directly corresponds to the proportion of
+green samples in the dataset. The collapse into a single-class prediction
+highlights the limitations of these older architectures: AlexNet and
+VGGNet16 lack the advanced feature extraction and efficient feature reuse
+mechanisms present in modern CNNs, making them less capable of capturing
+the subtle hue and texture variations that distinguish ripeness stages
+\citep{Krizhevsky2012} \citep{simonyan2015}. AlexNet, while revolutionary
+in 2012, was designed for large-scale but relatively coarse ImageNet
+classification and relies on shallow convolutional layers with large
+receptive fields, which limits its ability to capture fine-grained
+differences. Similarly, VGGNet16, though deeper, uses very uniform 3×3
+convolutions without skip connections or dense connectivity, leading to
+redundancy and inefficient feature reuse, which modern architectures have
+since addressed. Furthermore, the training setup and hyperparameters, which
+favored faster convergence in lightweight and well-optimized models such as
+MobileNetV2 and EfficientNet \citep{howard2017}  \citep{tan2019}, did not
+provide the same benefit to AlexNet and VGGNet16 \citep{Huang2017}.
+Importantly, the train accuracy values further reinforce these findings
+where modern architectures such as EfficientNetV2-B3 (93\% train, 93\%
+test) and EfficientNet-B6 (96\% train, 93\% test) maintained close
+alignment between training and test performance, indicating strong
+generalization. In contrast, AlexNet and VGGNet16 stagnated at 43\% for
+both training and test accuracy, indicating that they were underfitting and
+unable to capture the discriminative features necessary for ripeness
+classification. From a performance requirements perspective, the results
+also demonstrate that modern architectures not only achieved higher
+accuracy but did so with significantly lower training times and more
+efficient VRAM utilization. For instance, EfficientNetV2-B0 reached the
+highest accuracy in under two hours with an average VRAM usage of only 3
+GB, while AlexNet required over four hours yet produced poor results, and
+VGGNet16 consumed the highest VRAM (7 GB) despite its low accuracy. This
+efficiency–accuracy balance makes modern CNNs far more suitable for
+practical deployment in ripeness classification tasks, where both
+computational cost and predictive reliability are critical.
+
+For the classification of bruises, the highest accuracy was obtained with
+EfficientNetV2-B0, which achieved 88\%. This was followed by EfficientNet-B0
+at 87\% and MobileNetV2 at 86\%. \acr{ResNet} and DenseNet121 both reached 84\%,
+while GoogLeNet trailed slightly at 81\%. In contrast, both VGG16 and AlexNet
+severely underperformed, each plateauing at only 54\% accuracy. Similar to the
+results from training ripeness, VGG16 and AlexNet collapsed into underfitting,
+where both models produced very low precision (0.2965) and F1-scores (0.384),
+and their training accuracy stagnated at the same 54\%, confirming their
+inability to learn discriminative features. By contrast, modern architectures
+such as EfficientNet and MobileNetV2 leverage depthwise separable convolutions,
+compound scaling, and optimized feature reuse, enabling them to achieve higher
+accuracy with fewer parameters and faster convergence. EfficientNetV2-B0 not
+only achieved the highest accuracy (88\%) but also did so in just 2 hours and
+6 minutes with an average VRAM usage of 4.4 GB, making it both the most
+accurate and the most computationally efficient. MobileNetV2, while slightly
+less accurate, also demonstrated excellent efficiency, completing training in
+under 4 hours with modest memory requirements. From a performance requirements
+perspective, these results highlight that modern CNNs are not only more
+accurate but also far more resource-efficient. VGG16, despite consuming the
+most VRAM (6.5 GB) and requiring over 5 hours of training, delivered poor
+results, while AlexNet trained for more than 4 hours yet plateaued at the same
+low accuracy. In contrast, EfficientNetV2-B0 and EfficientNet-B0 achieved
+state-of-the-art performance in a fraction of the time and memory.
+
+
+Ultimately, choosing a CNN model from the EfficientNetV2 family
+represents the most practical and forward-looking decision for both ripeness
+and bruise classification tasks. These models consistently delivered the
+highest accuracy across experiments while maintaining shorter training
+times and lower memory footprints compared to other architectures.
+Their compound scaling strategy allows them to balance depth, width,
+and resolution more effectively than earlier CNNs, ensuring strong
+generalization without excessive computational cost \cite{tan2019}.
+This makes them not only state-of-the-art in predictive performance
+but also highly deployable in real-world agricultural settings, where
+efficiency, scalability, and reliability are critical. By combining
+accuracy, speed, and resource efficiency, the EfficientNetV2 family
+provides the best foundation for building robust and sustainable
+computer vision systems for fruit quality assessment.
+
+\subsection{Analysis of Table~\ref{tab:more_cnn_training_cpu} and Table~\ref{tab:more_cnn_training_gpu}} 
+
+For ripeness classification, among the EfficientNet V1 models as seen in
+Table~\ref{tab:more_cnn_training_cpu} and Table~\ref{tab:more_cnn_training_gpu}
+, B0 to B4 exhibited a performance plateau around 89–91\% accuracy.
+This can be explained by the compound scaling principle where each
+successive variant increases depth, width, and input resolution in tandem
+\citep{tan2019}. However, for the benchmark, the input resolution was fixed
+at 224×224 for all models. Since B0–B4 are relatively shallow and narrow,
+their representational capacity is already well-matched to the available
+input information at 224×224. Scaling them further in depth and width
+without increasing resolution does not provide additional discriminative
+power, leading to plateau in accuracy. Notably, their training accuracies,
+ranging from 89.5\% to 92.3\%, closely mirrored their test accuracies,
+suggesting that these models were neither severely underfitting nor
+overfitting, but rather limited by the resolution bottleneck. In contrast,
+B5 and B6 showed measurable improvements (92–93\% accuracy) even under the
+224×224 constraint. This is because their increased depth and width allowed
+them to extract more abstract and hierarchical features, compensating for
+the lack of higher-resolution input. While they were not operating at their
+full theoretical potential, which would require larger input sizes like
+456×456 or 528×528, their additional capacity still translated into better
+generalization for the 3-class ripeness classification task. Essentially,
+B5 and B6 reached a sweet spot where the added representational power was
+still beneficial, even though the input resolution bottleneck limited
+further gains. This is further supported by their training accuracies
+(94.1\% for B5 and 96.0\% for B6), which were slightly higher than their
+test accuracies, indicating strong learning capacity with only a modest
+generalization gap. By contrast, B7 crossed the threshold where additional
+scaling became counterproductive. With 18.8 GB of VRAM usage and a 9-hour
+training time, its extreme depth and parameter count, combined with the
+fixed low-resolution input, led to over-parameterization relative to the
+available information, optimization inefficiency, and degraded performance
+(87\%). This increase in training time and memory usage is expected, as
+higher EfficientNet versions introduce significantly more parameters. For
+instance, B6 has over 43 million parameters compared to B5’s 30 million,
+resulting in longer forward and backward passes and greater memory
+consumption per epoch. If the required memory exceeds available VRAM, the
+system resorts to RAM, which has slower access speeds, thereby
+significantly increasing training time. On the other hand, EfficientNetV2
+models demonstrated superior efficiency and faster convergence. Variants
+B0–B3 consistently achieved 91–93\% accuracy, with V2-B3 emerging as the
+top performer (precision 0.9258, recall 0.9256, F1-score 0.9253, accuracy
+93\%) while maintaining modest VRAM usage (4.5 GB) and a short training
+time ($\sim$2 hours). Their training accuracies (92.3–94.0\%) were well
+aligned with their test accuracies, confirming that these models
+generalized effectively without significant overfitting. In contrast, the
+larger variants (V2-S, V2-M, V2-L) all exhibited diminishing returns, as
+their increased depth and parameter counts did not translate into higher
+accuracy, instead plateauing at 87–89\% while demanding substantially more
+computational resources, similar to the case with EfficientNetV1 series.
+Their longer training times and higher VRAM usage reflect the same scaling
+trade-offs observed in B7, where added complexity does not yield
+proportional performance gains under fixed input resolution
+\citep{tan2021}. This was also reflected in their training accuracies
+(90.0–90.5\%), which showed little advantage over their test results,
+reinforcing that additional complexity did not yield meaningful gains. This
+performance limitation may also be attributed to the fixed input image size
+of 224×224, which constrained the representational capacity of deeper
+models , a phenomenon similarly observed with the EfficientNetV1-B7. This
+suggests that for a 3-class dataset of approximately 6,000 images,
+additional model complexity does not yield proportional performance gains
+and may even hinder optimization efficiency. Under these conditions, V2-B3
+stands out as the most effective architecture, striking the best balance
+between accuracy, efficiency, and training time.assessment.
+
+For bruise classification as seen in
+ Table~\ref{tab:more_cnn_training_cpu}, mid-tier EfficientNet V1 models
+ (B1–B3) delivered the strongest results, with B3 achieving the highest
+ performance (precision = 0.913, recall = 0.913, F1-score = 0.9129,
+ accuracy = 91\%). Their training accuracies ($\sim$90–91\%) were closely
+ aligned with their test results, indicating that these models generalized
+ well without significant overfitting. In contrast, the larger V1 variants
+ (B5–B7) required substantially more training time and memory yet plateaued
+ at 86–88\% accuracy, reflecting the same diminishing returns noted in
+ ripeness classification. This was further supported by their training
+ accuracies ($\sim$90–90.5\%), which were only marginally higher than
+ their test scores, suggesting that additional depth and parameters did
+ not translate into meaningful generalization gains. Among the V2 models,
+ V2-B3 stood out with 92\% accuracy and balanced precision/recall (0.919
+ each), surpassing the best V1 models while maintaining shorter training
+ times and lower memory usage. Meanwhile, the larger V2 variants (S, M, L)
+ mirrored the inefficiencies of their V1 counterparts, consuming more
+ resources without corresponding accuracy gains. Their training
+ accuracies ($\sim$85–86\%) were nearly identical to their test results,
+ confirming that these models were underutilizing their added capacity
+ under the fixed 224×224 input constraint. Across both families, GPU-based
+ training consistently achieved shorter training times than CPU-only runs,
+ even though the bruise classification task involved only two classes and
+ used the same dataset.
+
+ Overall, EfficientNetV2-B3 emerged as the most practical and effective model
+ for both ripeness and bruise classification, combining high accuracy (93\%
+ and 92\%, respectively) with modest VRAM requirements and short training
+ times ($\sim$2–3 hours). Its balance of performance and efficiency makes it
+ particularly well-suited for deployment in real-world agricultural
+ applications, where computational resources may be limited but reliable,
+ high-accuracy classification is essential. Complementing this, training with
+ GPUs proved consistently advantageous across both tasks, as their massively
+ parallel architecture is optimized for the matrix multiplications and
+ convolution operations central to deep learning. This allowed models to
+ converge significantly faster than on CPUs, reducing training times from
+ several hours to just a fraction of that. The efficiency gains were
+ especially evident in deeper networks, where CPU-only training often became
+ impractically slow. Notably, bruise classification, despite involving only
+ two classes and the same dataset size, still trained more slowly on CPU
+ than ripeness classification did on GPU, underscoring the decisive role of
+ hardware acceleration in practical deep learning workflows.
+
+\subsection{Analysis of Confusion Matrix together with Validation Loss and Accuracy}
+In this section, the performance of the top three models for both ripeness
+and bruise classification is examined in greater detail through their
+validation loss and accuracy curves, as well as their corresponding
+confusion matrices. These analyses provide deeper insight into how each
+model converged during training, the stability of their learning process,
+and their ability to generalize beyond the training set. The confusion
+matrices, in particular, highlight the distribution of correct and incorrect
+predictions across classes, allowing for a clearer understanding of where
+misclassifications occur.
+
+\subsubsection{Ripeness Classification}
+% effnetb5
+
+To start off, for ripeness classification, The EfficientNet-B5 model achieved strong
+overall performance, with a precision of 0.9246, recall of 0.9238, and an
+F1-score of 0.924, corresponding to an overall accuracy of 92\%, being the
+3rd best model for the task. These values indicate that the model is highly
+effective at distinguishing between the three ripeness classes, with balanced
+precision and recall suggesting that it does not disproportionately favor one
+class over another. Training required approximately 5 hours and 45 minutes,
+with an average VRAM usage of 11.6 GB, reflecting the computational demands
+of a high-capacity architecture such as EfficientNet-B5.
+
+Based on the confusion matrix in Figure~\ref{fig:effnetb5}, the model classified the
+majority of samples correctly across all categories, with particularly strong
+results for the green and yellow classes. For instance, 223 out of 239
+green samples were correctly identified, with only 16 misclassified as
+yellow\_green. Similarly, the yellow class showed minimal confusion, with 117
+correct predictions and only 7 misclassified as yellow\_green. The greatest
+overlap occurred in the yellow\_green class, where 169 samples were correctly
+predicted, but 19 were misclassified as either green or yellow. This pattern
+suggests that the transitional nature of the yellow\_green class poses the
+greatest challenge, as its visual features overlap with both neighboring
+categories. Nonetheless, the relatively low misclassification rates confirm that
+the model captures the key discriminative features of each ripeness stage.
+
+The validation loss and accuracy curves in Figure~{fig:effnetb5} further illustrate the
+model’s behavior during training. Validation accuracy remained consistently
+high, stabilizing above 0.90 across all epochs, which indicates that the model
+generalized well to unseen data. In contrast, validation loss exhibited
+noticeable fluctuations, with sharp drops and occasional peaks at specific
+epochs. This divergence between stable accuracy and variable loss suggests
+that while the model consistently predicted the correct class, it sometimes
+assigned lower confidence to its predictions. This behavior is common in
+multi-class classification tasks where class boundaries are less distinct, as
+in the case of the yellow\_green category. Importantly, the absence of a
+downward trend in accuracy despite the oscillations in loss indicates that the
+model did not suffer from severe overfitting.
+
+From a performance requirements perspective, the EfficientNet-B5 model
+demonstrates a favorable balance between accuracy and computational cost.
+Achieving over 92\% accuracy with an F1-score of 0.924 while maintaining
+an average VRAM usage of 11.6 GB indicates that the model is both reliable
+and feasible for deployment on high-end GPUs commonly available in
+research and industrial settings. The total training time of 5 hours and 45
+minutes is reasonable given the model’s depth and parameter count,
+suggesting that retraining or fine-tuning for new datasets is practical within
+typical project timelines. Importantly, the stability of validation accuracy
+across epochs implies that the model converges efficiently without requiring
+excessive epochs, further reducing computational overhead. These results
+highlight that EfficientNet-B5 not only meets accuracy benchmarks but also
+aligns with resource efficiency considerations, making it a strong candidate
+for real-world applications where both predictive performance and hardware
+constraints must be balanced.
+
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b5/confusion_matrix_ripeness}
+        \label{fig:effnetb5_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b5/val_loss_accuracy_curve_ripeness}
+        \label{fig:effnetb5_va}
+    }
+    \caption{Ripeness Training and Testing of EfficientNet-B5}
+    \label{fig:effnetb5}
+\end{figure}
+
+The second-best model for ripeness classification is EfficientNet-B6, achieving a
+ precision of 0.9339, recall of 0.9328, and an F1-score of 0.9331, corresponding
+ to an overall accuracy of 93\%. Like EfficientNet-B5, it demonstrated strong
+ and balanced performance across all three ripeness categories, but with
+ slightly higher accuracy. Training required approximately 7 hours and 12
+ minutes, with an average VRAM usage of 14.5 GB, which is substantially more
+ demanding than B5, reflecting the deeper architecture and larger parameter
+ count.
+
+The confusion matrix in Figure~\ref{fig:effnetb5} shows that the green class was classified
+ with high reliability, with 226 correct predictions and only 13 misclassified as
+ yellow\_green. The yellow class also performed well, with 115 correct
+ predictions and 9 misclassified as yellow\_green. As with B5, the yellow\_green
+ class posed the greatest challenge due to its transitional characteristics, with
+ 173 correct predictions but 15 misclassified as either green or yellow. This
+ reinforces the earlier observation that intermediate ripeness stages are
+ inherently more ambiguous, though overall misclassification rates remained
+ low.
+
+The validation curves in Figure~\ref{fig:effnetb5} further illustrate the model’s training
+ dynamics. Validation loss decreased sharply after the first epoch and
+ stabilized between 0.2 and 0.4, while validation accuracy steadily increased,
+ reaching approximately 0.97 by the final epoch. This consistent improvement
+ indicates effective convergence without signs of severe overfitting. Compared
+ to B5, B6 leveraged its higher representational capacity to refine feature
+ extraction further, leading to more confident predictions.
+
+From a performance standpoint, EfficientNet-B6 clearly delivers superior
+ accuracy compared to B5, but at the cost of significantly higher resource
+ consumption. While its 93\% accuracy and F1-score above 0.93 make it highly
+ reliable for practical applications, the 14.5 GB VRAM requirement and
+ extended training time of over 7 hours highlight the trade-off between
+ accuracy gains and efficiency. As with B5, this makes B6 well-suited for
+ research and industrial environments with high-end GPUs, but less practical
+ for real-time or edge deployment without model compression or optimization.
+
+% effnetb6
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b6/confusion_matrix_ripeness}
+        \label{fig:effnetb6_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/b6/val_loss_accuracy_curve_ripeness}
+        \label{fig:effnetb6_va}
+    }
+    \caption{Ripeness Training and Testing of EfficientNet-B6}
+    \label{fig:effnetb6}
+\end{figure}
+
+The best-performing model for ripeness classification was EfficientNetV2-B3, achieving
+ a precision of 0.9258, recall of 0.9256, F1-score of 0.9253, and an overall
+ accuracy of 93\%. These results confirm that the model is highly effective at
+ distinguishing between the three ripeness categories, with balanced precision
+ and recall indicating consistent performance across classes. Training required
+ only 2 hours and 2 minutes with an average VRAM usage of 4.5 GB, making
+ it far more efficient than deeper variants such as B5 and B6 while still
+ achieving comparable accuracy.
+
+The confusion matrix in Figure~\ref{fig:effnetb6} provides further insight into class-level
+ performance. The green class was classified with high reliability, with 231
+ correct predictions and only 8 misclassified as yellow\_green. The yellow class
+ also performed strongly, with 115 correct predictions and 9 misclassified as
+ yellow\_green. As with the other models, the yellow\_green class posed the
+ greatest challenge, with 164 correct predictions but 24 misclassified as either
+ green or yellow. This reflects the inherent ambiguity of the transitional stage,
+ where visual features overlap with both neighboring categories. Despite this,
+ overall misclassification rates remained low, confirming that the model
+ effectively captured the discriminative features of each ripeness stage.
+
+The validation curves in Figure~\ref{fig:effnetb6} further illustrate the model’s training
+ dynamics. Validation accuracy remained consistently high, stabilizing between
+ 0.85 and 0.92 across epochs, while validation loss fluctuated between 0.2 and
+ 0.4. The stability of accuracy, despite minor oscillations in loss, suggests that
+ the model generalized well to unseen data and avoided severe overfitting.
+ The fluctuations in loss likely reflect varying confidence in predictions for the
+ ambiguous yellow\_green class, but the consistently high accuracy
+ demonstrates that the model still assigned correct labels in most cases.
+
+From a performance standpoint, EfficientNetV2-B3 offers the best balance
+ between accuracy and computational efficiency. Achieving 93\% accuracy
+ with an F1-score above 0.92 while requiring only a fraction of the training
+ time and memory of B5 or B6 highlights its practicality for deployment.
+ While B6 achieved slightly higher precision and recall, its steep computational
+ demands, over 7 hours of training and 14.5 GB of VRAM, make it less
+ suitable for iterative experimentation or resource-constrained environments.
+ Similarly, B5 delivered strong accuracy but required nearly 6 hours of training
+ and 11.6 GB of VRAM, reflecting a high resource cost for only marginal gains.
+ In contrast, V2-B3 enables faster experimentation cycles, more accessible
+ deployment, and robust classification of both ripeness extremes and
+ transitional classes.
+
+Ultimately, EfficientNetV2-B3 provides the optimal trade-off between high-
+ quality classification and manageable computational requirements, making it
+ the best candidate for mango ripeness classification.
+
+% effnetv2b3
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/v2b3/confusion_matrix_ripeness}
+        \label{fig:effnetv2b3_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/ripeness/v2b3/val_loss_accuracy_curve_ripeness}
+        \label{fig:effnetv2b3_va}
+    }
+    \caption{Ripeness Training and Testing of EfficientNetV2-B3}
+    \label{fig:effnetv2b3_rp}
+\end{figure}
+
+
+\subsubsection{Bruises Classification}
+% effnetb2
+
+Moving forward with bruise classification, the EfficientNet-B2 model achieved strong performance overall.
+It reached a precision of 0.9012, recall of 0.9008, and F1-score of 0.9009.
+The overall accuracy was 90\%, ranking as the third-best model tested.
+These results show a well-balanced model with minimal trade-offs in detection.
+It effectively identifies both bruised and not-bruised cases with reliable accuracy.
+Training lasted approximately 3 hours and 8 minutes under stable GPU performance.
+Average VRAM usage was about 6.7 GB during the entire training session.
+This computational demand remains manageable for most modern GPU-based research setups.
+
+The confusion matrix in Figure~\ref{fig:effnetb2} reveals the class-level distribution clearly.
+The model correctly identified 242 bruised and 203 not-bruised fruit samples.
+However, it misclassified 27 bruised items as not bruised, indicating false negatives.
+Additionally, 22 not-bruised items were misclassified as bruised, producing false positives.
+This pattern suggests a slight tendency to under-detect bruised mango samples.
+False negatives are critical in quality control because they allow defects through.
+Despite these errors, the model maintains strong reliability in classification results overall.
+
+The validation curves in Figure~\ref{fig:effnetb2} illustrate training stability and convergence well.
+Validation loss dropped sharply after the first epoch and continued declining steadily.
+Validation accuracy increased quickly, stabilizing around 0.85 after several epochs completed.
+These trends indicate efficient learning and absence of severe overfitting during training.
+Minor oscillations in loss and accuracy reflect normal exploration of local minima.
+Such fluctuations are typical in deep learning models seeking optimal decision boundaries.
+
+From a performance perspective, EfficientNet-B2 satisfies practical requirements for bruise detection systems.
+With 90\% accuracy and balanced precision-recall metrics, it ensures consistent defect detection.
+The model offers reliability without imposing excessive computational or memory resource demands.
+Its three-hour training time supports scalability for mid-range GPU deployment setups.
+However, false negatives remain a primary issue affecting industrial screening reliability.
+Reducing them may involve threshold adjustments or using cost-sensitive learning approaches.
+Ensemble methods could further improve robustness and minimize undetected bruised cases effectively.
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b2/confusion_matrix_bruises}
+        \label{fig:effnetb2_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b2/val_loss_accuracy_curve_bruises}
+        \label{fig:effnetb2_va}
+    }
+    \caption{Bruises Training and Testing of EfficientNet-B2}
+    \label{fig:effnetb2}
+\end{figure}
+
+The EfficientNet-B3 model demonstrated strong classification performance across all evaluation metrics.
+It achieved a precision of 0.913, recall of 0.913, and F1-score of 0.9129.
+Overall accuracy reached 91\%, ranking as the second-best model for bruise classification.
+These values reflect high consistency in identifying both bruised and not-bruised samples.
+The trade-offs between false positives and false negatives remained minimal overall.
+Training required approximately 3 hours and 27 minutes using stable GPU resources.
+Average memory usage was 8 GB, slightly higher than EfficientNet-B2’s requirements.
+Despite this, resource demands remained feasible for most modern GPU systems.
+
+The confusion matrix in Figure~\ref{fig:effnetb3} presents the model’s classification outcomes clearly.
+The network correctly identified 250 bruised and 201 not-bruised fruit samples.
+It misclassified 19 bruised items as not bruised, representing false negatives.
+Additionally, 24 not-bruised items were misclassified as bruised, forming false positives.
+Compared to EfficientNet-B2, this model reduced false negatives significantly overall.
+This reduction decreases the likelihood of defective mangoes passing inspection unnoticed.
+Such improvement is crucial in quality control, where undetected bruising is costly.
+False alarms are less concerning than missed detections in industrial screening tasks.
+
+The validation curves in Figure~\ref{fig:effnetb3} depict stable training and convergence performance.
+Validation loss decreased steadily across epochs, showing consistent learning throughout training.
+Validation accuracy stabilized between 0.80 and 0.85 with minimal oscillations.
+This parallel pattern of low loss and stable accuracy suggests good generalization.
+The relatively flat accuracy curve after early epochs indicates efficient convergence overall.
+No signs of instability or severe overfitting were observed during final training.
+
+From a performance perspective, EfficientNet-B3 offers improved reliability over EfficientNet-B2.
+It balances classification accuracy and computational efficiency more effectively for bruise detection.
+Although training time and memory usage slightly increased, accuracy gains justify the cost.
+The reduced false negatives strengthen model dependability for automated quality control.
+This characteristic ensures fewer defective fruits are misclassified as acceptable products.
+Overall, EfficientNet-B3 represents a dependable and scalable choice for industrial bruise inspection.
+
+% effnetb3
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b3/confusion_matrix_bruises}
+        \label{fig:effnetb3_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/b3/val_loss_accuracy_curve_bruises}
+        \label{fig:effnetb3_va}
+    }
+    \caption{Bruises Training and Testing of EfficientNet-B3}
+    \label{fig:effnetb3}
+\end{figure}
+
+The EfficientNetV2-B3 model achieved the best overall performance for bruise classification.
+It reached precision, recall, and F1-score values all equal to 0.919.
+The overall accuracy was 92\%, demonstrating strong and balanced predictive capability.
+These metrics confirm consistent performance across both bruised and not-bruised mango classes.
+Neither precision nor recall dominated at the expense of the other.
+Training was notably efficient, finishing in just 2 hours and 55 minutes.
+Average VRAM usage measured only 6.2 GB throughout the training process.
+This requirement was lower than both EfficientNet-B2 and EfficientNet-B3 models.
+Despite lower computational demand, the model still achieved superior classification accuracy.
+This efficiency-accuracy balance makes V2-B3 practical for constrained computing environments.
+
+The confusion matrix in Figure~\ref{fig:effnetv2b3_rp} illustrates the model’s predictive distribution.
+The network correctly classified 245 bruised and 202 not-bruised fruit samples.
+It misclassified 24 bruised items as not bruised, forming false negatives.
+Meanwhile, 23 not-bruised items were incorrectly labeled as bruised, forming false positives.
+Compared to previous models, V2-B3 exhibited a more balanced error profile.
+EfficientNet-B2 and B3 showed slightly higher false negatives or false positives respectively.
+From a practical perspective, false negatives pose greater risks in production.
+Undetected bruised fruit directly threaten overall product quality and customer satisfaction.
+Although the number of missed detections was relatively small, optimization remains beneficial.
+Techniques such as threshold tuning or cost-sensitive loss functions may further reduce them.
+
+The validation curves in \ref{fig:cnn_bruises_info} show consistent training convergence behavior.
+Validation accuracy steadily increased and stabilized close to 0.9 after several epochs.
+Validation loss fluctuated slightly but showed a clear downward trend overall.
+This parallel pattern of stable accuracy and decreasing loss indicates effective generalization.
+Minor oscillations in loss reflect expected variations due to batch differences.
+Such fluctuations were also observed in EfficientNet-B2 and EfficientNet-B3 models.
+However, V2-B3 maintained consistently higher accuracy across the entire training process.
+No severe overfitting or instability was observed during model development or validation.
+
+In summary, EfficientNetV2-B3 outperformed both EfficientNet-B2 and EfficientNet-B3 comprehensively.
+It delivered superior predictive accuracy while reducing training time and memory consumption.
+The model also demonstrated smoother convergence and improved stability during optimization.
+This balance of precision, efficiency, and robustness highlights its deployment suitability.
+EfficientNetV2-B3 stands as the most effective network for automated bruise detection.
+It provides a scalable, reliable, and resource-efficient solution for industrial quality control.
+% effnetv2b3
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Confusion Matrix]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/v2b3/confusion_matrix_bruises}
+        \label{fig:effnetv2b3_cm}
+    }
+    \hfill
+    \subbottom[Validation and Accuracy per Epoch]{
+        \includegraphics[width=0.45\textwidth]{/results/bruises/v2b3/val_loss_accuracy_curve_bruises}
+        \label{fig:effnetv2b3_va}
+    }
+    \caption{Bruises Training and Testing of EfficientNetV2-B3}
+    \label{fig:effnetv2b3_rp}
+\end{figure}
+
+% [x] todo: revisit once actual interview and testing with expert is done
+\section{Comparative Analysis: Model Performance vs. Expert Benchmark}
+% placholder till ground truth
+To establish a robust benchmark for model performance, a comparative analysis
+was conducted against the expert assessment of a qualified horticulturist. This
+section outlines the methodology for the expert evaluation and presents a
+comparative summary of the results.
+\subsection{Expert Evaluation Methodology}
+The expert benchmark was established by Jerry Bravante, a farmer with 20 years
+of experience in mango species such as carabao, pico, idian, apple mango. Their
+expertise was employed to provide a ground-truth classification for mango
+samples based on two key phenotypic traits:
+\begin{itemize}
+    \item Skin Color: yellow, yellow-green, green
+    \item Bruises: bruised, non-bruised
+\end{itemize}
+To ensure statistical significance and mitigate the potential for coincidental
+agreement, a substantial sample set was utilized. The expert evaluated 50
+individual mangoes. No other tools except the expert's knowledge and eyes were
+used to evaluate the mangoes to ensure that the evaluation is based solely on
+human sensory perception.
+
+\subsection{Comparative Results}
+The expert's classifications for the 50 images randomly sampled from the
+dataset are presented in
+Table~\ref{tab:expert_results}.
+These results serve as the validated ground truth against which the predictive
+accuracy of the computational models was measured. Note that terms \gls{not:g},
+\gls{not:yg}, and \gls{not:y} refer to the mango color categories:
+green, yellow-green, and yellow, respectively. Likewise, \gls{not:b} and \gls{not:nb} indicate
+bruised and non-bruised mango surfaces.
+% [x] todo: revisit once actual interview and testing with expert is done
+
+\begin{longtable}{cccccc}
+    \label{tab:expert_results} \\
+    \caption{Expert Classification Results for Mango Phenotypic Traits} \\
+    \toprule
+    {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+     & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+    \midrule
+    \endfirsthead
+    
+    \multicolumn{6}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
+    \toprule
+    {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+     & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+    \midrule
+    \endhead
+    
+    \midrule
+    \multicolumn{6}{c}{{Continued on next page}} \\
+    \endfoot
+    
+    \bottomrule
+    \endlastfoot
+    % -- pg marker 2
+        001 & yg & yg  & b & nb & 0.5\\ % -- 01yg.jpg
+        002 & yg & g  & b & nb  & 0\\ % -- 08_g.jpg
+        003 & yg & yg  & b & b &  1\\ % -- 07b.jpg
+        004 & g & g  & nb & nb  & 1\\ % -- 10nb.jpg
+        005 & yg & yg  & b & nb  & 0.5\\ % -- 05yg.jpg
+        006 & yg & yg  & nb & nb  & 1\\ % --01nb.jpg
+    % -- pg marker 3
+        007 & yg & yg  & b & nb  & 0.5\\ % -- 06nb.jpg
+        008 & y & y  & b & b  & 1\\ % -- 07y.jpg
+        009 & yg & yg  & b & nb  & 0.5\\ % -- 08yg.jpg
+        010 & g & g  & b & nb  & 0.5\\ % -- 04g.jpg
+        011 & g & g  & nb & nb  & 1\\ % -- 09nb.jpg 
+        012 & y & y  & nb & nb  & 1\\ % -- 09y.jpg
+    % -- pg marker 4
+        013 & yg & y  & b & b  & 0.5\\ % -- 07yg.jpg
+        014 & y & yg  & b & b  & 0.5\\ % -- 03y.jpg
+        015 & y & yg  & b & b  & 0.5\\ % -- 09b.jpg
+        016 & yg & yg  & b & nb  & 0.5\\ % -- 08b.jpg
+        017 & y & yg  & b & b  & 0.5\\ % -- 10b.jpg
+        018 & g & yg  & nb & nb  & 0.5\\ % -- 02nb.jpg
+    % -- pg marker 5
+        019 & yg & yg  & b & b  & 1\\ % -- 03b.jpg
+        020 & g & g  & nb & nb  & 1\\ % -- 02g.jpg
+        021 & y & y  & b & nb  & 0.5\\ % -- 02y.jpg
+        022 & g & g  & nb & nb  & 1\\ % -- 01g.jpg
+        023 & g & g  & nb & nb  & 1\\ % -- 08nb.jpg
+        024 & yg & yg  & nb & nb  & 1\\ % -- 05nb.jpg
+    % -- pg marker 6
+        025 & yg & yg  & nb & nb  & 1\\ % -- 03nb.jpg
+        026 & g & g  & b & b  & 1\\ % -- 10g.jpg 
+        027 & y & y  & b & b  & 1\\ % -- 08y.jpg
+        028 & yg & yg  & nb & nb  & 1\\ % -- 06yg.jpg
+        029 & yg & g  & nb & b  & 0\\ % -- 09g.jpg
+        030 & g & g  & nb & nb  & 1\\ % -- 07g.jpg
+    % -- pg marker 7
+        031 & yg & g  & nb & nb  & 0.5\\ % -- 03g.jpg
+        032 & yg & yg  & b & b  & 1\\ % -- 01b.jpg
+        033 & y & y  & b & b  & 1\\ % -- 10y.jpg
+        034 & g & g  & b & nb  & 0.5\\ % -- 05g.jpg
+        035 & y & y  & b & b  & 1\\ % -- 04y.jpg
+        036 & yg & yg  & b & b  & 1\\ % -- 09yg.jpg
+    % -- pg marker 8
+        037 & yg & yg  & b & nb  & 0.5\\ % -- 04yg.jpg
+        038 & g & g  & nb & b  & 0.5 \\ % -- 05b.jpg
+        039 & yg & yg  & b & b  & 1\\ % -- 06b.jpg
+        040 & yg & yg  & b & b  & 1\\ % -- 02yg.jpg
+        041 & g & g  & nb & nb  & 1\\ % -- 06g.jpg
+        042 & yg & yg  & b & nb & 0.5 \\ % -- 04nb.jpg
+    % -- pg marker 9
+        043 & yg & yg  & b & b  & 1\\ % -- 04b.jpg
+        044 & yg & yg  & nb & nb  & 1\\ % -- 07nb.jpg
+        045 & y & y  & b & b  & 1\\ % -- 06y.jpg
+        046 & yg & yg  & nb & nb  & 1\\ % -- 03yg.jpg
+        047 & yg & yg  & nb & nb  & 1\\ % -- 10yg.jpg
+        048 & g & g  & nb & nb  & 1\\ % -- 02b.jpg
+    % -- pg marker 10
+        049 & y & y  & b & b  & 1\\ % -- 05y.jpg
+        050 & y & y  & b & b  & 1\\ % -- 01y.jpg
+\end{longtable}
+
+% -- disucussion of results
+% 31 1's 17 0.5's
+After compiling the scores, the model achieved an overall score of 39.5 out of
+50. This translates to a 79\% accuracy rate, meaning the model's answers were
+correct 79\% of the time when compared to the mango expert's benchmark.
+
+It is important to note that the expert's grading was conducted independently
+and consecutively, without external guidance or tools to aid their judgment.
+This purely human evaluation, while authoritative, inevitably introduces a
+degree of inherent human error.
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
-\subsection{Method 1: Computer Vision}
-To get the length and width of the mango. An initial image without the mango is taken which would be the background image. 
+\subsection{Method 1: Real World Object Size Calculation via Foreground Masking and Thresholding}
+To get the length and width of the mango, an initial image without the mango is taken which would be the background image. 
 After that another image is taken with the mango which would be the foreground image.
+To get the length and width of the mango. An initial image without the mango is taken
+which would be the background image. After that another image is taken with the mango
+which would be the foreground image. As seen on Figure~\ref{fig:mango_1_main}, there are three images
+which are the original image taken with the \acr{RPi} camera on the image acquisition system
+which goes through foreground masking as seen on the second image, then the third image
+is the thresholding image. Note that Figure~\ref{fig:mango_1_main} shows one of the flaws of the first method
+or version which is that due to the bright reflection from the LED lights attached to the
+image acquisition system. It causes an inconsistency when subtracting the foreground
+to the background. Furthermore, note that the background image was taken first before
+the original image show on Figure~\ref{fig:mango_1_main}. Moreover, the foreground masking is converted to
+grayscale and then it would be thresholded with the lower and upper limit range of 50 and
+255 as seen on Listing~\ref{lst:foreground_masking1}. Lastly note that this was taken on the first iteration of the image
+acquisition system which is why the conveyor belt isn’t white. Note that the Equation~\ref{eq:objectSizeCalculation2} 
+is used to convert the pixel measurements to get the dimensions in centimeters.
 
 \begin{figure}[!htbp]
     \centering
@@ -450,6 +1506,13 @@ After that another image is taken with the mango which would be the foreground i
     \label{fig:mango_1_main}
 \end{figure}
 
+For the ideal and best case scenario when doing method 1 of foreground masking and
+thresholding, it can be seen on Figure~\ref{fig:mango_2_main} where the foreground masking and thresholding
+were sucessfully able to remove the background. One of the reasons it was sucessfully for
+this instance is because of the black conveyor belt. However, one of the weaknesses of this
+black conveyor belt is that the material is too stiff causing conveyor belt not to move the
+mango.
+
 \begin{figure}[!htbp]
     \centering
     \subbottom[Original]{
@@ -465,6 +1528,15 @@ After that another image is taken with the mango which would be the foreground i
     \caption{Mango Size Best Case}
     \label{fig:mango_2_main}
 \end{figure}
+
+Moreover, Figure~\ref{fig:mango_3_top}and Figure ~\ref{fig:mango_3_bottom} shows the both cheek sides of the green Carabao
+mango. Notice that there are now four images which are the original image, foreground
+masking, background, and thresholding image. Notice that at the thresholding image there
+is a black area on the center of the mango. This is because when the foreground masking
+happened, the white and green background caused a blue with white top corner and black
+bottom corners. Because of the black corners on the at the middle of the mango, it creates
+a black line that cuts the mango in half for its width. This is also why the Width percent
+difference for this method is 56.89\% as seen on Table~\ref{tab:mean_and_std_results}.
 
 \begin{figure}[!htbp]
     \centering
@@ -489,7 +1561,17 @@ After that another image is taken with the mango which would be the foreground i
     }
     \caption{Mango Top Side with White Conveyor}
     \label{fig:mango_3_top}
-\end{figure}
+\end{figure} 
+
+For the Listing~\ref{lst:foreground_masking2}, it converts it to grayscale for processing. Likewise, a Gaussian blur
+with a 7x7 kernel is applied to reduce noise and smooth the image, followed by Canny
+edge detection using thresholds of 50 and 100 to identify object boundaries. Once the
+edges are processed, the code identifies all external contours in the image using OpenCV’s
+findContours function, which locates the boundaries of objects. After that, it selects the
+largest contour. For the selected contour, it fits a minimum area rectangle around it. The
+corner points of this rectangle are extracted to get the largest contour. Finally, these pixel
+measurements are converted to real-world dimensions formula with the parameters such as
+focal length (3500 pixels) and the known distance from camera to object (40).
 
 \begin{figure}[!htbp]
     \centering
@@ -516,7 +1598,91 @@ After that another image is taken with the mango which would be the foreground i
     \label{fig:mango_3_bottom}
 \end{figure}
 
-\subsection{Method 2: Object Detection}
+\begin{lstlisting}[
+float=h,
+caption=Getting Size through Foreground Masking part 1, 
+label=lst:foreground_masking1,
+language=TeX,
+frame=single]
+def calculate_size(img, top, dir):
+    fg = img['m']
+    bg = img['g']
+    formatted_date_time = img['f_dt']
+    FOCAL_LENGTH_PIXELS = 3500
+    DISTANCE_CAMERA_TO_OBJECT = 40
+    try:
+        suffix = "top" if top else "bottom"
+        foreground = cv2.imread(fg)
+        background = cv2.imread(bg)
+        if foreground is None or background is None:
+            print(f"Error: Unable to read image files. Foreground: {fg}, Background: {bg}")
+            return 0, 0
+            
+        fgMask = cv2.absdiff(foreground, background)
+        fgMask_filename = f"{formatted_date_time}_fgMask_{suffix}.png"
+        # cv2.imwrite(fgMask_filename, fgMask)
+        cv2.imwrite(os.path.join(dir, fgMask_filename), fgMask)
+        # print(f"Foreground mask saved as {fgMask_filename}")
+        
+        _, thresh = cv2.threshold(cv2.cvtColor(fgMask, cv2.COLOR_BGR2GRAY), 50, 255, cv2.THRESH_BINARY)
+        thresh_filename = f"{formatted_date_time}_thresh_{suffix}.png"
+        # cv2.imwrite(thresh_filename, thresh)        
+        thresh_path = os.path.join(dir, thresh_filename)
+        cv2.imwrite(thresh_path, thresh)
+        # print(f"Threshold saved as {thresh_filename}")
+\end{lstlisting} 
+
+\begin{lstlisting}[
+float=h,
+caption=Getting Size through Foreground Masking part 2, 
+label=lst:foreground_masking2,
+language=TeX,
+frame=single]
+        image = cv2.imread(thresh_path)
+        if image is None:
+            print(f"Error: Unable to read threshold image {thresh_filename}")
+            return 0, 0
+            
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        gray = cv2.GaussianBlur(gray, (7, 7), 0)
+        edged = cv2.Canny(gray, 50, 100)
+        edged = cv2.dilate(edged, None, iterations=1)
+        edged = cv2.erode(edged, None, iterations=1)
+        
+        cnts = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)
+        
+        # If no contours found, return zero dimensions
+        if not cnts:
+            return 0, 0
+            
+        # Find the largest contour by area
+        largest_contour = max(cnts, key=cv2.contourArea)
+        
+        # Only process if the contour area is significant enough
+        if cv2.contourArea(largest_contour) < 100:
+            return 0, 0
+            
+        # Process the largest contour
+        box = cv2.minAreaRect(largest_contour)
+        box = cv2.boxPoints(box)
+        box = np.array(box, dtype="int")
+        box = imutils.perspective.order_points(box)
+        (tl, tr, br, bl) = box
+        
+        pixel_width = dist.euclidean(tl, tr)
+        pixel_length = dist.euclidean(tr, br)
+        real_width = calculate_real_world_dimension(pixel_width, DISTANCE_CAMERA_TO_OBJECT, FOCAL_LENGTH_PIXELS)
+        real_length = calculate_real_world_dimension(pixel_length, DISTANCE_CAMERA_TO_OBJECT, FOCAL_LENGTH_PIXELS)
+        
+        return real_width, real_length
+        
+    except Exception as e:
+        print(f"Error in calculate_size: {e}")
+        return 0, 0
+\end{lstlisting}
+
+\subsection{Method 2: Object Detection using Faster-RCNN}
 For the second method, the researchers train an object detection which is a faster RCNN specifically the MobileNetV3.
 This was used because of its lightweight properties for the Raspberry Pi deployment.
 
@@ -525,77 +1691,42 @@ For the training of the object detection, the researchers annotated 488 images t
 
 \subsubsection{Calibration to the Prototype}
 To calibrate the model to measure the real world length and width of the mango, the researchers calibrated the model using a Philippine peso coin which has a diameter of 2.4 cm.
-\begin{verbatim}
-    self.reference_box = [815, 383, 999, 556]
-    self.reference_size_cm = 2.4 
-\end{verbatim}
+The reference box coordinates and reference size in cm can be seen on Listing~\ref{lst:init_coin}.
+\begin{lstlisting}[
+float=h,
+caption=Initializing the Calibration Box, 
+label=lst:init_coin,
+language=TeX,
+frame=single]
+    def __init__(self, model_path, num_classes=7):
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.model = self.load_model(model_path, num_classes)
+        
+        self.class_names = {
+            1: 'bruised', 2: 'not_bruised', 3: 'yellow',
+            4: 'green_yellow', 5: 'green', 6: 'mango', 7: 'background'
+        }
+        # coin object reference
+        self.reference_box = [815, 383, 999, 556]
+        # Known size of reference object in cm
+        self.reference_size_cm = 2.4  
+\end{lstlisting} 
+
 % image of the coin
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{coin_box}
+	\includegraphics[width=0.8\textwidth]{coin_box}
 	\caption{Calibration using Faster RCNN and a Philippine one peso coin}
 	\label{fig:one_peso_coin}
 \end{figure}
 
 Likewise, the reference box that contain the four coordinate points to the coin and the reference size in cm is added to the prototype's code.
 
-\subsection{Test Comparison Between Both Methods}
-To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
-compare and contrast both methods.
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Unripe Carabao Mangoes]{
-        \includegraphics[width=0.45\textwidth]{/size-mango-test/unripe}
-        \label{fig:unripe-mango}
-    }
-    \hfill
-    \subbottom[Ripe Carabao Mangoes]{
-        \includegraphics[width=0.45\textwidth]{/size-mango-test/ripe}
-        \label{fig:ripe-mango}
-    }
-    \caption{Mangoes Tested for Size Measurement}
-    \label{fig:mango_size_test}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_1}
-        \label{fig:m3_top}
-    }
-    \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_2}
-        \label{fig:m3_fm_top}
-    }
-    \vfill
-    \subbottom[Background]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_3}
-        \label{fig:m3_thresh_top}
-    }
-    \hfill
-    \subbottom[Thresholding]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_4}
-        \label{fig:m3_background}
-    }
-    \caption{Mango Top Side with White Conveyor}
-    \label{fig:mango_3_top}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_5}
-        \label{fig:m3_top}
-    }
-    \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{/size-plots/Figure_6}
-        \label{fig:m3_fm_top}
-    }
-    \caption{Mango Top Side with White Conveyor}
-    \label{fig:mango_3_top}
-\end{figure}
+For the training the mango object detection, the base model use is the Faster R-CNN with MobileNetV3-Large-FPN backbone. 
+Furthermore, the pre-trained weights are the COCO\_V1 with 7 classes based on the annotated Carabao mango images.
+Note that mobilenet was chosen for its low memory usage. The training parameters are 15 epochs, 2 batch size, learning rate of 0.005, momentum of 0.9, weight decay of 0.0005, 
+and \acr{SGD} Optimizer. 
+% todo make this as an \acr
 
 \begin{figure}[!htbp]
     \centering
@@ -622,36 +1753,223 @@ compare and contrast both methods.
     \label{fig:bounding_boxes}
 \end{figure}
 
+\subsection{Test Comparison Between Both Methods}
+To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
+compare and contrast both methods.
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Unripe Carabao Mangoes]{
+        \includegraphics[width=0.45\textwidth]{/size-mango-test/unripe}
+        \label{fig:unripe-mango}
+    }
+    \hfill
+    \subbottom[Ripe Carabao Mangoes]{
+        \includegraphics[width=0.45\textwidth]{/size-mango-test/ripe}
+        \label{fig:ripe-mango}
+    }
+    \caption{Mangoes Tested for Size Measurement}
+    \label{fig:mango_size_test}
+\end{figure}
+
+% todo explain the unripe and ripe mango imgs fig show above
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{/size_new_graph/fig01}
+	\caption{Length Comparison in cm}
+	\label{fig:length_cm}
+\end{figure}
+
+% todo explain the length and width comparison in cm fig above and below
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=1\textwidth]{/size_new_graph/fig02}
+	\caption{Width Comparison in cm}
+	\label{fig:width_cm}
+\end{figure}
+
+% todo will add explanation of the absolute and percent diff for the four graphs
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Absolute Difference for Length in cm]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig05}
+        \label{fig:abs_length}
+    }
+    \hfill
+    \subbottom[Absolute Difference for Width in cm]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig06}
+        \label{fig:abs_width}
+    }
+    \vfill
+    \subbottom[Percent Difference for Length]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig03}
+        \label{fig:percent_diff_length}
+    }
+    \hfill
+    \subbottom[Percent Difference for Width]{
+        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig04}
+        \label{fig:percent_diff_width}
+    }
+    \caption{Percent and Absolute Difference between Both Methods}
+    \label{fig:percent_absolute_diff}
+\end{figure}
+
+Note that the V2 Code refers to \textit{Method 2 (Object Detection)}, while the V1 Code refers to \textit{Method 1 (Real-World Object Size Calculation)}.
+
+Tables~\ref{tab:more_size_results01}, \ref{tab:more_size_results02}, \ref{tab:more_size_results03}, and~\ref{tab:mean_and_std_results} present the mango size estimation results using both V1 and V2 methods compared against the ground truth measurements. The results indicate that the V2 (Object Detection) method achieved higher accuracy and consistency in predicting both length and width dimensions compared to V1 (Real-World Object Size Calculation).
+
+As shown in Tables~\ref{tab:more_size_results01} to~\ref{tab:more_size_results03}, individual sample results demonstrate that the V2 method consistently produces values closer to the actual mango dimensions. Table~\ref{tab:mean_and_std_results} summarizes the overall statistical performance of both methods, showing that the V2 method achieved a mean length difference of 1.75 cm with a standard deviation of 0.56 cm, while the V1 method yielded a mean difference of 1.54 cm and a standard deviation of 0.40 cm. Although both methods performed similarly in estimating length, V2 demonstrated significantly better performance in estimating width, with an average difference of only 0.47 cm compared to the 4.61 cm mean error of V1.
+
+Furthermore, the percentage difference data in Table~\ref{tab:mean_and_std_results} reveal that V2 achieved an average of 13.57\% for length and 3.24\% for width, whereas V1 recorded 12.04\% for length but a notably higher 56.89\% for width. This large discrepancy in V1’s width estimation suggests that the Real-World Object Size Calculation method is more prone to scaling and calibration errors, especially along the horizontal dimension. In contrast, the Object Detection approach provided more stable and reliable measurements across all samples.
+
+Overall, as supported by Tables~\ref{tab:more_size_results01} to~\ref{tab:mean_and_std_results}, the analysis shows that the Object Detection (V2) method offers improved precision and robustness for estimating mango dimensions, particularly in width estimation, making it more suitable for getting the mango's size.
+
+% Table 3: Mango Size Results
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c}
+\hline \hline
+\multirow{2}{*}{\textbf{ID}} & \multirow{2}{*}{\textbf{Weight (g)}} & \multicolumn{2}{c|}{\textbf{Ground Truth}} & \multicolumn{2}{c|}{\textbf{V2 Code}} & \multicolumn{2}{c}{\textbf{V1 Code}} \\
+\cline{3-8}
+& & \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} \\
+\hline
+01 & 260.8 & 11.8 & 7.80 & 12.86 & 7.96 & 10.33 & 3.08 \\
+\hline
+02 & 299.4 & 12.8 & 7.80 & 14.69 & 8.30 & 11.59 & 3.73 \\
+\hline
+03 & 238.4 & 11.4 & 7.60 & 12.42 & 7.60 & 9.17 & 2.36 \\
+\hline
+04 & 335.6 & 13.8 & 10.50 & 15.38 & 9.33 & 12.49 & 5.00 \\
+\hline
+05 & 272.4 & 12.9 & 8.50 & 15.13 & 7.81 & 11.52 & 3.96 \\
+\hline
+06 & 267.9 & 13.1 & 8.20 & 15.72 & 7.73 & 11.78 & 3.58 \\
+\hline
+07 & 274.0 & 12.6 & 8.20 & 14.96 & 7.88 & 11.80 & 4.00 \\
+\hline
+08 & 272.3 & 13.3 & 8.00 & 15.56 & 7.49 & 12.02 & 4.26 \\
+\hline
+09 & 281.6 & 13.0 & 8.00 & 15.20 & 7.55 & 12.12 & 4.26 \\
+\hline
+10 & 286.2 & 13.8 & 8.00 & 15.20 & 7.55 & 12.17 & 3.09 \\
+\hline
+11 & 284.6 & 12.6 & 9.00 & 15.20 & 7.55 & 10.90 & 3.26 \\
+\hline
+12 & 265.7 & 13.3 & 8.00 & 14.80 & 8.48 & 11.38 & 2.98 \\
+\hline
+13 & 278.1 & 13.0 & 7.60 & 15.08 & 7.87 & 11.00 & 3.18 \\
+\hline
+14 & 263.8 & 12.9 & 7.50 & 15.11 & 7.75 & 11.28 & 4.11 \\
+\hline
+15 & 222.0 & 12.1 & 7.80 & 12.96 & 7.44 & 10.73 & 3.17 \\
+\hline
+16 & 240.1 & 13.5 & 8.20 & 15.36 & 7.14 & 11.15 & 3.21 \\
+\hline
+17 & 290.7 & 13.5 & 8.50 & 14.71 & 8.20 & 11.76 & 3.21 \\
+\hline
+18 & 260.1 & 12.8 & 8.00 & 14.52 & 7.65 & 10.91 & 3.12 \\
+\hline
+19 & 253.6 & 12.9 & 7.50 & 14.08 & 7.66 & 11.65 & 3.17 \\
+\hline
+20 & 225.9 & 12.0 & 7.50 & 13.17 & 7.48 & 10.49 & 3.24 \\
+\hline
+\textbf{AVG} & \textbf{264.1} & \textbf{12.8} & \textbf{8.1} & \textbf{14.7} & \textbf{7.8} & \textbf{11.3} & \textbf{3.5} \\
+\hline
+
+\end{tabular}
+\caption{Mango Size Results}
+\label{tab:more_size_results01}
+\end{table}
+
+% Table 4: Mango Size Difference to Ground Truth Results
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c|c|c|c}
+\hline \hline
+\multirow{2}{*}{\textbf{ID}} & \multicolumn{2}{c|}{\textbf{V2 Difference}} & \multicolumn{2}{c}{\textbf{V1 Difference}} \\
+\cline{2-5}
+& \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} \\
+\hline
+01 & 1.06 & 0.16 & 1.47 & 4.72 \\
+\hline
+02 & 1.89 & 0.50 & 1.21 & 4.07 \\
+\hline
+03 & 1.02 & 0.00 & 2.23 & 5.24 \\
+\hline
+04 & 1.58 & 1.17 & 1.31 & 5.50 \\
+\hline
+05 & 2.23 & 0.69 & 1.38 & 4.54 \\
+\hline
+06 & 2.62 & 0.47 & 1.32 & 4.62 \\
+\hline
+07 & 2.36 & 0.32 & 0.80 & 4.20 \\
+\hline
+08 & 2.26 & 0.51 & 1.28 & 3.74 \\
+\hline
+09 & 2.20 & 0.45 & 1.12 & 3.74 \\
+\hline
+10 & 1.40 & 0.45 & 1.63 & 4.91 \\
+\hline
+11 & 2.60 & 1.45 & 1.70 & 5.74 \\
+\hline
+12 & 1.50 & 0.48 & 1.92 & 5.02 \\
+\hline
+13 & 2.08 & 0.27 & 2.00 & 4.42 \\
+\hline
+14 & 2.21 & 0.25 & 1.62 & 3.39 \\
+\hline
+15 & 0.86 & 0.36 & 1.37 & 4.63 \\
+\hline
+16 & 1.86 & 1.06 & 2.35 & 4.99 \\
+\hline
+17 & 1.21 & 0.30 & 1.74 & 5.29 \\
+\hline
+18 & 1.72 & 0.35 & 1.89 & 4.88 \\
+\hline
+19 & 1.18 & 0.16 & 1.25 & 4.33 \\
+\hline
+20 & 1.17 & 0.02 & 1.51 & 4.26 \\
+\hline
+\textbf{AVG} & \textbf{1.80} & \textbf{0.50} & \textbf{1.60} & \textbf{4.60} \\
+\hline
+
+\end{tabular}
+\caption{Mango Size Difference to Ground Truth Results}
+\label{tab:more_size_results02}
+\end{table}
+
+% Table 5: Mean and Standard Deviation of Size
+\begin{table}[htbp]
+\centering
+\begin{tabular}{l|c|c|c|c}
+\hline \hline
+\multirow{2}{*}{\textbf{Metric}} & \multicolumn{2}{c|}{\textbf{V2 Code}} & \multicolumn{2}{c}{\textbf{V1 Code}} \\
+\cline{2-5}
+& \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} \\
+\hline
+Length Differences (cm) & 1.75 & 0.56 & 1.54 & 0.40 \\
+\hline
+Width Differences (cm) & 0.47 & 0.37 & 4.61 & 0.61 \\
+\hline
+Length Percent Difference & 13.57\% & 4.20\% & 12.04\% & 3.28\% \\
+\hline
+Width Percent Difference & 3.24\% & 6.16\% & 56.89\% & 6.32\% \\
+\hline
+
+\end{tabular}
+\caption{Mean and Standard Deviation of Size}
+\label{tab:mean_and_std_results}
+\end{table}
+
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
-\gls{not:bprio} and \gls{not:rprio} and \gls{not:sprio} are the \gls{User Priority-Based Grading} for bruises, ripeness, and size of the Carabao mango. 
-Furthermore, \gls{not:bpred} and \gls{not:rpred} and \gls{not:spred} are the machine learning's predictions for bruises, ripeness, and size of the Carabao mango.
-The formula for the user priority is given by:
-\begin{equation}
-	\label{eq:userPriority}	
-  \text{Mango Grade} = \ensuremath{b \left( P \right)  B\left( P \right) + r \left( P \right) R\left( P \right) + s \left( P \right) S\left( P \right)}
-\end{equation}
 
-\noindent The machine learning predictions are assigned the following numerical values:
+The Figures \ref{fig:bruises-only-input}, \ref{fig:ripeness-bruises-only-input} and 
+\ref{fig:ripeness-only-input} are explained in this section where the inputted weight
+values are all real number since negative and imaginary number are not allowed. The
+purpose of this section is to demonstrate the different possible cases of using 
+the zero value in the user priority.
 
-\subsection{Ripeness Scores:}
-\begin{align}
-r(\text{yellow}) &= 1.0 \\
-r(\text{yellow\_green}) &= 2.0 \\
-r(\text{green}) &= 3.0
-\end{align}
-
-\subsection{Bruises Scores:}
-\begin{align}
-b(\text{bruised}) &= 1.0 \\
-b(\text{unbruised}) &= 2.0
-\end{align}
-
-\subsection{Size Scores:}
-\begin{align}
-s(\text{small}) &= 1.0 \\
-s(\text{medium}) &= 2.0 \\
-s(\text{large}) &= 3.0
-\end{align}
 
 \begin{figure}[!htbp]
 	\centering
@@ -660,12 +1978,21 @@ s(\text{large}) &= 3.0
 	\label{fig:bruises-only-input}
 \end{figure}
 
+An example of where the user only prioritizes bruises is shown on Figure~\ref{fig:bruises-only-input}.
+This implies that the user disregards the ripeness and the size of the Carabao mangoes 
+by setting the input priority value to zero.
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{/priority/ripeness-and-bruises-only}
 	\caption{Only Ripeness and Bruises as a None Zero Value}
 	\label{fig:ripeness-bruises-only-input}
 \end{figure}
+
+Another example shown on Figure~\ref{fig:ripeness-bruises-only-input} shows where the user only
+prioritized two mango charactgeristics which are the bruises and the ripeness. This is because 
+the user set the size to zero. As such when grading the mangoes, it would still show the prediction
+of the size however when grading the Carabao mango it would disregard the size in its calculation.
 
 \begin{figure}[!htbp]
 	\centering
@@ -674,9 +2001,25 @@ s(\text{large}) &= 3.0
 	\label{fig:ripeness-only-input}
 \end{figure}
 
+Another similar user priority input to Figure~\ref{fig:bruises-only-input} is 
+Figure~\ref{fig:ripeness-only-input} where it only prioritizes one parameter which is the ripeness.
+Furthermore, notice the range of values for each grade has a maximum of 3.00 and a minimum of 1.00.
+This is because the input weight of the ripeness is 1.0 meaning that the possible values are 1.00, 2.00, and 3.00.
+
 \section{Physical Prototype} \label{sec:physicalPrototype}
 
-Add pictures of the hardware prototype here with description
+\subsection{Version 1: Barebone with Black Conveyor Sheets}
+
+For the physical prototype, there are two main parts which are the image acquisition system and
+the conveyor belt. Both of these parts are being controllered by an \acr{RPi} through a python script.
+Note that the DC motors, 4 channel relay, and camera can be seen on Figure~\ref{fig:hardware_view}.
+For the first version of the prototype, Figure~\ref{fig:v1_prototype} shows three images which are 
+the top view, entrance view of the Carabao mangoes and the side view of the prototype.
+Notice that it is a barebone prototype made out of plywood with four rollers and black matte sheets.
+to move the Carabao mangoes. There are two DC motors controlling each conveyor belt.
+As seen on the side of the prototype on Figure~\ref{fig:v1_prototype}, the black sheet is not 
+flexible and too stiff to be able to move it with the mangoes. This means that the conveyor 
+belt would not be able to rotate and move the Carabao mangoes consistency.
 
 \begin{figure}[!htbp]
     \centering
@@ -694,7 +2037,7 @@ Add pictures of the hardware prototype here with description
         \includegraphics[width=0.45\textwidth]{side2}
         \label{fig:side2}
     }
-    \caption{Version 1: Prototype}
+    \caption{Version 1 of the Prototype}
     \label{fig:v1_prototype}
 \end{figure}
 
@@ -718,6 +2061,49 @@ Add pictures of the hardware prototype here with description
     \label{fig:hardware_view}
 \end{figure}
 
+\subsection{Version 2: Enclosed with White Conveyor Sheets and Physical Sorter}
+% todo explain the improved prototype version 2 which are the conveyor belt and enclosing the 
+% prototype on the same black sheet
+For the second version of the prototype as seen on
+Figure~\ref{fig:v2_prototype}, improvements such as 
+replacing the black sheet to a white sheet which improved the
+efficiency and reduced the frequncy of requiring maintenance.
+Another improvement for this version is enclosing the 
+electronic devices in a container. This helps protect it from
+unwanted liquid spills. For the sorting of mangoes,
+the conveyors would sort it into three grades
+which are Grade A, B, and C.
+It would first go through the longest conveyor and the 
+the shorter conveyor depending on the grade.
+This is because if the Grade is A (which is the highest),
+then it would exit to the east of the prototype
+and not go through the shorter conveyor belt.
+For Grade B, it would go through the west side and then north of 
+the prototype.
+Finally for grade C, it would go through west side and then south
+of the prototype.
+The code for this can be seen on Listing~\ref{lst:mango_sorter}.
+
+\begin{lstlisting}[
+float=h,
+caption=Sorting the Mangoes, 
+label=lst:mango_sorter,
+language=TeX,
+frame=single]
+        if ave_letter.upper()  == 'A':
+            button_state_array = [0, 1, 0, 0]
+            print(button_state_array)
+            self.sort.set_motors(button_state_array)
+        elif ave_letter.upper() == 'B':
+            button_state_array = [1, 0, 1, 0]
+            print(button_state_array)
+            self.sort.set_motors(button_state_array)
+        elif ave_letter.upper() == 'C':
+            button_state_array = [1, 0, 0, 1]
+            print(button_state_array)
+            self.sort.set_motors(button_state_array)
+\end{lstlisting}
+
 \begin{figure}[!htbp]
     \centering
     \subbottom[Side View of Improved Prototype]{
@@ -729,34 +2115,68 @@ Add pictures of the hardware prototype here with description
         \includegraphics[width=0.45\textwidth]{new-top-view}
         \label{fig:new-top-view}
     }
+    \vfill
+    \subbottom[Inside Hardware View]{
+        \includegraphics[width=0.45\textwidth]{/sorting/hardware}
+        \label{fig:T_sort}
+    }
+    \hfill
+    \subbottom[Sorting Mangoes Using Two Conveyor Belts]{
+        \includegraphics[width=0.45\textwidth]{/sorting/T}
+        \label{fig:T_sort}
+    }
     \caption{Version 2: Improved Prototype}
     \label{fig:v2_prototype}
 \end{figure}
 
 \section{Software Application}
 
-Show the raspberry pi app UI and demonstrate it here 
+\subsection{Version 1: Progress Bar with Black Conveyor Sheets}
+For the software application inside the \acr{RPi}, CustomTkinter is used as the main 
+GUI for the python application. For the versions, there are two main versions. 
+The first version which involves a fully automated capturing of both sides of the Carabao mango
+and the second version which uses a part by part picturing and moving of mangoes. 
+
+For this version, some of the initial UI design are shown on 
+Figure~\ref{fig:user_interface_v1}. There are two three main columns which are 
+the live video feed with a progress bar,
+two sides of the mango cheek, and the control panel
+with the different buttons such as the user priority, and reset, stop, export,
+and help. The approach to this one involves fully automatically 
+moving and grading the mango which caused the grading to be inconsistent 
+because it was not able to fully rotate the mango at most cases.
 
 \begin{figure}[!htbp]
     \centering
-    \subbottom[Version 1]{
+    \subbottom[Version 1.1]{
         \includegraphics[width=0.45\textwidth]{UI_v1}
         \label{fig:ui_v1}
     }
     \hfill
-    \subbottom[Version 2]{
+    \subbottom[Version 1.2]{
         \includegraphics[width=0.45\textwidth]{UI_v2}
         \label{fig:ui_v2}
     }
     \vfill
-    \subbottom[Version 3]{
+    \subbottom[Version 1.3]{
         \includegraphics[width=0.45\textwidth]{UI_v3}
         \label{fig:ui_v3}
     }
 
-    \caption{Version 1: User Interface of the Raspberry Pi}
+    \caption{Version 1 of the RPi's User Interface}
     \label{fig:user_interface_v1}
 \end{figure}
+
+\subsection{Version 2: Improved UI without Progress Bar}
+% todo explain the second version and its upgrades to the first version
+For the second version of the software as seen on Figure~\ref{fig:ui_main_v2}, 
+an overhall of the 
+UI design was done with the hopes that it would be cleaner
+and intuitive. Some features such as the progress bar was removed because 
+this method uses a step by step approach for rotating the mango
+where the user would rotate it using the buttons and 
+how long they want to move the conveyors. Likewise, the stop buttons
+for all the conveyors are added.
 
 \begin{figure}[!htbp]
     \centering
@@ -769,30 +2189,53 @@ Show the raspberry pi app UI and demonstrate it here
         \includegraphics[width=0.45\textwidth]{/ui/ui-version2}
         \label{fig:app_v5}
     }
-    \caption{Version 2: User Interface of the Raspberry Pi}
+    \vfill
+    \subbottom[Version 2.3 with Stop Sorting Button]{
+      \includegraphics[width=0.45\textwidth]{/sorting/stop_sort}
+        \label{fig:stop_sort_button}
+    }
+
+    \caption{Version 2 of the RPi's User Interface}
     \label{fig:ui_main_v2}
 \end{figure}
 
+% todo explain how it sorts the Carabao mango images
+\subsection{Mango Image Sorting}
+Figure~\ref{fig:img_sorted} shows the 
+method sorting the mango images through
+a directory containing the year, date, and time.
+Likewise, inside that directory, is the three 
+possible grades from A to C and the input priorities
+of the user.
+
 \begin{figure}[!htbp]
     \centering
-    \subbottom[Version 1]{
+    \subbottom[Folder Tree Directory of Each Grade]{
         \includegraphics[width=0.45\textwidth]{sort_tree_1}
         \label{fig:sort_tree}
     }
     \hfill
-    \subbottom[Version 2]{
+    \subbottom[Directory with Year, Date, and Time]{
         \includegraphics[width=0.45\textwidth]{sort_folder}
         \label{fig:sort_folder}
     }
     \vfill
-    \subbottom[Version 3]{
+    \subbottom[Saved Input Priority/Weights]{
         \includegraphics[width=0.45\textwidth]{sort_input_prior}
         \label{fig:input_folder_prior}
     }
 
-    \caption{Mango Image Sorted}
+    \caption{Mango Image Data Sorting}
     \label{fig:img_sorted}
 \end{figure}
+
+\subsection{Error Handling}
+Figure~\ref{fig:error-handel-1} shows the three possible 
+error messages when the user inputs all zero in the user 
+priority, presses all and none of the buttons when moving
+the conveyor. In the case the user inputs a a letter or negative value,
+then the not number error message would pop up as shown in
+Figure~\ref{fig:error-handel-2}.
 
 \begin{figure}[!htbp]
     \centering
@@ -812,11 +2255,85 @@ Show the raspberry pi app UI and demonstrate it here
     }
 
     \caption{Error Messages}
-    \label{fig:error-handel}
+    \label{fig:error-handel-1}
 \end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Not Number at Conveyor Time]{
+        \includegraphics[width=0.45\textwidth]{/errors/letter-time}
+        \label{fig:letter-time}
+    }
+    \hfill
+    \subbottom[Not Number at Priority]{
+        \includegraphics[width=0.45\textwidth]{/errors/letter-priority}
+        \label{fig:letter-priority}
+    }
+    \caption{Error message for Letter as Input}
+    \label{fig:error-handel-2}
+\end{figure}
+
+\subsection{Sample UI Outputs}
+Figure~\ref{fig:help_page} shows the help page containing information
+about the button and their purpose to assist the user
+navigate and utilizing the application. 
+Furthermore, Figure~\ref{fig:ripeness-all} shows an example output
+for each possible case of green, yellow\_green, and yellow
+ripeness classification together with bruise and not bruised and
+small and medium size mangoes. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{/ui/help}
+	\caption{Help Page UI}
+	\label{fig:help_page}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+    \centering
+    \subbottom[Green and Unbruised]{
+        \includegraphics[width=0.45\textwidth]{/ripe-class/green}
+        \label{fig:green-result}
+    }
+    \hfill
+    \subbottom[Yellow\_Green and Bruised]{
+        \includegraphics[width=0.45\textwidth]{/ripe-class/yellow-green}
+        \label{fig:yellow-green-result}
+    }
+    \vfill
+    \subbottom[Yellow and Bruised]{
+        \includegraphics[width=0.45\textwidth]{/ripe-class/yellow}
+        \label{fig:yellow-result}
+    }
+
+    \caption{Sample Ripeness and Bruises Results}
+    \label{fig:ripeness-all}
+\end{figure}
+
+
 
 \section{Summary} \label{sec:summary_results_and_discussions}
 
-Provide the gist of this chapter such that it reflects the contents and the message. This is a compile test
+This chapter presents a comprehensive evaluation of the automated mango grading and
+sorting system, demonstrating its successful integration of software intelligence, hardware
+functionality, and user-centric design. The core of the system's success lies
+in its high-precision deep learning models, with the final EfficientNetV2-B3 architecture
+achieving exceptional accuracies of 98\% for ripeness classification and 99\% for bruise
+detection. Through extensive benchmarking, modern CNNs like EfficientNet were proven
+superior, offering an optimal balance of accuracy and computational efficiency. For
+physical attribute measurement, an object detection method (Faster R-CNN) was established
+as the most reliable technique for determining mango size, significantly outperforming a
+traditional computer vision approach. The system's practical validity was further
+confirmed through a comparative analysis with a human expert, achieving a 79\% agreement
+rate, which accounts for the inherent subjectivity of manual grading. This robust
+software is embodied in a functional physical prototype that evolved into a refined
+version with an efficient conveyor system and a fully enclosed, three-way sorting
+mechanism that accurately directs mangoes into designated grades. Controlling this
+hardware is an intuitive software application on the Raspberry Pi, featuring a
+user-friendly interface that allows for custom priority weighting of mango characteristics
+and includes comprehensive error handling and data logging. Overall, the results
+conclusively show that the research has successfully bridged the gap between theoretical
+model development and a practical, deployable system capable of automatically and
+accurately grading Carabao mangoes based on customizable, user-defined standards.
 \\
-

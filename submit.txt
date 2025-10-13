@@ -1,0 +1,6 @@
+BANAL, KENAN A.;
+BAUTISTA, FRANCIS ROBERT MIGUEL F.;
+HERMOSURA, DON HUMPHREY L.;
+SALAZAR, DANIEL G.;
+
+Non-Destructive Carabao Mango Sorter and Grader based on Physical Characteristics using Machine Learning
