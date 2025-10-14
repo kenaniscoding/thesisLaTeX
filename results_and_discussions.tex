@@ -1698,18 +1698,18 @@ caption=Initializing the Calibration Box,
 label=lst:init_coin,
 language=TeX,
 frame=single]
-    def __init__(self, model_path, num_classes=7):
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.model = self.load_model(model_path, num_classes)
-        
-        self.class_names = {
-            1: 'bruised', 2: 'not_bruised', 3: 'yellow',
-            4: 'green_yellow', 5: 'green', 6: 'mango', 7: 'background'
-        }
-        # coin object reference
-        self.reference_box = [815, 383, 999, 556]
-        # Known size of reference object in cm
-        self.reference_size_cm = 2.4  
+def __init__(self, model_path, num_classes=7):
+    self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    self.model = self.load_model(model_path, num_classes)
+    
+    self.class_names = {
+        1: 'bruised', 2: 'not_bruised', 3: 'yellow',
+        4: 'green_yellow', 5: 'green', 6: 'mango', 7: 'background'
+    }
+    # coin object reference
+    self.reference_box = [815, 383, 999, 556]
+    # Known size of reference object in cm
+    self.reference_size_cm = 2.4  
 \end{lstlisting} 
 
 % image of the coin
@@ -2090,18 +2090,18 @@ caption=Sorting the Mangoes,
 label=lst:mango_sorter,
 language=TeX,
 frame=single]
-        if ave_letter.upper()  == 'A':
-            button_state_array = [0, 1, 0, 0]
-            print(button_state_array)
-            self.sort.set_motors(button_state_array)
-        elif ave_letter.upper() == 'B':
-            button_state_array = [1, 0, 1, 0]
-            print(button_state_array)
-            self.sort.set_motors(button_state_array)
-        elif ave_letter.upper() == 'C':
-            button_state_array = [1, 0, 0, 1]
-            print(button_state_array)
-            self.sort.set_motors(button_state_array)
+if ave_letter.upper()  == 'A':
+    button_state_array = [0, 1, 0, 0]
+    print(button_state_array)
+    self.sort.set_motors(button_state_array)
+elif ave_letter.upper() == 'B':
+    button_state_array = [1, 0, 1, 0]
+    print(button_state_array)
+    self.sort.set_motors(button_state_array)
+elif ave_letter.upper() == 'C':
+    button_state_array = [1, 0, 0, 1]
+    print(button_state_array)
+    self.sort.set_motors(button_state_array)
 \end{lstlisting}
 
 \begin{figure}[!htbp]

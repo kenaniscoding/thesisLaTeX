@@ -792,6 +792,46 @@ Likewise, the pretrained \acr{Faster R-CNN} model used is the MobileNetV3.
 	\label{fig:annotated-mangoes}
 \end{figure}
 
+\subsubsection{Calibration by Getting the Pixels per cm}
+To get the accurate length and width of a mango the pixel-to-centimeter ratio of an image using a reference object, 
+such as a coin, with a known real-world size.  As seen on Listing~\ref{lst:pxpercm}, 
+it takes the bounding box 
+coordinates of the reference object (which is a Philippine 1 peso coin)
+and computes its width and height in pixels. Since the reference object may not 
+be perfectly square, the larger of these two values is selected as the effective reference size (of the coin) 
+in pixels. Using the 
+known physical size of the coin in cm, the function then calculates how many pixels correspond to one 
+centimeter. This means that if a coin of known diameter appears in the image, the function determines the relationship 
+between its pixel size and real-world measurement to establish a scale. Once this scale is set, the
+mango image can be measured accurately by comparing its pixel size to the calibrated ratio.
+
+\begin{lstlisting}[
+float=h,
+caption=Calibration of Reference Philippine Coin, 
+label=lst:pxpercm,
+language=TeX,
+frame=single]
+def calibrate_with_reference_object(self, image, reference_box, reference_size_cm):
+    x1, y1, x2, y2 = reference_box
+    
+    # Calculate reference object dimensions in pixels
+    ref_width_pixels = x2 - x1
+    ref_height_pixels = y2 - y1
+    
+    # Use the max dimension for calibration
+    ref_size_pixels = max(ref_width_pixels, ref_height_pixels)
+    
+    # Calculate pixels per cm
+    self.pixels_per_cm = ref_size_pixels / reference_size_cm
+    self.reference_object_size_cm = reference_size_cm
+    
+    print(f"Reference object: {reference_size_cm} cm")
+    print(f"Reference pixels: {ref_size_pixels:.1f} pixels")
+    print(f"Scale: {self.pixels_per_cm:.2f} pixels/cm")
+    
+    return self.pixels_per_cm
+\end{lstlisting}
+
 \section{Mango Formula with User Priority} \label{sec:formula}
 The linear equation used to calculate the Carabao mango grade is shown below. Likewise, the variables \gls{not:bprio}, \gls{not:rprio}, and \gls{not:sprio} represent the user-defined priority weightings for bruising, ripeness, and size characteristics in the \gls{User Priority-Based Grading} system.
 Additionally, \gls{not:bpred}, \gls{not:rpred}, and \gls{not:spred} correspond to the machine learning model's predicted values for the bruising, ripeness, and size attributes of the Carabao mango.
