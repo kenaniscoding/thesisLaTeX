@@ -144,277 +144,6 @@ integrated.
 
 \subsection{Hardware Specifications}
 
-% \subsubsection{Raspberry Pi}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{rpi4b}
-% 	\caption{Raspberry Pi 4 Model B}
-% 	\label{fig:rpi4b_fig}
-% \end{figure}
-%
-% Figure~\ref{fig:rpi4b_fig} depicts the Raspberry Pi 4 Model B which is the core of the
-% processing unit of the prototype. It was selected due to its small size, low
-% cost, and high computing power for image processing and machine learning. The
-% image depicts the most critical aspects of the board, such as the GPIO (General
-% Purpose Input/Output) pins for sensor, actuator, and relay connections, and the
-% USB and HDMI ports for other device connections. Its capability to support a
-% full operating system makes it suitable for supporting both the user interface
-% and the control logic of the mango grading system.
-%
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item SoC: Broadcom BCM2711
-%     \item \acr{CPU}: Quad-core ARM Cortex-A72 (64-bit)
-%     \item Clock Speed: 1.5 GHz (base, overclockable)
-%     \item RAM: 8GB LPDDR4-3200 SDRAM
-%     \item Wireless: Dual-band 2.4 GHz / 5 GHz Wi-Fi (802.11ac)
-%     \item Bluetooth: Bluetooth 5.0 (BLE support)
-%     \item Ethernet: Gigabit Ethernet (full throughput)
-%     \item USB: 2 x USB 3.0 ports and 2 x USB 2.0 ports
-%     \item Video Output: 2 x micro-HDMI ports (supports 4K @ 60Hz, dual 4K display capability)
-%     \item Audio: 3.5mm audio/video composite jack
-%     \item Storage: MicroSD card slot (supports booting via SD card or USB)
-%     \item GPIO: 40-pin GPIO header (backward-compatible with older models)
-%     \item Camera/Display: CSI (camera) and DSI (display) ports
-%     \item Power Input: USB-C (5V/3A recommended)
-%     \item Power Consumption: ~3W idle, up to 7.5W under load
-% \end{itemize}
-%
-% \subsubsection{Raspberry Pi Camera}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{rpi_cam}
-% 	\caption{Raspberry Pi Camera Module Version 2}
-% 	\label{fig:rpi_cam_fig}
-% \end{figure}
-% The Raspberry Pi Camera Module Version 2 is a high-quality camera module designed for the Raspberry Pi platform.
-% Likewise, it is capable of capturing still images at 8 megapixels, and supports video recording at 1080p @ 30fps, 
-% 720p @ 60fps, and 480p @ 90fps. 
-% Moreover, it has a fixed-focus lens with a diagonal field of view of 62.2 degrees, and an optical format of 1/4 inch. 
-% Furthermore, it supports various Python libraries such as Picamera and OpenCV for image capture and processing.
-% As such, it was selected for its compact size, ease of integration, and ability to capture high-resolution images. 
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Sensor: Sony IMX219PQ 8-megapixel CMOS sensor.
-%     \item Still Images Resolution: 8 MP (3280 x 2464 pixels).
-%     \item Video Resolution: Supports up to 1080p @ 30fps, 720p @ 60fps, and 480p @ 90fps.
-%     \item Focus: Fixed-focus lens (manual focus adjustment not supported without physical modification).
-%     \item Lens Size: 1/4-inch optical format.
-%     \item Field of View (FoV): Diagonal 62.2 degrees.
-%     \item Interface: Connected via 15-pin ribbon cable to the Raspberry Pi's CSI (Camera Serial Interface) port.
-%     \item APIs/Libraries: Supports Python libraries such as Picamera and OpenCV for image capture and processing.
-%     \item Dimensions: 25 mm x 24 mm x 9 mm.
-% \end{itemize}
-%
-% \subsubsection{DC Motor}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{dc_motor}
-% 	\caption{12 Volt DC Gear Motor}
-% 	\label{fig:dc_motor_fig}
-% \end{figure}
-% The 12 Volt \acr{DC} Gear Motor is a compact, high-torque, and low-noise motor suitable for a 
-% wide range of applications, including robotics, automation, and industrial control systems. 
-% It features a spur gear design, which provides a high reduction ratio for increased torque output. 
-% The motor is designed for continuous operation and has a low power consumption under standard load 
-% conditions. Likewise, it is also capable of withstanding high temperatures and has a high reliability.
-% This motor was selected for its high torque output, low power consumption, and compact size, 
-% making it ideal for the conveyor system.
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Gearbox Type: Spur gear design
-%     \item Operating Voltage: 12V (operational range: 6-12V)
-%     \item No-load Current Consumption: 0.8A
-%     \item Rated Current Draw: 3A (under standard load)
-%     \item No-load Speed: 282 RPM (maximum)
-%     \item Operating Speed: 248 RPM (under rated load)
-%     \item Torque Output: 18 kg-cm (rated)
-%     \item Stall Torque: 60 kg-cm (maximum)
-%     \item Power Rating: 50W (maximum)
-%     \item Unit Weight: 350 grams
-% \end{itemize}
-%
-%
-% \subsubsection{MicroSD Card}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{sdCard}
-% 	\caption{SanDisk Ultra MicroSD Card}
-% 	\label{fig:sdCard_fig}
-% \end{figure}
-% The SanDisk Ultra MicroSD Card is a compact, high-capacity, and secure digital memory card 
-% that is suitable for a wide range of applications, including digital cameras, smartphones, and tablets.
-% It features a high-speed data transfer rate, making it ideal for storing large files such as images and videos.
-% This card was selected for its high capacity, secure data protection, and ease of use,
-% making it ideal for the storage system for the prototype. 
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Capacity: 256GB
-%     \item Type: MicroSDXC (Secure Digital eXtended Capacity)
-%     \item Form Factor: MicroSD (11mm x 15mm x 1mm)
-%     \item File System: Pre-formatted exFAT
-% \end{itemize}
-%
-% \subsubsection{LED Lights}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{led}
-% 	\caption{LED Light Strip}
-% 	\label{fig:led_fig}
-% \end{figure}
-% For the \gls{LED}, they were used to provide consistent lighting for image capture, ensuring accurate color representation and feature extraction.
-% The LED lights were selected for their energy efficiency, long lifespan, and ability to produce a uniform light output.
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Power Input: 5V DC (USB-powered, compatible with laptops, power banks, or USB adapters).
-%     \item Waterproof Design: Suitable for indoor/outdoor use.
-%     \item LED Type: SMD 2835 (surface-mount diodes for high brightness and efficiency).
-%     \item Color Type: White (cool white)
-%     \item Length: 1m 
-%     \item Beam Angle: 120°
-%     \item Operating Temperature: -25°C to 60°C.
-%     \item Storage Temperature: -40°C to 80°C.
-% \end{itemize}
-%
-%
-% \subsubsection{Power Supply}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{Power_Supply}
-% 	\caption{Bench Power Supply}
-% 	\label{fig:Power_Supply_fig}
-% \end{figure}
-% The bench power supply is a versatile and adjustable power source used to 
-% provide stable voltage and current for various electronic projects.
-% It is designed for testing applications, allowing users to set specific voltage and current levels.
-% This power supply was selected for its versatility, 
-% ease of use, and ability to provide accurate voltage and current control for the prototype.
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Type: SMPS (Switch-Mode Power Supply)
-%     \item Input: 110V AC, 50/60Hz (U.S. Standard)
-%     \item Output Range: 0-30V DC / 0-5A DC
-%     \item Voltage Precision: ±0.010V (10 mV) resolution
-%     \item Current Precision: ±0.001A (1 mA) resolution
-%     \item Power Precision: ±0.1W resolution
-%     \item Weight: 5 lbs (2.27 kg)
-%     \item Dimensions: 11.1" x 4.92" x 6.14" (28.2 cm x 12.5 cm x 15.6 cm)
-%     \item Maximum Power: 195W
-%     \item Power Source: AC input only
-% \end{itemize}
-%
-% \subsubsection{4 Channel Relay Module}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{relay_module}
-% 	\caption{4 Channel Relay Module}
-% 	\label{fig:relay_module_fig}
-% \end{figure}
-% The 4 Channel Relay Module is a compact and versatile relay 
-% board that allows for the control of multiple devices using a single microcontroller.
-% This module was selected for its compact size, ease of use, and ability to control multiple devices simultaneously.
-% It is designed to be used with microcontrollers such as Arduino and Raspberry Pi,
-% allowing for easy integration into the prototype.
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Operating Voltage: 5V DC (compatible with Arduino, Raspberry Pi, and other microcontrollers).
-%     \item Number of Relays: 4 independent channels.
-%     \item Relay Type: Electromechanical (mechanical switching).
-%     \item Max AC Load: 10A @ 250V AC (resistive).
-%     \item Max DC Load: 10A @ 30V DC (resistive).
-%     \item Contact Type: SPDT (Single Pole Double Throw) - NO (Normally Open), NC (Normally Closed), COM (Common).
-%     \item Dimensions: ~50mm x 70mm x 20mm 
-%     \item Weight: ~50-80 grams.
-%     \item Status LEDs: Individual LEDs for each relay (indicates ON/OFF state).
-%     \item Input Pins: 4 digital control pins (one per relay).
-%     \item Output Terminals: Screw terminals for connecting loads (NO/NC/COM).
-% \end{itemize}
-%
-% \subsubsection{\acr{RPi} Power Supply}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{/sorting/PSU1}
-%   \caption{Power Supply for the \acr{RPi}}
-% 	\label{fig:rpi_power_supply}
-% \end{figure}
-% This Official Raspberry Pi power supply is the perfect choice for powering your Raspberry Pi 4 Model B board. It works with all variants of the Raspberry Pi 4 board (1GB, 2GB and 4GB). It is a 5.1V, 3A power supply featuring a USB-C connector at one end, and a plug socket at the other. Simply plug the USB-C into your Pi 4 and plug the socket into the mains and you're ready to go! The OKdo branded power supply provides 5V 3A output to your devices making it ideal for your Raspberry Pi 4, SBC, Smartphone, Tablet and more. The PSU also has over temperature protection and can be used all over the world.
-% \\
-% \\
-% \textbf{Features:}
-% \begin{itemize}
-%     \item Compatible with Raspberry Pi 4 Model B
-%     \item Color: Black
-%     \item USB-C connector
-%     \item US Plug
-%     \item Over temperature protection
-%     \item Short circuit protection
-%     \item Over current protection
-%     \item Over voltage protection
-% \end{itemize}
-%
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Input Voltage: 100-264V AC
-%     \item Input Frequency Range: 47-63Hz
-%     \item Input Current: 600mA Max
-%     \item Output Voltage: 5.1V DC
-%     \item Output Current: 3A
-%     \item Power Rating: 15.3W
-%     \item Output Connector: USB Type C
-%     \item Output Cable Length: 1.5M
-%     \item Number of Outputs: 1
-%     \item Unload Standby Power: 0.1W
-%     \item Max Ripple Noise: 50-240mVp-p
-% \end{itemize}
-%
-% \subsubsection{Mini Conveyor Single Narrow}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{/sorting/conveyor1}
-% 	\caption{Single Narrow Mini Conveyor}
-% 	\label{fig:single_narrow_conveyor}
-% \end{figure}
-% Mini Conveyor prototyping wide or narrow lets you create a miniature factory for presentations or projects. This single narrow version is ideal for small-scale automation and prototyping applications.
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Belt Dimensions: 43.4 x 9 x 9 cm (L x W x H)
-%     \item Chassis Dimensions: 46 x 10.5 x 11 cm (L x W x H)
-%     \item Type: Single narrow conveyor
-%     \item Application: Prototyping and miniature factory setups
-% \end{itemize}
-%
-% \subsubsection{Mini Conveyor Double Narrow}
-% \begin{figure}[!htbp]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{/sorting/conveyor2}
-% 	\caption{Double Narrow Mini Conveyor}
-% 	\label{fig:double_narrow_conveyor}
-% \end{figure}
-% Mini Conveyor prototyping wide or narrow lets you create a miniature factory for presentations or projects. This double narrow version provides extended length for more complex automation systems and continuous processing.
-% \\
-% \\
-% \textbf{Specifications:}
-% \begin{itemize}
-%     \item Belt Dimensions: 85.5 x 9 x 9 cm (L x W x H)
-%     \item Chassis Dimensions: 88 x 10.5 x 11 cm (L x W x H)
-%     \item Type: Double narrow conveyor
-%     \item Application: Extended prototyping and miniature factory setups
-% \end{itemize}
-
 \subsubsection{Raspberry Pi}
 \begin{figure}[!htbp]
 	\centering
@@ -423,7 +152,11 @@ integrated.
 	\label{fig:rpi4b_fig}
 \end{figure}
 
-The Raspberry Pi 4 Model B serves as the central processing unit of the prototype, chosen for its compact form factor, affordability, and substantial computational capability required for image processing and machine learning tasks. The board's essential features include GPIO pins for connecting sensors, actuators, and relays, along with USB and HDMI ports for peripheral integration. Its support for a full operating system enables it to efficiently manage both the user interface and the core control logic of the mango grading system.
+The Raspberry Pi 4 Model B serves as the central processing unit of the prototype, chosen for its compact form factor, 
+affordability, and substantial computational capability required for image processing and machine learning tasks. 
+The board's essential features include GPIO pins for connecting sensors, actuators, and relays, along with USB and 
+HDMI ports for peripheral integration. Its support for a full operating system enables it to efficiently manage both the user interface 
+and the core control logic of the mango grading system.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -451,7 +184,12 @@ The Raspberry Pi 4 Model B serves as the central processing unit of the prototyp
 	\caption{Raspberry Pi Camera Module Version 2}
 	\label{fig:rpi_cam_fig}
 \end{figure}
-This high-quality camera module is specifically engineered for the Raspberry Pi platform, offering 8-megapixel still image capture and video recording capabilities at 1080p (30fps), 720p (60fps), and 480p (90fps). It incorporates a fixed-focus lens with a 62.2-degree diagonal field of view and a 1/4-inch optical format. Compatibility with Python libraries like Picamera and OpenCV facilitates seamless image capture and processing. Its selection was driven by its small size, straightforward integration, and capacity for high-resolution imaging.
+This high-quality camera module is specifically engineered for the Raspberry
+Pi platform, offering 8-megapixel still image capture and
+video recording capabilities at 1080p (30fps), 720p (60fps), and 480p (90fps).
+It incorporates a fixed-focus lens with a 62.2-degree diagonal field of view and a 1/4-inch optical format. 
+Compatibility with Python libraries like Picamera and OpenCV facilitates seamless image capture and processing. 
+Its selection was driven by its small size, straightforward integration, and capacity for high-resolution imaging.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -473,7 +211,9 @@ This high-quality camera module is specifically engineered for the Raspberry Pi 
 	\caption{12 Volt DC Gear Motor}
 	\label{fig:dc_motor_fig}
 \end{figure}
-This compact 12V DC gear motor delivers high torque and operates quietly, making it suitable for robotics, automation, and industrial control systems. Its spur gear design ensures a high reduction ratio for enhanced torque. Engineered for continuous duty, it maintains low power consumption during standard operation and offers reliability under high-temperature conditions. These characteristics—high torque, efficiency, and compact design—made it the ideal choice for driving the conveyor system.
+This compact 12V DC gear motor delivers high torque and operates quietly, making it suitable for robotics, automation, 
+and industrial control systems. Its spur gear design ensures a high reduction ratio for enhanced torque. Engineered for continuous duty,
+it maintains low power consumption during standard operation and offers reliability under high-temperature conditions. 
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -497,7 +237,9 @@ This compact 12V DC gear motor delivers high torque and operates quietly, making
 	\caption{SanDisk Ultra MicroSD Card}
 	\label{fig:sdCard_fig}
 \end{figure}
-This compact, high-capacity SanDisk Ultra MicroSD card provides secure digital storage for devices like digital cameras, smartphones, and tablets. Its high-speed data transfer rate is optimal for handling large files such as images and videos. The card was chosen for the prototype's storage system due to its substantial capacity, reliable data protection, and user-friendly design.
+This compact, high-capacity SanDisk Ultra MicroSD card provides secure digital storage for devices like digital cameras, 
+smartphones, and tablets. Its high-speed data transfer rate is optimal for handling large files such as images and videos. 
+The card was chosen for the prototype's storage system due to its substantial capacity, reliable data protection, and user-friendly design.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -514,7 +256,9 @@ This compact, high-capacity SanDisk Ultra MicroSD card provides secure digital s
 	\caption{LED Light Strip}
 	\label{fig:led_fig}
 \end{figure}
-The LED strips were implemented to deliver uniform illumination for image capture, which is crucial for precise color representation and feature extraction. Their selection was based on exceptional energy efficiency, extended operational lifespan, and consistent light output quality.
+The LED strips were implemented to deliver uniform illumination for image capture, 
+which is crucial for precise color representation and feature extraction. Their selection was based on exceptional energy 
+efficiency, extended operational lifespan, and consistent light output quality.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -536,7 +280,10 @@ The LED strips were implemented to deliver uniform illumination for image captur
 	\caption{Bench Power Supply}
 	\label{fig:Power_Supply_fig}
 \end{figure}
-This bench power supply is an adaptable and regulated source that delivers stable voltage and current for diverse electronic projects. Designed for testing purposes, it enables precise setting of voltage and current parameters. Its versatility, user-friendly operation, and accurate control capabilities led to its selection for powering the prototype.
+This bench power supply is an adaptable and regulated source that delivers stable voltage and current 
+for diverse electronic projects. Designed for testing purposes, it enables precise setting of voltage and
+current parameters. Its versatility, user-friendly operation, and accurate control capabilities led 
+to its selection.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -559,7 +306,9 @@ This bench power supply is an adaptable and regulated source that delivers stabl
 	\caption{4 Channel Relay Module}
 	\label{fig:relay_module_fig}
 \end{figure}
-This compact and versatile relay board enables control of multiple devices through a single microcontroller. It was chosen for its small footprint, operational simplicity, and capacity to manage several devices concurrently. Designed for compatibility with microcontrollers like Arduino and Raspberry Pi, it integrates smoothly into the prototype.
+This compact and versatile relay board enables control of multiple devices through a single microcontroller. 
+It was chosen for its small footprint, operational simplicity, and capacity to manage several devices concurrently. 
+Designed for compatibility with microcontrollers like Arduino and Raspberry Pi, it integrates smoothly into the prototype.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -583,7 +332,10 @@ This compact and versatile relay board enables control of multiple devices throu
   \caption{Power Supply for the \acr{RPi}}
 	\label{fig:rpi_power_supply}
 \end{figure}
-This official Raspberry Pi power supply is optimally designed for the Raspberry Pi 4 Model B, compatible with all its memory variants. Delivering 5.1V at 3A via a USB-C connector, it ensures reliable performance. The OKdo-branded unit provides stable power suitable for the Raspberry Pi 4, other single-board computers, and mobile devices, and includes comprehensive over-temperature protection with global plug compatibility.
+This official Raspberry Pi power supply is optimally designed for the Raspberry Pi 4 Model B, 
+compatible with all its memory variants. Delivering 5.1V at 3A via a USB-C connector, it ensures reliable performance. 
+The OKdo-branded unit provides stable power suitable for the Raspberry Pi 4, other single-board computers, and mobile devices, 
+and includes comprehensive over-temperature protection with global plug compatibility.
 
 \textbf{Features:}
 \begin{itemize}
@@ -619,7 +371,8 @@ This official Raspberry Pi power supply is optimally designed for the Raspberry 
 	\caption{Single Narrow Mini Conveyor}
 	\label{fig:single_narrow_conveyor}
 \end{figure}
-This miniature conveyor system facilitates the creation of compact factory setups for presentations and prototyping. The single narrow configuration is particularly suited for small-scale automation tasks and experimental applications.
+This miniature conveyor system facilitates the creation of compact factory setups for presentations and prototyping. 
+The single narrow configuration is particularly suited for small-scale automation tasks and experimental applications.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -636,7 +389,8 @@ This miniature conveyor system facilitates the creation of compact factory setup
 	\caption{Double Narrow Mini Conveyor}
 	\label{fig:double_narrow_conveyor}
 \end{figure}
-This miniature conveyor system enables the development of small-scale factory environments for demonstrations and prototyping. The double narrow version offers increased length to accommodate more sophisticated automation processes and continuous operation requirements.
+This miniature conveyor system enables the development of small-scale factory environments for demonstrations and prototyping. 
+The double narrow version offers increased length to accommodate more sophisticated automation processes and continuous operation requirements.
 
 \textbf{Specifications:}
 \begin{itemize}
@@ -647,7 +401,8 @@ This miniature conveyor system enables the development of small-scale factory en
 \end{itemize}
 
 \section{Software Considerations}
-The software stack includes Python for programming PyTorch for machine learning and OpenCV for image processing. These tools are selected for their robustness, ease of use, and extensive community support, ensuring efficient system development.
+The software stack includes Python for programming PyTorch for machine learning and OpenCV for image processing. 
+These tools are selected for their robustness, ease of use, and extensive community support, ensuring efficient system development.
 
 \subsection{PyTorch}
 
