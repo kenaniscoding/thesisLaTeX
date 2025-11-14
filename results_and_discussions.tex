@@ -147,15 +147,15 @@
 
 \section{Training and Testing Results of the Model} \label{sec:main_trainAndTestResults}
 
-To identify the most suitable convolutional neural network (CNN) architecture
-for grading Carabao mangoes, multiple CNN models were evaluated under fixed
-experimental parameters. These parameters included the number of epochs, input
-image size, batch size, optimizer, data preprocessing methods, and dataset size.
-The only variable factor was the network architecture. Ripeness classification
-models were trained using a GPU, while bruises classification models were
-trained on a CPU to compare training times and assess the impact of hardware
-constraints on accuracy. Model performance was evaluated using precision,
-recall, F1-score, accuracy, resource utilization, and elapsed training time
+% To identify the most suitable convolutional neural network (CNN) architecture
+% for grading Carabao mangoes, multiple CNN models were evaluated under fixed
+% experimental parameters. These parameters included the number of epochs, input
+% image size, batch size, optimizer, data preprocessing methods, and dataset size.
+% The only variable factor was the network architecture. Ripeness classification
+% models were trained using a GPU, while bruises classification models were
+% trained on a CPU to compare training times and assess the impact of hardware
+% constraints on accuracy. Model performance was evaluated using precision,
+% recall, F1-score, accuracy, resource utilization, and elapsed training time
 
 
 \subsection{Ripeness Classification Results} \label{sec:ripenessClassificationResults}
@@ -1464,7 +1464,7 @@ section outlines the methodology for the expert evaluation and presents a
 comparative summary of the results.
 \subsection{Expert Evaluation Methodology}
 The expert benchmark was established by Jerry Bravante, a farmer with 20 years
-of experience in mango species such as carabao, pico, idian, apple mango. Their
+of experience in mango species such as carabao, pico, indian, apple mango. Their
 expertise was employed to provide a ground-truth classification for mango
 samples based on two key phenotypic traits:
 \begin{itemize}
@@ -2106,7 +2106,7 @@ by setting the input priority value to zero.
 \end{figure}
 
 Another example shown on Figure~\ref{fig:ripeness-bruises-only-input} shows where the user only
-prioritized two mango charactgeristics which are the bruises and the ripeness. This is because 
+prioritized two mango characteristics which are the bruises and the ripeness. This is because 
 the user set the size to zero. As such when grading the mangoes, it would still show the prediction
 of the size however when grading the Carabao mango it would disregard the size in its calculation.
 
@@ -2127,12 +2127,12 @@ This is because the input weight of the ripeness is 1.0 meaning that the possibl
 \subsection{Version 1: Barebone with Black Conveyor Sheets}
 
 For the physical prototype, there are two main parts which are the image acquisition system and
-the conveyor belt. Both of these parts are being controllered by an \acr{RPi} through a python script.
+the conveyor belt. Both of these parts are being controlled by an \acr{RPi} through a python script.
 Note that the DC motors, 4 channel relay, and camera can be seen on Figure~\ref{fig:hardware_view}.
 For the first version of the prototype, Figure~\ref{fig:v1_prototype} shows three images which are 
 the top view, entrance view of the Carabao mangoes and the side view of the prototype.
-Notice that it is a barebone prototype made out of plywood with four rollers and black matte sheets.
-to move the Carabao mangoes. There are two DC motors controlling each conveyor belt.
+Notice that it is a barebone prototype made out of plywood with four rollers and black matte sheets
+for moving the Carabao mangoes. There are two DC motors controlling each conveyor belt.
 As seen on the side of the prototype on Figure~\ref{fig:v1_prototype}, the black sheet is not 
 flexible and too stiff to be able to move it with the mangoes. This means that the conveyor 
 belt would not be able to rotate and move the Carabao mangoes consistency.
@@ -2183,7 +2183,7 @@ belt would not be able to rotate and move the Carabao mangoes consistency.
 For the second version of the prototype as seen on
 Figure~\ref{fig:v2_prototype}, improvements such as 
 replacing the black sheet to a white sheet which improved the
-efficiency and reduced the frequncy of requiring maintenance.
+efficiency and reduced the frequency of requiring maintenance.
 Another improvement for this version is enclosing the 
 electronic devices in a container. This helps protect it from
 unwanted liquid spills. For the sorting of mangoes,
@@ -2286,7 +2286,7 @@ because it was not able to fully rotate the mango at most cases.
 \subsection{Version 2: Improved UI without Progress Bar}
 % todo explain the second version and its upgrades to the first version
 For the second version of the software as seen on Figure~\ref{fig:ui_main_v2}, 
-an overhall of the 
+an overhaul of the 
 UI design was done with the hopes that it would be cleaner
 and intuitive. Some features such as the progress bar was removed because 
 this method uses a step by step approach for rotating the mango

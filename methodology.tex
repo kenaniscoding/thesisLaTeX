@@ -94,7 +94,7 @@ The prototype consists of hardware and software components for automated mango s
         \includegraphics[width=0.45\textwidth]{/dimensions/zoom}
         \label{fig:right-view}
     }
-    \caption{Image Acquision Dimensions}
+    \caption{Image Acquisition Dimensions}
     \label{fig:img-acquision-design}
 \end{figure}
 
@@ -108,7 +108,7 @@ The processed dataset is to be then used to create models using a variety of
 machine learning methods. For a comprehensive evaluation, the processed dataset
 was used to train and test a variety of machine learning models. The training
 included Convolutional Neural Network (CNN), k-Nearest Neighbors (k-NN), Naive
-Bayes, and k-Means clustering and various Efficientnet models. This comparative
+Bayes, and k-Mean clustering and various Efficientnet models. This comparative
 analysis was conducted to benchmark the performance of the deep learning
 approach against traditional machine learning algorithms.
 
@@ -305,9 +305,11 @@ mangoes are accurately and efficiently sorted and graded.
 
 % [o] todo put the specs of daniel laptop here for training
 
-For the training everything was done on laptop with the specific model: Ph16-71
-acer predator helios 16 2023. The technical specifications of this particular
-model I9 13900hx Rtx4070 8gb vram 32gb 5600mhz ddr5 ram
+% For the training everything was done on laptop with the specific model: Ph16-71
+% acer predator helios 16 2023. The technical specifications of this particular
+% model I9 13900hx Rtx4070 8gb vram 32gb 5600mhz ddr5 ram
+
+For the training, everything was done on a laptop, specifically the Acer Predator Helios 16 (PH16-71, 2023 model). The technical specifications of this unit are: Intel Core i9-13900HX processor, NVIDIA RTX 4070 GPU with 8GB VRAM, and 32GB DDR5 RAM running at 5600MHz.
 
 \subsection{Data Augmentation and Splitting}
 For the used methods to increase the Carabao mango image dataset, data augmentation techniques such as rotation, flipping, Gaussian blur, brightness adjustment,
@@ -363,14 +365,14 @@ the validation and test sets remained unaltered to preserve their role as unbias
     \label{fig:bruises_cnn_datasplit}
 \end{figure}
 
-The dataset for mango classification was organized into five categories: 
-bruised, not bruised, green, yellow-green, and yellow. To ensure robust model
-training and evaluation, the dataset was initially split into training (70\%), 
-validation (15\%), and test (15\%) sets using PyTorch’s automated splitting 
-functions. Following standard practice in deep learning \cite{perez2017effectivenessdataaugmentationimage}
-, only the training set was augmented to increase sample diversity and improve 
-generalization, while the validation and test sets remained unaltered to 
-preserve their role as unbiased evaluation benchmarks.
+% The dataset for mango classification was organized into five categories: 
+% bruised, not bruised, green, yellow-green, and yellow. To ensure robust model
+% training and evaluation, the dataset was initially split into training (70\%), 
+% validation (15\%), and test (15\%) sets using PyTorch’s automated splitting 
+% functions. Following standard practice in deep learning \cite{perez2017effectivenessdataaugmentationimage}
+% , only the training set was augmented to increase sample diversity and improve 
+% generalization, while the validation and test sets remained unaltered to 
+% preserve their role as unbiased evaluation benchmarks.
 
 The validation set contains a balanced representation of the five mango classes. 
 In the bruise-based categories shown on Table~\ref{fig:ripeness_cnn_datasplit}, the 
