@@ -5,6 +5,8 @@ My group's thesis documentation in LaTeX format.
 
 ## `ALWAYS CHECK THE BAUTISTA BRANCH FOR UP TO DATE CODE`
 
+## compressed.pdf is the full thesis paper
+
 ## TO READ THE DOCUMENT.PDF
 run this command
 ```bash
