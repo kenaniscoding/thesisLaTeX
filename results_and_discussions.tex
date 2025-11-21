@@ -1583,500 +1583,70 @@ This purely human evaluation, while authoritative, inevitably introduces a
 degree of inherent human error.
 
 \section{Size Determination Results} \label{sec:sizeDeterminationResults}
-\subsection{Method 1: Real World Object Size Calculation via Foreground Masking and Thresholding}
-To get the length and width of the mango, an initial image without the mango is taken which would be the background image. 
-After that another image is taken with the mango which would be the foreground image.
-To get the length and width of the mango. An initial image without the mango is taken
-which would be the background image. After that another image is taken with the mango
-which would be the foreground image. As seen on Figure~\ref{fig:mango_1_main}, there are three images
-which are the original image taken with the \acr{RPi} camera on the image acquisition system
-which goes through foreground masking as seen on the second image, then the third image
-is the thresholding image. Note that Figure~\ref{fig:mango_1_main} shows one of the flaws of the first method
-or version which is that due to the bright reflection from the LED lights attached to the
-image acquisition system. It causes an inconsistency when subtracting the foreground
-to the background. Furthermore, note that the background image was taken first before
-the original image show on Figure~\ref{fig:mango_1_main}. Moreover, the foreground masking is converted to
-grayscale and then it would be thresholded with the lower and upper limit range of 50 and
-255 as seen on Listing~\ref{lst:foreground_masking1}. Lastly note that this was taken on the first iteration of the image
-acquisition system which is why the conveyor belt isn’t white. Note that the Equation~\ref{eq:objectSizeCalculation2} 
-is used to convert the pixel measurements to get the dimensions in centimeters.
 
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{mango_1_bottom}
-        \label{fig:m1_top}
-    }
-    \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{mango_1_fgMask_bottom}
-        \label{fig:m1_fm_top}
-    }
-    \vfill
-    \subbottom[Thresholding]{
-        \includegraphics[width=0.45\textwidth]{mango_1_thresh_bottom}
-        \label{fig:m1_thresh_top}
-    }
-
-    \caption{Mango Size with Reflective Material}
-    \label{fig:mango_1_main}
-\end{figure}
-
-For the ideal and best case scenario when doing method 1 of foreground masking and
-thresholding, it can be seen on Figure~\ref{fig:mango_2_main} where the foreground masking and thresholding
-were sucessfully able to remove the background. One of the reasons it was sucessfully for
-this instance is because of the black conveyor belt. However, one of the weaknesses of this
-black conveyor belt is that the material is too stiff causing conveyor belt not to move the
-mango.
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{mango_2_bottom}
-        \label{fig:m2_top}
-    }
-    \hfill
-    \subbottom[Thresholding]{
-        \includegraphics[width=0.45\textwidth]{mango_2_thresh_bottom}
-        \label{fig:m2_fm_top}
-    }
-    \vfill
-    \caption{Mango Size Best Case}
-    \label{fig:mango_2_main}
-\end{figure}
-
-Moreover, Figure~\ref{fig:mango_3_top}and Figure ~\ref{fig:mango_3_bottom} shows the both cheek sides of the green Carabao
-mango. Notice that there are now four images which are the original image, foreground
-masking, background, and thresholding image. Notice that at the thresholding image there
-is a black area on the center of the mango. This is because when the foreground masking
-happened, the white and green background caused a blue with white top corner and black
-bottom corners. Because of the black corners on the at the middle of the mango, it creates
-a black line that cuts the mango in half for its width. This is also why the Width percent
-difference for this method is 56.89\% as seen on Table~\ref{tab:mean_and_std_results}.
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Original]{
-        \includegraphics[width=0.45\textwidth]{mango_3_top}
-        \label{fig:m3_top}
-    }
-    \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{mango_3_fgMask_top}
-        \label{fig:m3_fm_top}
-    }
-    \vfill
-    \subbottom[Background]{
-        \includegraphics[width=0.45\textwidth]{mango_3_background}
-        \label{fig:m3_thresh_top}
-    }
-    \hfill
-    \subbottom[Thresholding]{
-        \includegraphics[width=0.45\textwidth]{mango_3_thresh_top}
-        \label{fig:m3_background}
-    }
-    \caption{Mango Top Side with White Conveyor}
-    \label{fig:mango_3_top}
-\end{figure} 
-
-For the Listing~\ref{lst:foreground_masking2}, it converts it to grayscale for processing. Likewise, a Gaussian blur
-with a 7x7 kernel is applied to reduce noise and smooth the image, followed by Canny
-edge detection using thresholds of 50 and 100 to identify object boundaries. Once the
-edges are processed, the code identifies all external contours in the image using OpenCV’s
-findContours function, which locates the boundaries of objects. After that, it selects the
-largest contour. For the selected contour, it fits a minimum area rectangle around it. The
-corner points of this rectangle are extracted to get the largest contour. Finally, these pixel
-measurements are converted to real-world dimensions formula with the parameters such as
-focal length (3500 pixels) and the known distance from camera to object (40).
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Original View]{
-        \includegraphics[width=0.45\textwidth]{mango_3_bottom}
-        \label{fig:m3_bottom}
-    }
-    \hfill
-    \subbottom[Foreground Masking]{
-        \includegraphics[width=0.45\textwidth]{mango_3_fgMask_bottom}
-        \label{fig:m3_fm_bottom}
-    }
-    \vfill
-    \subbottom[Background]{
-        \includegraphics[width=0.45\textwidth]{mango_3_background}
-        \label{fig:m3_thresh_bottom}
-    }
-    \hfill
-    \subbottom[Thresholding]{
-        \includegraphics[width=0.45\textwidth]{mango_3_thresh_bottom}
-        \label{fig:m3_thresh_bottom}
-    }
-    \caption{Mango Bottom Side with White Conveyor}
-    \label{fig:mango_3_bottom}
-\end{figure}
-
-\begin{lstlisting}[
-float=h,
-caption=Getting Size through Foreground Masking part 1, 
-label=lst:foreground_masking1,
-language=TeX,
-frame=single]
-def calculate_size(img, top, dir):
-    fg = img['m']
-    bg = img['g']
-    formatted_date_time = img['f_dt']
-    FOCAL_LENGTH_PIXELS = 3500
-    DISTANCE_CAMERA_TO_OBJECT = 40
-    try:
-        suffix = "top" if top else "bottom"
-        foreground = cv2.imread(fg)
-        background = cv2.imread(bg)
-        if foreground is None or background is None:
-            print(f"Error: Unable to read image files. Foreground: {fg}, Background: {bg}")
-            return 0, 0
-            
-        fgMask = cv2.absdiff(foreground, background)
-        fgMask_filename = f"{formatted_date_time}_fgMask_{suffix}.png"
-        # cv2.imwrite(fgMask_filename, fgMask)
-        cv2.imwrite(os.path.join(dir, fgMask_filename), fgMask)
-        # print(f"Foreground mask saved as {fgMask_filename}")
-        
-        _, thresh = cv2.threshold(cv2.cvtColor(fgMask, cv2.COLOR_BGR2GRAY), 50, 255, cv2.THRESH_BINARY)
-        thresh_filename = f"{formatted_date_time}_thresh_{suffix}.png"
-        # cv2.imwrite(thresh_filename, thresh)        
-        thresh_path = os.path.join(dir, thresh_filename)
-        cv2.imwrite(thresh_path, thresh)
-        # print(f"Threshold saved as {thresh_filename}")
-\end{lstlisting} 
-
-\begin{lstlisting}[
-float=h,
-caption=Getting Size through Foreground Masking part 2, 
-label=lst:foreground_masking2,
-language=TeX,
-frame=single]
-        image = cv2.imread(thresh_path)
-        if image is None:
-            print(f"Error: Unable to read threshold image {thresh_filename}")
-            return 0, 0
-            
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        gray = cv2.GaussianBlur(gray, (7, 7), 0)
-        edged = cv2.Canny(gray, 50, 100)
-        edged = cv2.dilate(edged, None, iterations=1)
-        edged = cv2.erode(edged, None, iterations=1)
-        
-        cnts = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        cnts = imutils.grab_contours(cnts)
-        
-        # If no contours found, return zero dimensions
-        if not cnts:
-            return 0, 0
-            
-        # Find the largest contour by area
-        largest_contour = max(cnts, key=cv2.contourArea)
-        
-        # Only process if the contour area is significant enough
-        if cv2.contourArea(largest_contour) < 100:
-            return 0, 0
-            
-        # Process the largest contour
-        box = cv2.minAreaRect(largest_contour)
-        box = cv2.boxPoints(box)
-        box = np.array(box, dtype="int")
-        box = imutils.perspective.order_points(box)
-        (tl, tr, br, bl) = box
-        
-        pixel_width = dist.euclidean(tl, tr)
-        pixel_length = dist.euclidean(tr, br)
-        real_width = calculate_real_world_dimension(pixel_width, DISTANCE_CAMERA_TO_OBJECT, FOCAL_LENGTH_PIXELS)
-        real_length = calculate_real_world_dimension(pixel_length, DISTANCE_CAMERA_TO_OBJECT, FOCAL_LENGTH_PIXELS)
-        
-        return real_width, real_length
-        
-    except Exception as e:
-        print(f"Error in calculate_size: {e}")
-        return 0, 0
-\end{lstlisting}
-
-\subsection{Method 2: Object Detection using Faster-RCNN}
-For the second method, the researchers train an object detection which is a faster RCNN specifically the MobileNetV3.
-This was used because of its lightweight properties for the Raspberry Pi deployment.
-
-\subsubsection{Training and Testing}
-For the training of the object detection, the researchers annotated 488 images to detect the mango.
-
-\subsubsection{Calibration to the Prototype}
-To calibrate the model to measure the real world length and width of the mango, the researchers calibrated the model using a Philippine peso coin which has a diameter of 2.4 cm.
-The reference box coordinates and reference size in cm can be seen on Listing~\ref{lst:init_coin}.
-\begin{lstlisting}[
-float=h,
-caption=Initializing the Calibration Box, 
-label=lst:init_coin,
-language=TeX,
-frame=single]
-def __init__(self, model_path, num_classes=7):
-    self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    self.model = self.load_model(model_path, num_classes)
-    
-    self.class_names = {
-        1: 'bruised', 2: 'not_bruised', 3: 'yellow',
-        4: 'green_yellow', 5: 'green', 6: 'mango', 7: 'background'
-    }
-    # coin object reference
-    self.reference_box = [815, 383, 999, 556]
-    # Known size of reference object in cm
-    self.reference_size_cm = 2.4  
-\end{lstlisting} 
-
-% image of the coin
+\subsection{Actual and Estimated Length}
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{coin_box}
-	\caption{Calibration using Faster RCNN and a Philippine one peso coin}
-	\label{fig:one_peso_coin}
+	\includegraphics[width=0.8\textwidth]{/size_rev/1}
+	\caption{Bar Graph of Actual vs Estimated Length}
+	\label{fig:size_rev1}
 \end{figure}
+Starting off for size determination, the method for measuring length achieved an average error of 3.41\% 
+with a median of 3.15\% 
+and a standard deviation of 0.02, showing that length estimation was highly consistent and tightly clustered around the mean. Most mangoes exhibited differences below 5\%,
+with only a few samples such as Mango 3 and Mango 4 exceeding this threshold 
+as seen on Figure~\ref{fig:size_rev1}. These deviations were primarily due to bounding box approximation, where slight misalignment of 
+contours led to overestimation. The low variability demonstrates that the code reliably captures mango length, and the small errors are unlikely to affect classification outcomes
 
-Likewise, the reference box that contain the four coordinate points to the coin and the reference size in cm is added to the prototype's code.
 
-For the training the mango object detection, the base model use is the Faster R-CNN with MobileNetV3-Large-FPN backbone. 
-Furthermore, the pre-trained weights are the COCO\_V1 with 7 classes based on the annotated Carabao mango images.
-Note that mobilenet was chosen for its low memory usage. The training parameters are 15 epochs, 2 batch size, learning rate of 0.005, momentum of 0.9, weight decay of 0.0005, 
-and \acr{SGD} Optimizer. 
-% todo make this as an \acr
-
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Sample 1]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/1}
-        \label{fig:box1}
-    }
-    \hfill
-    \subbottom[Sample 2]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/2}
-        \label{fig:box2}
-    }
-    \vfill
-    \subbottom[Sample 3]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/3}
-        \label{fig:box3}
-    }
-    \hfill
-    \subbottom[Sample 4]{
-        \includegraphics[width=0.45\textwidth]{/rcnn-result/4}
-        \label{fig:box4}
-    }
-    \caption{Resulting Bounding Boxes of the Mangoes}
-    \label{fig:bounding_boxes}
-\end{figure}
-
-\subsection{Test Comparison Between Both Methods}
-To test the accuracy in measuring the length and width of the mangoes, 14 mangoes were tested to
-compare and contrast both methods.
-\begin{figure}[!htbp]
-    \centering
-    \subbottom[Unripe Carabao Mangoes]{
-        \includegraphics[width=0.45\textwidth]{/size-mango-test/unripe}
-        \label{fig:unripe-mango}
-    }
-    \hfill
-    \subbottom[Ripe Carabao Mangoes]{
-        \includegraphics[width=0.45\textwidth]{/size-mango-test/ripe}
-        \label{fig:ripe-mango}
-    }
-    \caption{Mangoes Tested for Size Measurement}
-    \label{fig:mango_size_test}
-\end{figure}
-
-% todo explain the unripe and ripe mango imgs fig show above
-
+\subsection{Actual and Estimated Width}
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=1\textwidth]{/size_new_graph/fig01}
-	\caption{Length Comparison in cm}
-	\label{fig:length_cm}
+	\includegraphics[width=0.8\textwidth]{/size_rev/2}
+	\caption{Bar Graph of Actual vs Estimated Width}
+	\label{fig:size_rev2}
 \end{figure}
+For width, the average error was 3.81\%, the median was 3.92\%, and the standard deviation was 0.03, reflecting slightly higher variability 
+compared to length but still within a stable range
+as seen on Figure~\ref{fig:size_rev2}. Most mangoes showed differences between 2–6\%, though Mango 6 was a clear outlier with a width error of 9.67\%, 
+which inflated the overall variability. This error was likely caused by segmentation inconsistencies at the fruit edges, where the HSV mask occasionally included background pixels or missed portions of the mango contour. Despite this, the majority of samples demonstrated stable width estimation, confirming that the method is effective but sensitive to segmentation accuracy.
 
-% todo explain the length and width comparison in cm fig above and below
-
+\subsection{Calculated Area and Estimated Area}
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=1\textwidth]{/size_new_graph/fig02}
-	\caption{Width Comparison in cm}
-	\label{fig:width_cm}
+	\includegraphics[width=0.8\textwidth]{/size_rev/3}
+	\caption{Bar Graph of Actual vs Estimated Area}
+	\label{fig:size_rev3}
 \end{figure}
+For area, which is the most critical parameter for size classification, the code produced an average error of 4.51\%, a median of 4.83\%, 
+and a standard deviation of 0.03, indicating consistent performance across the dataset. Most mangoes were measured within a 2–6\% difference, with Mango 15 
+showing nearly perfect agreement at 0.14\% error
+as seen on Figure~\ref{fig:size_rev3}. Larger deviations were observed in Mango 3 and Mango 6, where area errors reached 8–9\%, primarily due to 
+compounding effects of length and width misestimation. These results highlight that while area estimation is generally reliable, boundary cases near classification 
+thresholds may be more prone to misclassification. Nonetheless, the overall accuracy demonstrates that the code is effective for non-destructive mango grading, with 
+error margins well within acceptable tolerance.
 
-% todo will add explanation of the absolute and percent diff for the four graphs
+\subsection{Summarized Size Results}
 \begin{figure}[!htbp]
-    \centering
-    \subbottom[Absolute Difference for Length in cm]{
-        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig05}
-        \label{fig:abs_length}
-    }
-    \hfill
-    \subbottom[Absolute Difference for Width in cm]{
-        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig06}
-        \label{fig:abs_width}
-    }
-    \vfill
-    \subbottom[Percent Difference for Length]{
-        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig03}
-        \label{fig:percent_diff_length}
-    }
-    \hfill
-    \subbottom[Percent Difference for Width]{
-        \includegraphics[width=0.45\textwidth]{/size_new_graph/fig04}
-        \label{fig:percent_diff_width}
-    }
-    \caption{Percent and Absolute Difference between Both Methods}
-    \label{fig:percent_absolute_diff}
+	\centering
+	\includegraphics[width=0.8\textwidth]{/size_rev/4}
+	\caption{List of Size Results}
+	\label{fig:size_rev4}
+\end{figure}
+Overall, based on Figure~\ref{fig:size_rev4}, the data shows that the mango size determination code produced results that were consistently close to manual caliper measurements 
+across the 15-sample dataset. The average error margins of 3.41 \% for length, 3.81\% for width, and 4.51\% for area, combined with very low standard deviations 
+of 0.02, 0.03, and 0.03 respectively, indicate that the system maintained stable accuracy with minimal variability. Most mangoes fell within a 2–6\% difference, 
+which is acceptable for practical grading, while only a few outliers exceeded 8–9\% error. Likewise,
+the small, medium, and large classification with a 3$\text{cm}^3$ is shown in Figure~\ref{fig:size_rev5} These findings confirm that the methodology is effective for non-destructive 
+mango sizing and classification, with errors generally small and consistent across samples.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/size_rev/5}
+	\caption{Size Area Classification with $\text{cm}^3$ Gap}
+	\label{fig:size_rev5}
 \end{figure}
 
-Note that the V2 Code refers to \textit{Method 2 (Object Detection)}, while the V1 Code refers to \textit{Method 1 (Real-World Object Size Calculation)}.
 
-Tables~\ref{tab:more_size_results01}, \ref{tab:more_size_results02}, \ref{tab:more_size_results03}, and~\ref{tab:mean_and_std_results} present the mango size estimation results using both V1 and V2 methods compared against the ground truth measurements. The results indicate that the V2 (Object Detection) method achieved higher accuracy and consistency in predicting both length and width dimensions compared to V1 (Real-World Object Size Calculation).
-
-As shown in Tables~\ref{tab:more_size_results01} to~\ref{tab:more_size_results03}, individual sample results demonstrate that the V2 method consistently produces values closer to the actual mango dimensions. Table~\ref{tab:mean_and_std_results} summarizes the overall statistical performance of both methods, showing that the V2 method achieved a mean length difference of 1.75 cm with a standard deviation of 0.56 cm, while the V1 method yielded a mean difference of 1.54 cm and a standard deviation of 0.40 cm. Although both methods performed similarly in estimating length, V2 demonstrated significantly better performance in estimating width, with an average difference of only 0.47 cm compared to the 4.61 cm mean error of V1.
-
-Furthermore, the percentage difference data in Table~\ref{tab:mean_and_std_results} reveal that V2 achieved an average of 13.57\% for length and 3.24\% for width, whereas V1 recorded 12.04\% for length but a notably higher 56.89\% for width. This large discrepancy in V1’s width estimation suggests that the Real-World Object Size Calculation method is more prone to scaling and calibration errors, especially along the horizontal dimension. In contrast, the Object Detection approach provided more stable and reliable measurements across all samples.
-
-Overall, as supported by Tables~\ref{tab:more_size_results01} to~\ref{tab:mean_and_std_results}, the analysis shows that the Object Detection (V2) method offers improved precision and robustness for estimating mango dimensions, particularly in width estimation, making it more suitable for getting the mango's size.
-
-% Table 3: Mango Size Results
-\begin{table}[htbp]
-\centering
-\begin{tabular}{c|c|c|c|c|c|c|c}
-\hline \hline
-\multirow{2}{*}{\textbf{ID}} & \multirow{2}{*}{\textbf{Weight (g)}} & \multicolumn{2}{c|}{\textbf{Ground Truth}} & \multicolumn{2}{c|}{\textbf{V2 Code}} & \multicolumn{2}{c}{\textbf{V1 Code}} \\
-\cline{3-8}
-& & \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} \\
-\hline
-01 & 260.8 & 11.8 & 7.80 & 12.86 & 7.96 & 10.33 & 3.08 \\
-\hline
-02 & 299.4 & 12.8 & 7.80 & 14.69 & 8.30 & 11.59 & 3.73 \\
-\hline
-03 & 238.4 & 11.4 & 7.60 & 12.42 & 7.60 & 9.17 & 2.36 \\
-\hline
-04 & 335.6 & 13.8 & 10.50 & 15.38 & 9.33 & 12.49 & 5.00 \\
-\hline
-05 & 272.4 & 12.9 & 8.50 & 15.13 & 7.81 & 11.52 & 3.96 \\
-\hline
-06 & 267.9 & 13.1 & 8.20 & 15.72 & 7.73 & 11.78 & 3.58 \\
-\hline
-07 & 274.0 & 12.6 & 8.20 & 14.96 & 7.88 & 11.80 & 4.00 \\
-\hline
-08 & 272.3 & 13.3 & 8.00 & 15.56 & 7.49 & 12.02 & 4.26 \\
-\hline
-09 & 281.6 & 13.0 & 8.00 & 15.20 & 7.55 & 12.12 & 4.26 \\
-\hline
-10 & 286.2 & 13.8 & 8.00 & 15.20 & 7.55 & 12.17 & 3.09 \\
-\hline
-11 & 284.6 & 12.6 & 9.00 & 15.20 & 7.55 & 10.90 & 3.26 \\
-\hline
-12 & 265.7 & 13.3 & 8.00 & 14.80 & 8.48 & 11.38 & 2.98 \\
-\hline
-13 & 278.1 & 13.0 & 7.60 & 15.08 & 7.87 & 11.00 & 3.18 \\
-\hline
-14 & 263.8 & 12.9 & 7.50 & 15.11 & 7.75 & 11.28 & 4.11 \\
-\hline
-15 & 222.0 & 12.1 & 7.80 & 12.96 & 7.44 & 10.73 & 3.17 \\
-\hline
-16 & 240.1 & 13.5 & 8.20 & 15.36 & 7.14 & 11.15 & 3.21 \\
-\hline
-17 & 290.7 & 13.5 & 8.50 & 14.71 & 8.20 & 11.76 & 3.21 \\
-\hline
-18 & 260.1 & 12.8 & 8.00 & 14.52 & 7.65 & 10.91 & 3.12 \\
-\hline
-19 & 253.6 & 12.9 & 7.50 & 14.08 & 7.66 & 11.65 & 3.17 \\
-\hline
-20 & 225.9 & 12.0 & 7.50 & 13.17 & 7.48 & 10.49 & 3.24 \\
-\hline
-\textbf{AVG} & \textbf{264.1} & \textbf{12.8} & \textbf{8.1} & \textbf{14.7} & \textbf{7.8} & \textbf{11.3} & \textbf{3.5} \\
-\hline
-
-\end{tabular}
-\caption{Mango Size Results}
-\label{tab:more_size_results01}
-\end{table}
-
-% Table 4: Mango Size Difference to Ground Truth Results
-\begin{table}[htbp]
-\centering
-\begin{tabular}{c|c|c|c|c}
-\hline \hline
-\multirow{2}{*}{\textbf{ID}} & \multicolumn{2}{c|}{\textbf{V2 Difference}} & \multicolumn{2}{c}{\textbf{V1 Difference}} \\
-\cline{2-5}
-& \textbf{L} & \textbf{W} & \textbf{L} & \textbf{W} \\
-\hline
-01 & 1.06 & 0.16 & 1.47 & 4.72 \\
-\hline
-02 & 1.89 & 0.50 & 1.21 & 4.07 \\
-\hline
-03 & 1.02 & 0.00 & 2.23 & 5.24 \\
-\hline
-04 & 1.58 & 1.17 & 1.31 & 5.50 \\
-\hline
-05 & 2.23 & 0.69 & 1.38 & 4.54 \\
-\hline
-06 & 2.62 & 0.47 & 1.32 & 4.62 \\
-\hline
-07 & 2.36 & 0.32 & 0.80 & 4.20 \\
-\hline
-08 & 2.26 & 0.51 & 1.28 & 3.74 \\
-\hline
-09 & 2.20 & 0.45 & 1.12 & 3.74 \\
-\hline
-10 & 1.40 & 0.45 & 1.63 & 4.91 \\
-\hline
-11 & 2.60 & 1.45 & 1.70 & 5.74 \\
-\hline
-12 & 1.50 & 0.48 & 1.92 & 5.02 \\
-\hline
-13 & 2.08 & 0.27 & 2.00 & 4.42 \\
-\hline
-14 & 2.21 & 0.25 & 1.62 & 3.39 \\
-\hline
-15 & 0.86 & 0.36 & 1.37 & 4.63 \\
-\hline
-16 & 1.86 & 1.06 & 2.35 & 4.99 \\
-\hline
-17 & 1.21 & 0.30 & 1.74 & 5.29 \\
-\hline
-18 & 1.72 & 0.35 & 1.89 & 4.88 \\
-\hline
-19 & 1.18 & 0.16 & 1.25 & 4.33 \\
-\hline
-20 & 1.17 & 0.02 & 1.51 & 4.26 \\
-\hline
-\textbf{AVG} & \textbf{1.80} & \textbf{0.50} & \textbf{1.60} & \textbf{4.60} \\
-\hline
-
-\end{tabular}
-\caption{Mango Size Difference to Ground Truth Results}
-\label{tab:more_size_results02}
-\end{table}
-
-% Table 5: Mean and Standard Deviation of Size
-\begin{table}[htbp]
-\centering
-\begin{tabular}{l|c|c|c|c}
-\hline \hline
-\multirow{2}{*}{\textbf{Metric}} & \multicolumn{2}{c|}{\textbf{V2 Code}} & \multicolumn{2}{c}{\textbf{V1 Code}} \\
-\cline{2-5}
-& \textbf{Mean} & \textbf{SD} & \textbf{Mean} & \textbf{SD} \\
-\hline
-Length Differences (cm) & 1.75 & 0.56 & 1.54 & 0.40 \\
-\hline
-Width Differences (cm) & 0.47 & 0.37 & 4.61 & 0.61 \\
-\hline
-Length Percent Difference & 13.57\% & 4.20\% & 12.04\% & 3.28\% \\
-\hline
-Width Percent Difference & 3.24\% & 6.16\% & 56.89\% & 6.32\% \\
-\hline
-
-\end{tabular}
-\caption{Mean and Standard Deviation of Size}
-\label{tab:mean_and_std_results}
-\end{table}
 
 \section{Formula with User Priority } \label{sec:userPriorityFormula}
 
