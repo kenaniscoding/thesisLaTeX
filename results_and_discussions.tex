@@ -114,10 +114,12 @@
 			\Paste{SO6} & 
 			Results:
 			\begin{enumerate}
-        \item Compared and tested two methods, which are the foreground masking then thresholding and Object Detection, to measure the length and width of the Carabao mangoes
-        \item Version 1, which is the foreground masking then thresholding, has a 12.04\% and 3.24\% percent difference to the ground truth for length and width.
-        \item Version 2, which is the Object Detection, has a 13.57\% and 3.24\% percent difference to the ground truth for the length and width.
-				% \item Successfully classified mango size using Faster R-CNN
+        \item OpenCV method demonstrated an accurate performance, with measured area percent difference of 4.8\% 
+        to the manual measurement by getting its length and width, respectively.
+        % Compared and tested two methods, which are the foreground masking then thresholding and Object Detection, to measure the length and width of the Carabao mangoes
+        % \item Version 1, which is the foreground masking then thresholding, has a 12.04\% and 3.24\% percent difference to the ground truth for length and width.
+        % \item Version 2, which is the Object Detection, has a 13.57\% and 3.24\% percent difference to the ground truth for the length and width.
+				% \item Successfully classified mango size using 
 				% \item Successfully tuned to have an accurate size with an 80 percent accuracy rating
 			\end{enumerate} 
 			% Actual Results:
@@ -2008,16 +2010,14 @@ small and medium size mangoes.
 
 \section{Summary} \label{sec:summary_results_and_discussions}
 
-This chapter presents a comprehensive evaluation of the automated mango grading and
-sorting system, demonstrating its successful integration of software intelligence, hardware
+This chapter shows its successful integration of software intelligence, hardware
 functionality, and user-centric design. The core of the system's success lies
 in its high-precision deep learning models, with the final EfficientNetV2-B3 architecture
 achieving exceptional accuracies of 98\% for ripeness classification and 99\% for bruise
 detection. Through extensive benchmarking, modern CNNs like EfficientNet were proven
-superior, offering an optimal balance of accuracy and computational efficiency. For
-physical attribute measurement, an object detection method (Faster R-CNN) was established
-as the most reliable technique for determining mango size, significantly outperforming a
-traditional computer vision approach. The system's practical validity was further
+superior, offering an optimal balance of accuracy and computational efficiency. The system 
+is able to get an overall percent difference to measured area of 4.8 for the size.
+The system's practical validity was further
 confirmed through a comparative analysis with a human expert, achieving a 79\% agreement
 rate, which accounts for the inherent subjectivity of manual grading. This robust
 software is embodied in a functional physical prototype that evolved into a refined
