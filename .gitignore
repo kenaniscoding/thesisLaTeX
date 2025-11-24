@@ -16,6 +16,7 @@ vscode/
 # pdf files
 document.pdf
 document_with_extra_guides_in_the_appendices.pdf
+article_forum_paper.pdf
 # Intermediate files
 *.dvi
 *.xdv
