@@ -305,183 +305,6 @@ distinguishing features between the stages.
 	\label{fig:ripeness_confusion_matrix_knn_fig}
 \end{figure}
 
-\subsubsection{CNN}
-
-The final CNN model for ripeness and bruise classification utilized EfficientNetV2-B3.
- Collected experimental data confirmed that it achieved the best performance-to-efficiency ratio.
- It consistently outperformed other architectures tested during benchmarking and optimization stages.
- For the final ripeness classification, the complete dataset contained around 14,000 images.
- The model achieved a test accuracy of 98\%, with precision, recall, and F1-score near 0.985.
- This consistency across metrics demonstrates both high accuracy and class-balanced reliability.
- It performed uniformly across all ripeness categories without favoring any particular class.
- Validation accuracy of 98.41\% closely matched the test accuracy, confirming excellent generalization.
- The slightly higher training accuracy of 99.37\% indicated minimal overfitting occurrence.
- The narrow gap between training, validation, and test results reflected stable learning.
- These findings confirm that dataset refinement and optimization prevented memorization effectively.
- They also promoted genuine feature learning across ripeness categories and lighting variations.
-
-The confusion matrix in Figure~\ref{fig:ripeness_confusion_matrix_fig} further supports these conclusions clearly.
- Misclassifications were minimal and occurred mostly between adjacent ripeness categories.
- Errors were concentrated between transitional stages such as yellow-green and yellow mangoes.
- This pattern matches the biological ambiguity seen during mango ripening transitions.
- Even human evaluators sometimes disagree on borderline ripeness due to visual overlap.
- The model’s strong accuracy in these ambiguous cases reflects superior discriminative ability.
- It demonstrates practical reliability for deployment in real-world mango grading systems.
-
-Several major modifications to the training pipeline improved overall model effectiveness significantly.
- Mixed-precision training using GradScaler and autocast reduced GPU memory consumption substantially.
- This optimization increased batch size from 32 to 56, enhancing training stability.
- Larger batch sizes improved gradient estimation and smoothed convergence across training epochs.
- Input resolution was corrected to 300×300, matching EfficientNetV2-B3’s native architecture.
- This adjustment improved feature extraction and ensured compatibility with pretrained weights.
- The optimizer was changed from Adam to \acr{AdamW} for stronger regularization.
- Learning rate was set to 3e-4, and weight decay to 1e-4.
- These parameters decoupled regularization from gradient updates, ensuring stable convergence behavior.
- A cosine annealing warm-restart scheduler with T0 = 5 and Tmult = 2 was applied.
- It included three warm-up epochs to escape sharp minima effectively during training.
-
-Additional refinements further improved training robustness and model generalization performance.
- CrossEntropy loss with label smoothing of 0.05 reduced overconfident predictions.
- This adjustment improved resilience to ambiguous ripeness categories and noisy image labels.
- Early stopping with a patience of five epochs prevented redundant computation cycles.
- Checkpointing saved the best weights once performance improvements plateaued consistently.
- Data loading was optimized with workers set to half of available CPU cores.
- Pin\_memory and non\_blocking transfers accelerated CPU-to-GPU data streaming throughput.
- These optimizations minimized data bottlenecks and reduced idle GPU computation time.
- Regularization through dropout = 0.25 and drop-path = 0.15 improved network robustness.
- These techniques prevented neuron co-adaptation and encouraged diverse feature representations.
-
-The validation curves in Figure~\ref{fig:ripeness-graph} confirm stable convergence throughout training.
- Validation accuracy increased steadily before plateauing at a consistently high level.
- Validation loss showed minor oscillations but followed an overall downward trajectory.
- This inverse relationship between loss and accuracy indicates strong discriminative learning ability.
- Accuracy stability despite small loss fluctuations shows resistance to overfitting.
- These patterns confirm that optimizations such as label smoothing and annealing worked effectively.
- The model maintained robustness and generalization even in complex visual conditions.
- Its smooth convergence underscores training stability and computational efficiency across all epochs.
-
-Lastly, dataset enhancements contributed substantially to achieving these superior results overall.
- The dataset expanded from approximately 6,000 to 14,000 well-curated mango images.
- New Carabao mango samples were added, improving variety and biological representativeness.
- Ambiguous or noisy samples were removed to reduce label uncertainty significantly.
- Augmentation strategies were refined to introduce meaningful color, rotation, and lighting diversity.
- These augmentations enhanced robustness by exposing the network to realistic visual variations.
- As a result, the final model generalized strongly and maintained stable performance.
- Across all dataset splits, it demonstrated consistent accuracy and balanced classification reliability.
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{l|c|c|c|c}
-	  \hline \hline
-	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
-    \hline
-	  Green & 0.98 & 0.99 & 0.99 & 210 \\
-    \hline
-	  Yellow & 0.99 & 0.99 & 0.99 & 161 \\
-	  \hline
-	  Yellow\_Green & 0.98 & 0.98 & 0.98 & 219 \\
-	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 590 \\
-	  \hline
-	  Macro Avg & 0.99 & 0.99 & 0.99 & 590 \\
-	  \hline
-    Weighted Avg & 0.98 & 0.98 & 0.98 & 590 \\
-	  \hline
-	\end{tabular}
-	\caption{EfficientNetV2-B3 Ripeness Classification Report with Precision: 0.9848, Recall: 0.9847, F1 Score: 0.9847}
-	\label{tab:ripeness_classification_report}
-\end{table}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{/effnetv2-m-ripeness/confusion_matrix_ripeness}
-	\caption{EfficientNetV2-B3 Ripeness Confusion Matrix}
-	\label{fig:ripeness_confusion_matrix_fig}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{/graphs/ripeness_plot}
-	\caption{EfficientNetV2-B3 Ripeness Accuracy and Loss Graph}
-	\label{fig:ripeness-graph}
-\end{figure}
-
-\subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
-
-\subsubsection{CNN} 
-For bruise classification, the final EfficientNetV2-B3 model also performed excellently.
-It achieved a test accuracy of 99\%, with precision, recall, and F1-score near 0.989.
-The validation accuracy of 99.31\% and training accuracy of 99.86\% confirmed stability.
-These results demonstrate exceptional reliability and consistent performance across all dataset splits.
-The training configuration was refined to improve both computational efficiency and robustness.
-Batch size was increased to 60, fully utilizing available GPU memory capacity.
-This adjustment enhanced gradient stability and accelerated convergence across training epochs effectively.
-Regularization parameters were tuned with a dropout rate of 0.2 overall.
-A drop-path rate of 0.1 was also applied to further control overfitting.
-Together, these settings balanced high predictive accuracy with improved model generalization capability.
-Early stopping with a patience of 10 epochs was employed during training.
-This ensured meaningful improvement capture while avoiding unnecessary computation after convergence detection.
-
-The confusion matrix in Figure~\ref{fig:bruises_confusion_matrix_fig} reinforces these excellent quantitative results clearly.
-The model correctly identified nearly all samples across both bruise categories tested.
-Only four false negatives and one false positive occurred in total predictions.
-This minimal error distribution illustrates a well-balanced and highly reliable classification profile.
-The model demonstrated strong sensitivity to bruised fruit and high specificity otherwise.
-Low false negatives are particularly important in postharvest quality control applications.
-Undetected bruises pose a major risk to maintaining consistent product quality standards.
-The low occurrence of such cases underscores the model’s robustness and precision.
-These characteristics make EfficientNetV2-B3 ideal for deployment in real-time inspection systems.
-
-The validation curves in Figure~\ref{fig:bruises-graph} further illustrate stable training convergence behavior.
-Validation accuracy rose rapidly during initial epochs and stabilized near 0.99 overall.
-Meanwhile, validation loss decreased sharply early on and then gradually leveled off.
-Minor fluctuations in loss reflect typical batch-level variations during optimization cycles.
-Despite these oscillations, accuracy remained consistently high and stable throughout training.
-This indicates that the network maintained strong confidence in its classification predictions.
-The inverse correlation between loss and accuracy confirms effective learning of features.
-These patterns demonstrate robust generalization and the absence of significant overfitting problems.
-Together, the curves validate that all applied optimizations improved convergence stability efficiently.
-EfficientNetV2-B3 thus combines exceptional accuracy, reliability, and computational efficiency effectively.
-This performance level establishes it as the optimal model for bruise classification.
-Its predictive precision makes it suitable for industrial-grade automated quality control systems.
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{l|c|c|c|c}
-	  \hline \hline
-	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
-	  \hline
-	  Bruised & 1.00 & 0.98 & 0.99 & 206 \\
-	  \hline
-	  Not Bruised & 0.98 & 1.00 & 0.99 & 234 \\
-	  \hline
-	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.99 & 440 \\
-	  \hline
-	  Macro Avg & 0.99 & 0.99 & 0.99 & 440 \\
-	  \hline
-    Weighted Avg & 0.99 & 0.99 & 0.99 & 440 \\
-	  \hline
-	\end{tabular}
-	\caption{EfficientNetV2-B3 Bruises Classification Report with Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886}
-	\label{tab:bruises_classification_report}
-\end{table}
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{/effnetv2-m-bruises/confusion_matrix_bruises}
-	\caption{EfficientNetV2-B3 Bruises Confusion Matrix}
-	\label{fig:bruises_confusion_matrix_fig}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{/graphs/bruises_plot}
-	\caption{EfficientNetV2-B3 Bruises Accuracy and Loss Graph}
-	\label{fig:bruises-graph}
-\end{figure}
-
 \section{Achieving the Highest Accuracy in CNN Models}
 
 \begin{table}[htbp]
@@ -1402,6 +1225,184 @@ It provides a scalable, reliable, and resource-efficient solution for industrial
     \label{fig:effnetv2b3_rp}
 \end{figure}
 
+
+\subsubsection{CNN}
+
+The final CNN model for ripeness and bruise classification utilized EfficientNetV2-B3.
+ Collected experimental data confirmed that it achieved the best performance-to-efficiency ratio.
+ It consistently outperformed other architectures tested during benchmarking and optimization stages.
+ For the final ripeness classification, the complete dataset contained around 14,000 images.
+ The model achieved a test accuracy of 98\%, with precision, recall, and F1-score near 0.985.
+ This consistency across metrics demonstrates both high accuracy and class-balanced reliability.
+ It performed uniformly across all ripeness categories without favoring any particular class.
+ Validation accuracy of 98.41\% closely matched the test accuracy, confirming excellent generalization.
+ The slightly higher training accuracy of 99.37\% indicated minimal overfitting occurrence.
+ The narrow gap between training, validation, and test results reflected stable learning.
+ These findings confirm that dataset refinement and optimization prevented memorization effectively.
+ They also promoted genuine feature learning across ripeness categories and lighting variations.
+
+The confusion matrix in Figure~\ref{fig:ripeness_confusion_matrix_fig} further supports these conclusions clearly.
+ Misclassifications were minimal and occurred mostly between adjacent ripeness categories.
+ Errors were concentrated between transitional stages such as yellow-green and yellow mangoes.
+ This pattern matches the biological ambiguity seen during mango ripening transitions.
+ Even human evaluators sometimes disagree on borderline ripeness due to visual overlap.
+ The model’s strong accuracy in these ambiguous cases reflects superior discriminative ability.
+ It demonstrates practical reliability for deployment in real-world mango grading systems.
+
+Several major modifications to the training pipeline improved overall model effectiveness significantly.
+ Mixed-precision training using GradScaler and autocast reduced GPU memory consumption substantially.
+ This optimization increased batch size from 32 to 56, enhancing training stability.
+ Larger batch sizes improved gradient estimation and smoothed convergence across training epochs.
+ Input resolution was corrected to 300×300, matching EfficientNetV2-B3’s native architecture.
+ This adjustment improved feature extraction and ensured compatibility with pretrained weights.
+ The optimizer was changed from Adam to \acr{AdamW} for stronger regularization.
+ Learning rate was set to 3e-4, and weight decay to 1e-4.
+ These parameters decoupled regularization from gradient updates, ensuring stable convergence behavior.
+ A cosine annealing warm-restart scheduler with T0 = 5 and Tmult = 2 was applied.
+ It included three warm-up epochs to escape sharp minima effectively during training.
+
+Additional refinements further improved training robustness and model generalization performance.
+ CrossEntropy loss with label smoothing of 0.05 reduced overconfident predictions.
+ This adjustment improved resilience to ambiguous ripeness categories and noisy image labels.
+ Early stopping with a patience of five epochs prevented redundant computation cycles.
+ Checkpointing saved the best weights once performance improvements plateaued consistently.
+ Data loading was optimized with workers set to half of available CPU cores.
+ Pin\_memory and non\_blocking transfers accelerated CPU-to-GPU data streaming throughput.
+ These optimizations minimized data bottlenecks and reduced idle GPU computation time.
+ Regularization through dropout = 0.25 and drop-path = 0.15 improved network robustness.
+ These techniques prevented neuron co-adaptation and encouraged diverse feature representations.
+
+The validation curves in Figure~\ref{fig:ripeness-graph} confirm stable convergence throughout training.
+ Validation accuracy increased steadily before plateauing at a consistently high level.
+ Validation loss showed minor oscillations but followed an overall downward trajectory.
+ This inverse relationship between loss and accuracy indicates strong discriminative learning ability.
+ Accuracy stability despite small loss fluctuations shows resistance to overfitting.
+ These patterns confirm that optimizations such as label smoothing and annealing worked effectively.
+ The model maintained robustness and generalization even in complex visual conditions.
+ Its smooth convergence underscores training stability and computational efficiency across all epochs.
+
+Lastly, dataset enhancements contributed substantially to achieving these superior results overall.
+ The dataset expanded from approximately 6,000 to 14,000 well-curated mango images.
+ New Carabao mango samples were added, improving variety and biological representativeness.
+ Ambiguous or noisy samples were removed to reduce label uncertainty significantly.
+ Augmentation strategies were refined to introduce meaningful color, rotation, and lighting diversity.
+ These augmentations enhanced robustness by exposing the network to realistic visual variations.
+ As a result, the final model generalized strongly and maintained stable performance.
+ Across all dataset splits, it demonstrated consistent accuracy and balanced classification reliability.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
+	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+    \hline
+	  Green & 0.98 & 0.99 & 0.99 & 210 \\
+    \hline
+	  Yellow & 0.99 & 0.99 & 0.99 & 161 \\
+	  \hline
+	  Yellow\_Green & 0.98 & 0.98 & 0.98 & 219 \\
+	  \hline
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.98 & 590 \\
+	  \hline
+	  Macro Avg & 0.99 & 0.99 & 0.99 & 590 \\
+	  \hline
+    Weighted Avg & 0.98 & 0.98 & 0.98 & 590 \\
+	  \hline
+	\end{tabular}
+	\caption{EfficientNetV2-B3 Ripeness Classification Report with Precision: 0.9848, Recall: 0.9847, F1 Score: 0.9847}
+	\label{tab:ripeness_classification_report}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/effnetv2-m-ripeness/confusion_matrix_ripeness}
+	\caption{EfficientNetV2-B3 Ripeness Confusion Matrix}
+	\label{fig:ripeness_confusion_matrix_fig}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{/graphs/ripeness_plot}
+	\caption{EfficientNetV2-B3 Ripeness Accuracy and Loss Graph}
+	\label{fig:ripeness-graph}
+\end{figure}
+
+\subsection{Bruises Classification Results} \label{sec:bruisesClassificationResults}
+
+\subsubsection{CNN} 
+For bruise classification, the final EfficientNetV2-B3 model also performed excellently.
+It achieved a test accuracy of 99\%, with precision, recall, and F1-score near 0.989.
+The validation accuracy of 99.31\% and training accuracy of 99.86\% confirmed stability.
+These results demonstrate exceptional reliability and consistent performance across all dataset splits.
+The training configuration was refined to improve both computational efficiency and robustness.
+Batch size was increased to 60, fully utilizing available GPU memory capacity.
+This adjustment enhanced gradient stability and accelerated convergence across training epochs effectively.
+Regularization parameters were tuned with a dropout rate of 0.2 overall.
+A drop-path rate of 0.1 was also applied to further control overfitting.
+Together, these settings balanced high predictive accuracy with improved model generalization capability.
+Early stopping with a patience of 10 epochs was employed during training.
+This ensured meaningful improvement capture while avoiding unnecessary computation after convergence detection.
+
+The confusion matrix in Figure~\ref{fig:bruises_confusion_matrix_fig} reinforces these excellent quantitative results clearly.
+The model correctly identified nearly all samples across both bruise categories tested.
+Only four false negatives and one false positive occurred in total predictions.
+This minimal error distribution illustrates a well-balanced and highly reliable classification profile.
+The model demonstrated strong sensitivity to bruised fruit and high specificity otherwise.
+Low false negatives are particularly important in postharvest quality control applications.
+Undetected bruises pose a major risk to maintaining consistent product quality standards.
+The low occurrence of such cases underscores the model’s robustness and precision.
+These characteristics make EfficientNetV2-B3 ideal for deployment in real-time inspection systems.
+
+The validation curves in Figure~\ref{fig:bruises-graph} further illustrate stable training convergence behavior.
+Validation accuracy rose rapidly during initial epochs and stabilized near 0.99 overall.
+Meanwhile, validation loss decreased sharply early on and then gradually leveled off.
+Minor fluctuations in loss reflect typical batch-level variations during optimization cycles.
+Despite these oscillations, accuracy remained consistently high and stable throughout training.
+This indicates that the network maintained strong confidence in its classification predictions.
+The inverse correlation between loss and accuracy confirms effective learning of features.
+These patterns demonstrate robust generalization and the absence of significant overfitting problems.
+Together, the curves validate that all applied optimizations improved convergence stability efficiently.
+EfficientNetV2-B3 thus combines exceptional accuracy, reliability, and computational efficiency effectively.
+This performance level establishes it as the optimal model for bruise classification.
+Its predictive precision makes it suitable for industrial-grade automated quality control systems.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l|c|c|c|c}
+	  \hline \hline
+	  \textbf{ } & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{Support} \\
+	  \hline
+	  Bruised & 1.00 & 0.98 & 0.99 & 206 \\
+	  \hline
+	  Not Bruised & 0.98 & 1.00 & 0.99 & 234 \\
+	  \hline
+	  Accuracy &  \multicolumn{2}{c|}{ }  & 0.99 & 440 \\
+	  \hline
+	  Macro Avg & 0.99 & 0.99 & 0.99 & 440 \\
+	  \hline
+    Weighted Avg & 0.99 & 0.99 & 0.99 & 440 \\
+	  \hline
+	\end{tabular}
+	\caption{EfficientNetV2-B3 Bruises Classification Report with Precision: 0.9887, Recall: 0.9886, F1 Score: 0.9886}
+	\label{tab:bruises_classification_report}
+\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/effnetv2-m-bruises/confusion_matrix_bruises}
+	\caption{EfficientNetV2-B3 Bruises Confusion Matrix}
+	\label{fig:bruises_confusion_matrix_fig}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{/graphs/bruises_plot}
+	\caption{EfficientNetV2-B3 Bruises Accuracy and Loss Graph}
+	\label{fig:bruises-graph}
+\end{figure}
+
 % [x] todo: revisit once actual interview and testing with expert is done
 \section{Comparative Analysis: Model Performance vs. Expert Benchmark}
 % placholder till ground truth
@@ -1411,7 +1412,7 @@ section outlines the methodology for the expert evaluation and presents a
 comparative summary of the results.
 
 \subsection{Comparative Results}
-The expert's classifications for the 50 images randomly sampled from the
+The expert's classifications for the 26 images randomly sampled from the
 dataset are presented in
 Table~\ref{tab:expert_results}.
 These results serve as the validated ground truth against which the predictive
@@ -1421,94 +1422,177 @@ green, yellow-green, and yellow, respectively. Likewise, \gls{not:b} and \gls{no
 bruised and non-bruised mango surfaces.
 % [x] todo: revisit once actual interview and testing with expert is done
 
-\begin{longtable}{cccccc}
-    \label{tab:expert_results} \\
-    \caption{Expert Classification Results for Mango Phenotypic Traits} \\
-    \toprule
-    {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
-     & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
-    \midrule
-    \endfirsthead
-    
-    \multicolumn{6}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
-    \toprule
-    {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
-     & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
-    \midrule
-    \endhead
-    
-    \midrule
-    \multicolumn{6}{c}{{Continued on next page}} \\
-    \endfoot
-    
-    \bottomrule
-    \endlastfoot
-    % -- pg marker 2
-        001 & yg & yg  & b & nb & 0.5\\ % -- 01yg.jpg
-        002 & yg & g  & b & nb  & 0\\ % -- 08_g.jpg
-        003 & yg & yg  & b & b &  1\\ % -- 07b.jpg
-        004 & g & g  & nb & nb  & 1\\ % -- 10nb.jpg
-        005 & yg & yg  & b & nb  & 0.5\\ % -- 05yg.jpg
-        006 & yg & yg  & nb & nb  & 1\\ % --01nb.jpg
-    % -- pg marker 3
-        007 & yg & yg  & b & nb  & 0.5\\ % -- 06nb.jpg
-        008 & y & y  & b & b  & 1\\ % -- 07y.jpg
-        009 & yg & yg  & b & nb  & 0.5\\ % -- 08yg.jpg
-        010 & g & g  & b & nb  & 0.5\\ % -- 04g.jpg
-        011 & g & g  & nb & nb  & 1\\ % -- 09nb.jpg 
-        012 & y & y  & nb & nb  & 1\\ % -- 09y.jpg
-    % -- pg marker 4
-        013 & yg & y  & b & b  & 0.5\\ % -- 07yg.jpg
-        014 & y & yg  & b & b  & 0.5\\ % -- 03y.jpg
-        015 & y & yg  & b & b  & 0.5\\ % -- 09b.jpg
-        016 & yg & yg  & b & nb  & 0.5\\ % -- 08b.jpg
-        017 & y & yg  & b & b  & 0.5\\ % -- 10b.jpg
-        018 & g & yg  & nb & nb  & 0.5\\ % -- 02nb.jpg
-    % -- pg marker 5
-        019 & yg & yg  & b & b  & 1\\ % -- 03b.jpg
-        020 & g & g  & nb & nb  & 1\\ % -- 02g.jpg
-        021 & y & y  & b & nb  & 0.5\\ % -- 02y.jpg
-        022 & g & g  & nb & nb  & 1\\ % -- 01g.jpg
-        023 & g & g  & nb & nb  & 1\\ % -- 08nb.jpg
-        024 & yg & yg  & nb & nb  & 1\\ % -- 05nb.jpg
-    % -- pg marker 6
-        025 & yg & yg  & nb & nb  & 1\\ % -- 03nb.jpg
-        026 & g & g  & b & b  & 1\\ % -- 10g.jpg 
-        027 & y & y  & b & b  & 1\\ % -- 08y.jpg
-        028 & yg & yg  & nb & nb  & 1\\ % -- 06yg.jpg
-        029 & yg & g  & nb & b  & 0\\ % -- 09g.jpg
-        030 & g & g  & nb & nb  & 1\\ % -- 07g.jpg
-    % -- pg marker 7
-        031 & yg & g  & nb & nb  & 0.5\\ % -- 03g.jpg
-        032 & yg & yg  & b & b  & 1\\ % -- 01b.jpg
-        033 & y & y  & b & b  & 1\\ % -- 10y.jpg
-        034 & g & g  & b & nb  & 0.5\\ % -- 05g.jpg
-        035 & y & y  & b & b  & 1\\ % -- 04y.jpg
-        036 & yg & yg  & b & b  & 1\\ % -- 09yg.jpg
-    % -- pg marker 8
-        037 & yg & yg  & b & nb  & 0.5\\ % -- 04yg.jpg
-        038 & g & g  & nb & b  & 0.5 \\ % -- 05b.jpg
-        039 & yg & yg  & b & b  & 1\\ % -- 06b.jpg
-        040 & yg & yg  & b & b  & 1\\ % -- 02yg.jpg
-        041 & g & g  & nb & nb  & 1\\ % -- 06g.jpg
-        042 & yg & yg  & b & nb & 0.5 \\ % -- 04nb.jpg
-    % -- pg marker 9
-        043 & yg & yg  & b & b  & 1\\ % -- 04b.jpg
-        044 & yg & yg  & nb & nb  & 1\\ % -- 07nb.jpg
-        045 & y & y  & b & b  & 1\\ % -- 06y.jpg
-        046 & yg & yg  & nb & nb  & 1\\ % -- 03yg.jpg
-        047 & yg & yg  & nb & nb  & 1\\ % -- 10yg.jpg
-        048 & g & g  & nb & nb  & 1\\ % -- 02b.jpg
-    % -- pg marker 10
-        049 & y & y  & b & b  & 1\\ % -- 05y.jpg
-        050 & y & y  & b & b  & 1\\ % -- 01y.jpg
-\end{longtable}
+ \begin{longtable}{cccccc}
+     \label{tab:expert_results} \\
+     \caption{Expert Classification Results for Mango Phenotypic Traits frrom Professional 1} \\
+     \toprule
+     {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+     \midrule
+     \endfirsthead
+     
+     \multicolumn{6}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
+     \toprule
+     {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+     \midrule
+     \endhead
+     
+     \midrule
+     \multicolumn{6}{c}{{Continued on next page}} \\
+     \endfoot
+     
+     \bottomrule
+     \endlastfoot
+     % -- pg marker 2
+         001 & y & y  & b & b & 1\\ % -- 01yg.jpg
+         002 & yg & yg  & b & b  & 1\\ % -- 08_g.jpg
+         003 & g & g  & nb & nb &  1\\ % -- 07b.jpg
+         004 & y & y  & b & b  & 1\\ % -- 10nb.jpg
+         005 & g & g  & nb & nb  & 1\\ % -- 05yg.jpg
+         006 & yg & yg  & b & b  & 1\\ % --01nb.jpg
+     % -- pg marker 3
+         007 & yg & y  & nb & nb  & 0.5\\ % -- 06nb.jpg
+         008 & g & g  & nb & nb  & 1\\ % -- 07y.jpg
+         009 & y & y  & b & b  & 1\\ % -- 08yg.jpg
+         010 & yg & yg  & nb & nb  & 1\\ % -- 04g.jpg
+         011 & yg & yg  & b & b  & 1\\ % -- 09nb.jpg 
+         012 & yg & yg  & b & b  & 1\\ % -- 09y.jpg
+     % -- pg marker 4
+         013 & g & g  & nb & nb  & 1\\ % -- 07yg.jpg
+         014 & yg & yg  & b & b  & 1\\ % -- 03y.jpg
+         015 & g & g & b & b  & 1\\ % -- 09b.jpg
+         016 & yg & yg  & nb & nb  & 1\\ % -- 08b.jpg
+         017 & yg & yg  & nb & nb  & 1\\ % -- 10b.jpg
+         018 & yg & yg  & b & nb  & 0.5\\ % -- 02nb.jpg
+     % -- pg marker 5
+         019 & yg & yg  & nb & nb  & 1\\ % -- 07yg.jpg
+         020 & g & g  & nb & nb  & 1\\ % -- 03y.jpg
+         021 & yg & yg  & b & b  & 1\\ % -- 09b.jpg
+         022 & g & g  & nb & nb  & 1\\ % -- 08b.jpg
+         023 & y & y  & b & b  & 1\\ % -- 10b.jpg
+         024 & yg & yg  & b & b  & 1\\ % -- 02nb.jpg
+     % -- pg marker 5
+         025 & yg & yg  & b & b  & 1\\ % -- 03b.jpg
+         026 & g & g  & nb & nb  & 1\\ % -- 02g.jpg
+ \end{longtable}
 
-% -- disucussion of results
-% 31 1's 17 0.5's
-After compiling the scores, the model achieved an overall score of 39.5 out of
-50. This translates to a 79\% accuracy rate, meaning the model's answers were
-correct 79\% of the time when compared to the mango expert's benchmark.
+ \begin{longtable}{cccccc}
+     \label{tab:expert_results} \\
+     \caption{Expert Classification Results for Mango Phenotypic Traits
+     from Professional 2} \\
+     \toprule
+     {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+     \midrule
+     \endfirsthead
+     
+     \multicolumn{6}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
+     \toprule
+     {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+     \midrule
+     \endhead
+     
+     \midrule
+     \multicolumn{6}{c}{{Continued on next page}} \\
+     \endfoot
+     
+     \bottomrule
+     \endlastfoot
+     % -- pg marker 2
+         001 & y & y  & b & b & 1\\ % -- 01yg.jpg
+         002 & yg & yg  & b & b  & 1\\ % -- 08_g.jpg
+         003 & g & g  & nb & nb &  1\\ % -- 07b.jpg
+         004 & y & y  & b & b  & 1\\ % -- 10nb.jpg
+         005 & g & g  & nb & nb  & 1\\ % -- 05yg.jpg
+         006 & y & yg  & b & b  & 0.5\\ % --01nb.jpg
+     % -- pg marker 3
+         007 & yg & y  & nb & nb  & 0.5\\ % -- 06nb.jpg
+         008 & g & g  & nb & nb  & 1\\ % -- 07y.jpg
+         009 & y & y  & b & b  & 1\\ % -- 08yg.jpg
+         010 & yg & yg  & nb & nb  & 1\\ % -- 04g.jpg
+         011 & yg & yg  & b & b  & 1\\ % -- 09nb.jpg 
+         012 & yg & yg  & nb & b  & 0.5\\ % -- 09y.jpg
+     % -- pg marker 4
+         013 & g & g  & nb & nb  & 1\\ % -- 07yg.jpg
+         014 & yg & yg  & b & b  & 1\\ % -- 03y.jpg
+         015 & g & g & b & b  & 1\\ % -- 09b.jpg
+         016 & yg & yg  & nb & nb  & 1\\ % -- 08b.jpg
+         017 & yg & yg  & nb & nb  & 1\\ % -- 10b.jpg
+         018 & yg & yg  & b & nb  & 0.5\\ % -- 02nb.jpg
+     % -- pg marker 5
+         019 & yg & yg  & nb & nb  & 1\\ % -- 07yg.jpg
+         020 & g & g  & nb & nb  & 1\\ % -- 03y.jpg
+         021 & yg & yg  & b & b  & 1\\ % -- 09b.jpg
+         022 & g & g  & nb & nb  & 1\\ % -- 08b.jpg
+         023 & y & y  & b & b  & 1\\ % -- 10b.jpg
+         024 & y & yg  & b & b  & 0.5\\ % -- 02nb.jpg
+     % -- pg marker 5
+         025 & yg & yg  & b & b  & 1\\ % -- 03b.jpg
+         026 & yg & g  & nb & nb  & 0.5\\ % -- 02g.jpg
+ \end{longtable}
+
+ \begin{longtable}{cccccc}
+     \label{tab:expert_results} \\
+     \caption{Expert Classification Results for Mango Phenotypic Traits
+     from Professional 3} \\
+     \toprule
+     {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+     \midrule
+     \endfirsthead
+     
+     \multicolumn{6}{c}{{\tablename\ \thetable{} -- continued from previous page}} \\
+     \toprule
+     {\textbf{Mango ID}} & \multicolumn{2}{c}{\textbf{Color Category}} & \multicolumn{2}{c}{\textbf{Bruising Status}} & {\textbf{Result}}\\
+      & \textbf{Expert} & \textbf{Model} & \textbf{Expert} & \textbf{Model} \\
+     \midrule
+     \endhead
+     
+     \midrule
+     \multicolumn{6}{c}{{Continued on next page}} \\
+     \endfoot
+     
+     \bottomrule
+     \endlastfoot
+     % -- pg marker 2
+         001 & y & y  & b & b & 1\\ % -- 01yg.jpg
+         002 & y & yg  & b & b  & 0.5\\ % -- 08_g.jpg
+         003 & yg & g  & nb & nb &  0.5\\ % -- 07b.jpg
+         004 & y & y  & b & b  & 1\\ % -- 10nb.jpg
+         005 & g & g  & nb & nb  & 1\\ % -- 05yg.jpg
+         006 & y & yg  & b & b  & 0.5\\ % --01nb.jpg
+     % -- pg marker 3
+         007 & y & y  & nb & nb  & 1\\ % -- 06nb.jpg
+         008 & g & g  & nb & nb  & 1\\ % -- 07y.jpg
+         009 & y & y  & b & b  & 1\\ % -- 08yg.jpg
+         010 & yg & yg  & nb & nb  & 1\\ % -- 04g.jpg
+         011 & yg & yg  & b & b  & 1\\ % -- 09nb.jpg 
+         012 & yg & yg  & b & b  & 1\\ % -- 09y.jpg
+     % -- pg marker 4
+         013 & g & g  & nb & nb  & 1\\ % -- 07yg.jpg
+         014 & yg & yg  & b & b  & 1\\ % -- 03y.jpg
+         015 & g & g & b & b  & 1\\ % -- 09b.jpg
+         016 & yg & yg  & nb & nb  & 1\\ % -- 08b.jpg
+         017 & yg & yg  & nb & nb  & 1\\ % -- 10b.jpg
+         018 & yg & yg  & b & nb  & 0.5\\ % -- 02nb.jpg
+     % -- pg marker 5
+         019 & yg & yg  & nb & nb  & 1\\ % -- 07yg.jpg
+         020 & g & g  & nb & nb  & 1\\ % -- 03y.jpg
+         021 & yg & yg  & b & b  & 1\\ % -- 09b.jpg
+         022 & g & g  & nb & nb  & 1\\ % -- 08b.jpg
+         023 & y & y  & b & b  & 1\\ % -- 10b.jpg
+         024 & y & yg  & b & b  & 0.5\\ % -- 02nb.jpg
+     % -- pg marker 5
+         025 & yg & yg  & b & b  & 1\\ % -- 03b.jpg
+         026 & yg & g  & nb & nb  & 0.5\\ % -- 02g.jpg
+ \end{longtable}
+
+
+After compiling the scores, the model achieved an overall score of 71 out of
+78. This translates to a 91.02\% accuracy rate, meaning the model's answers were
+correct 91.02\% of the time when compared to the mango expert's benchmark.
 
 It is important to note that the expert's grading was conducted independently
 and consecutively, without external guidance or tools to aid their judgment.
