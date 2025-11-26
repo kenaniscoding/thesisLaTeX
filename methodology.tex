@@ -79,17 +79,25 @@ software and hardware design.
 The prototype consists of hardware and software components for automated mango sorting and grading purposes. The hardware includes the conveyor belt system used to transfer mangoes from scanning to sorting smoothly. A camera and lighting system are able to collect high-resolution images for analysis. The DC motors and stepper motors are responsible for driving the conveyor belt and sorting actuators. The entire system is controlled by a microcontroller \acr{RPi}, coordinating actions of all components. Sorting actuators then direct mangoes into selected bins based on their classification to make sorting efficient. 
 
 \subsection{Mango Position} \label{sec:mango_positioning}
-In the image acquisition system, the mango is always positioned above the camera and parallel to the metallic rollers and gap. This is so that the size classification would be consistent for both image capturing attempts. Once the mango has already been graded, the mango would exit the image acquisition system parallel to the metallic rollers and parallel to the long conveyor belt. In the case that the mango would go towards the small conveyor belt, it would be perpendicular to the small conveyor belt.
+In the image acquisition system, the mango is always positioned above the camera
+and parallel to the metallic rollers and gap. This is so that the size
+classification would be consistent for both image capturing attempts. Once the
+mango has already been graded, the mango would exit the image acquisition system
+parallel to the metallic rollers and parallel to the long conveyor belt. In the
+case that the mango would go towards the small conveyor belt, it would be
+perpendicular to the small conveyor belt.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{/size_rev/position}
-	\caption{List of Size Results}
+	\caption{conveyor positioning}
 	\label{fig:mango_pos}
 \end{figure}
 
-Figure~\ref{fig:mango_pos} shows the position of the mango from the image acquisition system which are the mangoes labeled 1 and 2.
-When the mango is already graded, it would be sorted using the T sorter seen on mangoes 3, 3.1, and 3.2.
+Figure~\ref{fig:mango_pos} shows the position of the mango from the image
+acquisition system which are the mangoes labeled 1 and 2.  When the mango is
+already graded, it would be sorted using the T sorter seen on mangoes 3, 3.1,
+and 3.2.
 
 \begin{figure}[!htbp]
     \centering
