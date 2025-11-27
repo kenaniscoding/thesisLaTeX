@@ -20,3 +20,12 @@ SALAZAR, DANIEL G.
 
 Adviser:
 Dr. Reggie C. Gustilo
+
+smallest
+gswin64c "-sOutputFile=compressed.pdf" -sDEVICE=pdfwrite -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH document.pdf
+
+good
+gswin64c "-sOutputFile=compressed.pdf" -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH document.pdf
+
+highest
+gswin64c "-sOutputFile=compressed.pdf" -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH document.pdf
