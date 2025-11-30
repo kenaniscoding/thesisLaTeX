@@ -16,20 +16,27 @@
 % for measuring mango length and width. \acr{Faster R-CNN} with object detection achieved best overall performance, with length and width measurement 
 % showing 13.57\% and 3.24\% differences from ground truth respectively. Finally, the image acquisition system consisting of \acr{RPi}
 % with camera module and conveyor belts successfully demonstrated grading and sorting using the developed linear grading formula.
-Current machine learning systems for \gls{Carabao mango} sorting and grading primarily classify mangoes based on individual physical characteristics 
-such as size, \gls{bruises}, and \gls{ripeness}. However, limited research has explored systems that can prioritize these characteristics 
-according to user-defined preferences with customizable weighting. This study introduces a flexible Carabao mango grading and sorting system 
-that integrates machine learning with a user-adjustable weighting mechanism, enabling dynamic prioritization or exclusion of ripeness, size, 
-and bruises based on specific requirements.
-Different machine learning methods were evaluated for classifying ripeness and bruises separately. 
-The dataset consisted of both publicly available images and researchers’ own Carabao mango images, 
-with a data split of 70-15-15 for training, validation, and testing, respectively. 
-\acr{CNN} models, particularly EfficientNetV2, achieved optimal performance for ripeness and bruise classification 
-with accuracy scores of 98\% and 99\%, respectively. To validate these results, a comparative analysis between the best-performing model 
-and expert evaluations was conducted, yielding an overall agreement accuracy of 79\%.
-For size classification, two approaches (Computer Vision and Object Detection) were assessed for estimating mango length and width. 
-\acr{Faster R-CNN} demonstrated the best overall performance, with measured length and width differences of 13.57\% and 3.24\% 
-from the ground truth, respectively. Finally, the image acquisition system, consisting of an \acr{RPi} with a camera module 
-and conveyor belt setup, successfully demonstrated the proposed grading and sorting process using the developed linear grading formula.
+Current machine learning systems for \gls{Carabao mango} sorting and grading
+primarily classify mangoes based on individual physical characteristics such as
+size, \gls{bruises}, and \gls{ripeness}. However, limited research has explored
+systems that can prioritize these characteristics according to user-defined
+preferences with customizable weighting. This study introduces a flexible
+Carabao mango grading and sorting system that integrates machine learning with a
+user-adjustable weighting mechanism, enabling dynamic prioritization or
+exclusion of ripeness, size, and bruises based on specific requirements.
+Different machine learning methods were evaluated for classifying ripeness and
+bruises separately.  The dataset consisted of both publicly available images and
+researchers’ own Carabao mango images, with a data split of 70-15-15 for
+training, validation, and testing, respectively.  \acr{CNN} models, particularly
+EfficientNetV2, achieved optimal performance for ripeness and bruise
+classification with accuracy scores of 98\% and 99\%, respectively. To validate
+these results, a comparative analysis between the best-performing model and
+expert evaluations was conducted, yielding an overall agreement accuracy of
+91.02\%.  For size classification, OpenCV method demonstrated an accurate
+performance, with measured area percent difference of 4.51\% to the manual
+measurement by getting its length and width, respectively. Finally, the image
+acquisition system, consisting of an \acr{RPi} with a camera module and conveyor
+belt setup, successfully demonstrated the proposed grading and sorting process
+using the developed linear grading formula.
 
 

@@ -60,10 +60,10 @@
 
 % Sort in alphabetically ascending manner the surnames of the examiners
 \newcommand{\examinerATitle}{Dr.} 
-\newcommand{\examinerA}{Ronnel P. Agulto}
+\newcommand{\examinerA}{Alexander Co Abad}
 
-\newcommand{\examinerBTitle}{Dr.} 
-\newcommand{\examinerB}{Alexander Co Abad}
+\newcommand{\examinerBTitle}{Engr.} 
+\newcommand{\examinerB}{Dino Dominic F. Ligutan}
 
 % Note that \examinerC and \examinerD only applies for PhD dissertations
 % \newcommand{\examinerCTitle}{Dr.} 
@@ -83,7 +83,7 @@
 
 \newcommand{\numberOfAuthors}{4} % adapt the number of names below accordingly and sort the sunames in alphabetically ascending manner, like in the following example
 
-\defineAuthor{surname1}{Banal}
+\defineAuthor{surname1}{BANAL}
 \defineAuthor{firstname1}{Kenan A.}
 
 \defineAuthor{surname2}{BAUTISTA}
@@ -331,20 +331,63 @@
 	]{./figure/AppendixZ.pdf} % Includes all pages (1 to 5)
 	%\stopcontents[chapters]
 	\cleardoublepage
-	
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter{Revision to the Final} 
+	\label{ch:revisions_to_the_final}
+	%\startcontents[chapters]
+	%\Mprintcontents  
+	%\include{revisions_to_the_proposal}
+	\includepdf[pages={1-2},
+	offset=3.5mm -10mm,%
+	scale=0.65,%
+	pagecommand={},
+	]{./figure/defense_revision.pdf} % Includes all pages (1 to 5)
+	%\stopcontents[chapters]
+	\cleardoublepage
+
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\chapter{Questionaire to the Expert} 
+	\chapter{Questionnaire to the Expert} 
 	\label{ch:questionaire_to_expert}
 	%\startcontents[chapters]
 	%\Mprintcontents  
 	%\include{revisions_to_the_proposal}
-	\includepdf[pages={1-10},
+	\includepdf[pages={1-6},
 	offset=3.5mm -10mm,%
 	scale=0.75,%
 	pagecommand={},
-	]{./figure/questions.pdf} % Includes all pages (1 to 5)
+	]{./figure/comparative_test_paper.pdf} % Includes all pages (1 to 5)
 	%\stopcontents[chapters]
 	\cleardoublepage
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter{Certificate from Farmers} 
+	\label{ch:cert_farmer}
+	%\startcontents[chapters]
+	%\Mprintcontents  
+	%\include{revisions_to_the_proposal}
+	\includepdf[pages={1-7},
+	offset=3.5mm -10mm,%
+	scale=0.67,%
+	pagecommand={},
+	]{./figure/farmer_cert.pdf} % Includes all pages (1 to 5)
+	%\stopcontents[chapters]
+	\cleardoublepage
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter{Dataset Validation} 
+	\label{ch:dataset_validation}
+	%\startcontents[chapters]
+	%\Mprintcontents  
+	%\include{revisions_to_the_proposal}
+	\includepdf[pages={1-26},
+	offset=3.5mm -10mm,%
+	scale=0.75,%
+	pagecommand={},
+	]{./figure/dataset_val_compressed.pdf} % Includes all pages (1 to 5)
+	%\stopcontents[chapters]
+	\cleardoublepage
+  
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% \chapter{Revisions to the Final} 
 	% \label{ch:revisions_to_the_final}

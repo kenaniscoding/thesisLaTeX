@@ -43,9 +43,7 @@ traditional classifiers, achieving 98\% accuracy in categorizing mango ripeness 
 and yellow stages based on color and texture features.
 
 \subsubsection{\Paste{SO6}}
-For SO6, the  system utilized OpenCV for contour extraction and geometric calculations, and Faster
-R-CNN for object detection, resulting in an average deviation of 13.57\% in length and 3.24\% in width from 
-ground-truth measurements, indicating reliable dimensional estimation.
+For SO6, the system utilized OpenCV with an average percent difference of 4.8\% in area measurement.
 
 \subsubsection{\Paste{SO7}}
 For SO7, the implemented CNN models effectively detected and classified visible surface bruises, 
@@ -56,21 +54,35 @@ under controlled lighting conditions.
 
 The contributions of each group member are as follows:
 \begin{itemize}
-  \item BANAL Kenan A.: Scrum Master (Project manager in charge of the hardware and software integration) 
+  \item BANAL Kenan A.: Scrum Master (Project manager in charge of the hardware
+      and software integration, assisted in mango size determination, incharge
+        of dataset collection and data augmentation, assisted in mango size
+        determination and estimation) 
   \item BAUTISTA Francis Robert Miguel F.: Front End Engineer (UI/UX Designer in charge of software interface 
-  and hardware assistant of the Scrum Master) 
-  \item HERMOSURA Don Humphrey L. : Back End Engineer (Software Engineer in charge of the 
-  machine learning algorithm and software assistant of the Scrum Master)
+  and hardware assistant of the Scrum Master, assisted in dataset splitting,
+        categorization and collectio, assisted in mango size determination and
+        estimation) 
+  \item HERMOSURA Don Humphrey L. : Back End Engineer (in charge of mango size determination, assisted in machine learning algorithm)
   \item SALAZAR Daniel G.: Product Engineer (Software Engineer in charge of training and testing of 
-  the machine learning algorithm)
+  the machine learning algorithm, assisted in dataset collection and data
+        augmentation, assisted in mango size determination and estimation)
 \end{itemize}
 
 
 \section{Recommendations}
 
-The researchers recommend that the prototype be improved in the optimization of the machine learning algorithm
-and the hardware design. The researchers also recommend that the prototype be tested in the 
-actual grading and sorting of Carabao mangoes in the market. 
+The researchers recommend that the prototype be enhanced through the
+optimization of the machine learning algorithm and the refinement of the
+hardware design, with further testing in the actual grading and sorting of
+Carabao mangoes in the market. To strengthen its performance and reliability,
+the improvements should include expanding the dataset by incorporating a larger
+number of mango samples, utilizing the latest available machine learning models
+at the time of implementation, and updating the size determination method by
+applying recent advancements in machine learning and computer vision. In
+addition, the prototype should integrate weight determination through the use of
+weight sensors, implement a non-destructive technique for sweetness detection,
+and employ industry-grade equipment to ensure robust implementation and
+automation.
 
 \section{Future Prospects}
 

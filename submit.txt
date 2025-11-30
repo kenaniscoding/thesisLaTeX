@@ -3,4 +3,29 @@ BAUTISTA, FRANCIS ROBERT MIGUEL F.;
 HERMOSURA, DON HUMPHREY L.;
 SALAZAR, DANIEL G.;
 
+AISL-1-2425-C5
+
 Non-Destructive Carabao Mango Sorter and Grader based on Physical Characteristics using Machine Learning
+
+Title: Non-Destructive Carabao Mango Sorter and Grader based on Physical Characteristics using Machine Learning
+
+Grp:
+AISL-1-2425-C5
+
+Members:
+BANAL, KENAN A.;
+BAUTISTA, FRANCIS ROBERT MIGUEL F.;
+HERMOSURA, DON HUMPHREY L.;
+SALAZAR, DANIEL G.
+
+Adviser:
+Dr. Reggie C. Gustilo
+
+smallest
+gswin64c "-sOutputFile=compressed.pdf" -sDEVICE=pdfwrite -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH document.pdf
+
+good
+gswin64c "-sOutputFile=compressed.pdf" -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH document.pdf
+
+highest
+gswin64c "-sOutputFile=compressed.pdf" -sDEVICE=pdfwrite -dPDFSETTINGS=/printer -dNOPAUSE -dQUIET -dBATCH document.pdf
